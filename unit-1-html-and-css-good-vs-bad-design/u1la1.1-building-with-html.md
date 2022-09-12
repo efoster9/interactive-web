@@ -48,6 +48,7 @@ Students will be able to:
 * ****[**Repl.it** ](https://replit.com/\~)- online IDE
 * ****[**W3 Schools**](https://www.w3schools.com/html/) **** - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) **-** a robust but sometimes less student-friendly documentation
+* ****[**What is HTML, CSS, JavaScript?** ](https://youtu.be/gT0Lh1eYk78)(Youtube Video)
 * **Practice Original**
 
 ### Assessments
@@ -57,6 +58,10 @@ Students will be able to:
 **Summative:**
 
 ### Do Now/Warm Up (\~5 min)
+
+Will probably be something around logging into repl.it and either joining the class assignment or starting a new repl, depending on teacher choice. (In lesson 2, will involve forking an assignment and looking at some code.)
+
+### Mini Lesson: How are webpages built? && Your First HTML (\~x - y min)
 
 
 
