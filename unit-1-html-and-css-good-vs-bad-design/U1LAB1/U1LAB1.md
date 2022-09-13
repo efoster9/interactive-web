@@ -1,5 +1,5 @@
 ---
-description: *Question that this lab answers*
+description: How do you use HTML elements to build a webpage?
 ---
 
 # My Fan Page - Part 1
@@ -14,13 +14,21 @@ _Be careful sharing [documentation](https://www.w3schools.com/tags/) for this le
 
 Who's your favorite TV character, celebrity, historical figure, or role model? Imagine you were hired to make a fan page website for them. What would you include: a brief bio, a bunch of photos, links to other sites where you can see more of them?
 
-**Directions**: Your task is to build a website or fan page with enough content to convince anyone that this person is worth knowing about. Include the following:
+**Directions**: Your task is to build a website or fan page with enough content to convince anyone that this person is worth knowing about. 
 
-- The person's name
-- About me section that talks about what they're known for
-- Movie appearances, popular events, achievements, or fictional locations that they've made an appearance to.
-- At least 4 images of them
-- Other websites you can go to to find their work/ impact on the world.
+Include the following sections each wrapped in a `div` with an appropriate ID name:
+
+- "Intro" or "Header" section with:
+    - The person's name
+    - catch phrase or quote
+    - A picture
+- "About Me" section
+    - that describes what they're known for.
+- An "Achievements", "Last Seen", or similar section.
+    - This should include at least 3 nested `div`'s that each contain a title, picture, and an optional description for context.
+    - This could be movie appearances, popular events, achievements or awards, or fictional locations that they've made an appearance at.
+- An "Other" section
+    - This should include other websites you can go to to find their work or impact on the world.
 
 **Requirements**:
 
@@ -37,7 +45,7 @@ Include the following html elements in your code...
 
 ### Exemplar
 
-Take a look at this [finished example](./U1LAB1-Exemplar/index.html) before you start to get an idea of what your fan page might look like. 
+Take a look at this [finished example](./U1LAB1-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
 
 ### Culturally Responsive Best Practice
 
@@ -53,8 +61,8 @@ Finished with your HTML and want to browse through more specific colors? Check o
 
 **Directions**:
 
-- Turn your list of appearances into a table with a title, date, a picture, and a description.
-- You may have noticed that some your page is styled with colors. Add IDs and class names where appropriate and see if you can fiddle with the colors on your page. Use the example lab to help you.
+- Turn your achievements section into a table with a title, date, picture, and description.
+- You may have noticed that some your page is already styled with colors. Add IDs and class names where appropriate and see if you can fiddle with the colors on your page. Use the example lab to help you.
 
 **Reflection Questions:**
 

@@ -1,25 +1,7 @@
 img {
-    min-width: 200px;
-    max-width: 200px;
-}
-
-h2 {
-    color: #e63946;
-}
-
-#header {
-    background-color: #f1faee;
-}
-
-#about {
-    background-color: #a8dadc;
+  max-width: 80%;
 }
 
 .feature {
-    background-color: #457b9d;
-    color: #f1faee;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+  background-color: #f1faee;
 }
-
