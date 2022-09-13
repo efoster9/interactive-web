@@ -43,6 +43,14 @@ Students will be able to:
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
 | When using repl.it, please determine if you would like students to clone directly from GitHub, or if you will be setting up assignments via Teams for Education. | _No special materials are required, but as it's the first day, make sure computers are charged and ready to go!_ |
 
+### Suggestions for UDL
+
+|                             Multiple Means of Representation                            |                                       Multiple Means of Engagement                                       |                                    Multiple Means of Expression                                    |
+| :-------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
+| _How are you going to present your content so that it meets the needs of ALL students?_ | _How are you going to provide multiple pathways for students to actually learn the material presented?_  | _How will students demonstrate what they have learned?  How will you assess progress and mastery?_ |
+
+### Suggestions for Differentiation
+
 ### Resources
 
 * ****[**Repl.it** ](https://replit.com/\~)- online IDE
