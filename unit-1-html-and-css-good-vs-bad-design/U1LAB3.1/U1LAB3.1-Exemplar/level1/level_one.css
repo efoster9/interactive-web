@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 400px;
+}
+
+
+/* 
+For this first layout you'll want to focus on 
+grid-template-columns and 
+grid-template-rows. 
+The end goal for this level is a simple row 
+(with a height of 400px) 
+with four columns (each with a width of 200px). */

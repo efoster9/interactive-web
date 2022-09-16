@@ -1,0 +1,17 @@
+.months-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(4, 3fr);
+}
+
+/* For this, you'll be using the same properties that 
+you worked with in the last level, but you'll want 
+to create two rows, each with a height of .5fr. Each 
+row should have 5 columns in it, each with a width of 
+1fr. Use of the repeat keyword.*/

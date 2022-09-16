@@ -1,0 +1,39 @@
+.container {
+  height: 900px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 70% 1fr;
+}
+
+#navbar {
+  grid-column: 1 / -1;
+}
+
+#sidebar {
+  writing-mode: vertical-rl;
+  grid-row: 2 / 4;
+}
+
+#title {
+  grid-column: 2 / -1;
+}
+
+#content {
+  grid-column: 2 / -1;
+  grid-row: 3;
+}
+
+#footer {
+  grid-column: 1 / -1;
+}
+
+/* 
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end Or the shorthand properties:
+grid-column
+grid-row with any of the acceptable value types. 
+Check out the help link at the top for detailed 
+information on both types of syntax. */
