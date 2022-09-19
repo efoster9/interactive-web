@@ -94,11 +94,11 @@ Make an account
 
 Navigate to 'My Repls' on the side of the page:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 10.06.38 AM.png" alt=""><figcaption><p>Screen capture of the repl.it login page displaying the sidebar navigation with 'My Repls'</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 10.06.38 AM.png" alt=""><figcaption><p>Screen capture of the repl.it login page displaying the sidebar navigation with 'My Repls'</p></figcaption></figure>
 
 Within 'My Repls', create a new folder and name it **Unit 1: HTML && CSS**.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 10.08.43 AM.png" alt=""><figcaption><p><em>Close up screen shot of the 'New folder' button on the My Repls page.</em></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 10.08.43 AM.png" alt=""><figcaption><p><em>Close up screen shot of the 'New folder' button on the My Repls page.</em></p></figcaption></figure>
 
 _**When you're done, clamshell your computer.**_
 
@@ -202,7 +202,7 @@ Images can be added two ways: either by their URL, or locally, when they are sav
 
 First, we should make a folder to house all of the images we want to use. Let's call it 'assets.' We can do that by clicking the little folder with a + button the left side of our repl:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 11.36.32 AM.png" alt=""><figcaption><p>Close up screen shot of the 'Add folder' button in a repl</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 11.36.32 AM.png" alt=""><figcaption><p>Close up screen shot of the 'Add folder' button in a repl</p></figcaption></figure>
 
 Now, let's go find an image. When we get one we like, we will right-click (or control-click/two-finger click if we're working on a Mac) and save it somewhere we can find on our computer. Let's make sure we give it an easy-to-read name without spaces!
 
@@ -238,7 +238,7 @@ Now, take \~5 minutes and try doing this all again - add your own image, another
 
 In this activity, students will pair-program to work with a partner and try to replicate a basic website. Ask students to select one computer to use as their primary, and they will both take turns adding one tag at a time to try to make their plain site look like the example below. At the end of the activity, ask students to share the link and 'fork' the project to make a copy in their account. They'll see forking again (as well as how to organize forked projects) in the next lesson!
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 1.11.11 PM.png" alt=""><figcaption><p>Sample Website to Duplicate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 1.11.11 PM.png" alt=""><figcaption><p>Sample Website to Duplicate</p></figcaption></figure>
 
 Students will begin by [forking this code](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) that does not have any extra HTML in the body and will try to get as close to [the example](https://interactive-web-u1la11-recreation-website.qrtnycs4all.repl.co/) as possible. It's okay for them to go out and find similar, but not identical, images to what's contained in the project!
 

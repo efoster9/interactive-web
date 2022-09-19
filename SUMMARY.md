@@ -15,4 +15,5 @@
 ## Unit 1: HTML & CSS: Good vs Bad Design
 
 * [🔮 Unit 1 Overview](unit-1-html-and-css-good-vs-bad-design/unit-1-overview.md)
-* [U1LA1.1: Building with HTML](unit-1-html-and-css-good-vs-bad-design/u1la1.1-building-with-html.md)
+* [U1LA1.1: Building with HTML](unit-1-html-and-css-good-vs-bad-design/u1la1.1-building-with-html/README.md)
+  * [U1LA1.1: Starter Code](unit-1-html-and-css-good-vs-bad-design/u1la1.1-building-with-html/u1la1.1-starter-code.md)
