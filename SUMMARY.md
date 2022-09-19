@@ -16,3 +16,4 @@
 
 * [🔮 Unit 1 Overview](unit-1-html-and-css-good-vs-bad-design/unit-1-overview.md)
 * [U1LA1.1: Building with HTML](unit-1-html-and-css-good-vs-bad-design/u1la1.1-building-with-html.md)
+* [U1LA1.2: Structuring Pages with Divs, Classes, IDs](unit-1-html-and-css-good-vs-bad-design/u1la1.2-structuring-pages-with-divs-classes-ids.md)
