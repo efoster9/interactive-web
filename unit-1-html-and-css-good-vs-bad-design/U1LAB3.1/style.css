@@ -13,3 +13,7 @@ li {
   font-size: larger;
   margin: 20px;
 }
+
+.sub-li {
+  margin: 2px;
+}
