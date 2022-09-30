@@ -74,14 +74,13 @@ Your task is to add styling to a website that looks similar to the one we made i
     }
     ```
 
-6. Now that we have access to just this image, let's [center](https://www.w3schools.com/howto/howto_css_image_center.asp) by adding 3 more declarations:
+6. Now that we have access to just this image, let's [center](https://www.w3schools.com/howto/howto_css_image_center.asp) it. You can add three declarations, `display: block;`, `margin-left: auto;`, and `margin-right: auto;`, or, if they have the same value (in this case "auto") you can just add two as shown below:
     ```css
     #main-image {
         width: 400px;
 
         display: block;
-        margin-left:auto;
-        margin-right: auto;
+        margin: auto;
     }
     ```
 
