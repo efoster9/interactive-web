@@ -104,11 +104,10 @@ How can I custom create some cool, unique colors? Check out [Google's Color Pick
 
 **Directions**:
 
-- Take a moment change the some of the styles we've already added. Maybe the images are too small or big for your taste. Maybe the margin and padding feels a bit off with the new colors you picked. Maybe you want the main image to have some shadow as well. Do what feels right to match your creative vision. 
+- Take a moment to change some of the styles we've already added. Keep in mind the audience that will see this page and adjust accordingly. Maybe the images are too small or big for your taste. Maybe the margin and padding feels a bit off with the new colors you picked. Maybe you want the main image to have some shadow as well. Do what feels right to match your creative vision. 
 - Checkout [this page](https://www.w3schools.com/css/css_font_google.asp) and see if you can implement some uniquely customized fonts onto the fan page.
-- We already added some shadow to the features on the page, but use this resource for ["on hover" effects](https://www.w3schools.com/csSref/sel_hover.asp) so that the shadow only appears when the mouse hovers over the feature. ( HINT: you will have to create a separate rule with the selector `.feature:hover`). Once you do, see if you can use the same resource to customize the links at the bottom of the fan page. 
-- Tricky! Have you ever hovered over something with your mouse on a website and watched it change in someway? Do a search for "hover in CSS" and see if you can apply some dynamic changes to your webpage. HINT: start with something really obvious to check that it works before scaling it back.
-- Super Tricky! Do a search for "css animation" and see if you can have the features slide into the page as you scroll.
+- We already added some shadow to the features on the page, but use this resource for ["on hover" effects](https://www.w3schools.com/csSref/sel_hover.asp) so that the shadow only appears when the mouse hovers over the feature. ( HINT: you will have to create a separate ruleset with the selector `.feature:hover`). Once you do, carry this concept over and see if you can use the same resource to customize the links at the bottom of the fan page as well. 
+- Spicy! Do a search for "css animation" and see if you can have the features slide into the page as you scroll.
 
 **Reflection Questions:**
 

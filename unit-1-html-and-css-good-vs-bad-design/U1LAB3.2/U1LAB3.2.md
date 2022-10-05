@@ -1,5 +1,5 @@
 ---
-description: How can I use CSS Grid to format sections of a webpage into different sizes and orientations?
+description: **
 ---
 
 # Grid Interview
