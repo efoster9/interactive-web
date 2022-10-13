@@ -4,7 +4,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-img {
+.container img {
   height: 200px;
 }
 
@@ -24,7 +24,7 @@ del {
   justify-content: center;
 }
 
-.item {
+.container .item {
   margin: 0 5px;
   padding: 5px;
   width: 250px;

@@ -16,26 +16,26 @@ We've seen the limitations HTML has when trying to build a beautiful website. It
 
 #### Directions: 
 
-Your task is to add styling to a website that looks similar to the one we made in the previous lab. Use IDs for unique elements and class names for repeated styling to style different portions of your website. Don't forget to link the css file in the head of your HTML code. Consider including things such as, but not limited to, margin around the whole page, padding within certain `div` sections, and a change in background color.
+Your task is to add styling to a website that looks similar to the one we made in the previous lab. Use IDs for unique elements and class names for repeated styling to style different portions of your website. Don't forget to link the `style.css` file in the head of your `index.html` code. Consider including things such as, but not limited to, margin around the whole page, padding within certain `div` sections, and a change in background color.
 
 **Part 1**
-1. Head to the CSS page and notice that there is already styling for the image elements on the page `max-width: 80%;`. This means the image will take up at most 80 percent of the page. This is good if our image is too big, but if the image is too small, then it will not be consistent with the other images. Change that to say `width: 300px;`, and notice what happens. All the images are forced to be exactly 300 pixels wide; no more, no less.
+1. Head to the `style.css` page and notice that there is already styling for the image elements on the page `max-width: 80%;`. This means the image will take up at most 80 percent of the page. This is good if our image is too big, but if the image is too small, then it will not be consistent with the other images. Change that to say `width: 300px;`, and notice what happens. All the images are forced to be exactly 300 pixels wide; no more, no less.
 
-2. There are 3 ways to access specific parts of an HTML file in order to style them. We can select the element (as we did with `img` above), the ID name, or the class name. First, style the font color of all the `h2` elements to the custom color `#e63946`. Add the following code to the CSS and notice what changes.
+2. There are 3 ways to access specific parts of an HTML file in order to style them. We can select the element (as we did with `img` above), the ID name, or the class name. First, style the font color of all the `h2` elements to the custom color `#e63946`. Add the following code to the `style.css` and notice what changes.
     ```css
     h2 {
         color: #e63946;
     }
     ```
 
-3. Head over to the HTML page and notice that there are 4 sections to the page each wrapped in `div` elements with different ID names: `id="header"`, `id="about"`, `id="achievements"`, and `id="other"`. Let's add some color to the header's background. We'll reference it by ID, and set a custom color to the background. In the CSS add the following rule to change the background color:
+3. Head over to the `index.html` page and notice that there are 4 sections to the page each wrapped in `div` elements with different ID names: `id="header"`, `id="about"`, `id="achievements"`, and `id="other"`. Let's add some color to the header's background. We'll reference it by ID, and set a custom color to the background. In the `style.css` add the following rule to change the background color:
     ```css
     #header {
         background-color: #f1faee;
     }
     ```
 
-4. Now, let's add a different color `#a8dadc` to the about and the achievements sections. Instead of writing these color changes individually, notice in the HTML how the two `divs` and no others have a class name `class="section"`. We can access the sections by class name using the following code:
+4. Now, let's add a different color `#a8dadc` to the about and the achievements sections. Instead of writing these color changes individually, notice in the `index.html` how the two `divs` and no others have a class name `class="section"`. We can access the sections by class name using the following code:
     ```css
     .section {
         background-color: #a8dadc;
@@ -67,7 +67,7 @@ Your task is to add styling to a website that looks similar to the one we made i
 
 4. Great! The features have a nice pop to them now. Let's move on to centering and enlarging the main image. 
 
-5. We don't yet have a selector to access the main image without affecting the other images on the page. In the HTML, find the `img` that's tied to the main image at the top of the page and give it a special ID name like `id="main-image"`. Then, in the CSS, create a new rule that increases the image size to 400px. If you did this right, the first main image of Frida should be bigger than all the others. The code should look as follows:
+5. We don't yet have a selector to access the main image without affecting the other images on the page. In the `index.html`, find the `img` that's tied to the main image at the top of the page and give it a special ID name like `id="main-image"`. Then, in the `style.css`, create a new rule that increases the image size to 400px. If you did this right, the first main image of Frida should be bigger than all the others. The code should look as follows:
     ```css
     #main-image {
         width: 400px;
@@ -98,7 +98,7 @@ Take a look at this [finished example](./U1LAB2-Exemplar/index.html) before you 
 
 I can't get my images to center! Always look up your questions on w3schools.com before asking your teacher, but this one in particular is tricky. Check out [this page](https://www.w3schools.com/howto/howto_css_image_center.asp) to see an example on how to do it.
 
-How can I custom create some cool, unique colors? Check out [Google's Color Picker](https://hexcolorspicker.com/google-color-picker/). Simply search "Color Picker" on Google, select an exact color, and copy and paste the hex number. Check out [this CSS example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_text_background) in w3schools on how to apply it to your CSS code.
+How can I custom create some cool, unique colors? Check out [Google's Color Picker](https://hexcolorspicker.com/google-color-picker/). Simply search "Color Picker" on Google, select an exact color, and copy and paste the hex number. Check out [this CSS example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_text_background) in w3schools on how to apply it in your `style.css` code.
 
 ### Extensions
 

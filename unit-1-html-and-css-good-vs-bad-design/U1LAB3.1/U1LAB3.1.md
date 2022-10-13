@@ -14,7 +14,7 @@ Especially for level 3 and harder, students will want to use the Dev Tools to vi
 
 You are applying to work side by side a busy politician who will need a nicely organized website, and they want to make sure you know your stuff before giving you the job. They've given you a couple of challenges to test your competency.
 
-**Directions**: You task is to use Grid to style the CSS for each level matching the corresponding exemplar.
+**Directions**: Your task is to use Grid to style the CSS for each level matching the corresponding exemplar.
 
 1. For this first layout, you'll want to focus on `grid-template-columns` and `grid-template-rows`. The end goal for this level is a simple row (at a height of `400px`) with four equal sized columns (each at `1fr`).
 
@@ -30,7 +30,7 @@ You are applying to work side by side a busy politician who will need a nicely o
     _Mock Up 2 "February"_
     ![Level 2b Exemplar](U1LAB3.1-Starter/level2/img/level2b.png)
 
-3. Things get quite a bit trickier for the month of December in level 3. You'll need to use `grid-column-start` and `grid-column-end` to specify how much space each section takes up horizontally. You could also use `span` or specific `column-line values` as seen in [this documentation](https://www.w3schools.com/cssref/pr_grid-column.asp) from w3schools. Either way, head into the HTML for this level so you can extract the ID needed for special styling. Notice that the first row of day titles are still smaller than the other rows. Use the same proportion (1:3) you used in level 2.
+3. Things get quite a bit trickier for the month of December in level 3. You'll need to use `grid-column-start` and `grid-column-end` to specify how much space each section takes up horizontally. You could also use `span` or specific `column-line values` as seen in [this documentation](https://www.w3schools.com/cssref/pr_grid-column.asp) from w3schools. Either way, head into the `level_three.html` for this level so you can extract the ID needed for special styling. Notice that the first row of day titles are still smaller than the other rows. Use the same proportion (1:3) you used in level 2.
 
     _Mock Up 3_
     ![Level 3 Exemplar](U1LAB3.1-Starter/level3/img/level3.png)
@@ -62,15 +62,15 @@ What's the difference between using `fr` (**fr**action) and `px` (**p**i**x**els
 
 5. Go back to #4 and apply the proportional width in which ever way you haven't yet. If you did it in 2 uneven parts, now try it in 5 equal parts, and if you tried it in 5 equal parts, try completing it in just 2 uneven parts.
 
-5. Okay. The politician now wants a website set up similar to [Apple's website](https://www.apple.com/mac/). Here all your skills learned thus far are put to the test. Take a moment to look through the HTML and CSS that is already created for you, and compare it with the aesthetic of the website. The first 2 Navbars are created in the HTML and semi formatted in the CSS. If you scroll down on the apple page, you'll see a small black promotion similar to the one thats defaulted for you on the level 5 html. That div is the first div which marks the second half of the webpage. The margin is already set to the appropriate width.
+6. Okay. The politician now wants a website set up similar to [Apple's website](https://www.apple.com/mac/). Here all your skills learned thus far are put to the test. Take a moment to look through the `level_five.html` and `level_five.css` starter files already created for you, and compare it with the aesthetic of the website. The first 2 Navbars are created in the `level_five.html` and semi formatted in the `level_five.css`. If you scroll down on the apple page, you'll see a small black promotion similar to the one thats defaulted for you on the `level_five.html`. That div is the first div which marks the second half of the webpage. The margin is already set to the appropriate width.
 
-6. You will need to add the rest of the divs in the HTML and make sure they're styled in the CSS to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
+7. You will need to add the rest of the divs in the `level_five.html` and make sure they're styled in the `level_five.css` to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
 
 ![Level 5 Exemplar](U1LAB3.1-Starter/level5/assets/level5-demo.gif)
 
-7. The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
+8. The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
 
-8. Explore other websites such as [Spotify's website](https://www.spotify.com/us/free/), [HubSpot](https://www.hubspot.com/), or the [NYC DOE website](https://www.schools.nyc.gov/). Go above and beyond by creating the skeleton for one of these websites from scratch!
+9. Explore other websites such as [Spotify's website](https://www.spotify.com/us/free/), [HubSpot](https://www.hubspot.com/), or the [NYC DOE website](https://www.schools.nyc.gov/). Go above and beyond by creating the skeleton for one of these websites from scratch!
 
 **Reflection Questions:**
 
