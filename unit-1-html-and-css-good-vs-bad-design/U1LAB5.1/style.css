@@ -33,3 +33,7 @@ li {
   background-color: green;
   color: white;
 }
+
+.bold {
+  font-weight: bold;
+}

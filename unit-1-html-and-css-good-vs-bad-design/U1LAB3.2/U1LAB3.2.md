@@ -6,15 +6,17 @@ description: **
 
 ### Teacher Notes
 
+...
+
 This lab is a way for students to get some at bats at applying CSS Grid to pre-written HTML code. In the extension, students will have the opportunity to duplicate the general structure of a webpage. We find that Apple's website is a straight forward exemplar, but feel free to find other similar websites or allow students to use a website they prefer to recreate.
 
 Especially for level 3 and harder, students will want to use the Dev Tools to visualize how Grid is being applied. For level 3 and 4, two mock up views are provided. One is used to illustrate the exemplar result, and the other is used to illustrate how the result should be conceptualized in order to incorporate Grid effectively.  Take some time to show students how to use the Dev Tools on their own computers to work through these problems. 
 
 ### Prompt
 
-You are applying to work side by side a busy politician who will need a nicely organized website, and they want to make sure you know your stuff before giving you the job. They've given you a couple of challenges to test your competency.
+You've moved on to the second stage of the application process, and the employer now wants to see that you are proficient with using CSS Flexbox to style a webpage. They've given you a couple of challenges to test your competency before giving you the job.
 
-**Directions**: You task is to use Grid to style the CSS for each level matching the corresponding exemplar.
+**Directions**: You task is to use Flexbox to style the CSS for each level matching the corresponding exemplar.
 
 1. For this first layout, you'll want to focus on `grid-template-columns` and `grid-template-rows`. The end goal for this level is a simple row (at a height of `400px`) with four equal sized columns (each at `1fr`).
 
@@ -25,7 +27,7 @@ You are applying to work side by side a busy politician who will need a nicely o
    - For the first part organize the months of the year into 3 rows of 4. The width of each column should be evenly spaced (`1fr`), and the height of each row should be `100px`.
    - For the month of February, it should be formatted as 5 rows of 7 columns. The days themselves should be three times as large as the first row of day titles, and horizontally, all the columns should be equally sized.
 
-    _Mock Up 2 Months_
+    _Mock Up 2 - Months_
     ![Level 2a Exemplar](U1LAB3.2-Starter/level2/exemplar/level2.png)
 
 3. Things get quite a bit trickier for the month of December in level 3. You'll need to use `grid-column-start` and `grid-column-end` to specify how much space each section takes up horizontally. You could also use `span` or specific `column-line values` as seen in [this documentation](https://www.w3schools.com/cssref/pr_grid-column.asp) from w3schools. Either way, head into the HTML for this level so you can extract the ID needed for special styling. Notice that the first row of day titles are still smaller than the other rows. Use the same proportion (1:3) you used in level 2.
@@ -35,7 +37,7 @@ You are applying to work side by side a busy politician who will need a nicely o
 
 4. Now that you proven your skills and have shown what's needed to format a quality calendar, it's time to demonstrate how you can format a webpage. For this level, use `grid-column` **and** `grid-row` to match the starter code to the image below. The "Navbar", "Page Title", and "Footer" sections are each `90px` in height, and the content section is `630px`. The "Side Bar" takes up 1/5 of the horizontal width. You can do this one of two ways as illustrated below. Choose the one that makes most sense to you for now.
 
-    _Mock Up 4_
+    _Mock Up 4 - Wide View_
     ![Level 4 Exemplar](U1LAB3.2-Starter/level4/exemplar/full-screen.png)
     _Mock Up 4 - Dev Tools View (Option 1: 2 Columns)_
     ![Level 4 Best Grid](U1LAB3.2-Starter/level4/exemplar/small-screen.png)
@@ -45,6 +47,8 @@ You are applying to work side by side a busy politician who will need a nicely o
 [COURTNEY TO ADD]
 
 ### Extra Help?
+
+...
 
 Can't tell if my proportions are right! If you're having problems sizing things up, inspect your page. Right click on you page and click on inspect. When you hover over the portion you're working on, you should be able to see a _"grid"_ as indicated above that will show you whether or not you're on track. On top of that, be sure to go with the trial and error method.
 

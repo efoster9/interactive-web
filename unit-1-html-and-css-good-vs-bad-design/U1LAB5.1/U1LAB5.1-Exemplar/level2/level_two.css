@@ -35,7 +35,7 @@ a {
 }
 
 /* Insert @Media queries here! */
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .footer {
     flex-direction: column-reverse;
   }

@@ -31,7 +31,7 @@ body {
 }
 
 /* Insert @Media queries here! */
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .main {
         grid-template-columns: repeat(3, 1fr);
     }
