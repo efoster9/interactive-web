@@ -86,15 +86,12 @@ Let's start by forking the [starter code](https://replit.com/@qrtnycs4all/Intera
 	<h1>Div Depot</h1>
 	<h3>A playground for divs!</h3>
 	
-	<!-- 	my first div -->
 	<div></div>
   <script src="script.js"></script>
 </body>
 ```
 
 Notice how there's now a box on the page? That's your div! Usually, divs are blank, empty boxes, but we have done some behind-the-scenes magic to make them more visible for you while you're learning. (This is the same sort of magic you'll be learning in future lessons.)
-
-**NB:** _Leaving comments here is important, as students will be making A LOT of divs and then adding things inside of them. Having comments to differentiate between them is very helpful!_
 
 Like we said before, divs can hold things. So let's try to put a little paragraph of text in there!
 
@@ -103,7 +100,6 @@ Like we said before, divs can hold things. So let's try to put a little paragrap
 	<h1>Div Depot</h1>
 	<h3>A playground for divs!</h3>
 	
-	<!-- 	my first div -->
 	<div>
 	   <p>Hello World!</p>
 	</div>
@@ -116,7 +112,6 @@ This paragraph is now _inside_ the div and when you run the program, you should 
 Now, as you may guess, our divs can hold a lot of things. We can, for example, put more than one paragraph in there:
 
 ```
-<!-- 	my first div -->
 <div>
     <p>Hello World!</p>
     <p>This div can hold a lot.</p>
@@ -130,7 +125,7 @@ What else can we put in a div? Let's find out! Give students about 7-10 minutes 
 * Make a new div. Put three HTML elements of your choice in it.
 * {SPICY CHALLENGE} Make a new div. Put a paragraph in it. Then put another div in it. Inside that div, put a second paragraph.
 
-Once students are done, spend some time reviewing what they have made - you may ask students to display their code, to come up to your computer and complete your code on the screen, or to walk you through what to type to solve one or more of the tasks. Make sure that if no one got to the spicy challenge, you spend time looking at it together, as placing divs inside of divs will become important as students continue their web development journey.
+Once students are done, spend some time reviewing what they have made - you may ask students to display their code, to come up to your computer and complete your code on the screen, or to walk you through what to type to solve one or more of the tasks.
 
 ### Differentiating Divs: IDs (\~5 - 7 min)
 
@@ -139,7 +134,6 @@ This is great, but one thing you'll notice is that right now, our divs all look 
 Let's say, for example, that we wanted the title of our page to be in a div, and we wanted that div to look different. First, let's put the title in a div:
 
 ```
-<!-- 	title div -->
 <div>
     <h1>Div Depot</h1>
     <h3>A playground for divs!</h3>
@@ -149,7 +143,6 @@ Let's say, for example, that we wanted the title of our page to be in a div, and
 This should look the same as all the other divs. But let's try giving it an ID:
 
 ```
-<!-- 	title div -->
 <div id="title">
     <h1>Div Depot</h1>
     <h3>A playground for divs!</h3>
@@ -167,7 +160,6 @@ Now let's imagine a page where multiple parts of the page look the same or simil
 Let's go back to some of those test divs we made and try adding a class:
 
 ```
-<!-- 	my first div - green -->
 <div class="green">
     <p>Hello World!</p>
     <p>This div can hold a lot.</p>
