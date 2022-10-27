@@ -26,9 +26,9 @@ You are applying to work side by side a busy politician who will need a nicely o
    - For the month of February, it should be formatted as 5 rows of 7 columns. The days themselves should be three times as large as the first row of day titles, and horizontally, all the columns should be equally sized.
 
     _Mock Up 2 Months_
-    ![Level 2a Exemplar](U1LAB3.1-Starter/level2/img/level2a.png)
+    ![Level 2a Exemplar](U1LAB3.1-Starter/level2/exemplar/level2a.png)
     _Mock Up 2 "February"_
-    ![Level 2b Exemplar](U1LAB3.1-Starter/level2/img/level2b.png)
+    ![Level 2b Exemplar](U1LAB3.1-Starter/level2/exemplar/level2b.png)
 
 3. Things get quite a bit trickier for the month of December in level 3. You'll need to use `grid-column-start` and `grid-column-end` to specify how much space each section takes up horizontally. You could also use `span` or specific `column-line values` as seen in [this documentation](https://www.w3schools.com/cssref/pr_grid-column.asp) from w3schools. Either way, head into the `level_three.html` for this level so you can extract the ID needed for special styling. Notice that the first row of day titles are still smaller than the other rows. Use the same proportion (1:3) you used in level 2.
 
@@ -37,7 +37,9 @@ You are applying to work side by side a busy politician who will need a nicely o
     _Mock Up 3 - Dev Tools View_
     ![Level 3 Grid](U1LAB3.1-Starter/level3/img/level3-grid.png)
 
-4. Now that you proven your skills and have shown what's needed to format a quality calendar, it's time to demonstrate how you can format a webpage. For this level, use `grid-column` **and** `grid-row` to match the starter code to the image below. The "Navbar", "Page Title", and "Footer" sections are each `90px` in height, and the content section is `630px`. The "Side Bar" takes up 1/5 of the horizontal width. You can do this one of two ways as illustrated below. Choose the one that makes most sense to you for now.
+4. Now that you proven your skills and have shown what's needed to format a quality calendar, it's time to demonstrate how you can format a webpage. For this level, there is actually 2 ways it can be done. Choose which ever method you're most comfortable with:
+    - **Method 1**: use `grid-column` **and** `grid-row` to match the starter code to the image below. The "Navbar", "Page Title", and "Footer" sections are each `90px` in height, and the content section is `630px`. The "Side Bar" takes up 1/5 of the horizontal width. You can do this one of two ways as illustrated below. Choose the one that makes most sense to you for now.
+    - **Method 2**: use `grid-template-areas` and `grid-area`. This method is a a bit trickier to understand, but once you learn it, it makes styling with Grid much easier. If you're interested check out [this video](https://youtu.be/qTGbWfEEnKI?t=319) for a quick tutorial.
 
     _Mock Up 4_
     ![Level 4 Exemplar](U1LAB3.1-Starter/level4/img/level4.png)
@@ -66,7 +68,7 @@ What's the difference between using `fr` (**fr**action) and `px` (**p**i**x**els
 
 7. You will need to add the rest of the divs in the `level_five.html` and make sure they're styled in the `level_five.css` to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
 
-![Level 5 Exemplar](U1LAB3.1-Starter/level5/assets/level5-demo.gif)
+![Level 5 Exemplar](U1LAB3.1-Starter/level5/exemplar/level5.gif)
 
 8. The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
 

@@ -1,5 +1,5 @@
 ---
-description: bla?
+description: How can media queries on breakpoints be used to make for an responsive webpage?
 ---
 
 # ChefHub Goes Mobile
@@ -15,14 +15,14 @@ You've gotten hired for the web design job you were looking to get! The company 
 **Screen Sizes**
 For the entirety of the directions, this lab will be refer to 4 screen sizes: **x-large** (default), **large**, **medium**, and **small**. There are more sizes (eg. x-small and xx-large) but only the 4 mentioned will be used here. These are the breakpoint dimensions for the width of screen that you should refer to when writing the `@media` queries:
 
-- `X-Large` : 1200px +
-- `Large` : 992px - 1200px
-- `Medium` : 768px - 992px
 - `Small` : 0px - 768px
+- `Medium` : 768px - 992px
+- `Large` : 992px - 1200px
+- `X-Large` : 1200px +
 
 **Directions**: Your task is, at each level, to apply breakpoints to change the layout of the page so that smaller screen sizes are accommodated for. The instructions below will guide you through this process incrementally until, at level 5, you have a fully adaptable webpage.
 
-0. There's two things you should prepare before going into these levels. First, get comfortable adjusting your screen size. The best way to do this is to inspect the page and click the _Toggle Device Toolbar_ button or on keyboard press `CTRL+Shift+M` (or `CMD+Shift+M` on Mac). This will allow you to see the screen width dimensions while adjusting the screen width. The second note to be aware of is that all the CSS has already been written for the `X-Large` screen size by default for all levels 1-5. You will be writing `@media` queries with the `max-width` parameter to account for the relatively smaller screen sizes. For example:
+0. There's two things you should prepare before going into these levels. First, get comfortable adjusting your screen size. The best way to do this is to inspect the page (right click anywhere and click inspect) and click the _Toggle Device Toolbar_ button or on keyboard press `CTRL+Shift+M` (or `CMD+Shift+M` on Mac). This will allow you to see the screen width dimensions while adjusting the screen width. The second note to be aware of is that all the CSS has already been written for the `X-Large` screen size by default for all levels 1-5. You will be writing `@media` queries with the `max-width` parameter to account for the relatively smaller screen sizes. For example:
 
    ```css
    @media (max-width: 1200px) {
@@ -77,6 +77,8 @@ For the entirety of the directions, this lab will be refer to 4 screen sizes: **
 
     ![Level 4 Exemplar Small](U1LAB5.1-Starter/level4/exemplar/level4-sm.png)
 
+7. Head over to the extensions for **level 5**.
+
 ### Exemplar
 
 When you're done, the page should look like [this](U1LAB5.1-Starter/level5/exemplar/level5-lg.png) at full screen (x-large) and like [this](U1LAB5.1-Starter/level5/exemplar/level5-sm.png) for example on a large mobile device (medium).
@@ -87,15 +89,15 @@ When you're done, the page should look like [this](U1LAB5.1-Starter/level5/exemp
 
 ### Extra Help?
 
-...
+I'm not seeing my changes on the screen! Make sure you are typing your `@media` queries below all the other code in the CSS. If this is already true, try changing something drastic like font `color` or `font-size` before something more subtle to test that the breakpoint is working.
 
 ### Extensions
 
 **Directions**:
 
-- You may have noticed that there is a **level 5**! Surprise, this is actually Gordon Ramsey's ChefHub page. Be sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
-    - Using `grid-template-areas` and `grid-area`. This way is easier, most commonly used, and is the most efficient way, but it is trickier to first learn. This is the way we recommend doing it, and the site is currently formatted using `grid-area`. In the `@media` query, you would only need to change the one parent `div`.
-    - Using `grid-template-columns` and `grid-column`. This way will most likely feel more familiar to you. It is easier to learn, but harder to implement. In the `@media` query, you would need to change all the changed child `div`'s `grid-columns`.
+- Surprise, this is actually Gordon Ramsey's ChefHub page. For **level 5**, be especially sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
+    - **Method 1**: using `grid-template-areas` and `grid-area`. This way is easier, most commonly used, and is the most efficient way, but it is trickier to first learn. Regardless, this is the way we recommend doing it, and the site is currently formatted using `grid-area`. Checkout [this video](https://youtu.be/qTGbWfEEnKI?t=319) for an example on how to use it. HINT: In the `@media` query, you will need to only change the one parent `div`.
+    - **Method 2**: using `grid-template-columns` and `grid-column`. This way will most likely feel more familiar to you. It is easier to learn, but harder to implement. In the `@media` query, you would need to change all the changed child `div`'s `grid-columns`.
 
     Choose which ever route you feel comfortable exploring. If you choose to use `grid-template-columns`, be sure to change the pre-written `level_five.css` to be consistent with this method. 
 
@@ -105,4 +107,5 @@ When you're done, the page should look like [this](U1LAB5.1-Starter/level5/exemp
 
 **Reflection Questions:**
 
-- ...
+- Why is it important to have breakpoints in your code?
+- Whats the difference between starting with a small sized website and building up ("mobile-first") and starting with a x-large sized website and building down ("desktop-first")? Do a little bit of research and find out. Which one makes the most sense and at what time is one approach more sensible than the other?
