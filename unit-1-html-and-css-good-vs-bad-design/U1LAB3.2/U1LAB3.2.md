@@ -1,14 +1,14 @@
 ---
-description: **
+description: How does Flexbox offer more specific formatting than Grid?
 ---
 
 # Flexbox Interview
 
 ### Teacher Notes
 
-This lab is a way for students to get some at bats at applying CSS Flexbox to pre-written HTML code. The main section focusses on tackling individual parts of a webpage such as the sidebar, footer, etc. In the extension, students will have two opportunities to use both Grid and Flexbox to bring these different parts together completing a full webpage. 
+This lab is a way for students to get some at bats at applying CSS Flexbox to pre-written HTML code. The main section focusses on tackling individual parts of a webpage such as the sidebar, footer, etc. In the extension, students will have two opportunities to use both Grid and Flexbox simultaneously to bring these different parts together completing a full webpage. 
 
-DISCLAIMER: The order of the two extension questions are interchangeable. #5 is slightly more challenging than #6 as it requires the cutting and pasting of code from various files into one. This can cause some errors that are good to troubleshoot through, but are not the intent of such a lesson. However, #5 is a natural continuation of the previous levels 1-4. 
+DISCLAIMER: The order of the two extension questions are interchangeable. #5 is slightly more challenging than #6 as it requires the copying and pasting of code from various files into one. This can cause some errors that are good to troubleshoot through, but are not the intent of such a lesson. Despite #5 being more challenging, it is a natural continuation of the previous levels 1-4 which is why it is originally placed as #5. 
 
 ### Prompt
 
@@ -50,7 +50,23 @@ You're applying for a different position, and this employer wants to see that yo
 
 ### Extra Help?
 
-...
+There are so many rulesets. How do I know which one to include `display: flex;` and everything else? There are 2 types of Felxbox properties: Parent properties, on the left of [this Flexbox documentation](), and Children properties on the right side. In the example below, copied from level2, the `div` with the `id="navbar-one"` is the parent container. All the `divs` inside with the `class="item"` are children items. Therefore, to use `Flexbox` for this navbar section, properties like `display: flex;` and `align-items: center;` (both parent properties) should be in the CSS ruleset `#navbar-one`. Properties like `align-self: flex-end;` (a child property) would be applied to the individual item to be affected. HINT: None of the problems above require the use of children properties.
+
+```html
+<!-- First Nav Bar -->
+<div id="navbar-one">
+    <div class="item" id="logo">
+        <div id="circle"></div>
+    </div>
+    <div class="item page">Home</div>
+    <div class="item page">Music</div>
+    <div class="item page">Blog</div>
+    <div class="item page">Podcast</div>
+    <div class="item page">About</div>
+    <div class="item page">FAQ</div>
+    <div class="item page">Contact</div>
+</div>
+```
 
 ### Extensions
 
@@ -73,7 +89,4 @@ You're applying for a different position, and this employer wants to see that yo
 
 **Reflection Questions:**
 
-- How would you compare Grid with Flexbox? Which one do you like better? What situations make one better than the other? 
-- ...
-
-
+- How would you compare Grid with Flexbox? Which one do you like better? What situations make one better than the other?

@@ -1,8 +1,8 @@
 ---
-description: **
+description: What can one do to make a website more easily accessible?
 ---
 
-# Flexbox Interview
+# What do you hear? - Make it Accessible.
 
 ### Teacher Notes
 

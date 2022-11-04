@@ -6,9 +6,9 @@ description: How Bulma make styling webpages easier?
 
 ### Teacher Notes
 
-In this lab, there is quite a bit of copying and pasting being done, namely in part 2. Students tend to run into difficulty knowing where to paste things, and ...
+The biggest difficulty that students face when using Bulma is generally putting things in the wrong place. This includes putting class names under the wrong `div` (captured mainly in Part 1) and copying and pasting pre-written components or other layouts in the wrong sections (mainly covered in Part 2). Comments have been written throughout the `index.html` and referenced in the directions below to help prevent such errors, but be sure to have students undo their changes until they get to a working version of their code when necessary to spot hard-to-spot errors. 
 
-
+The Bulma documentation is well written, and it provides comprehensive definitions and examples for everything used below. For every newly introduced class or component, a link is provided linking to the corresponding page. As students progress through the lab, they will feel more comfortable using Bulma as well as reading through the documentation, but know that this, just like any documentation, can be overwhelming at first glance.
 
 ### Prompt
 
@@ -171,5 +171,6 @@ Take a look at this [finished example](./U1LAB6-Exemplar/index.html) before you 
 
 **Reflection Questions:**
 
-- In what ways did Bulma make styling a web page easier? What were some challenges you ran into?
-- 
+- In what ways did Bulma make styling a web page easier?
+- What were some challenges you ran into? How did you overcome them?
+- Why do you think web designers would use a framework like Bulma? Why might they not want to use such a framework?

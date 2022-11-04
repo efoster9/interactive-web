@@ -1,12 +1,12 @@
 ---
-description: How can media queries on breakpoints be used to make for an responsive webpage?
+description: How can media queries at certain breakpoints be used to make for a responsive webpage?
 ---
 
 # ChefHub Goes Mobile
 
 ### Teacher Notes
 
-...
+Leading up to this Lab, you may want to model again how to inspect a page and use the _Toggle Device Toolbar_. Point out specifically the dimensions of the webpage at the top so that students can use this to validate that their breakpoints are working. This is explained in step 0. 
 
 ### Prompt
 
@@ -89,13 +89,13 @@ When you're done, the page should look like [this](U1LAB5.1-Starter/level5/exemp
 
 ### Extra Help?
 
-I'm not seeing my changes on the screen! Make sure you are typing your `@media` queries below all the other code in the CSS. If this is already true, try changing something drastic like font `color` or `font-size` before something more subtle to test that the breakpoint is working.
+Not seeing your changes on the screen? Make sure you are typing your `@media` queries below all the other code in the CSS. If this is already true, try changing something drastic like font `color` or `font-size` before something more subtle to test that the breakpoint is working. Lastly, since we're adjusting the webpage from a big size to all the smaller sizes, you should be using `max-width` for all the changes.
 
 ### Extensions
 
 **Directions**:
 
-- Surprise, this is actually Gordon Ramsey's ChefHub page. For **level 5**, be especially sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
+- Surprise, as you can see by the new addition of the sidebar, this is actually Gordon Ramsey's ChefHub page. For **level 5**, be especially sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
     - **Method 1**: using `grid-template-areas` and `grid-area`. This way is easier, most commonly used, and is the most efficient way, but it is trickier to first learn. Regardless, this is the way we recommend doing it, and the site is currently formatted using `grid-area`. Checkout [this video](https://youtu.be/qTGbWfEEnKI?t=319) for an example on how to use it. HINT: In the `@media` query, you will need to only change the one parent `div`.
     - **Method 2**: using `grid-template-columns` and `grid-column`. This way will most likely feel more familiar to you. It is easier to learn, but harder to implement. In the `@media` query, you would need to change all the changed child `div`'s `grid-columns`.
 
@@ -108,4 +108,4 @@ I'm not seeing my changes on the screen! Make sure you are typing your `@media` 
 **Reflection Questions:**
 
 - Why is it important to have breakpoints in your code?
-- Whats the difference between starting with a small sized website and building up ("mobile-first") and starting with a x-large sized website and building down ("desktop-first")? Do a little bit of research and find out. Which one makes the most sense and at what time is one approach more sensible than the other?
+- Whats the difference between starting with a small sized website and building up ("mobile-first") and starting with an x-large sized website and building down ("desktop-first")? Do a little bit of research and see what you can find on which is better or worse and why. Which one makes the most sense and at what time is one approach more sensible than the other?

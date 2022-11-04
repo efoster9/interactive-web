@@ -6,10 +6,6 @@ p {
   border-radius: 10px;
 }
 
-.feature {
-  background-color: #f1faee;
-}
-
 .blue-image {
   background-image: url("img/hero.jpg");
 }
