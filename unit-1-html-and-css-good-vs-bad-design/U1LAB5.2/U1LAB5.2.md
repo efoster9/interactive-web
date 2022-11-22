@@ -6,41 +6,48 @@ description: What can one do to make a website more easily accessible?
 
 ### Teacher Notes
 
-...
-
-This lab is a way for students to get some at bats at applying CSS Grid to pre-written HTML code. In the extension, students will have the opportunity to duplicate the general structure of a webpage. We find that Apple's website is a straight forward exemplar, but feel free to find other similar websites or allow students to use a website they prefer to recreate.
-
-Especially for level 3 and harder, students will want to use the Dev Tools to visualize how Grid is being applied. For level 3 and 4, two mock up views are provided. One is used to illustrate the exemplar result, and the other is used to illustrate how the result should be conceptualized in order to incorporate Grid effectively.  Take some time to show students how to use the Dev Tools on their own computers to work through these problems. 
+From a student's perspective, knowing if you're applying _accessibility_ correctly is tricky. From a teacher's  perspective, grading it is too, tricky. Students won't be adding any code in this lab. They will instead be making modifications to the HTML and CSS in order to make the website more accessible. For the students, links to the HTML accessibility tools have been provided, but we believe accessibility is best understood with some type of a screen reader validating the adjustments being made. For teachers, an outline of the answer key is provided in the `U1LAB5.2-Exemplar` folder. This answer key makes it easier to scan through a student's code without having to use a screen reader to check their work.
 
 ### Prompt
 
-You've moved on to the second stage of the application process, and the employer now wants to see that you are proficient with using CSS Flexbox to style a webpage. They've given you a couple of challenges to test your competency before giving you the job.
+Beautiful websites can be fun and satisfying for both the creator and the navigator, but what if, as the navigator, you can't see the website. According to [the National Federation of the Blind](https://nfb.org/resources/blindness-statistics), the NFB, roughly 7.7 million Americans are blind as of 2016. And, about 90% of people use a screen reader because of their disability, according to a small survey done by [WebAIM](https://webaim.org/projects/screenreadersurvey7/). WebAIM, Web Accessibility In Mind, is a non-profit organization that focusses on providing web accessibility solutions for those with disabilities. Most of the linked resources attached below will bring you to either their webpage or [w3schools](https://www.w3schools.com/). 
 
-**Directions**: You task is to use Flexbox to style the CSS for each level matching the corresponding exemplar.
+**Directions**: Today, your task is to modify the websites given to you so that they are _"accessible"_. The steps below will guide you in using the right element tags, and adding descriptive alt text to make for a more accessible page. 
 
-1. For this first layout, you'll want to focus on `grid-template-columns` and `grid-template-rows`. The end goal for this level is a simple row (at a height of `400px`) with four equal sized columns (each at `1fr`).
+1. The names you use for your element tags are very important and useful for someone using a screen reader. Skim through the `level_one.html` and modify any `div` that can be a more specific element. For example:
+    ```html
+    <div class="h2">Introduction</div>
+    <!-- Can be switched to... -->
+    <h2>Introduction</h2>
+    ```
 
-    _Mock Up 1_
-    ![Level 1 Exemplar](U1LAB3.2-Starter/level1/exemplar/level1.png)
+    Then, in the `level_one.css` change the `.h2` class selector into an `h2` element selector. You'll need to double check and potentially do the same with any other changes you make in the `level_one.html`.
 
-2. Busy politicians rely heavily on calendars to organize their tasks. In this next section, you'll be using the same properties that you worked with in the last level, but you'll need to format it two-dimensionally:
-   - For the first part organize the months of the year into 3 rows of 4. The width of each column should be evenly spaced (`1fr`), and the height of each row should be `100px`.
-   - For the month of February, it should be formatted as 5 rows of 7 columns. The days themselves should be three times as large as the first row of day titles, and horizontally, all the columns should be equally sized.
+2. Next, notice the descriptive `alt` text written for the first 2 images: _"Calm hippo standing in swampland"_ and _"Roaring male lion lying on low cut grass"_. Skim through the code again, this time looking for and nondescriptive `alt` text. Change it so that it describes the corresponding image with enough detail that a blind person can get the idea.
 
-    _Mock Up 2 - Months_
-    ![Level 2a Exemplar](U1LAB3.2-Starter/level2/exemplar/level2.png)
+3. At the bottom of the page, there are 3 links provided for further reading. The first link is accompanied by text that describes what the reader will find when clicking to that webpage: _"hippos' and lions' strengths and weaknesses"_. The other links may be enticing, but they poorly describe what the reader will see if they were to click. In the `level_one.html`, change the text so that it is more descriptive. Check out this website for more [help on creating descriptive links](https://www.w3schools.com/accessibility/accessibility_link_text.php).
 
-3. Things get quite a bit trickier for the month of December in level 3. You'll need to use `grid-column-start` and `grid-column-end` to specify how much space each section takes up horizontally. You could also use `span` or specific `column-line values` as seen in [this documentation](https://www.w3schools.com/cssref/pr_grid-column.asp) from w3schools. Either way, head into the HTML for this level so you can extract the ID needed for special styling. Notice that the first row of day titles are still smaller than the other rows. Use the same proportion (1:3) you used in level 2.
+4. On to level 2! Notice on the webpage that there are 3 questions to _"The Quickest Personality Quiz"_. Then, there's a slot for your name and email, and a button to submit the quiz. Input fields, especially ones in a quiz format like this, can be hard to navigate through using a screen reader if done incorrectly. The goal will be using proper element tags and other techniques to connect titles, questions, and labels to their input fields. 
 
-    _Mock Up 3_
-    ![Level 3 Exemplar](U1LAB3.2-Starter/level3/exemplar/level3.png)
+5. In the `level_two.html`, the first question `<fieldset class="question" id="q1">` is done properly. It uses `<fieldset>` to wrap the entire question instead of a `div`, and `<legend>` for the question itself instead of `<p>`. Change the 2nd and 3rd questions so that they fit the same structure. Checkout [this resource on fieldset](https://webaim.org/techniques/forms/controls#checkbox) for more examples.
 
-4. Now that you proven your skills and have shown what's needed to format a quality calendar, it's time to demonstrate how you can format a webpage. For this level, use `grid-column` **and** `grid-row` to match the starter code to the image below. The "Navbar", "Page Title", and "Footer" sections are each `90px` in height, and the content section is `630px`. The "Side Bar" takes up 1/5 of the horizontal width. You can do this one of two ways as illustrated below. Choose the one that makes most sense to you for now.
+6. In the third question, there is an image that correlates to each radio button. This correlation or connection should be made explicitly in the HTML. Notice that the first selection, the cabin in the snow, is done already. The `<label>` has an attribute `for="cabin"`, and the corresponding radio `<input>` above it has an `id="cabin"`:
+    ```html
+    <div class="q3-item">
+        <input type="radio" id="cabin" name="getaway" value="cabin" />
+        <label for="cabin">
+            <img src="img/cabin.jpg" alt="A cold snowy mountain with a small cabin in the distance." />
+        </label>
+    </div>
+    ```
 
-    _Mock Up 4 - Wide View_
-    ![Level 4 Exemplar](U1LAB3.2-Starter/level4/exemplar/full-screen.png)
-    _Mock Up 4 - Dev Tools View (Option 1: 2 Columns)_
-    ![Level 4 Best Grid](U1LAB3.2-Starter/level4/exemplar/small-screen.png)
+    Add the `for` attribute to the other 3 `<label>` elements in this question matching them to the right ID. Use this [resource on text inputs](https://webaim.org/techniques/forms/controls#input) if you need more guidance.
+
+7. The `<label>` for the email's text input field also needs a `for` attribute to reference the field.
+
+8. For both the Name and Email text inputs, use the [placeholder and autocomplete](https://webaim.org/techniques/forms/advanced#placeholder) attributes. 
+
+9. For the submit button, change the text to say "Submit Quiz" and make the button accessible using [this example on buttons](https://webaim.org/techniques/forms/controls#button) on the WebAIM page.
 
 ### Culturally Responsive Best Practice
 
@@ -48,32 +55,26 @@ You've moved on to the second stage of the application process, and the employer
 
 ### Extra Help?
 
-...
-
-Can't tell if my proportions are right! If you're having problems sizing things up, inspect your page. Right click on you page and click on inspect. When you hover over the portion you're working on, you should be able to see a _"grid"_ as indicated above that will show you whether or not you're on track. On top of that, be sure to go with the trial and error method.
-
-What's the difference between using `fr` (**fr**action) and `px` (**p**i**x**els). In short, you want to use fraction for width of the page and pixels for length or height of the page. Later we will be looking at how your webpage can adjust based on screen size, and this best practice will make more sense. If you're itching to know now, check out [this resource](https://medium.com/swlh/css-units-which-ones-to-use-and-avoid-31e4ed461f9) for more information on the difference between `fr`, `px`, `%`, and more.
+[COURTNEY TO ADD]
 
 ### Extensions
 
-**Directions**:
+**Mild**
+- Level 3 continues the thread of accessibility through tables, image buttons, and more. Start by including the following in the `level_three.html`:
+    - For the "Submit Option" section, add a `for` attribute for the `label` element. 
+    - Then, for the "Submit Button" section, add an `alt` attribute and give it a descriptive alt text that would help someone understand the purpose of the image.
 
-5. Go back to #4 and apply the proportional width in which ever way you haven't yet. If you did it in 2 uneven parts, now try it in 5 equal parts, and if you tried it in 5 equal parts, try completing it in just 2 uneven parts.
+**Medium**
+- Name, Birthday, and Email are the 3 text inputs on the page:
+    - Name should have autocomplete; include the `autocomplete` attribute in the `<input>` element.
+    - Birthday should be a required input. Check out this [resource on the required attribute](https://www.w3schools.com/tags/att_input_required.asp) for an example.
+    - Email should both have an autocomplete and required attribute.
 
-5. Okay. The politician now wants a website set up similar to [Apple's website](https://www.apple.com/mac/). Here all your skills learned thus far are put to the test. Take a moment to look through the HTML and CSS that is already created for you, and compare it with the aesthetic of the website. The first 2 Navbars are created in the HTML and semi formatted in the CSS. If you scroll down on the apple page, you'll see a small black promotion similar to the one thats defaulted for you on the level 5 html. That div is the first div which marks the second half of the webpage. The margin is already set to the appropriate width.
-
-6. You will need to add the rest of the divs in the HTML and make sure they're styled in the CSS to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
-
-![Level 5 Exemplar](U1LAB3.2-Starter/level5/exemplar/level5.png)
-
-7. The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
-
-8. Explore other websites such as [Spotify's website](https://www.spotify.com/us/free/), [HubSpot](https://www.hubspot.com/), or the [NYC DOE website](https://www.schools.nyc.gov/). Go above and beyond by creating the skeleton for one of these websites from scratch!
+**Spicy**
+- Finally, Use this [documentation on creating accessible tables](https://webaim.org/techniques/tables/data#th) to fix the structure of the first question in the `level_three.html`. HINT: the `<fieldset>` and `<legend>` have been done already. You will start with replacing `<div class="full-table">` with `<table>`.
 
 **Reflection Questions:**
 
-- How do you like grid? Why or why not? Do you think websites look better with grid or without grid? Explain what about grid makes websites look better or worse.
-- What were the biggest challenges you faced while applying grid to the webpage?
-- Do a search for some websites with good looking layouts. What makes them look so appealing?
-
-
+- What does it mean for a website to be accessible? What are some examples of changes that can be made to get it that way?
+- Can you imagine a situation where a company would not want to make their site accessible? What would be the repercussions?
+- In what situations might a website need to legally be accessible? 
