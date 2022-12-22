@@ -1,0 +1,14 @@
+div {
+  background-color: #e9edc9;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+img {
+  max-width: 80%;
+}
+
+#header {
+  background-color: #d4a373;
+}
