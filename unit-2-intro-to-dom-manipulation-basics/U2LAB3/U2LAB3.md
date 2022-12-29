@@ -1,50 +1,109 @@
 ---
-description: How do you change a webpage based on other inputs?
+description: What are ways you can change a webpage based on other inputs while maintaining accessibility?
 ---
 
 # The Interactive Site
 
 ### Teacher Notes
 
-...
+In this lab, students will be adding Javascript to the site that has pre-written HTML. The goal is to have each input produce a unique output. _"Conditional statements"_ are essential to this lab! For the 3rd and 4th input section, a general idea of `classList` and _"hex color input"_ respectively is the essential skill being used. As always, resources are provided. 
+
+Students may be excited to jump around and do the section that appeals to them the most. Use your best judgement, but these were built to be done in order. Making them interactive and accessible both get increasingly more challenging as the lab progresses. The 4th section was originally created as an extension, and can still be used in that way if desired. 
 
 ### Prompt
 
-It's the national horse race again! Three horses line up to race for the finish line. Which one will win? Click the "Run!" button to activate a horse. (Try the blue one, it works!) When it gets to the end of the screen, a text should appear announcing that horse the winner. 
+Text inputs, buttons, checkboxes... you've seen many of these input types before, but they haven't done anything to make changes to the page. They are all really useful ways to have the user interact with the page, but the page doesn't interact back with the user. This website has 4 interactive components that currently are not interactive. Can we use Javascript to change that?
 
-**Directions**: Your task is to finish the website so that the pink and brown horse also work the same as the blue horse. You'll have to use `querySelector`, `addEventListener`, and _arrow functions_ to do so. For the extensions, you'll have a chance to add a fourth horse, a reset button, and more.
+**Directions**: Your task is to make this site interactive and accessible. The first section will display to the user a heart emoji thats the same color that the user picks. The second section is a number guessing game that the site will help the user find by saying to guess higher or lower. For the third section, enter all 7 continents and the site will have an image of each of them appear as you do. Lastly, use the color input to pick a color, check the checkbox to say you're not a robot, and click the button to change the website's background color.
 
-0. If you haven't already, check out the website and notice that when you click the "Run!" button next to the blue horse, the blue horse moves forward a bit. First thing we're going to work on is getting the other horses to do the same. This will be done in 3 parts: 1st, you'll need `querySelectors` to listen to the button and move the horse image, 2nd, you'll need to create `addEventListeners` for each button, and 3rd, you'll need to create a function that advances the horse once the button is clicked. 
+0. Before we start coding, look through the files to see what you're working with. Reminder, this is best practice when ever working on a new project.
+    - First, navigate through the website as it is, and play with the inputs. Start thinking about the data type (integer, string, etc.) of each input. This will become more important to know as you start to write that javascript code. 
+    - Next, look at the `index.html` and notice how the four sections are divided with their own comments. You'll be coming back here to find `IDs` for your `querySelectors`.
+    - Lastly, in the `script.js`, there are 2 functions that you will be using in this lab: `getRandomInt()` and `is-dark(hex)`. The two functions are at the top commented out to remind you of their name. They were created for you in the `utils.js` file, and both that file and this one are already attached in the `index.html` at the bottom. They will be used in section 2 and 4. 
 
-1. First, go to the `script.js` and notice that there are 2 `querySelctors`: one for the `blueButton`, and one for the `blueHorse`. We need the first to listen to when the "Run!" button is clicked, and we need the second to move the image of the horse. Do the same for the pink horse and the brown horse. If you're stuck look below for the code for the pink horse:
+**What's Your Favorite Color?**
+
+1. Let's begin! For this first section, we want to display a unique message to the user with a heart emoji that is the same color that the user picks. In the `script.js`, start by using `querySelector` to connect to the `IDs` belonging to the radio button input and the output section currently with the text "YOUR RADIO OUTPUT HERE". You'll have to find the `IDs` in the `index.html`.
+
+2. Then, on the radio button `querySelector` you created, put an `addEventListener` that calls a function on change, and make an arrow function for the event listener. It should look as follows:
     ```js
-    const pinkButton = document.querySelector("#pink-button");
-    const pinkHorse = document.querySelector("#pink-horse");
-    ```
+    const radioInput = document.querySelector("#fav_color");
+    const radioOutput = document.querySelector("#radio-output");
 
-2. Second, scroll to the bottom, and notice that theres is an `addEventListener` for the `blueButton` that calls a function _"advanceBlue"_. Create 2 more `addEventListeners`, one for the `pinkButton` and one for the `brownButton`. When these buttons are clicked, they should call a function called _"advancePink"_ and _"advanceBrown"_ respectively. Use the blue button's event listener for reference.
+    const displayColor = (e) => {
+        //the color that was selected
+        const color = e.target.value;
 
-3. Third, find the section on the page where the OnClick functions are declared. Notice that the `advanceBlue()` arrow function is already made, and the `advancePink()` function is set up, but not completed. Complete the advancePink function so that it increments the `pink_position` variable by 1, then it should adjusts the image of the horse using the function `changePosition` that takes in 2 variables as parameters: the `querySelector` for the horse, and the new position. Use the `advanceBlue` function for reference.
-
-4. Great! Now head over to the website and check that all 3 of your buttons are working.
-
-5. Now, when a horse gets to the end of the race, you'll have to announce that that horse is the winner. Edit the `checkWinner()` function so that it writes a winner to the screen based on the position of the horse:
-    - First, up with all the other query selectors, write a new `querySelector` for the `div` with an `id="winner"`
-    - Then, in the `checkWinner()` function, write an if statement: If the horse's position is equal to 5, change the innerHTML of the winner `div` to, for example, "Blue is the Winner!". Use the `position` argument and the `color` to help.
-    - NOTE: use `console.log()` where needed to check that your code is doing what it should.
-
-6. After the function is set up, you'll need to call it in each of the _`advanceColor()`_ functions. For example, here's what the `advanceBlue()` function should look like:
-    ```js
-    const advanceBlue = (e) => {
-        blue_position += 1;
-        changePosition(blueHorse, blue_position);
-        checkWinner(blue_position, "Blue");
     };
+
+    radioInput.addEventListener('change', displayColor);
     ```
+
+3. In the function, set the `radioOutput` `innerHTML` to a message based on the color that has been chosen. You will need to use conditional [if and else if statements](https://www.w3schools.com/js/js_if_else.asp) to do this.
+    - Blue - You picked blue 💙
+    - Green - You picked green 💚
+    - Pink - You picked pink 💕
+    - Black - You picked black 🖤
+
+4. Once you have tested that all 4 buttons are working properly, delete the default text in the `index.html`.
+
+5. **Make it Accessible**: If you turn on your screen reader, notice that you can navigate through most of the section. It says the title, the radio button labels, and even the unique message. However, when you select a new button, there is no way of knowing that the new message has been updated. Add the following attributes in the element that holds the message so that screen reader knows to announce new changes: `aria-live:"polite"` and `aria-atomic="true"` Use this resource on ARIA attributes for more information.
+    ```html
+    <div id="radio-output" aria-live="polite" aria-atomic="true"></div>
+    ```
+
+**Guess the Number (1 to 100)**
+
+6. Now, you're going to use the function `getRandomInt()`. For now, save the value in a variable as, and print it using `console.log()` as follows:
+    ```js
+    const randomNumber = getRandomInt();
+    console.log(randomNumber);
+    ```
+7. Open the inspector window to the console tab and notice that a random number between 1 and 100 is being printed. When you refresh the page, a different random number should appear.
+8. Great! Now, repeat the steps you did for the previous section:
+    - Find the `IDs` and use `querySelector` for both the numerical input and for the output.
+    - Add an event listener for the input, and
+    - create an arrow function that will generate the output. If the input was 50 (for example), this function should use `innerHTML` to say _"Not 50, guess lower!"_ if the correct answer is less than 50, _"Not 50, guess higher!"_ if the correct answer is greater than 50, or _"Hurray! You got it! It's 50"_ if the correct answer is equal to 50.
+
+9. Try this on your own first. If you're having trouble setting this up, the start of the code should look as follows:
+    ```js
+    const randomNumber = getRandomInt();
+    console.log(randomNumber);
+
+    const numInput = document.querySelector("#num-input");
+    const numOutput = document.querySelector("#num-output");
+
+    const checkNumber = (e) => {
+        // the inputted number (as an integer not as a string)
+        const value = e.target.valueAsNumber;
+        
+        // Insert conditional code here.
+    }
+
+    numInput.addEventListener('change', checkNumber);
+    ```
+
+10. Once you've tested that the guessing game works, and all 3 messages are being displayed, delete the starting text _"YOUR GUESSING GAME OUTPUT HERE"_.
+
+11. **Make it Accessible**: When you turn on the screen reader, a similar issue occurs as before. The unique messages do not make themselves known after each change. Additionally, the previous number must be deleted before entering the next guess.
+    - Include `aria-live="polite"` and `aria-atomic="true"` as done before. This will make the screen reader announce any changes in the output message.
+    - At the beginning of your function, use `e.target.select();` so that the entire previous number input gets selected immediately after it's entered. Now, any new inputs will automatically replace the previous one.
+    
+**Name All 7 Continents**
+
+12. For this third section, the idea is to have the user input a continent, and un-hide or reveal the corresponding continent image. If the input is invalid then no image will be revealed. Start by adding the `class="hidden"` attribute to all 7 continent images in the `index.html`.
+
+13. Now, follow the pattern for the previous two sections as best as you can completing as much as possible until you get stuck. Once you do, read on for a bit more guidance. For now, use the `div id="sr-continent-alert"` to output a message for the user's input. If a continent, for example _Asia_ was guessed, the message should say _"Yes, Asia is a continent."_ For an invalid guess, like Canada, the message should say _"Canada is not a continent."_
+
+14. Use `e.target.value.toLowerCase();` to ensure that the user's input is always all lower cased for consistency when comparing it to correct answers. Use this [resource for more information on `.toLowerCase()`](https://www.w3schools.com/jsref/jsref_tolowercase.asp).
+
+15. Use `.classList.contains()` to [check if an element has a specific class name](https://www.w3schools.com/jsref/met_domtokenlist_contains.asp) like `class="hidden"` which would mean it is hidden. And, use `.classList.remove()` to [remove that class](https://www.w3schools.com/jsref/prop_element_classlist.asp) so that it is un-hidden or revealed.
+
+16. At this point, you should have this section working pretty nicely. See how you can make this accessible in the extensions.
 
 ### Exemplar (...to be deleted)
 
-Take a look at this [finished example](./U2LAB2-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
+Take a look at this [finished example](./U2LAB3-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
 
 ### Culturally Responsive Best Practice
 
@@ -52,58 +111,86 @@ Take a look at this [finished example](./U2LAB2-Exemplar/index.html) before you 
 
 ### Extra Help?
 
-...
+- If you're having trouble getting your conditionals to work properly...
+    <details>
+    <summary>click here to peak at one way of doing the Section 1:</summary>
+    <br>
+
+
+    ```js
+    const displayColor = (e) => {
+    const color = e.target.value;
+    console.log("color", color);
+
+    let emoji = "";
+
+    if(color === "blue") {
+        emoji = " 💙";
+    } else if(color === "green") {
+        emoji = " 💚";
+    } else if(color === "pink") {
+        emoji = " 💕";
+    } else if(color === "black") {    // this can also just be else
+        emoji = " 🖤";
+    }
+
+    radioOutput.innerHTML = "You picked " + color + emoji;
+    }
+    ```
+
+    </details>
+    <br>
+
+- Section 3 gets tricky pretty quickly. Are you using the following methods? Here are some resources that may help:
+    - [toLowerCase()](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
+
+    - [.classList.contains()](https://www.w3schools.com/jsref/met_domtokenlist_contains.asp)
+    - [.classList.add() and .classList.remove()](https://www.w3schools.com/jsref/prop_element_classlist.asp)
+    - [.innerHTML](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+    - [.select()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select) - (used in Section 2, too)
 
 ### Extensions
 
-**Directions**:
+**Mild**
 
-- Once the game is over, notice that the other buttons still work. In fact, if the blue horse wins, you can get another horse to the finish line overwriting the who the winner is. Use `blueButton.disabled = true;` to disable all three of the buttons once a winner is declared. You'll want to put the statements in the `if` statement of your `checkWinner` function. Use [the documentation for disabling buttons](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) for more information. 
-- With everything you've coded up until now, add a restart button to the page that starts the game over. For an easier challenge, disable it while the game is in progress, and reenable it once the game is over and there's a winner. For a more spicy challenge, make the button appear and disappear instead. Regardless, the restart button should do 3 things:
-    - set the horses position to 1, back to the starting position,
-    - reenable the buttons,
-    - clear the `innerHTML` of the `div` with `id="winner"`, and
-- There's currently quite a bit of redundancy in the code; there's repetition where there doesn't need to be. For this extension, you'll change the `advanceBlue()`, `advancePink()`, and `advanceBrown()` functions into 1 function called `advance()`:
-    - First, head to the top of code and change all the variables so that they are in 1 object. You will have to eventually delete `blue_position`, `pink_position`, `brown_position`, and all the query selectors. The new object should be called `horses` and have 3 keys: "blue", "pink", and "brown". Each of the values should be another object with 3 keys as follows:
-        ```js
-        let horses = {
-            "blue" : {
-                "position" : 1,
-                "button" : document.querySelector("#blue-button"),
-                "horse" : document.querySelector("#blue-horse")
-            },
-            "pink" : //etc...
-        };
-        ```
-        When you've done this for all 3 colors, test that it is working by printing the pink position with `console.log(horses["pink"].position)`.
+- For Section 2, the number guessing game, and Section 3, "Name All 7 Continents", use `e.target.select();` in the `script.js` in the functions to highlight the input after it's entered so that the user can input a new input without having to backspace their old one.  
 
-    - Next, in the `advance()` functions, they should each have a parameter `e` which points to all the attributes associated with the button that calls it. Print `e.target` and notice that the entire element is printed. Then, print `e.target.value` to the console in one of the functions to see what value is given. The blue button should print "blue", the pink button "pink", and so on. You'll use these values to help access the right information from the object you created.
-        ```js
-        const advanceBlue = (e) => {
-            console.log(e.target)
-            console.log(e.target.value);
-            //...
-        }
-        ```
-    - Now, create a new `advance()` function that will replace the 3 current advance functions. This new function should do the same as the others, but instead of writing and reading from a specific variable, write and read to and from the object based on the `e.target.value`. Here's the partial code:
-        ```js
-        const advance = (e) => {
-            color = e.target.value;
-            horses[color].position += 1
-            // etc...
-        }
-        ```
-    - Finally, change the `addEventListeners` at the bottom of the code to run the `advance()` function, and test that everything still works.
-        ```js
-        horses["blue"].button.addEventListener("click", advance);
-        //etc...
-        ```
-    - NOTE: if you implemented a restart button, and included disables everywhere, you'll need to change those as well
-        ```js
-        horses["blue"].button.disabled = false;
-        //etc...
-        ```
+- The text outputs in Section 2 and 3 are really only for accessibility purposes. We need to go back and hide them from being seen, but we want a screen reader to still read it as someone navigates through the page. Go back to all the text outputs where you included `aria-live="polite"` and `aria-atomic="true"`, and add a class name `class="sr-only"`. Then, in the style.css, add the following class declaration.
+    ```css
+    .sr-only {
+        opacity: 0;         /* this hides it visually */
+        z-index: -1;        /* this avoids unintended clicks */
+        position: absolute; /* this is so that the text doesn't affect other elements' positioning */
+    }
+    ```
+
+**Medium**
+
+- **Make it Accessible**: For Section 3, the output says if the input is a continent, but doesn't say how many continents have been already entered so far, or if an input has already been entered. Change the code in the `script.js` so that the output says one of the following:
+    - If the input is Canada: **Canada is not a continent**.
+    - If the input is Asia and it is the 3rd continent entered: **Yes! Asia is a continent. 3 out of 7**, or...
+    - If the input is Africa and the user has already guessed Africa: **Africa has already been selected.**
+
+    _Note: Use a screen reader to check that this is working properly. The message should only say "7 out of 7" when all 7 continents have appeared on the screen._
+
+
+- Let's connect Section 4. Input the color and change the background if the checkbox is checked. Use the following steps:
+    - Add querySelectors for the color input, the checkbox, the submit button, and the body.
+    - Add an eventListener on the submit button. When it is _clicked_ it should call a function called `changeBackground`.
+    - create the function `changeBackground` that does the following
+        - uses `e.preventDefault()` ([See resource](https://www.w3schools.com/jsref/event_preventdefault.asp)) to stop the page from reloading. 
+        - uses `.checked` ([See Resource](https://www.w3schools.com/jsref/prop_checkbox_checked.asp)) to see if the "I'm not a Robot*" checkbox is checked. If it is...
+        - set the `body.style.background` ([See Resource](https://softauthor.com/change-background-color-javascript/)) to the inputted value.
+
+**Spicy**
+- **Make it Accessible**: Add a `div` in the `index.html` for a text output for section 4 similar to the other 3 sections, and include an ID, the aria properties, and the `sr-only` class. In the `script.js`, change the code so that when the button is pressed, one of the following messages appear:
+    - "Background color changed to #FFFEEE" (or what ever color was selected)
+    - "Background color not changed. Please, select 'I'm not a robot'."
+
+    **Note**: `sr-only` hides the message, so consider starting without the class name, and adding it once its working properly. Use a screen reader to ensure that this section is accessible.
+
 
 **Reflection Questions:**
-
-- ...
+- In what ways could this site be improved? What questions or curiosities do you have?
+- What was most challenging about this lab? What are you most proud of?
+- Would someone who is colorblind be able to navigate the website you helped create today? What about someone who is blind? If not, what would need to be changed? If so, what is an example of what you did to make it that way?
