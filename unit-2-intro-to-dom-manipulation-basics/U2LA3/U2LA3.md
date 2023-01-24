@@ -16,6 +16,7 @@ Students will be able to:
 
 * retrieve inputs from a textbox input
 * use if, else if, and else to trigger conditional events.
+* write conditional and compound conditional statements using conditional operators
 
 ### Suggested Duration
 
@@ -75,7 +76,7 @@ Be sure to end early enough that everyone has reached but not necessarily starte
 
 **Summative:**
 
-- Unit 2, "The Cross-Wired Lightbulbs Puzzle" Lab 4 (Upcoming Lab)
+- Unit 2, "The Interactive Site" Lab 3 (Upcoming Lab)
 
 - "Input-Output Helper Site" Final Project (End of Unit Project)
 
@@ -163,13 +164,17 @@ Lastly, ask students what they think these 3 DOM elements will be used for.
     ```
 5. Add a secret town to the list of valid entries. It can be a town in one of the boroughs like "China Town" or "West Village", it can be a town in New Jersey like "Jersey City", or it can be a made up town like "Halloween Town". When this entry is inputted, it should have it's own special output like the 5 boroughs, but it should not add 1 to the score.
 
-**Spicy Activities**
-
 6. Under the score variable, create a boolean variable for your additional town, and set it to `false`. 
     - When your town is guessed, change the boolean variable to `true`.  
     - In the `checkScore()` function, if the score is equal to 5 and if the boolean value is true, put a special message in the `statusBox`, and disable it! Check out this resource to find out [how to disable an input field](https://www.w3schools.com/jsref/prop_text_disabled.asp).
 
-7. Currently, this game is a bit flawed. Try typing in "Manhattan" 5 times and see what happens! With your partner, come up with a way to make sure this doesn't happen. The `statusBox` should have a message that tells the user they've already guessed that borough. 
+**Spicy Activities**
+
+7. Currently, if you type any of the following guesses in the `inputBox`, you will get an invalid result: "The Bronx", "bronx", "Bronx " (notice the space after). Think about ways you can allow for these nuanced responses to be successful, and solve them with your partner. Consider the following resources:
+    - [String Methods](https://www.w3schools.com/js/js_string_methods.asp)
+    - [Compound Conditional Statements](https://www.w3schools.com/js/js_comparisons.asp) 
+
+8. Currently, this game is a bit flawed. Try typing in "Manhattan" 5 times and see what happens! With your partner, come up with a way to make sure this doesn't happen. The `statusBox` should have a message that tells the user they've already guessed that borough. 
 
 ### Wrap Up (\~5 minutes)
 
