@@ -28,7 +28,7 @@ Students will be able to:
 
 ### Suggested Duration
 
-1 periods (\~45 minutes)
+1-2 periods (45-90 minutes)
 
 ### NYS Computing Standards
 
