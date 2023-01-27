@@ -6,9 +6,12 @@ description: How can I make it easier for someone using a screen reader to inter
 
 ### Teacher Notes & Overview
 
-In this lesson, students will begin by working with basic HTML tags and reading documentation. The focus will not be on making something pretty, but on making pages that allow them to practice writing HTML tags and using their resources in a meaningful way.
+The goal of this lesson is to give students exposure to using a screen reader having them empathize with people that have visual deficiencies. For a majority of the lesson, students will be navigating websites with a screen reader making observations on how various elements of the page are or are not accessible. 
 
-If you did not complete a Unit 0, please allow extra time in the lesson to make sure students are set up on repl.it. Students who completed the pre-requisite ICM course likely have accounts but may need to ensure they can still get logged in. If you have a vision for student organization, you may also want to take time to help them set up folders in the 'My Repls' section.
+Most computers have a screen reader in their original software: Mac has `VoiceOver`, Chromebooks have `ChromeVox`, etc. There are free Chrome extensions like [ScreenReader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) you can use to unify your class, but if possible, we recommend using either of the other 2. [Here's a video tutorial on ChromeVox](https://www.youtube.com/watch?v=NyuuK7tB9fM). Which ever you choose, be sure to learn the basic controls in preparation for this lesson. This lesson was written with `ChromeVox` in mind.
+
+As this lesson is more of an exploration, students will have an opportunity to reflect by writing on their observations toward the end of the lesson. Feel empowered to extend this "explore and reflect" section further than what's written.
+
 
 ### Objectives
 
@@ -21,7 +24,7 @@ Students will be able to:
 
 ### Suggested Duration
 
-1 periods (\~45 minutes)
+1-2 periods (\~45-90 minutes)
 
 ### NYS Computing Standards
 
@@ -41,7 +44,7 @@ Students will be able to:
 
 |                                                                          Planning Notes                                                                          |                                                     Materials                                                    |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
-| When using repl.it, please determine if you would like students to clone directly from GitHub, or if you will be setting up assignments via Teams for Education. | _No special materials are required, but as it's the first day, make sure computers are charged and ready to go!_ |
+| When using repl.it, please determine if you would like students to clone directly from GitHub, or if you will be setting up assignments via Teams for Education. | Students will need headphones while navigating websites using screen readers. They will also need a computer and access to the internet.  |
 
 ### Suggestions for UDL
 
@@ -51,11 +54,7 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-To differentiate across different levels, we recommend keeping instruction short and having students work in pairs when getting practice. The Lesson & Demo section is written with this in mind.
-
-The activities below are in an order that progresses in difficulty. The advanced students will work quickly through the first couple of challenges giving you time to support the struggling students. Once they get a grasp on things, you can support the more advanced students who by that time are probably stuck on the more advanced challenges. 
-
-Be sure to stop early enough that everyone has reached but not necessarily started the extensions. It is okay if most students don't complete any or all extensions. They exist mainly for differentiation and an engaging challenge. 
+This lesson is designed as an exploration of websites using a screen reader. There is also, a code along portion in the middle. Consider having a documented sheet of controls that students can type when using a screen reader. We encourage that students sit in pairs. Consider offering opportunities for them to communicate with each other about their observations and curiosities. 
 
 ### Resources
 
@@ -69,24 +68,22 @@ Be sure to stop early enough that everyone has reached but not necessarily start
 
 **Formative:**
 
-During **mini-lesson:** spot check to ensure students are adding HTML tags to their code, ask quick check-for-understanding questions and ask students to provide code when possible.
-
-**Activity Code** can be collected and assessed as needed
+**Activity Code Along** and **Writing Activity** can be collected and assessed as needed
 
 **Wrap Up** reflection questions and shares can serve as formative assessments.
 
 **Summative:**
 
-Unit 1, HTML Lab 1 (Upcoming Lab)
+Unit 2, HTML Lab 2 (Upcoming Lab)
 
-HTML FInal Project (End of Unit Project)
+JavaScript DOM Manipulation Final Project (End of Unit Project)
 
 ### Do Now/Warm Up (\~10 min)
 
 For the warmup, students will have an opportunity to play with a screen reader to simulate an experience that a blind person might go through. Students will spend a few minutes using a screen reader with a paper (or similar) covering their screen. Then, they will uncover their screen and continue using a screen reader for a few more minutes before discussing their observations as a group.
 
 > NOTE: the screen readers are very yappy. It is recommended that you have students use their own headphones and do this warm up independently. Alternatively, in pairs you can have one student listen and navigate while the other student peaks at the screen.
-> This can also be done without headphones (the text is displayed at the top of the screen), but will result in a less impactful effect.
+> This can also be done without headphones on mute (the text is displayed at the top of the screen), but will result in a less impactful lesson.
 
 Have students run up the main webpage of the starter code, and ask them to immediately cover their screen and plug in their headphones. Guide them on how to turn the screen reader on and how to navigate by heading and using arrow keys, and ask them to challenge themselves to navigate through the webpage as a blind person would.
 
@@ -147,14 +144,15 @@ Use the last couple of minutes to reflect and mainly talk about what flaws there
     clearButton.addEventListener("keydown", checkKey)
     ```
 
-### Exploration Activity (\~10 minutes)
+### Exploration Writing Activity (\~10 minutes)
 
-- Go to some of your favorite websites and navigate them with a screen reader 
-- Find 3 things that don't look right, copy the link and describe how they're inaccessible.
-- How would you imagine those things being fixed?
+- Go to 1 or 2 of your favorite websites and try to navigate them with a screen reader 
+- Find 3 things that are clear and work well when using the screen reader. Copy the link and describe how what they are and how they made the website accessible.
+- Find 3 things that don't feel right making the website feel hard to navigate through. Copy the link and describe what happened and what made them hard to use.
+- Brainstorm with your partner how you might imagine fixing those inaccessible parts of the website
 
 ### Wrap Up (\~5 minutes)
-If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit any links as well as any reflection questions.
+If you'd like time to collect their written work or code along, this would be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit any links as well as any reflection questions.
 
 Before students leave, ask them to select a question to answer on a post-it or other easily collectable paper:
 
