@@ -38,8 +38,7 @@ Students will be able to:
 
 ### Vocabulary
 
-* **variable**: [To Be Defined]
-* **data types**: [To Be Defined]
+* **variable**: Variables are containers for storing data (storing data values).
 * **declaration**: [To Be Defined]
 * **assignment**: [To Be Defined]
 * **concatenation**: [To Be Defined]

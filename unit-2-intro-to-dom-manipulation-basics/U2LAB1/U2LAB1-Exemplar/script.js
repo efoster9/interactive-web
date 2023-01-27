@@ -1,7 +1,11 @@
 
 // Mild Challenges 
 
-// The three siblings get their allowance once a week
+/// The three siblings get their allowance once a week.
+/// Their current obsession is buying unique card games and collecting shoes.
+/// Below is the total money they split weekly, their names, and the price of
+///     a card game and a pair of shoes.
+
 let weeklyAllowance = 129;
 let sibling1 = "Jordan";
 let sibling2 = "Quinn";
@@ -10,11 +14,11 @@ let game = 15.99;
 let shoes = 89.78;
 
 // 1. If divided evenly, how much would each sibling get for the week?
-console.log("individual allowance", weeklyAllowance/3);
+console.log("Individual allowance", weeklyAllowance/3);
 
 // 2. How many games can Jordan buy with their cut?
 let jordanGames = Math.floor((weeklyAllowance/3)/game);
-console.log("jordan's games", Math.floor((weeklyAllowance/3)/game));
+console.log("Jordan's games", Math.floor((weeklyAllowance/3)/game));
 
 // 3. The cost of games just went up by a dollar and shoes are on sale at 50% (half) off. Change the variables to their new prices.
 game = game + 1;
@@ -49,7 +53,8 @@ console.log( sibling3.substring( sibling3.indexOf('De'), 26) );
 
 // Medium Challenges
 
-// 12. Rewrite these function as an arrow function. Then, run them to see the result.
+// 12. Rewrite these function as an arrow function.
+/// Then, call them with different inputs to check the result.
 
 const getRandomNum = () => {
     return Math.floor(Math.random() * 100);
@@ -68,12 +73,13 @@ const perfectRoot = (x) => {
     }
 }
 
-// 13. Fix/Finish the following functions. Then, run them to ensure they work.
+// 13. Fix/Finish the following functions.
+/// Then, call them with at least 2 different inputs to ensure they work.
 
 /// a. Adds 2 numbers and returns the sum
 const addNums = (x, y) => {
     let sum = x + y;
-    return sum; //delete
+    return sum; 
 }
 
 console.log( addNums(4, 6) );
@@ -81,28 +87,28 @@ console.log( addNums(4, 6) );
 
 /// b. Prints a special message if name is "Beyonce"
 const isBeyonce = (name) => {
-    if(name == "Beyonce") { //remove condition
+    if(name == "Beyonce") { 
         return "Welcome Queen!";
     } else {
-        return `Sorry ${name}, you're not Beyonce`; // remove $
+        return `Sorry ${name}, you're not Beyonce`; 
     }
 }
 
-// Test different names
+// Test "Beyonce" and other names to ensure it works
 console.log( isBeyonce("Quinn") );
 
 
 /// c. If the number is even, return the number divided by 2, otherwise, return the number
 /// For example reduceEvens(10) => 5 -- reduceEvens(11) => 11
 const reduceEvens = (x) => {
-    if( x%2==0 ){ //no condition
-        return x/2 //no return statement
+    if( x%2==0 ){ 
+        return x/2 
     } else {
         return x;
     }
 }
 
-//Write your own test
+//Write your own function calls
 console.log("Reduce evens 16", reduceEvens(16));
 console.log("Reduce evens 15", reduceEvens(15));
 
@@ -152,7 +158,7 @@ const buyMeals = (budget) => {
 console.log("Meals:", buyMeals(25) );
 
 
-// 17. Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
+// 17. [Challenge] Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
 /// The larger side should be the hypotenuse  
 
 const missingLeg = (side1, side2) => {
@@ -182,4 +188,3 @@ const factorial = (x) => {
         return x * factorial(x-1);
     }
 }
-

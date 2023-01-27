@@ -10,7 +10,7 @@ This vanilla javascript lab located exclusively in the `script.js` is a series o
 
 ### Prompt
 
-For this lab, put together what you know so far about javascript and try the challenges in the `script.js`. Use the resources below in [Extra Help](#extra-help) if you get stuck. When the time's up come back here for some reflection questions.
+For this lab, put together what you know so far about javascript and try the challenges in the `script.js`. Use the resources below under [Extra Help](#extra-help) if you get stuck. When the time's up come back here for some reflection questions.
 
 
 ### Exemplar (teacher's view only)

@@ -1,13 +1,19 @@
 
 // Mild Challenges 
 
-// Three siblings get a cut of their allowance once a week
+/// The three siblings get their allowance once a week.
+/// Their current obsession is buying unique card games and collecting shoes.
+/// Below is the total money they split weekly, their names, and the price of
+///     a card game and a pair of shoes.
+
 let weeklyAllowance = 129;
 let sibling1 = "Jordan";
 let sibling2 = "Quinn";
 let sibling3 = "Ricardo Montoya De La Rosa Ramirez";
 let game = 15.99;
 let shoes = 89.78;
+
+
 
 // 1. If divided evenly, how much would each sibling get for the week?
 
@@ -33,7 +39,8 @@ let shoes = 89.78;
 
 // Medium Challenges
 
-// 12. Rewrite these function as an arrow function. Then, run them to see the result.
+// 12. Rewrite these function as an arrow function.
+/// Then, call them with different inputs to check the result.
 
 function getRandomNum() {
     return Math.floor(Math.random() * 100);
@@ -52,14 +59,15 @@ function perfectRoot(x) {
     }
 }
 
-// 13. Fix/Finish the following functions. Then, run them to ensure they work.
+// 13. Fix/Finish the following functions.
+/// Then, call them with at least 2 different inputs to ensure they work.
 
 /// a. Adds 2 numbers and returns the sum
 const addNums = (x, y) => {
     let sum = x + y;
 }
-
-console.log( addNums(4, 6) );
+// uncomment the line below, to call the function, and add one more function call
+// console.log( addNums(4, 6) );
 
 
 /// b. Prints a special message if name is "Beyonce"
@@ -70,9 +78,8 @@ const isBeyonce = (name) => {
         return `Sorry {name}, you're not Beyonce`;
     }
 }
+// Test "Beyonce" and other names to ensure it works
 
-// Test different names
-console.log( isBeyonce("Quinn") );
 
 
 /// c. If the number is even, return the number divided by 2, otherwise, return the number
@@ -84,8 +91,7 @@ const reduceEvens = (x) => {
         return x;
     }
 }
-
-//Write your own test
+//Write your own function calls
 
 
 // 14. Write a function called shortenString(string) that returns the first 10 characters of a string if it is longer than 10
@@ -116,7 +122,7 @@ const buyMeals = (budget) => {
 }
 
 
-// 17. Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
+// 17. [Challenge] Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
 /// The larger side should be the hypotenuse  
 
 
