@@ -19,7 +19,7 @@ Take a look at this [finished example](./U2LAB1-Exemplar/index.html) for the ans
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+In the previous unit, students learned to build and add style to websites that they were, unfortunately, unable to interact with. Consider starting this unit by having student look for websites that they **can** interact with. Have them identify what is happening in their own words and why they enjoy interacting with the website they found. In this way, students can find something they can relate to that will demonstrate how vanilla javascript can potentially add value to the websites they build in the near future.
 
 ### Extra Help?
 

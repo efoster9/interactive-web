@@ -63,7 +63,7 @@ Take a look at this [finished example](./U2LAB4-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+We find that a light switch is a good, generic example of applying toggle in javascript, but students may have a hard time seeing how else this can be applied on a website. [This website](https://codemyui.com/tag/toggle-switch/) is a good starting point to have students begin recognizing the use of toggle, but encourage students to explore other websites to identify toggle in a place that's more familiar to them. Places may include: emails, social media accounts, phone's settings/control center, music making applications, and more.
 
 ### Extra Help?
 

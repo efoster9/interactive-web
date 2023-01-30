@@ -8,7 +8,7 @@ description: How can I add specific styles such as color, spacing, and font to m
 
 _This lab is designed to be built off of a template website, "Frida Kahlo's Fan Page." If students have a completed first lab that they feel proud of, encourage them to build off of what they already have from lab 1. Otherwise, this lab's stater code is best to have them effectively get some experience with CSS._
 
-_There's a lot of fun things to add to your website with CSS. After having students go through the steps below, give students the documentation and the liberty to explore as many additional things beyond this personalizing their page to satisfaction._
+_There's a lot of fun things to add to your website with CSS. After having students go through the steps below, give students the documentation and the liberty to explore as many additional things beyond this, personalizing their page to their satisfaction._
 
 ### Prompt
 
@@ -92,7 +92,7 @@ Take a look at this [finished example](./U1LAB2-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+If you find it's necessary for the needs of your specific classroom, feel empowered to change the icon from Frida Kahlo to anyone else you see fit. As aforementioned, if students feel passionately about working off of the website they created in the previous lab, that would be acceptable. Keep in mind this may be challenging if you have assigned different group pairs. 
 
 ### Extra Help?
 
@@ -102,12 +102,18 @@ How can I custom create some cool, unique colors? Check out [Google's Color Pick
 
 ### Extensions
 
-**Directions**:
+**Mild**:
+- Take a moment to change some of the styles we've already added. Keep in mind the type of people that will stumble onto this page and adjust accordingly. Consider the following when matching to your creative vision:
+    - are the images are too small or big? If so change their size. 
+    - Fix the margin and padding so it matches the new colors you picked.
+    - Give the main image some shadow.
 
-- Take a moment to change some of the styles we've already added. Keep in mind the audience that will see this page and adjust accordingly. Maybe the images are too small or big for your taste. Maybe the margin and padding feels a bit off with the new colors you picked. Maybe you want the main image to have some shadow as well. Do what feels right to match your creative vision. 
+**Medium**
 - [Checkout this page](https://www.w3schools.com/css/css_font_google.asp) and see if you can implement some uniquely customized fonts onto the fan page.
 - We already added some shadow to the features on the page, but use [this resource for "on hover" effects](https://www.w3schools.com/csSref/sel_hover.asp) so that the shadow only appears when the mouse hovers over the feature. ( HINT: you will have to create a separate ruleset with the selector `.feature:hover`). Once you do, carry this concept over and see if you can use the same resource to customize the links at the bottom of the fan page as well. 
-- Spicy! Do a search for "css animation" and see if you can have the features slide into the page as you scroll.
+
+**Spicy**
+- Do a search for "css animation" and see if you can have the features slide into the page as you scroll.
 
 **Reflection Questions:**
 

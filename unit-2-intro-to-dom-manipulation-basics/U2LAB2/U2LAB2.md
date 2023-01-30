@@ -68,19 +68,17 @@ Take a look at this [finished example](./U2LAB2-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+When thinking of the rationale behind using OnClick and ensuring it's accessibility on a website, consider having students recall a time that they clicked something on a website not including links. You may even encourage them to explore websites with their partners looking for examples. In this way, students will find a rationale that they can personally identify with. 
 
 ### Extra Help?
 
-For accessibility, the resources linked above are your best bet when you get stuck. Check them out to see an example on how they should be used. 
+For accessibility, the resources linked above are your best bet when you get stuck. Check them out to see an example on how they should be used.
 
-Use the following resources to see examples that may help throughout the lab:
+Use the following resources to see some other examples that may help throughout the lab:
 - [addEventListener "onClick"](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
 - [innerHTML](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
 
 ### Extensions
-
-**Directions**:
 
 **Mild**
 - Once the game is over, notice that the other buttons still work. In fact, if the blue horse wins, you can get another horse to the finish line overwriting who the winner is. Use `blueButton.disabled = true;` to disable all three of the buttons once a winner is declared. You'll want to put the statements in the `if` statement of your `checkWinner` function. Use [the documentation for disabling buttons](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) for more information. 

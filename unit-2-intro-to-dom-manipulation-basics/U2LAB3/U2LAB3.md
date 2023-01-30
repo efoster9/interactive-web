@@ -107,7 +107,7 @@ Take a look at this [finished example](./U2LAB3-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+"What's your favorite color" and "Name all 7 continents" are purposely made to be innocuous topics so that the focus of the lab is weighted on the the javascript and not the topic itself. If you feel like continents, for example, will create obstacles in you classroom, feel empowered to change the topic while being conscious of not excluding any individuals.
 
 ### Extra Help?
 

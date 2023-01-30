@@ -35,7 +35,9 @@ Take a look at this [finished example](./HTML-Exemplar/index.html) before you st
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+For this final project, consider having students use locations or topics that they are learning about in other subjects. For example, _Medieval Europe_ from their History class or English class, _Ancient Egypt_ as per the founding of Alchemy/ Chemistry, or _"The world of Geometry"_ if that's the math they're currently passionate about. The students can also use a fictional place if they so choose. Consider the identities of your specific students when offering inspiration.
+
+If this is not your first time running this curriculum, this is a great opportunity to show 2 or 3 former students' projects as exemplars. Just be sure to showcase a wide range of skills.
 
 ### Extra Help?
 

@@ -147,13 +147,15 @@ Take a look at this [finished example](./U1LAB6-Exemplar/index.html) before you 
 
 ### Extra Help?
 
-...
+There are quite a lot of resources linked in the various sections of this lab. Check those resources out first for help. Here are some videos from a Youtube series that show examples of using Bulma in a website: a [font sizes and colors example](https://www.youtube.com/watch?v=j9ijz7u_M_o) &  a [navbar example](https://www.youtube.com/watch?v=HmfQq0suMSA).
 
 ### Extensions
 
-**Directions**:
+**Mild**:
 
 - There something called a "sticky navbar" or a navbar in a "fixed" position. Check out [the main Youtube page](https://www.youtube.com/), and notice how their navbar stays at the top of the page as you scroll down. Once you have an idea of what it should look like, check out [the documentation on a _"Fixed navbar"_](https://bulma.io/documentation/components/navbar/#fixed-navbar) on the Bulma website, and see if you can apply this to the navbar in the `index.html`.
+
+**Medium**
 
 - Previously, we've looked at responsiveness, the idea of having your website adapt to different screen sizes. Go ahead and resize the website as it is currently, and notice anything that already "adapts" or is already responsive. Almost everything but the Hero is responsive! There are currently 2 breakpoints, one at `1024` and another at `769`. Check out [the documentation on "Column Responsiveness"](https://bulma.io/documentation/columns/responsiveness/) and add at least 3 customizations to the webpage. You can add it to any of, or a combination of, the following sections:
     - CARDS
@@ -163,6 +165,8 @@ Take a look at this [finished example](./U1LAB6-Exemplar/index.html) before you 
     If you're stuck without an idea, change the computers so they switch to two rows of two, and change Ads 1 and 3 so that their text and image cards both take up _one-half_ of the screen.
 
 - A navbar, a row of cards, or a row of anything can be customized using something called a `Level` in Bulma. Check out [the documentation for Level](https://bulma.io/documentation/layout/level/), find an example you like most, and add it to the webpage where you see fit. If you're stuck, copy the code for the [centered level](https://bulma.io/documentation/layout/level/#centered-level) and change the stats to something like: _"Computers sold"_, _"Happy employees"_, _"Subscribers"_, and _"Countries reached"_. 
+
+**Spicy**
 
 - You have the opportunity to add something special to this website. Explore the following sections of the Bulma documentation and incorporate it into the site.
     - [Colors](https://bulma.io/documentation/helpers/color-helpers/) - change the background and font colors where ever you see fit. Try to stick to a theme.

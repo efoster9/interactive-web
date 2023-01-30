@@ -50,7 +50,7 @@ You are applying to work side by side a busy politician who will need a nicely o
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+Grid is commonly found in many websites. Have students find websites that they commonly go to for products that they have or have bought in the past including but not limited to: Nike, Playstation, Apple, Glossier, etc. Select websites that the students have provided, and use them to show examples of Grid. The goal will be to have students connect Grid to experiences or websites that they are personally familiar with.
 
 ### Extra Help?
 
@@ -60,19 +60,23 @@ What's the difference between using `fr` (**fr**action) and `px` (**p**i**x**els
 
 ### Extensions
 
-**Directions**:
+**Mild**:
 
-5. Go back to #4 and apply the proportional width in which ever way you haven't yet. If you did it in 2 uneven parts, now try it in 5 equal parts, and if you tried it in 5 equal parts, try completing it in just 2 uneven parts.
+- Go back to #4 and apply the proportional width in which ever way you haven't yet. If you did it in 2 uneven parts, now try it in 5 equal parts, and if you tried it in 5 equal parts, try completing it in just 2 uneven parts.
 
-6. Okay. The politician now wants a website set up similar to [Apple's website](https://www.apple.com/mac/). Here all your skills learned thus far are put to the test. Take a moment to look through the `level_five.html` and `level_five.css` starter files already created for you, and compare it with the aesthetic of the website. The first 2 Navbars are created in the `level_five.html` and semi formatted in the `level_five.css`. If you scroll down on the apple page, you'll see a small black promotion similar to the one thats defaulted for you on the `level_five.html`. That div is the first div which marks the second half of the webpage. The margin is already set to the appropriate width.
+**Medium**
 
-7. You will need to add the rest of the divs in the `level_five.html` and make sure they're styled in the `level_five.css` to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
+- Okay. The politician now wants a website set up similar to [Apple's website](https://www.apple.com/mac/). Here all your skills learned thus far are put to the test. Take a moment to look through the `level_five.html` and `level_five.css` starter files already created for you, and compare it with the aesthetic of the website. The first 2 Navbars are created in the `level_five.html` and semi formatted in the `level_five.css`. If you scroll down on the apple page, you'll see a small black promotion similar to the one thats defaulted for you on the `level_five.html`. That div is the first div which marks the second half of the webpage. The margin is already set to the appropriate width.
+
+- You will need to add the rest of the divs in the `level_five.html` and make sure they're styled in the `level_five.css` to look like a skeleton of what the apple page looks like. Your finished product won't have all the inside details like text and images, but it should look like the below gif when it's done. Try to be as precise as possible to match the width and height of the apple website, and stop once you get to the "Tiny Promotions" as you see in the gif below.
 
 ![Level 5 Exemplar](U1LAB3.1-Starter/level5/exemplar/level5.gif)
 
-8. The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
+- The demo above only goes about halfway down the actual webpage it's based off of. Continue with the rest of the website and see how far you can go!
 
-9. Explore other websites such as [Spotify's website](https://www.spotify.com/us/free/), [HubSpot](https://www.hubspot.com/), or the [NYC DOE website](https://www.schools.nyc.gov/). Go above and beyond by creating the skeleton for one of these websites from scratch!
+**Spicy**
+
+- Explore other websites such as [Spotify's website](https://www.spotify.com/us/free/), [HubSpot](https://www.hubspot.com/), or the [NYC DOE website](https://www.schools.nyc.gov/). Go above and beyond by creating the skeleton for one of these websites from scratch!
 
 **Reflection Questions:**
 

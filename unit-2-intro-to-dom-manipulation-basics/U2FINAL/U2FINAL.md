@@ -6,9 +6,9 @@ description: How can you use Javascript to create seamless interaction on a webp
 
 ### Teacher Notes
 
-In this project, students will be coming up with unique ideas for how to create an accessible websites that require some type of user input and will generate some type of an output. The prompt is left vague enough that students can bring their own identities and motivations, but ideas and requirements are provided for a sense of direction and an clear rubric.
+In this project, students will be coming up with unique ideas for how to create an accessible websites that require some type of user input and will generate some type of an output. The prompt is left vague enough that students can bring their own identities and motivations, but ideas and requirements are provided for a sense of direction and a clear rubric.
 
-If you chose to minimize the scope of the project, be sure to keep the aforementioned in mind allowing room for students to personalize their project. If students are getting writers block, have a specific project idea (we suggest an "order form") in mind to recommend.
+If you chose to minimize the scope of the project, be sure to keep the aforementioned in mind allowing room for students to personalize their project. If students are getting writers block, have a specific project idea in mind to recommend (we suggest an "order form" similar to the exemplar).
 
 We suggest spending at least an entire period allowing the students with their partner to come up with a written plan for what they will create and what tools they will use to make it accessible.
 
@@ -39,7 +39,7 @@ Take a look at this [finished example](./U2FINAL-Exemplar/index.html) before you
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+As aforementioned in the teacher notes, the topic is meant to be vague enough that students can bring their own identities to the table. Typically, students make an order form, calculator, or quiz of some kind. If your students need more direction, feel empowered to limit this project to a food order form, for example. However, be mindful that something like a calculator can exclude students that aren't strong in math.
 
 ### Extra Help?
 

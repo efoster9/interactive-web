@@ -49,7 +49,7 @@ Take a look at this [finished example](./U1LAB1-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+Students have the opportunity to personalize this lab by selecting nonfictional or fictional celebrities of their choosing. Feel free to, but be cautious when adding restriction to students' choice here.
 
 ### Extra Help?
 
