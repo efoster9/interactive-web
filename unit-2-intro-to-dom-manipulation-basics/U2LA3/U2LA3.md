@@ -47,7 +47,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| The 5 boroughs of Manhattan were picked in this "Quiz" because it is an innocuous entry point. Feel empowered to change this to something that suits your specific classroom more accurately, or have students change this as an extension. | Have some partially completed code (potentially more than what's provided) that students can add to throughout the code along for students who need extra support. Have syntax reference sheet available. | Mild, medium, and spicy activities act as a formal assessment of skills while the "Wrap Up" writing activity offers reflection and higher order thinking; an informal assessment. |
+| The 5 boroughs of Manhattan were picked in this "Quiz" because it is an innocuous entry point. Definitely change this to something else that's more important/relevant to your specific class - school clubs, historical icons being taught currently, etc. | Have some partially completed code (potentially more than what's provided) that students can add to throughout the code along for students who need extra support. Have syntax reference sheet available. | Mild, medium, and spicy activities act as a formal assessment of skills while the "Wrap Up" writing activity offers reflection and higher order thinking; an informal assessment. |
 
 ### Suggestions for Differentiation
 
