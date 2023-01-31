@@ -59,10 +59,10 @@ Be sure to end early enough that everyone has reached but not necessarily starte
 
 ### Resources
 
-* [**Repl.it**](https://replit.com/\~)- online IDE
-* [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
-* **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
-* [**Practice: "NYC Boroughs"**](/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/index.html) 
+* **[Repl.it](https://replit.com/\~)**- online IDE
+* **[W3 Schools**](https://www.w3schools.com/html/)** - readable documentation
+* **[(OPTIONAL) MDN](https://developer.mozilla.org/en-US/)** - a robust but sometimes less student-friendly documentation
+* **[Practice: "5 Boroughs Quiz"](/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/index.html)**
 
 ### Assessments
 

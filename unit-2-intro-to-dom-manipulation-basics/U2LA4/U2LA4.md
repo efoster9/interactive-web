@@ -57,10 +57,10 @@ Be sure to stop early enough that everyone has reached but not necessarily start
 
 ### Resources
 
-* [**Repl.it**](https://replit.com/\~)- online IDE
-* [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
-* **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
-* [**Practice: "Email Inbox"**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) 
+* **[Repl.it](https://replit.com/\~)**- online IDE
+* **[W3 Schools**](https://www.w3schools.com/html/)** - readable documentation
+* **[(OPTIONAL) MDN](https://developer.mozilla.org/en-US/)** - a robust but sometimes less student-friendly documentation
+* **[Practice: "Email Inbox"](/unit-2-intro-to-dom-manipulation-basics/U2LA4/U2LA4-Starter/index.html)**
 
 ### Assessments
 

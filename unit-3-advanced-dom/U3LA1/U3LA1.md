@@ -1,34 +1,31 @@
 ---
-description: How can I store and manipulate data to later be used in various ways throughout my website?
+description: What structures can I use to store and manipulate larger and more nuanced data?
 ---
 
-# U2LA3: Javascript Essentials: Variables to Arrow Functions
+# U3LA1: Javascript Arrays, Iteration, and Objects
 
 ### Teacher Notes & Overview
 
-This is likely students' first time working in javascript. However, students will likely pick up the material quickly as this course was built with the idea that most if not all of them have just finished a P5 course. Therefore, consider putting more emphasis on vocabulary throughout the instruction for this lesson. 
+Students will be learning arrays, iteration using `forEach()`, `map()`, and `filter()`, and objects. This lesson is designed as a vanilla javascript lesson. There is no front end other than the console in the development tools window (the "dev tools console"). Instruction will consist of mainly a lecture style code along. However, the presentation is written with opportunities for students to engage by making predictions.
 
-Here, students will be learning the basic javascript syntax: variables & data types, arithmetic, concatenation, comparison operators, basic if/else syntax, and functions (namely arrow functions). Instruction will consist of mainly a lecture style presentation. However, the presentation is written with opportunities for students to engage by making predictions.
+As it is now, the starter `notes.js` code is blank. Depending on where a majority of your students are coming from, you may consider modifying the amount of starter code you give to relieve the pressure of copying notes allowing students to add comments or put more of their attention on your presentation. Be mindful that students with IEPs may **require** a visual supplemental aid. 
 
-This lesson is designed as a vanilla javascript lesson. There is no front end other than the console in the development tools window (the "dev tools console"). Be mindful that this is likely the first time students will see the console section in the dev tools window.
-
-As it is now, the starter `script.js` code is mostly blank. Depending on where a majority of your students are coming from, you may consider modifying the amount of starter code you give to relieve the pressure of copying notes allowing students to add comments or put more of their attention on your presentation. Be mindful that students with IEPs may **require** a visual manipulative. Alternatively to taking notes, they can rank their confidence on each section as you go through. (See the [#Wrap up](#wrap-up-5-minutes) section below)
+Depending on the level of your specific classroom, this lesson can take 1 to 3 days. Regardless, this lesson and the lab that follows offers many activities and challenges for students to feel more comfortable with the material.
 
 ### Objectives
 
 Students will be able to:
 
-* Explain and use variables with both `let` and `const`
-* Use `console.log()` and the developer console to determine whether code is working
-* Perform arithmetic operations with variables and literals
-* Write if, else if, and else to trigger conditional events including their conditional operators.
-* Recognize and explain what a function is and how it is used
-* Predict the expected return value of a function
-
+* Create, read, update, and delete elements of an array.
+* Iterate through an array using `.forEach`, `.map`, `.filter`, and  `.reduce`.
+* Identify the difference between array iteration methods and the standard for loop.
+* Create, read, update, and delete key values in an object.
+* Use functions as part of an object to call them like methods.
+* Recognize the difference between arrays and objects and when to use one over the other
 
 ### Suggested Duration
 
-1-2 periods (45-90 minutes)
+1-3 periods (45-135 minutes)
 
 ### NYS Computing Standards
 
@@ -40,14 +37,14 @@ Students will be able to:
 
 ### Vocabulary
 
-* **variable**: Variables are containers for storing data (storing data values).
-* **declaration**: a declaration determines the name and data type of a variable or other element.
-* **assignment**: to give a new value to a variable or property
-* **concatenation**: the operation of joining two strings together.
-* **methods**:  a method is a programmed procedure that is defined as part of a class and included in any object of that class.
-* **comparison operators**: operators that compare values and return true or false. The operators include: > , < , >= , <= , === , and !==
-* **conditional statements**: they instruct the computer on the decision to make when given some comparison.
-* **arrow function**: a “chunk” of code that you can use over and over again, rather than writing it out multiple times.
+* **arrays**: [To define later]
+* **iteration**: [To define later]
+* **for loop**: [To define later]
+* **element**: [To define later]
+* **index**:  [To define later]
+* **object**: [To define later]
+* **key**: [To define later]
+* **value**: [To define later]
 
 ### Planning Notes && Materials
 
@@ -59,264 +56,227 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
 
 ### Suggestions for Differentiation
 
-This lesson is about 80% lecture and 20% percent student engagement. The intention is to have students code along and a build a program full of syntax specific pieces that they can refer to at a later point during the unit. 
+For best results, we suggest interchanging between the code along and the hands on activity in the 3 parts that are sectioned below rather than doing the full code along and then having students do the full activity. The activity progressively increases in difficulty offering a low enough entry point for the students that need more guidance, and a challenging enough stretch goal for the students that need to be challenged. The critical point that students need to hit before moving on is indicated in the exemplar (answer key) version of the `script.js`.
 
 There are small moments within the lecture where it is encouraged that you stop and ask predictive questions, e.g. "What do you predict this `console.log()` statement will print?". These questions are intentionally open ended and challenging. The more advance students will have an opportunity to problem solve while copying notes, and the students with less experience won't feel expected to have prior knowledge in order to answer these predictive questions.
 
-Furthermore, students can remain in pairs as during these small moments to engage they may need to ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
+Furthermore, students can remain in pairs so that during the code along, they can ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
 
 ### Resources
 
-* [**Repl.it**](https://replit.com/\~)- online IDE
-* [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
-* **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
-* [**Practice: "NYC Boroughs"**](/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/index.html) 
+* **[Repl.it](https://replit.com/\~)**- online IDE
+* **[W3 Schools**](https://www.w3schools.com/html/)** - readable documentation
+* **[MDN](https://developer.mozilla.org/en-US/)** - a robust but sometimes less student-friendly documentation
+* **[Practice: "Javascript Arrays, Iteration, and Objects"](/unit-3-advanced-dom/U3LA1/U3LA1-Exemplar/index.html)**
 
 ### Assessments
 
 **Formative:**
 
-- **Lesson Notes** can be collected and marked for completion
+- During **group work:** spot check to ensure students are using `.forEach()`, `.map()`, and `.filter()` properly, and ask informal check-for-understanding questions. Look for opportunities to have students (who feel comfortable) show their properly completed code to help other students catch on.
+
+- **Activity Code** can be collected and assessed as needed
 
 - **Wrap Up** reflection questions and shares can serve as formative assessments.
 
 **Summative:**
 
-> Note: All assignments from this point on will include javascript. This lesson includes the essentials, the foundational tools that are encompassed in all future lessons and labs. Two big ones are mentioned here.
+[To be edited later]
 
-- Unit 2, "Javascript Essentials: Arrow Functions" Lab 1 (Upcoming Lab)
+- Unit 3, "NoName" Lab 1 (Upcoming Lab)
 
-- "Input-Output Helper Site" Final Project (End of Unit Project)
+- "NoName" Final Project (End of Unit Project)
 
 ### Do Now/Warm Up (\~5 min)
 
-Open up the Exemplar `script_demo.js` and tell students that theres is this function here called triple and we're calling it 3 times on 3 different numbers: 10, 22, and 0.  Ask them what they think the function will do. Emphasize that students should be making a prediction here, and that it is likely, and expected, that they wouldn't know for sure.
+Open up the `notes.js` starter code along with students and have them write 10 variables with their favorite foods. At the same time, write 5 favorite foods yourself as written in the `notes.js` exemplar code, or have it already written. After only about a minute, open a discussion as to why that may be an unenjoyable task. What about if they had to write 50 variables? What issues could arise with having that many variables? Here's a couple:
+- It's tedious 
+- Run out of variable names
+- Not remember variable names
 
-> Note: this may feel like a stretch to have students get this, and it partially is, but students will likely intuit (because of the function name) that the numbers will be tripled.
+If only there was a way to save this list of variables, that are all related to each other, in one variable.
 
-Show the students the 3 tripled numbers in the console of the dev tools window, and briefly explain how the code is connected to a website.
+### Mini Lesson 1: Javascript Arrays (~15 min)
 
-Don't spend much time on articulating the syntax and how the function is working, but instead mention that it's called a function, and that by the end of the lesson, they will know how to write and read one. Before doing more intermediate topics like functions, we gotta review the basics.
+> The students' starter code is empty. It is recommended to start with a similar `script.js` and add each segment one at a time so that students can code along with you. Now is a good time to tell students that you will be sharing all the following code if you plan on doing so.
 
-### Lesson & Demo: The Javascript Essentials (~35 min)
+1. Code up the following array `favFoods` as a replacement for the 5 variables for 5 different favorite foods that you had written. Also code up `testGrades` and the following `console.log()`. Before running, ask students what they predict the output would be.
+    ```js
+    let favFoods = ['taco', 'burger', 'pizza', 'sushi'];
+    let testGrades = [90, 88, 94, 100, 64];
 
-0. There is a lot syntax that will be unloaded onto the students. Preface this next section by telling students that you will be giving them a reference sheet that they will copy and code along with you. They can come back to this document for the entirety of the unit to refer to specific syntax. The students' starter code is empty. It is recommended to start with a similar `script.js` and add each segment one at a time.
+    console.log( testGrades[1] );
+    ```
+2. If students haven't seen **indexing** before, they will most likely say **90** as opposed to the correct answer **88**. Take a brief moment and remind folks that in most languages indexing starts counting at 0. Then, head over to the Dev Tools window in the browser, and show the result being logged. Use more examples if your class needs it.
 
-1. Before any code can be written, the students need to connect the `script.js` to the website by including it in a `<script>` tag in the `index.html`. Demo these steps and have students do them as well.
-    ```html
-    <script src="script.js"></script>
+3. Let's say you did extra credit and got an extra 10 points for the 64 test grade. Also, let's say you took another test and got an 81. How would we update the array to show these changes?
+    ```js
+    testGrades[4] = 74;         //changes the 64 to a 74
+    testGrades.push(81);        //adds the 81 to the test grades
+
+    console.log(testGrades);    //prints the whole array
     ```
 
-2. Now, in the `script.js` include the following **variable declarations**. Students having come from P5 will likely know what a variable is and possibly what the data types are, but this will be a good time to refresh and remind students. 
+4. Now predict what this next line will do to the array. Run this code and notice what changes to the `favFoods` array. Play with the numbers and make a prediction as to what they represent.
     ```js
-    // Fundamental data types
-    const studentID = "j61L22";
-    let firstName = "Jayden";
-    let age = 19;
-    let year = "freshman";
-    let isStudent = true;
-    let gpa = 4.0;
-    let major = undefined;
+    favFoods.splice(3, 1);      //?
 
-    console.log(firstName, age)
+    console.log(favFoods);
     ```
-    This is a good time to:
-    - ask students what they predict will be outputted as a result of the `console.log()` line. It should print "Jayden 19"
-    - point out `const` vs `let` and explain that Jayden's studentID wont change through his years as a student, but everything else might.
-    - briefly review the difference between a string, integer, float, boolean, and undefined
+    The `splice` method removes elements from the array. The first number is the index, and the second number is the number of elements to remove starting at the index. Here, we remove 1 element starting at the 3rd index.
 
-3. Add the next few **reassignment statements** to the code, and ask students to predict the output of age. It should be 22 after these statements. 
+5. There are other methods like `splice` and `push` you can use to manipulate the array in various ways. Here's some more information on [splice()](https://www.w3schools.com/jsref/jsref_splice.asp) and [push()](https://www.w3schools.com/jsref/jsref_push.asp).
+
+### Mini Lesson 2: Array Iteration (~15 min)
+
+> You can use a named function or an anonymous function when iterating over an array using the following methods. Depending on the skill level of your students, consider leaning on either named functions or anonymous functions and allowing them to practice and "play" before showing them the other.
+
+1. Look at the following code, and predict what will be outputted. If students need a hint, ask them to look at the variable and function names. _The function will be run on every element of the array._ Run the code segment and show the results in the Dev Tools window in the browser.
     ```js
-    // Reassignment (no let)
-    age = 20;
-    age = age + 1;
-    age += 1;
+    // using a named function
+    const printFoods = (element) => {
+        console.log( element, "is so tasty!" );
+    };
 
-    console.log(age)
+    favFoods.forEach( printFoods );
     ```
 
-4. Next, include the following notes about **arithmetic operations** and **Math methods**. Go over the expected outputs for the 3 Math methods without spending too much time on the syntax as this will be best learned through their practice using them.
+2. [Optional] There are 2 different ways to write this exact syntax. Above we used a named arrow function, and below notice that we use an anonymous arrow function. They produce the same results!
     ```js
-    // Essential Operations
-    age + 10;
-    age - 5;
-    age * 2;
-    age / 5;
+    // using an anonymous function
+    favFoods.forEach( (element) => {
+        console.log( element, "is so tasty!" );
+    } );
 
-
-    // Additional operations
-    console.log( Math.round(5.8) );
-
-    console.log( Math.floor(23 / 4) );
-
-    console.log( Math.ceil(5.5) );
+    // an anonymous function in one line!
+    favFoods.forEach( element => console.log( element, "is so tasty!" ) );
     ```
 
-5. There are two ways to combine string literals with string variables and even numerical variables: **string concatenation** and **string formatting**. These 2 examples produce the same results, and they're both important to recognize and use. If you remember, `"Jayden"` was the firstName from before, and `19` was his age. Any ideas what `string1` will print to the console?
+3. The `forEach()` method is an array method you can use to do something with each element in an array. If you wanted to change the values and make a **new** array you would use `.map()`. Let's say we wanted to curve all the grades. 
     ```js
-    // Concatenation v. templates
-    let string1 = firstName + " is " + age + " years old.";
-    let string2 = `${firstName} is ${age} years old.`;
+    // named function
+    const curveGrade = (grade) => {
+        return grade * 0.5 + 50;
+    };
+
+    let curvedGrades = testGrades.map( curveGrade );
+
+    console.log("Test Grades", testGrades)
+    console.log( "Curved Grades", curvedGrades );
     ```
-    You can purposely leave the `console.log(string1);` statement out hoping someone will mention it, bring it up when nothing get's printed, or just include it from the start. They should both read `Jayden is 19 years old.`
-
-6. There's also some cool methods that can be run off of strings (**String Methods**). For example, `.toUpperCase()` turns all the letters in a string to their capitalized version.
     ```js
-    // String methods
-    console.log( string1.toUpperCase() ); 
+    // anonymous arrow function
+    let curvedGrades = testGrades.map( (grade) => {
+        return grade * 0.5 + 50;
+    } );
 
-    console.log( string1.includes("old") );
+    // one line
+    let curvedGrades = testGrades.map( grade => (grade * 0.5 + 50) );
     ```
+    Notice that the original test grades don't change! Instead we made a new array with each value curved.
 
-7. Now, there are ways to compare two values using something called **comparison operators**. These ask the question to the computer, and the answer is always either `true` or `false`.
+3. Code up the following, and have students predict the output. What do you notice as the similarities and differences between `filter()` and `map()`?
     ```js
-    // Comparison operators - true or false?
-    age === 10;     // is age equal to 10? notice the triple equal sign!
-    "42" === 42;
-    age > 10;
-    age <= 99;      // is age less than or equal to 99?
-    year === "freshman";
+    // named function
+    const isGradA = (grade) => {
+        return grade >= 90;
+    };
+
+    let aGrades = testGrades.filter( isGradA );
+
+    console.log( aGrades );
     ```
-
-8. We can use these comparison operators to determine what actions will be done as a result. Continue to code the following **conditional statements** as you explain each line in a pseudo-code like language (i.e "If the user's name is Miles and his age is equal to 18, then... etc.)
     ```js
-    // Conditional statements;
-    let username = "Miles";
-    let age2 = 18;
+    // anonymous function
+    let aGrades = testGrades.filter( (grade) => {
+        return grade >= 90;
+    } );
 
-    if (username === "Miles" && age2 === 18) {
-        console.log("Welcome, Spiderman");
-    } else if (age2 < 18) {
-        console.log("Unauthorized youth access.");
-    } else {
-        console.log(`Welcome ${username}`);
+    // one line
+    let aGrades = testGrades.filter( grade => grade >= 90 );
+    ```
+    Similar to `map()` this one creates a new array, and uses the arrow symbol to show what to do to each element. However, `filter()` requires a condition and only keeps the elements where the condition is true -- `map()` keeps all the elements all the time, but changes their value in some way.
+
+4. `forEach()`, `map()`, and `filter()` are a few of the most common methods used to iterate over an array. However, if you wanted to write out some steps more explicitly, you can write a `for loop` instead. This is how it's typically written. _"For each element in `favFoods`, log the element."_
+    ```js
+    for (const element of favFoods) {
+        console.log( element );
     }
     ```
-    If time allows, challenge students to come up with different `username` and `age2` values to get each of the 3 results before moving on. Again, don't spend too much time on syntax as this will be covered more in depth in lesson 3 of this unit.
 
-9. Finally, we have functions. Give students the following code and ask them to predict any of the 3 `console.log()` statements before showing them the results.
+> Whether or not you have stopped before this point to have students work on the challenges, it is highly encouraged that you now pause instruction and have students start using the syntax above before moving on to _Mini Lesson 3_.
+
+### Mini Lesson 3: Javascript Objects (~15 min)
+
+1. Look at this array and predict what each element represents. What are ways that our predictions can be made more obvious? You can probably guess the first and last name, but the representation of each element is unclear. If we had a label of some kind, it would be much easier to understand.
     ```js
-    // Returns half the number if it can be halved; otherwise returns false
-    function getHalf(x) {
-        if (x % 2 === 0) {
-            return x / 2;
-        } else {
-            return false;
-        }
-    }
-
-    a = getHalf(10); // () CALL the function
-    b = getHalf(22);
-    c = getHalf(3);
-
-    console.log(a, b, c);
-
+    let studentList = [82, 'Daniel', 'Perez', 'blue', 12, 18];
     ```
 
-10. Functions can also be written as **arrow functions**. This is another way of writing a function, and it's the more common way to write it. Notice that the body of the function doesn't change, just the signature.
+2. An object solves that problem for us. Take a look at the following code and predict the outputs. The first output will print out the students id which is 82. The second will print out the sentence "Daniel Perez is 17 years old." The keys are the labels on the left, and the values are the elements on the right are from the array above.
     ```js
-    const getHalf2 = (x) => {
-        if (x % 2 === 0) {
-            return x / 2;
-        } else {
-            return false;
+    let student = {
+        id: 82,
+        firstName: 'Daniel',
+        lastName: 'Perez',
+        eyeColor: 'blue',
+        grade: 12,
+        age: 17
+    };
+
+    console.log( student.id );
+    console.log( `${student.firstName} ${student.lastName} is ${student.age} years old.` );
+    ```
+
+3. What if it's Daniel's birthday. He's 1 year older. And, now that he's an adult, he wants to change his name to Ezra. You can change both these values as follows.
+    ```js
+    student.firstName = 'Ezra';
+    student.age += 1;
+
+    console.log( student );
+    ```
+
+4. Ezra is now out of highschool. So we can get rid of the key `'grade'`, and his major in college is `'Computer Science'`. Look carefully at the following code and predict what will happen. _This code doesn't produce an error even though major is not yet a key in the object. We can create a new key by assigning it a value as if it was always there._
+    ```js
+    student.major = 'Computer Science';
+    delete student.grade;
+
+    console.log( student );
+    ```
+
+5. Finally, there's a new student who has their very own `printBio` function. The key word `this` tells the function to look in this object for the variables.
+    ```js
+    let student2 = {
+        id: 123,
+        firstName: 'Tyler',
+        lastName: 'Young',
+        eyeColor: 'brown',
+        age: 21,
+        printBio: function() {
+            return `${this.firstName} ${this.lastName} is ${this.age} years old.`
         }
     };
+
+    console.log( student2.printBio() )
     ```
 
+**See the `script.js `for mild, medium, and spicy challenges to practice the concepts above.**
 
-**Practice Activities**
-
-If time allows include these optional activities in your lesson based on your individual students' needs. Feel free to add or remove any functions from this list. 
-
-_For each of the following functions, change them into arrow functions and write one sentence to summarize what the function is doing. Plug in as many different inputs as you need to make your prediction._
-
-A.
-```js
-function double(x) {
-    return x * 2;
-}
-
-console.log( double(10) );
-```
-
-B.
-```js
-function isEven(x) {
-    if ( x%2 == 0 ) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-console.log( isEven(9) );
-```
-
-C. 
-```js
-function squareRoot(x) {
-    if ( x >= 0 ) {
-        return Math.sqrt(x);
-    } else {
-        return undefined;
-    }
-}
-
-console.log( squareRoot(-4) );
-```
-
-D. 
-```js
-function likelyVerb(x) {
-    if( x.includes("ing") ) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-console.log( likelyVerb("coding") );
-```
-
-E. 
-```js
-function cropString(x) {
-    if( x.length > 10 ) {
-        return x.substring(0, 10);
-    } else {
-        return x;
-    }
-}
-
-console.log( cropString( "This is javascript!") );
-```
-
-### Wrap Up (\~5 minutes)
+### Wrap Up (\~5-10 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-Before students leave, ask them to conplete the following task on an easily collectable paper:
+Before students leave, ask them to select a question or two to answer on an easily collectable paper or document:
 
-**The Self Reflection Assessment**
-
-Using the following scale from 1-4, scroll up to the notes given to you today and grade your confidence on each topic: 
-- Fundamental data types
-- Reassignment
-- Essential Operations
-- Additional operations
-- Concatenation v. templates
-- String methods
-- Comparison operators - true or false?
-- Conditional statements
-- Functions
-
-Your confidence levels:
-- **1**: I don't understand this topic at all
-- **2**: I partially understand but need more practice
-- **3**: I mostly understand it, but I'm not an expert yet
-- **4**: I fully understand this topic; I can help others with it
+1. What is something you struggled with?
+2. Which iteration method do you prefer and why: named arrow functions or anonymous arrow functions?
+3. Head back to the `notes.js`. Give yourself a rating from 1-5 for how you feel about the following topics:
+    - Creating an array 
+    - "Indexing" arrays (starting at 0)
+    - Iterating through arrays (using `forEach()`, `map()`, and `filter()`)
+    - Creating an object
+    - Accessing "values" in an object (using "keys")

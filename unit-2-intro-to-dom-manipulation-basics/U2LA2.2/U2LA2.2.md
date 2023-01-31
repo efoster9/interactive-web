@@ -58,11 +58,9 @@ This lesson is designed as an exploration of websites using a screen reader. The
 
 ### Resources
 
-* ****[**Repl.it** ](https://replit.com/\~)- online IDE
-* ****[**W3 Schools**](https://www.w3schools.com/html/) **** - readable documentation
-* **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) **-** a robust but sometimes less student-friendly documentation
-* ****[**What is HTML, CSS, JavaScript?** ](https://youtu.be/gT0Lh1eYk78)(Youtube Video)
-* ****[**Practice: Recreating Template**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) **** (repl.it) NEED TO PUT CODE ON GITHUB
+- **[Replit.com](https://replit.com/)**
+- **[W3 Schools: DOM Essentials](https://www.w3schools.com/js/js_htmldom_document.asp)** - functions used to read and update the DOM
+- **[MDN: Accessibility Best Practices](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript)** - an article on how CSS and Javascript are accessible. 
 
 ### Assessments
 

@@ -67,14 +67,13 @@ This lesson is about 80% lecture and 20% percent student engagement. The intenti
 
 There are small moments within the lecture where it is encouraged that you stop and ask predictive questions, e.g. "What do you predict this `console.log()` statement will print?". These questions are intentionally open ended and challenging. The more advance students will have an opportunity to problem solve while copying notes, and the students with less experience won't feel expected to have prior knowledge in order to answer these predictive questions.
 
-Furthermore, students can remain in pairs as during these small moments to engage they may need to ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
+Furthermore, students can remain in pairs so that during the code along, they can ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
 
 ### Resources
 
-* [**Repl.it**](https://replit.com/\~)- online IDE
-* [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
-* **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
-* [**Practice: "NYC Boroughs"**](/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/index.html) 
+* **[Repl.it](https://replit.com/\~)**- online IDE
+* **[W3 Schools](https://www.w3schools.com/html/)** - readable documentation
+* **[MDN](https://developer.mozilla.org/en-US/)**- a robust but sometimes less student-friendly documentation
 
 ### Assessments
 
@@ -300,7 +299,7 @@ console.log( cropString( "This is javascript!") );
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-Before students leave, ask them to conplete the following task on an easily collectable paper:
+Before students leave, ask them to complete the following task on an easily collectable paper:
 
 **The Self Reflection Assessment**
 
