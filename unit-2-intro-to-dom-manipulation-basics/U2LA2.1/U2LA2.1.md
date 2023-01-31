@@ -16,9 +16,13 @@ As written, this lesson occurs entirely in JavaScript - the starting and ending 
 
 **Students will be able to:**
 
-- verb
-- verb
-- verb
+- Add `'click'` event listeners to elements.
+Use control flow / conditionals to respond to specific user inputs.
+- Use string interpolation and the `.innerHTML` property to dynamically append elements to the DOM.
+- Explain why DOM Manipulation script tags must be included *below* the elements they will be manipulating, or include the `defer` attribute. 
+- Store HTML elements in JS variables using `document.querySelector()`.
+- Use named ES6 (arrow) functions as callback functions for event listeners.
+- Use `console.log()` and the developer console to debug code.
 
 ### Suggested Duration
 
@@ -26,7 +30,7 @@ As written, this lesson occurs entirely in JavaScript - the starting and ending 
 
 ### NYS Standards
 
-- TK
+[Courtney to fill in]
 
 ### Vocabulary
 

@@ -32,6 +32,8 @@ Students will be able to:
 
 ### NYS Computing Standards
 
+[Courtney to Edit]
+
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
 * **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
@@ -39,13 +41,13 @@ Students will be able to:
 ### Vocabulary
 
 * **variable**: Variables are containers for storing data (storing data values).
-* **declaration**: [To Be Defined]
-* **assignment**: [To Be Defined]
-* **concatenation**: [To Be Defined]
-* **methods**: [To Be Defined]
-* **comparison operators**: [To Be Defined]
-* **conditional statements**: [To Be Defined]
-* **arrow function**: [To Be Defined]
+* **declaration**: a declaration determines the name and data type of a variable or other element.
+* **assignment**: to give a new value to a variable or property
+* **concatenation**: the operation of joining two strings together.
+* **methods**:  a method is a programmed procedure that is defined as part of a class and included in any object of that class.
+* **comparison operators**: operators that compare values and return true or false. The operators include: > , < , >= , <= , === , and !==
+* **conditional statements**: they instruct the computer on the decision to make when given some comparison.
+* **arrow function**: a “chunk” of code that you can use over and over again, rather than writing it out multiple times.
 
 ### Planning Notes && Materials
 
@@ -56,8 +58,8 @@ Students will be able to:
 ### Suggestions for UDL
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| _How are you going to present your content so that it meets the needs of ALL students?_ | _How are you going to provide multiple pathways for students to actually learn the material presented?_  | _How will students demonstrate what they have learned?  How will you assess progress and mastery?_ |
+| :----------------: | :------------------: | :--------------: |
+| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
 
 ### Suggestions for Differentiation
 

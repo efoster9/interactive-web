@@ -28,12 +28,12 @@ Students will be able to:
 
 ### Vocabulary
 
-* **DOM**: [To Be Defined]
-* **class list**: [To Be Defined]
-* **event listener**: [To Be Defined]
-* **query Selector**: [To Be Defined]
-* **conditional statement**: [To Be Defined]
-* **toggle**: [To Be Defined]
+* **DOM**: The Document Object Model (DOM) defines the logical structure of documents and the way a document is accessed and manipulated.
+* **class list**: a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
+* **event listener**: a procedure or function in a computer program that waits for an event to occur.
+* **query Selector**: The `querySelector()` is a method used for searching and returning the very first element within the document that matches the given selector.
+* **conditional statement**: statements that are created by the programmer which evaluates actions in the program and evaluates if it's true or false. If-then-else statement allows conditional execution based on the evaluation of an expression.
+* **toggle**: a function that removes a class from the classList of an element if it exists or adds it if it does not yet exist.
 
 ### Planning Notes && Materials
 
@@ -44,8 +44,8 @@ Students will be able to:
 ### Suggestions for UDL
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| _How are you going to present your content so that it meets the needs of ALL students?_ | _How are you going to provide multiple pathways for students to actually learn the material presented?_  | _How will students demonstrate what they have learned?  How will you assess progress and mastery?_ |
+| :----------------: | :------------------: | :--------------: |
+| Have students find a site where that they often go to that contains an on/off switch or checkbox of some kind. Use these sites that they personally identify with as an anchor for the rationale behind this lesson. | Create a reference sheet or slide deck for vocabulary; include add, remove, and toggle with examples of each. As there is a lot going on in the `script.js`, this can be useful to narrow students' focus. | Mild, medium, and spicy activities act as a formal assessment of skills while the "Wrap Up" writing activity offers reflection and higher order thinking; an informal assessment. |
 
 ### Suggestions for Differentiation
 
@@ -184,8 +184,6 @@ At the end of the 4 minutes, ask for about three volunteers to describe one thin
 5. There's one more button that needs to be programmed; the "Dark Mode" button at the top left of the page! For this, you'll need to create your own CSS classes and general design for what _dark mode_ will look like on this page. If you're stuck, look for images of Google's dark mode on Gmail for some inspiration. 
 
 ### Wrap Up (\~10 minutes)
-
-Students just did a big thing - they finished their first website! Make sure you give time for a few groups (2-3) to share. Since they were all replicating the same thing, the focus should be more so on process, and less so on output (although displaying the output and walking through code is always helpful).
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 

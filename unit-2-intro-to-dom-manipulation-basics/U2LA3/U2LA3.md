@@ -30,12 +30,12 @@ Students will be able to:
 
 ### Vocabulary
 
-* **DOM**: [To Be Defined]
-* **Conditional Statements**: [To Be Defined]
-* **event listener**: [To Be Defined]
-* **query Selector**: [To Be Defined]
-* **Function**: [To Be Defined]
-* **innerHTML**: [To Be Defined]
+* **DOM**: The Document Object Model (DOM) defines the logical structure of documents and the way a document is accessed and manipulated.
+* **Conditional Statements**:  statements that are created by the programmer which evaluates actions in the program and evaluates if it's true or false. If-then-else statement allows conditional execution based on the evaluation of an expression.
+* **event listener**: a procedure or function in a computer program that waits for an event to occur.
+* **query Selector**: The `querySelector()` is a method used for searching and returning the very first element within the document that matches the given selector.
+* **Function**: a “chunk” of code that you can use over and over again, rather than writing it out multiple times.
+* **innerHTML**: The Element property `innerHTML` gets or sets the HTML markup contained within the element
 
 ### Planning Notes && Materials
 
@@ -46,8 +46,8 @@ Students will be able to:
 ### Suggestions for UDL
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| _How are you going to present your content so that it meets the needs of ALL students?_ | _How are you going to provide multiple pathways for students to actually learn the material presented?_  | _How will students demonstrate what they have learned?  How will you assess progress and mastery?_ |
+| :----------------: | :------------------: | :--------------: |
+| The 5 boroughs of Manhattan were picked in this "Quiz" because it is an innocuous entry point. Feel empowered to change this to something that suits your specific classroom more accurately, or have students change this as an extension. | Have some partially completed code (potentially more than what's provided) that students can add to throughout the code along for students who need extra support. Have syntax reference sheet available. | Mild, medium, and spicy activities act as a formal assessment of skills while the "Wrap Up" writing activity offers reflection and higher order thinking; an informal assessment. |
 
 ### Suggestions for Differentiation
 

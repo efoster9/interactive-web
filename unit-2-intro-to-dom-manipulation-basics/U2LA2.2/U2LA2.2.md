@@ -34,10 +34,10 @@ Students will be able to:
 
 ### Vocabulary
 
-* **Screen Reader:** [Define here]
-* **Semantic Element Tag:** [Define here]
-* **ARIA:** [Define here]
-* **Keydown Event:** [Define here]
+* **Screen Reader:** provides access to information on a computer for people who are blind or visually impaired and converts important information from the computer screen into speech, braille or magnified form.
+* **Semantic Element Tag:** tags that define the meaning of the content they contain. For example, tags like `<header>`, `<article>`, and `<footer>` are semantic HTML tags.
+* **ARIA:** Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications more accessible to people with disabilities.
+* **Keydown Event:** The key-events happen whenever a user interacts with keyboard. There are mainly three key event types − keydown, keypress and keyup.
 
 
 ### Planning Notes && Materials
@@ -48,9 +48,9 @@ Students will be able to:
 
 ### Suggestions for UDL
 
-|                             Multiple Means of Representation                            |                                       Multiple Means of Engagement                                       |                                    Multiple Means of Expression                                    |
-| :-------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-| _How are you going to present your content so that it meets the needs of ALL students?_ | _How are you going to provide multiple pathways for students to actually learn the material presented?_  | _How will students demonstrate what they have learned?  How will you assess progress and mastery?_ |
+| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
+| :----------------: | :------------------: | :--------------: |
+| As written in the [Warm Up](#do-nowwarm-up-10-min), have students cover their screen and try navigating a website with a screen reader to create empathy and awareness. | Depending on the level of your students, have a pre-written or half completed starter code so students can spend more time listening and understanding, and less time coding along.  | Students' will demonstrate higher order thinking through reflection and the writing activity. Both items can be collected as a form of assessment. |
 
 ### Suggestions for Differentiation
 
