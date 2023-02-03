@@ -37,14 +37,12 @@ Students will be able to:
 
 ### Vocabulary
 
-* **arrays**: [To define later]
-* **iteration**: [To define later]
-* **for loop**: [To define later]
-* **element**: [To define later]
-* **index**:  [To define later]
-* **object**: [To define later]
-* **key**: [To define later]
-* **value**: [To define later]
+* **arrays**: An array is like a collection of boxes, each of which is called an element. Each element has a position in the array, and can hold a value. The data in an array must all be of the same data type .
+* **iteration**: a function that repeats a block of code in a specified order, often until a specific result occurs.
+* **for loop**: a control flow statement for specifying iteration.
+* **Zero indexing**:  Zero-based array indexing is a way of numbering the items in an array such that the first item of it has an index of 0, whereas a one-based array indexed array has its first item indexed as 1
+* **object**: a collection of unordered properties. Values associated with a JavaScript object are called its properties. 
+* **key-value pairs**: a type of data storage that stores data as a set of unique identifiers (keys), each of which have an associated value which can be any data type or data structure.
 
 ### Planning Notes && Materials
 
@@ -85,11 +83,9 @@ Furthermore, students can remain in pairs so that during the code along, they ca
 
 **Summative:**
 
-[To be edited later]
+- Unit 3, Arrays, Iteration, and Objects Lab 1 (Upcoming Lab)
 
-- Unit 3, "NoName" Lab 1 (Upcoming Lab)
-
-- "NoName" Final Project (End of Unit Project)
+- Final Project (End of Unit Project)
 
 ### Do Now/Warm Up (\~5 min)
 
@@ -135,7 +131,7 @@ If only there was a way to save this list of variables, that are all related to 
 
 > You can use a named function or an anonymous function when iterating over an array using the following methods. Depending on the skill level of your students, consider leaning on either named functions or anonymous functions and allowing them to practice and "play" before showing them the other.
 
-1. Look at the following code, and predict what will be outputted. If students need a hint, ask them to look at the variable and function names. _The function will be run on every element of the array._ Run the code segment and show the results in the Dev Tools window in the browser.
+1. Look at the following code, and predict what will be outputted. If students need a hint, ask them to look at the variable and function names. _The function will be run on every element of the array._ Run the code segment and show the results in the Dev Tools window in the browser. For [more examples on `forEach()`](https://www.w3schools.com/js/js_array_iteration.asp) check this link out.
     ```js
     // using a named function
     const printFoods = (element) => {
@@ -177,7 +173,7 @@ If only there was a way to save this list of variables, that are all related to 
     // one line
     let curvedGrades = testGrades.map( grade => (grade * 0.5 + 50) );
     ```
-    Notice that the original test grades don't change! Instead we made a new array with each value curved.
+    Notice that the original test grades don't change! Instead we made a new array with each value curved. For [more examples on `map()`](https://www.w3schools.com/js/js_array_iteration.asp) check this link out.
 
 3. Code up the following, and have students predict the output. What do you notice as the similarities and differences between `filter()` and `map()`?
     ```js
@@ -199,7 +195,7 @@ If only there was a way to save this list of variables, that are all related to 
     // one line
     let aGrades = testGrades.filter( grade => grade >= 90 );
     ```
-    Similar to `map()` this one creates a new array, and uses the arrow symbol to show what to do to each element. However, `filter()` requires a condition and only keeps the elements where the condition is true -- `map()` keeps all the elements all the time, but changes their value in some way.
+    Similar to `map()` this one creates a new array, and uses the arrow symbol to show what to do to each element. However, `filter()` requires a condition and only keeps the elements where the condition is true -- `map()` keeps all the elements all the time, but changes their value in some way. For [more examples on `filter()`](https://www.w3schools.com/js/js_array_iteration.asp) check this link out.
 
 4. `forEach()`, `map()`, and `filter()` are a few of the most common methods used to iterate over an array. However, if you wanted to write out some steps more explicitly, you can write a `for loop` instead. This is how it's typically written. _"For each element in `favFoods`, log the element."_
     ```js
@@ -264,7 +260,7 @@ If only there was a way to save this list of variables, that are all related to 
     console.log( student2.printBio() )
     ```
 
-**See the `script.js `for mild, medium, and spicy challenges to practice the concepts above.**
+**See the `script.js `for mild, medium, and spicy challenges to practice the concepts above.** For mor examples on objects, head over to [this link](https://www.w3schools.com/js/js_loop_forof.asp)!
 
 ### Wrap Up (\~5-10 minutes)
 

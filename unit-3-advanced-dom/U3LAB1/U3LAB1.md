@@ -2,38 +2,50 @@
 description: How can I store and manipulate data to later be used in various ways throughout my website?
 ---
 
-# Javascript Essentials
+# Arrays, Iteration, and Objects Lab
 
 ### Teacher Notes
 
-This vanilla javascript lab located exclusively in the `script.js` is a series of challenges for students to get familiar with javascript essential topics from variable arithmetics to functions with conditional statements. The extensions are included but not labeled at the bottom of the `script.js`. They require researching the pythagorean theorem formula and researching recursive functions to be completed.
+This vanilla javascript lab located exclusively in the `script.js` (1-3) is a series of challenges for students to get familiar with javascript basic data structures, arrays and objects, and iterating through them. The extensions are included at the bottom of the `script.js`.
+
+This lab is designed to come right after the Javascript Arrays, Iteration, and Objects lesson. Students should be able to jump right in and work on the challenges throughout the script files. However, there is a short launch you can run below if you need an introduction for the day. 
+
+As there are 3 files, plan to remind students how to comment and uncomment the corresponding script tags in the `index.html` as to which they are currently working on. (i.e. when they finish the `script1.js` they should comment out the line in the `index.html` and uncomment the `script2.js` line so they can see the results displayed in the Dev Tools.)
 
 ### Prompt
 
-For this lab, put together what you know so far about javascript and try the challenges in the `script.js`. Use the resources below under [Extra Help](#extra-help) if you get stuck. When the time's up come back here for some reflection questions.
+For this lab, put together what you've learned recently about javascript arrays and objects, and try the challenges in the `script1.js`. When you finish `script1.js`, there is two others you can work from (`script2.js` and `script3.js`). Use the resources below under [Extra Help](#extra-help) if you get stuck. When time's up come back here for some reflection questions.
+
+**Directions**
+
+<!-- Contains or for of loop? -->
+<!-- Mini-Launch -> Something about comparing individual variables to an array? Can be super light touch. -->
+
+1. 
+
 
 
 ### Exemplar (teacher's view only)
 
-Take a look at this [finished example](./U2LAB1-Exemplar/index.html) for the answer key to the javascript challenges.
+Take a look at this [finished example](./U3LAB1-Exemplar/index.html) for the answer key to the javascript challenges.
 
 ### Culturally Responsive Best Practice
 
-In the previous unit, students learned to build and add style to websites that they were, unfortunately, unable to interact with. Consider starting this unit by having student look for websites that they **can** interact with. Have them identify what is happening in their own words and why they enjoy interacting with the website they found. In this way, students can find something they can relate to that will demonstrate how vanilla javascript can potentially add value to the websites they build in the near future.
+[Courtney to add]
 
 ### Extra Help?
 
 Use the following resources to see examples of how to implement the methods, functions and other concepts in the `script.js`:
 
-- `Math.floor()`, `Math.sqrt()`, and [other Math methods](https://www.w3schools.com/js/js_math.asp).
-- [String methods](https://www.w3schools.com/js/js_string_methods.asp)
-- Converting to [Arrow functions](https://www.w3schools.com/js/js_arrow_function.asp)
-- [Template Literals](https://www.w3schools.com/js/js_string_templates.asp) (aka Formatted Strings)
-- [Recursive Functions](https://www.javascripttutorial.net/javascript-recursive-function/) [Super Challenge]
+- For basic **array** syntax, refer to the lesson `notes.js` or check out [this w3schools resource](https://www.w3schools.com/js/js_arrays.asp).
+- Here's a link to some [array methods](https://www.w3schools.com/js/js_array_methods.asp) and a separate one for [the `.sort()` method](https://www.w3schools.com/js/js_array_sort.asp).
+- For basic **object** syntax, refer to the lesson `notes.js` or check out [this w3schools resource](https://www.w3schools.com/js/js_objects.asp).
+-  Here's a link to the [array iteration methods](https://www.w3schools.com/js/js_array_iteration.asp) specifically.
+- Enjoy watching videos instead? This Youtuber has great videos on [array basics](https://www.youtube.com/watch?v=7W4pQQ20nJg), [array iteration methods](https://www.youtube.com/watch?v=R8rmfD9Y5-c), and an [array of objects!](https://www.youtube.com/watch?v=D77ANP60DaU)
 
 
 **Reflection Questions:**
 
-- What was the most challenging part of the lab? What was the part you're most proud of?
+- Which `script.js` was the most challenging? What is something you're most proud of getting through?
 - What was one point in the challenges you got stuck? What did you do to unstick?
-- Why might what you've learned today be useful for making websites in the future?
+- What's the difference between an object and an array? Why might you rather use an object? Why might you rather use an array?
