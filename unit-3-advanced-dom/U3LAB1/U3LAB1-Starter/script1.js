@@ -28,38 +28,37 @@ console.log(fav_foods);
 
 // 8. Add your partner's number 1 choice to your list
 
-// 9. Remove your number 5 choice.
+// 9. Remove your number 4 choice.
 
 
 /******** Part 3 ********/
 //// Use these arrays when writing the code for the following challenges
 
-let fresh_grades = [78, 100, 80, 67, 80, 57, 93, 100, 96, 80, 60, 88, 77, 58];
-let soph_grades = [70, 82, 66, 98, 80, 96, 94, 66, 67, 72, 75, 87, 88, 100, 67, 78];
+let class1 = ["Dahlia", "Perry", "Ruby", "Danika", "Johnathan", "Renae", "Devon", "Bradly", "Lindsey", "Marley", "Yousef", "Siera", "Kailee", "Lauren", "Santana"]
+let class2 = ["Emery", "Ramiro", "Randy", "Shea", "Max", "Rashad", "Anna", "Elaina", "Yesica", "Sarah", "Moira", "Tyrell", "Acacia", "Jania", "Jair", "Marisol", "Christianna", "Lizette"]
 
-// 10. Use a method to SORT the 2 arrays
+// 10. Use a method to SORT the 2 arrays alphabetically
 
 // 11. Use a method to REVERSE the 2 arrays
 
 // 12. Print the length of the 2 arrays
 
-// 13. Use a method to combine the 2 arrays into one called all_grades
+// 13. Use a method to combine the 2 arrays into one called allStudents
 
-// 14. Use a method to insert a new item in the front spot
+// 14. Use a method to insert a your name in the front spot of allStudents
 
-// 15. Find and use a method to remove the middle item and save it in it's own variable "median"
+// 15. Sort allStudents and find and use a method to remove the middle item and save it in it's own variable "median"
 
 
 /******** Part 4 [Spicy] ********/
 
 let sentence = "How much wood would a woodchuck chuck if a woodchuck could chuck wood";
 
-// 16. Use a method to SPLIT this string into an array of its words. Save it as sentence_array
+// 16. Use a method to SPLIT this string into an array of its words. Save it as sentenceArray
 
 // 17. Use a method to find the first time "woodchuck" appears in the array
 
-// 18. Reference documentation -- What will this do?
+// 18. Reference documentation -- What will the line below do?
 /// Then, uncomment it and run it.
 
-
-// console.log(sentence_array.find((food) => food.includes("o")));
+// console.log(sentenceArray.find((food) => food.includes("d")));
