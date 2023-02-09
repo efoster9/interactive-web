@@ -1,8 +1,8 @@
 ---
-description: How can I store and manipulate data to later be used in various ways throughout my website?
+description: How can you add functionality to an array of similar interactive components such as a button?
 ---
 
-# U2LA3: Javascript Essentials: Variables to Arrow Functions
+# U3LA2.1: Javascript Essentials: Variables to Arrow Functions
 
 ### Teacher Notes & Overview
 
@@ -143,14 +143,24 @@ Lastly, switch over to the exemplar `script.js` and demo the goal for the **Less
 
 **Practice Activities**
 
+**Mild**
+
 - Create a new class called `special` in the `style.css`. Give it either a special shadow color or border color. In the `index.html`, assign your favorite 3 fruits the `special` class name. When these buttons are clicked, add some special text to the results. For example, if Banana is special, it should say, "Enjoy your Banana Smoothie! 🍌"
-- Pop on the screen reader and fix up the `index.html` so that the website is more accessible.
+- Implement a pricing scheme and include the total price on the webpage. Make sure the first 3 toppings are free and then add `0.50` cents extra for each one after that.
+
+**Medium**
+
+- Add a small / medium / large toggle that can only be one thing at a time. There are many ways to do this, for example with a `querySelectorAll()`, with a form and _radio buttons_, and more. Change the price according to the selection.
+- Refactor the webpage to be an order form, and gather more info from the customer.
+
+**Spicy**
+
+- `querySelectorAll()` doesn't actually return an array so map and filter, for example, don't work! It returns something called a _Node List_. Look up `Array.from()` and refactor the code so that `map()` is used instead of `forEach()`.
+- Pop on the screen reader and fix up the `index.html` so that the website is more accessible. Test that your order form works by navigating through the page while your screen is covered.
 
 ### Wrap Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
-
-Before students leave, ask them to one of the following questions on an easily collectable paper:
 
 - What is made easier when using `querySelectorAll()`? What is more challenging?
 - When was a moment you got stuck today? What did you do to unstick?
