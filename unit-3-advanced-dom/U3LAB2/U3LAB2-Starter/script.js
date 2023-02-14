@@ -1,14 +1,7 @@
-const inputs = document.querySelectorAll("input");
+/* DOM ELEMENT FOR "INPUT" */
 const button = document.querySelector("button");
-const resultText = document.querySelector("#results");
 const personalityGrid = document.querySelector("#personality-grid")
-
-let results = {
-  first_letter: '',
-  second_letter: '',
-  third_letter: '',
-  fourth_letter: ''
-}
+const resultText = document.querySelector("#results");
 
 const letterDescriptions = {
   E:{
@@ -45,33 +38,32 @@ const letterDescriptions = {
   },
 }
 
+/* RESULTS VARIABLE */
+
+/* FIX THIS FUNCTION */
 const displayBadges = () => {
   personalityGrid.innerHTML = '';
+
+  // For each letter (ex. ESTJ)...
   Object.values(results).forEach(letter => {
     personalityGrid.innerHTML += (
     `<div class="card has-background-warning-light">
       <div class="card-content">
         <div class="content">
           <h1 style="text-align: center">${letter}</h1>
-          <p><b>${letterDescriptions[letter].title}</b></p>
-          <p><b>Description:</b> ${letterDescriptions[letter].description}</p>
+          <p><b>LETTER TITLE HERE</b></p>
+          <p><b>Description:</b>LETTER DESCRIPTION HERE</p>
         </div>
       </div>
     </div>`)
   })
 };
 
-inputs.forEach(input => {
-  input.addEventListener("click", (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-
-    results[name] = value;
-  });
-});
+/* EVENT LISTENERS FOR EACH INPUT RADIO BUTTON */
 
 button.addEventListener('click', (e) => {
-  e.preventDefault();
+  e.preventDefault(); // stops the page from reloading
   displayBadges();
   resultText.innerHTML = Object.values(results).join('');
 });
+

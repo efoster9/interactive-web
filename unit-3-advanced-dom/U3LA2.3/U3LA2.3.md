@@ -57,11 +57,9 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-Though there is nothing new being taught in this lesson, this is the first time students will see many of these concepts (conditional statements, iterative techniques, arrays, DOM manipulation) working in tandem. 
+This lesson is already designed to have students engaged for a majority of the time. Students, at there own pace, will be identifying and defining functions and methods throughout the warm up, and they will be choosing their own level of difficulty for the practice activities that come after the lesson demo.
 
-The lesson is designed as ~50% code-along and ~50% student engagement in the material. With a larger Warm Up and plenty of practice activities, be sure to give your students the time they need to play and go at their own pace with this code at the beginning and end of the lesson. 
-
-As with previous code-along lessons, consider preparing partially completed code as a supplemental for students who will find it useful or who require it as per IEP or otherwise.
+For the practice activity, scope out the difficulty that students will be getting themselves into. Students should be aware that their goal is mild, medium, or spicy, for example. If it's too hard, help them breakdown the task into chunks, or encourage them to tackle something easier first. If the task is "too easy" that is okay. They will finish quickly and try something harder. If the task is too hard, however, they may not finish it leaving them feeling discouraged. 
 
 ### Resources
 
@@ -105,7 +103,7 @@ Have the students open up the starter code and find the total number of function
     - *`updateDropdown()` - uses _setMatches()_ to display or hide dropdown on search.
     - [Stretch] `isAnyLetter()` - (not yet used) returns true if the character given is a letter.
 
-After a few minutes, if a majority of students haven't noticed all 3 scripts, point their attention to how `script.js` calls `getMatches()` which is defined in `getMatches.js`, and give them more time to explore and define before going over the above function and method definitions.
+After a few minutes, if a majority of students haven't noticed all 3 script files, point their attention to how `script.js` calls `getMatches()` which is defined in `getMatches.js`, and give them more time to explore and define before going over the above function and method definitions.
 
 ### Lesson & Demo: Approaching Problems (~20 min)
 
@@ -175,14 +173,14 @@ After a few minutes, if a majority of students haven't noticed all 3 scripts, po
 
 > Below are recommended fixes to try, but if students think of something more creative or clever, allow them to explore those ideas instead. The goal is for them to practice piecing together computer science concepts to solve an abstract problem.
 
-- wait for 3 characters to be typed to give a result
-- allow 1 letter to be wrong.. 2!
-- only show the first 10 results, if there's less than 10 think about how you can open it up to recommend more relevant results.
+- [mild] - Wait for 3 characters to be typed before giving any results
+- [medium] - Only show the first 10 results, if there's less than 10, think about how you can open it up to recommend other relevant results. (For example, use first letter of the input to make up for missing results, or just fill them with the most popular songs. Be creative here.)
+- [spicy] - Allow for misspellings: try allowing 1 letter to be wrong, then 2!
 
 ### Wrap Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-- What are some websites and examples where you have used typeahead search?
-- What is made easy with typeahead search? When would it make sense to **not** have typeahead on a website?
-- What was the biggest challenge you faced in this lesson?
+- With more time, what are some other additions you would make to this autocorrect search?
+- When was a time in the lesson you got stuck? What did you do to get "unstuck"?
+- What is something you're most proud of? What is something you'd like to get better at?
