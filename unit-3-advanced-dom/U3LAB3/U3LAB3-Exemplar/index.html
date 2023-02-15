@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Management</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-justify-content-space-between">
+    
+    <section class="hero is-small notification has-background-info has-text-centered">
+      <div class="hero-body"></div>
+    </section>
+
+    <div class="title has-text-centered">File Manager</div>
+    <section class="section p-1">
+      <div class="box m-5 p-5">
+        <div id="controls" class="buttons">
+          <button class="button is-info">New Folder 📂</button>
+          <button class="button is-info">New File 📜</button>
+        </div>
+        <div id="accomplishments" class="container">
+          <h1>/Desktop/Projects</h1>
+          <div id="files-grid" class="">
+            
+            <!-- Cards go here! -->
+            <div class="card is-size-7">
+              <div class="card-header">
+                <p class="card-header-title">
+                  Folder Name
+                </p>
+                <div class="card-header-icon">📂</div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Duplicate</a>
+                <a href="#" class="card-footer-item">Delete</a>
+              </footer>
+            </div>
+            <!-- Card 2 -->
+            <div class="card is-size-7">
+              <div class="card-header">
+                <p class="card-header-title">
+                  File Name
+                </p>
+                <div class="card-header-icon">📜</div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Duplicate</a>
+                <a href="#" class="card-footer-item">Delete</a>
+              </footer>
+            </div>
+            <!-- Card 2 -->
+            <div class="card is-size-7">
+              <div class="card-header">
+                <p class="card-header-title">
+                  File Name
+                </p>
+                <div class="card-header-icon">📜</div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Duplicate</a>
+                <a href="#" class="card-footer-item">Delete</a>
+              </footer>
+            </div>
+            <!-- Card 2 -->
+            <div class="card is-size-7">
+              <div class="card-header">
+                <p class="card-header-title">
+                  File Name
+                </p>
+                <div class="card-header-icon">📜</div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Duplicate</a>
+                <a href="#" class="card-footer-item">Delete</a>
+              </footer>
+            </div>
+            <!-- Card 2 -->
+            <div class="card is-size-7">
+              <div class="card-header">
+                <p class="card-header-title">
+                  File Name
+                </p>
+                <div class="card-header-icon">📜</div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Duplicate</a>
+                <a href="#" class="card-footer-item">Delete</a>
+              </footer>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer notification has-background-info mt-0 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
