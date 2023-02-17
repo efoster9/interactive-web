@@ -1,30 +1,25 @@
 ---
-description: How do you think critically to solve a not-so-straight-forward problem
+description: What is a DOM element and how can we use it to navigate and manipulate the DOM tree. 
 ---
 
-# U3LA3.2: 
+# U3LA3.2: Advance DOM Manipulation
 
 ### Teacher Notes & Overview
 
-This lesson is sort of a cross between a lab and a lesson. The goal is give students the liberty and encouragement they need to solve an open ended problem in what ever way makes sense to them. "Fuzzy" in the title implies that the solution, as in most real-life situations, is not so clear. The goal is to have students think critically to come up with a viable solution and a reasonable approach that they feel confident about executing.
-
-The data used in this lab is the Billboard top 200 songs as of December 31, 2021. Feel empowered to change this to meet the needs more closely of your specific students. We highly recommend, for example, you survey your students and ask them to give you their favorite 5-10 songs. Then, replace the `top200.js` file with a similar array of objects. _NOTE: The artist "Kodak Black" is used as an example. You will need a different example if you do this._
-
-
+{}
 
 ### Objectives
 
 Students will be able to:
 
-* Connect DOM elements by referencing HTML code.
-* Iterate through an array of objects
-* Control the flow of execution using conditional statements
-* Add and remove class names from a class list
+* Access parent and child elements given a DOM element.
+* Create new DOM elements using DOM methods in javascript.
+* Add and remove child elements to other DOM elements.
 
 
 ### Suggested Duration
 
-1-3 period (~45-135 minutes)
+1 period (~45 minutes)
 
 ### NYS Computing Standards
 
@@ -36,6 +31,7 @@ Students will be able to:
 
 ### Vocabulary
 
+{}
 * **Typeahead Search**: a method for progressively searching for and filtering through text. It is also sometimes known as autocomplete.
 * **querySelectorAll**: returns a static NodeList representing a list of the document's elements that match the specified group of selectors
 * **iterative methods**: a method that repeats a block of code in a specified order, often until a specific result occurs. Algorithms use iterations to run a program repeatedly until it meets certain conditions or until the algorithm repeats a set number of times
@@ -57,9 +53,7 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-This lesson is already designed to have students engaged for a majority of the time. Students, at there own pace, will be identifying and defining functions and methods throughout the warm up, and they will be choosing their own level of difficulty for the practice activities that come after the lesson demo.
-
-For the practice activity, scope out the difficulty that students will be getting themselves into. Students should be aware that their goal is mild, medium, or spicy, for example. If it's too hard, help them breakdown the task into chunks, or encourage them to tackle something easier first. If the task is "too easy" that is okay. They will finish quickly and try something harder. If the task is too hard, however, they may not finish it leaving them feeling discouraged. 
+{}
 
 ### Resources
 
@@ -72,115 +66,205 @@ For the practice activity, scope out the difficulty that students will be gettin
 
 **Formative:**
 
-- **Warm Up** writing activity can be collected and serve as a formative assessment.
-- Overlook **students' code** and overhear their **conversations** for an informal formative assessment.
-- **Practice Activities** and **Wrap Up** reflection questions can serve as formative assessments.
+- Overlook **students' code** during the warm up and during the practice activities as an informal formative assessment.
+- **Wrap Up** reflection questions can serve as formative assessments.
 
 **Summative:**
 
-- Unit 3, Lab 2 (Upcoming Lab)
+- Unit 3, Lab 3 (Upcoming Lab)
 
 - Final Project (End of Unit Project)
 
-### Do Now/Warm Up (\~10 min)
+### Do Now/Warm Up (\~5 min)
 
-Have the students open up the starter code and find the total number of functions and methods being used. As you find them, describe what they do in 1 sentence. They are allowed and encouraged to look things up when applicable. _It is more important that students are able to recognize and explain what a function/ method is and what it is used for. It is less important that students find all of them. The functions that should be prioritized when reviewing are starred (*) below_:
-- **Methods**
-    - `querySelector()` - selects DOM element by ID or Class Name
-    - `toLocaleString()` - turns big number into string with commas
-    - `toLowerCase()` - turns string to all lowercase values
-    - `forEach()` - array iterator with no return value
-    - `add()`/`remove()` - adds or removes class name from DOM element
-    - `split()` - splits a string into an array
-    - *`includes()` - checks if string is in another string
-    - `addEventListener()` - attaches an action to a DOM element when triggered 
-    - `push()` - adds an element to the end of a list
-- **Functions**
-    - `console.log()` - prints values to the console in DevTools window
-    - *`displayBadge()` - adds a summary badge of song
-    - *`setMatches()` - uses _getMatches()_ populates results to dropdown on search
-    - *`getMatches()` - filters the matching songs from the array.
-    - *`updateDropdown()` - uses _setMatches()_ to display or hide dropdown on search.
-    - [Stretch] `isAnyLetter()` - (not yet used) returns true if the character given is a letter.
+Have the students open up the starter code `script.js`. Take a moment to walk them through the code and the checkbox on the website that it is connected to. There is already a DOM element for the checkbox called `darkMode`, and the event listener is set up to listen to when the checkbox is checked. There challenge is to search and use a method that will get the "parent element" to make the background of the window dark, then use the method to finish the code. Demo this functionality with the exemplar code.
 
-After a few minutes, if a majority of students haven't noticed all 3 script files, point their attention to how `script.js` calls `getMatches()` which is defined in `getMatches.js`, and give them more time to explore and define before going over the above function and method definitions.
+Part of the challenge is that they cannot create a new DOM element alias using `document.querySelector()`. In fact, for an extra challenge refrain from looking at the `index.html` at all!
 
-### Lesson & Demo: Approaching Problems (~20 min)
+After several minutes, share a solution a student came up with, or show the following code.
+```js
+const darkMode = document.querySelector('#dark-mode');
 
-> This lesson is sort of a cross between a lab and a lesson. The goal is give students the liberty and encouragement they need to solve an open ended problem in what ever way makes sense to them. This section will guide students through 1 approach that they hopefully dislike enough to try and come up with a better one.   
+darkMode.addEventListener('click', () => {
+    // fix this
+    const greatGrandParentDiv = darkMode.parentElement.parentElement.parentElement;
 
-0. Tell students that this lab is done, but with the way the search engine currently works, it doesn't account for misspellings or if one word is accurate and the other is not. For example, if I search for the artist "Codak Black", completely believing that it is spelled with a 'C' and not a 'K', I get **no** results. However, most search engines will be more helpful to users in some way. There are many ways to handle this problem. The following is a walk through through 1 way. After, the students will work in pairs to try different, more efficient ways.
+    greatGrandParentDiv.style.background = darkMode.checked ? '#242424' : 'white';
 
-1. Open the `getMatches.js` and show students that the function `getMatches()` is filtering the results for the search. We're going to change it so that the function splits the input into its words, and checks for matches for each split word.
+});
+```
 
-2. Type the following code and ask students to predict what will be console logged when you search "Codak Black". Then, add a space character between the quotes and ask them for a prediction again.  
+The idea is that students start to think of a DOM element as something that has functionality allowing us to navigate through and manipulate the DOM tree.
+
+### Lesson & Demo: Approaching Problems (~35 min)
+
+1. Tell students that to finish the website we need to input the two input fields and have the button display a badge in the accomplishments section. Again, demo this using the exemplar code so students have a clear visual understanding of what the goal is. We can break this into to main steps: 
+    A. Save both inputs on the button click
+    B. Use the inputs to display a badge or "Add Accomplishment"
+
+2. Give students another ~5 minutes with their partner to add an event listener to the button. On click, the button should console log the inputs. Extra challenge, only log the inputs **if both inputs were filled in**. After the allotted time, go over the solution using the following code:
     ```js
-    const getMatches = (string, top200) =>{
+    const addButton = document.querySelector('button');
 
-        const stringWords = string.split('');
-        console.log("string words", stringWords);
+    addButton.addEventListener('click', () => {
+        const inputs = document.querySelectorAll('.input');
+        const title = inputs[0].value;
+        const date = inputs[1].value;
 
-        //...
-    ```
-    _The `.split('')` will turn each character into an array element, and `.split(' ')` will turn each word into an array element._
-
-3. Now, we need to filter the top200 array and return the filtered array. Set up a filter as follows:
-    ```js
-    const getMatches = (string, top200) =>{
-
-        const stringWords = string.split(' ');
-        console.log("string words", stringWords);
-
-        return top200.filter( song => {
-
-            let isMatch = false;
-
-            // Check for each string word
-
-            return isMatch;
-        });
-    }
-    ```
-    The variable isMatch is going to represent whether the current song is a match or not. We assume at first that it is not, then we check if we need to change this assumption. Finally, we return it to the filter so it can include or omit it.
-
-4. Lastly, for each split word, we'll use the same condition as before to check that the song title or artist includes it. If so, we can call this song a match.
-    ```js
-    return top200.filter( song => {
-
-        let isMatch = false;
-
-        for(const word of stringWords) {
-             if(song.title.toLowerCase().includes(word) || song.artist.toLowerCase().includes(word)) {
-                isMatch = true;
-             };
-        };
-
-        return isMatch;
+        if (title && date) {
+            console.log(title, date);
+        }
     });
     ```
-    _After, show students that "Codak Black" will now show results for "Codak" (none) and "Black"._
 
-5. Have the students "think pair share" with their partner another way this code could have been written and better ways this search engine could have been improved. 
-    - A `forEach()` method could have been used instead of the `for..of` loop.
-    - A `for..of` loop could have been used instead of the `filter()` method.
-    - You could have done a search by character (but is this really helpful?)
-    - You could allow 1 or 2 letters to be wrong in the search.
+3. The first step is done! To set up the next step, we need to retrieve the DOM element for the accomplishments board and create a new function that we can call from the button's event listener. The new function, `addAccomplishments()`, should create an accomplishment badge (with html, classnames, etc.) and append it to the list of other accomplishments on the board. Set this step up for students as follows:
+    ```js
+    const addButton = document.querySelector('button');
+    //1st addition
+    const accomplishments = document.querySelector('#accomplishments-grid'); 
 
-    Encourage students' creative suggestions and give them time to brainstorm some ideas they can get excited behind before allowing them to explore coding these solutions in the practice activities.
+    // 2nd addition
+    const addAccomplishment = (title, date) => {
+        //
+    };
 
+    addButton.addEventListener('click', () => {
+        const inputs = document.querySelectorAll('.input');
+        const title = inputs[0].value;
+        const date = inputs[1].value;
+
+        if (title && date) {
+            console.log(title, date);
+            //3rd addition
+            addAccomplishment(title, date);
+        }
+    });
+    ```
+
+4. Tell students that up until this point, they have learned to add HTML to a page only by creating formatted strings that they add to a parent's `innerHTML`. However, this avoids using the full power of DOM elements and the functionality they bring. The function `addAccomplishment` is going to create the HTML block below from scratch. Cut and paste it out of the `index.html` and into the `script.js` to use as a reference for the code.
+    ```html
+    <!-- Accomplishment cards here -->
+    <div class="card has-background-warning-light">
+        <header class="card-header">
+            <p class="card-header-title is-size-7">
+                Honor Roll!
+            </p>
+            <p class="card-header-title is-size-7 is-justify-content-flex-end">
+                01/01/1992
+            </p>
+            <button class="card-header-icon">
+                <span class="icon has-text-danger">
+                    <i class="fas fas-ban">x</i>
+                </span>
+            </button>
+        </header>
+    </div>
+    ```
+
+5. For each element tag, we need to first create a DOM element variable. Code the following declarations in the `script.js` in the `addAccomplishments()` function, and show students how they match up to each element in the HTML example. _NOTE: use the `console.log(div)` throughout so students can see an example of what they are creating._
+    ```js
+    const addAccomplishment = (title, date) => {
+        const div = document.createElement('div');
+        const header = document.createElement('header');
+        const pTitle = document.createElement('p'); 
+        const pDate = document.createElement('p'); 
+        const xButton = document.createElement('button');
+        const span = document.createElement('span');
+        const i = document.createElement('i');
+
+        console.log(div);
+    }    
+    ```
+    
+6. Explain to students that these variables are holding a DOM element. It's the same thing that's held when we say `document.querySelector()`, and all the same methods, as we'll soon see, apply. The difference is that `createElement()` allows us to create an element in javascript without adding it to the HTML just yet. This way we can construct it and customize it fully before ultimately adding it to the `index.html`. [See more on createElement() here.](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+
+6. Next, let's add the class names to all the elements. We can do that using `classList.add()` as we've seen in previous lessons (recall `add`, `remove`, and `toggle`). _NOTE: After doing the first one, consider allowing students to do the other elements on their own if they can pick up the pattern._
+    ```js
+        //...
+        const i = document.createElement('i');
+
+        div.classList.add('card', 'has-background-warning-light');
+        header.classList.add('card-header');
+        pTitle.classList.add('card-header-title', 'is-size-7');
+        pDate.classList.add('card-header-title', 'is-size-7', 'is-justify-content-flex-end');
+        xButton.classList.add('card-header-icon');
+        span.classList.add('icon', 'has-text-danger');
+        i.classList.add('fas', 'fas-ban');
+
+        console.log(div);
+    }
+    ```
+
+7. Now, we need to embed DOM elements within each other. For example, the `header` element is the child of the `div` element, so we can use a method called `appendChild()` to tell the DOM tree that this is so. [See more on appendChild() here.](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) Code up the following:
+    ```js
+        //...
+        i.classList.add('fas', 'fas-ban');
+
+        div.appendChild(header);
+        // Notice header has 3 children!
+        header.appendChild(pTitle);
+        header.appendChild(pDate);
+        header.appendChild(xButton);
+        xButton.appendChild(span);
+        span.appendChild(i);
+
+        console.log(div);
+    }
+    ```
+    _NOTE: Notice that when you look at the console log, you should now see all the nested elements._
+
+8. If we look at the innerHTML of the the paragraph (`p`) elements and the icon (`i`) element, they require some text. We can use `innerHTML` to insert that text. The icon will always be an 'x' and the other 2 will be dependent on the `title` and `date` variables passed as parameters.
+    ```js
+        //...
+        span.appendChild(i);
+
+        pTitle.innerHTML = title;
+        pDate.innerHTML = date;
+        i.innerHTML = 'x';
+        
+        console.log(div);
+    }
+    ```
+
+10. Finally, we can add this completed html block that represents the accomplishment badge in the accomplishments grid that we querySelected earlier as `accomplishments`. We can again use `appendChild()`. The `appendChild()` function will always append to the end of the "array" of children nodes of its corresponding parent. Demo this by adding a few accomplishments on the site.
+    ```js
+        //...
+        console.log(div);
+
+        accomplishments.appendChild(div);
+    }
+    ```
+
+11. Almost forgot! There is an 'x' button on each accomplishment so that it can be eliminated from the board. We can easily add an event listener to that button. The action will be to remove the whole `div` from it's parent's child array using `.removeChild()`. We already have the parent's name, `accomplishments`, so we can code it before we add it as follows:
+    ```js
+        console.log(div);
+
+        xButton.addEventListener('click', () => accomplishments.removeChild(div));
+
+        accomplishments.appendChild(div);
+    }
+    ```
+
+> The order in which things are done don't really matter. However, organization should be kept in mind, and when conditional execution is implemented, the order will matter. The order seen here was chosen strictly for instructional purposes. See the exemplar for a slightly different layout.
 
 **Practice Activities**
 
-> Below are recommended fixes to try, but if students think of something more creative or clever, allow them to explore those ideas instead. The goal is for them to practice piecing together computer science concepts to solve an abstract problem.
+**Mild**
+- If an input field is missing add the `is-danger` class to that input. When the input field is then filled out, make sure the `is-danger` class is removed.
+- Once a badge is created, clear the input fields.
 
-- [mild] - Wait for 3 characters to be typed before giving any results
-- [medium] - Only show the first 10 results, if there's less than 10, think about how you can open it up to recommend other relevant results. (For example, use first letter of the input to make up for missing results, or just fill them with the most popular songs. Be creative here.)
-- [spicy] - Allow for misspellings: try allowing 1 letter to be wrong, then 2!
+**Medium**
+- Create a special badge! When the date inputted is today's date, change the background color to `has-background-danger` instead of `has-background-warning-light`.
+
+**Spicy**
+- Add an alert message "Missing Fields" when one or more input fields are missing. The message should go away when the input fields are filled. You may need some of the following methods to help.
+    - [createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+    - [parentElement](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
+    - [insertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
 
 ### Wrap Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-- With more time, what are some other additions you would make to this autocorrect search?
-- When was a time in the lesson you got stuck? What did you do to get "unstuck"?
-- What is something you're most proud of? What is something you'd like to get better at?
+- You now know 2 ways to add HTML code to a website. Which way do you prefer? Why?
+- Why might it be more helpful as a developer to manually create DOM element variables over typing out the html code as a string?
