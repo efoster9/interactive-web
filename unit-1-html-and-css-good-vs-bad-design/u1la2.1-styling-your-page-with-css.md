@@ -57,9 +57,12 @@ _Coming Soon_
 * Website Starter Code ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) | github)
 * [W3Schools Demo Page ](https://www.w3schools.com/w3css/tryw3css\_templates\_start\_page.htm)(Resource)
 * [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php)[/Documentation](https://www.w3schools.com/cssref/index.php) (Resource)
+* [Google Fonts](https://fonts.google.com/) (Resource)
 * [View and Change CSS with Chrome Dev Tools ](https://developer.chrome.com/docs/devtools/css/)(Extra Learning Resource)
 * [CSS Selectors Diner](https://flukeout.github.io/) (Extra Learning Resource)
 * [CSS Battle](https://cssbattle.dev/) (Extra Learning Resource)
+* [Google Font Pairings](https://femmebot.github.io/google-type/) (Extra Resource)
+* [Adobe Color Picker](https://color.adobe.com/create/color-wheel) (Extra Resource)
 
 ### Assessments
 
@@ -216,3 +219,81 @@ One thing we can try is to add some padding to our div so it takes up more space
 }
 ```
 
+Take a few moments to experiment with margins and borders and see if you can get the page title to look like a banner!
+
+Once you've had a chance to play, there is one more relevant thing we can take away from this: we learned how to center text, but what about images? We can use a class to help us!
+
+If we want to center our image from line 24, we could add a class called 'center':
+
+```
+<img src="assets/uglycomp1.jpeg" alt="an ugly computer in space" class="center">
+```
+
+And then in our CSS, we could do the following:
+
+```
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+```
+
+This will change how the browser sees the image and will automatically 'balance' the margins on either side. And tah-dah! Just like that, a centered image!
+
+**NB:** _If you feel like your students may benefit from extra practice using CSS selectors, you could utilize the_ [_CSS Selector Diner Extra Learning Resource_](../Templates/Lesson-template.md)_. This is a 15 - 30 minute activity (but can really be start/stopped as you see fit) that explores other ways CSS selectors can be used in a fun way._
+
+### Using Different Fonts (10 - 12 minutes)
+
+One last thing to show you before you go off to make the Ugliest Webpage in the World: getting different fonts. Fonts can be tricky because they are not the same on all computing systems/browsers, although it has become _much_ more standardized over the years.
+
+We have two main ways to work with fonts: we can find free ones and download them and add the downloads into the asset folder of our project, or we can use fonts that already exist for us online. For the purpose of this class, we are going to focus on using fonts from Google Fonts, but you are welcome to look up tutorials for downloading other fonts.
+
+To begin, let's head to [Google Fonts](https://fonts.google.com/). On Google Fonts, we will notice that we have several ways to sort - we can search names, or we can select categories. Feel free to explore these with your students - we will talk about them more specifically in later design lessons! For now, let's pick a few fonts we think we may want to use. I'm choosing from the main page.
+
+When we click a font name, if we scroll down we should see the option to 'add' it to the fonts we want to use. (We also have the option to see it used with different sample text and at different sizes)
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-03-02 at 11.13.07 AM.png" alt=""><figcaption><p>Sample font with button to select</p></figcaption></figure>
+
+Once we've selected fonts we want to use, we can use the top right corner icon with three squares and a plus to view our selected font families. This will show us code that we can use in our HTML page to link the fonts to our page, as well as how to use this in our CSS.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-03-02 at 11.14.32 AM.png" alt=""><figcaption><p>Icon with three squares and a plus used to view selected families of fonts</p></figcaption></figure>
+
+Let's take all of the HTML `<link rel...>` tags and paste them in the `<head>` of our HTML around where we linked our CSS. We can even denote what these are with a comment!
+
+Then, we can use the CSS rules to change our fonts, like so:
+
+```
+body {
+    background-color: thistle;
+    color: #0000FF;
+    font-family: 'Roboto', sans-serif;
+}
+```
+
+And there you have it - now you can add fonts!
+
+### Creating the Ugliest Website in the World (15 - 30 minutes)
+
+You have learned the very, very basics of CSS. The truth is, there are actually _a lot_ of properties you can adjust with CSS; some you'll use frequently, others you won't. It's your students' job now to explore, and in that exploration, try to create the ugliest website the world has ever known.
+
+Want to use multiple images as backgrounds for different divs? SURE. Want to make the color scheme look WILD? Go nuts! Use the [CSS Reference page on W3 Schools](https://www.w3schools.com/cssref/index.php) to identify parts of the page you wish to change. We recommend:
+
+* Use classes and IDs to style your divs or other repeated components of your page
+* Explore using margin/padding/borders
+  * Styling borders is fun and can be a great way to make things pop OR look hideous, depending!
+* Experiment with styling images, such as creating an image with a rounded border.
+* Find something new to explore!
+
+Let the students free and see what crazy things they make!
+
+### Wrap-Up (5 - 10 minutes)
+
+Consider having students complete a gallery walk and leave post-its on their peers' computers with any feedback they'd like to leave.
+
+Alternatively, you can have a few students do rapid fire shares of one thing they are most proud of.
+
+### Extensions
+
+This is really a self-extending lesson as students can explore as little or as much into CSS a they want! [CSS Battle](https://cssbattle.dev/) can be a great sponge activity website for students who are feeling passionate about CSS and can do a little research on their own.
