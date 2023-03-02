@@ -21,7 +21,9 @@ In this lesson, students will begin working with CSS to style their pages. They 
 
 ### Suggested Duration
 
-1-2 periods (\~45 - 90 minutes)
+2-3 Periods (\~90 - 135 minutes)
+
+_Please note that there are several optional learning activities that you may choose to use with students - these can easily extend the amount of initial time you spend learning CSS. Use your best judgment as to the needs of your students, and please remember that you can always come back to the extras later if you realize that remediation is needed._
 
 ### NYS Standards
 
@@ -54,6 +56,7 @@ _Coming Soon_
 
 * Website Starter Code ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) | github)
 * [W3Schools Demo Page ](https://www.w3schools.com/w3css/tryw3css\_templates\_start\_page.htm)(Resource)
+* [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php)[/Documentation](https://www.w3schools.com/cssref/index.php) (Resource)
 * [View and Change CSS with Chrome Dev Tools ](https://developer.chrome.com/docs/devtools/css/)(Extra Learning Resource)
 * [CSS Selectors Diner](https://flukeout.github.io/) (Extra Learning Resource)
 * [CSS Battle](https://cssbattle.dev/) (Extra Learning Resource)
@@ -115,11 +118,101 @@ Before they begin, they will need a CSS file. To do this, they can click the 'Ne
 
 This links our style sheet from the reference of the file name, sets it up as a stylesheet, and prepares the browser to read our page to understand that it is a text/CSS file. Now to ensure it's linked, let's add some CSS!
 
-Back in the `style.css` page, let's add some style to the body of our page. We will use `body` as our selector and `background-color` as our property. Remember that all the colons and semi-colons are VERY IMPORTANT!
+Back in the `style.css` page, let's add some style to the body of our page. We will use `body` as our selector and `background-color` as our property.&#x20;
+
+What if we didn't know that we could use `background-color` as a property? There is so much to CSS that this is a _great_ time to demo to students how to Google for what they want - no one should be expected to know everything when they have the internet to help them - and to use documentation such as the [CSS Reference on W3 Schools](https://www.w3schools.com/cssref/index.php).
+
+Once we've established how and what to change, we are ready to code. Remember that all the colons and semi-colons are VERY IMPORTANT!
 
 ```
 body {
     background-color: thistle;
+}
+```
+
+We should now see that the background is light purple! It is recommended to give students a few minutes to adjust the background to different colors using both HTML color names and HEX codes (which will give them a wider range of choices).
+
+Once students have had fun with the background, let's figure out how to change the font color. We can once again google, or we can search on W3 Schools, or we can do a mix of both by googling 'CSS font color w3 Schools.' Either way, we should come to something like this:
+
+```
+body {
+    background-color: thistle;
+    color: #0000FF;
+}
+```
+
+This will make our text all a bright blue! But what if we wanted titles to be a different color? Well, we could use another selector:
+
+```
+body {
+    background-color: thistle;
+    color: #0000FF;
+}
+
+h2{
+    color: #FFFFFF;
+}
+```
+
+As it's written, this would make anything within an `<h2>` tag turn white. If for some reason you notice this isn't happening, you can adjust the declaration to add: `color: #FFFFFF !important` which will override whatever the `<h2>` tag would _inherit_ from the body tag. It's important to note - and this will become more prevalent the more students work with CSS - that HTML is built of parent/child elements (things nested in other things) and CSS will use this structure to apply changes broadly and specifically.
+
+Now, we can add one more thing which may be especially useful with our titles - we can center them! Doing so would look something like this:
+
+```
+body {
+    background-color: thistle;
+    color: #0000FF;
+}
+
+h2{
+    color: #FFFFFF;
+    text-align: center;
+}
+```
+
+**NB:** _There are usually lots of possible values for each property, just as there are lots of properties you can change! Often editors such as repl.it will assist by auto-filling or giving you a list of options. This can be a great tool, and when in doubt, remember to keep Googling and modeling using your resources so that students form similar habits._
+
+### Styling with Classes and IDs (10 - 15 minutes)
+
+One thing we should notice is that so far, when we change something, it changes any and everything that has that tag. Sometimes we want this - we might want all of our text to be the same color, for example - but sometimes we want to be able to differentiate for whatever reason.
+
+That's where we can use the classes and IDs that we saw in our last lesson! This starter code does not have any classes or IDs added yet, but we can add them in and then utilize them in our CSS file.
+
+Let's head to our page title div on line 17 in `index.html`.  This div contains the page title, which we may want to have a different style than anything else on the page. In this instance, we may want to use an ID because we will not be repeating this style again elsewhere. If we wanted to use a style we created on multiple elements, we would want to use a class.
+
+So let's update our HTML first:
+
+```
+<!-- 	page title -->
+	<div id="pagetitle">
+		<h1>The Ugliest Webpage in the World</h1>
+		<h4>A place to let loose with styling!</h4>
+	</div>
+```
+
+And then let's go to our CSS and add the following:
+
+```
+#pagetitle {
+    background-color: tomato;
+}
+```
+
+Notice the #? That's what tells the computer we are selecting by ID! If we had been using a class called page title, we would've written `.pagetitle` **-** the . denotes that we are calling a class. Let's keep exploring our page title - we can of course make it centered by adding `text-align: center;` in our CSS. We can also start working on styling our div! Divs, those empty boxes we put content into, have some useful attributes that we can use to style our page. Each div has:
+
+* ****[**Padding**](https://www.w3schools.com/css/css\_padding.asp)**:** the space between the content and the edge of the div
+* ****[**Borders**](https://www.w3schools.com/css/css\_border.asp)**:** the (currently invisible) lines around the div, which can be styled with color/pattern in addition to be thinner and thicker
+* ****[**Margins**](https://www.w3schools.com/css/css\_margin.asp)**:** the space between the div and the content around the outside of it.
+
+Now, each of these we can set individually based on sides (top, bottom, left, right) or we can set it all at once by just using the property `padding` or `border` or `margin`. Again, if you want to do things more specific or learn exactly what can or can't be done with each, this is a great thing to google or use documentation to review!
+
+One thing we can try is to add some padding to our div so it takes up more space:
+
+```
+#pagetitle {
+    background-color: tomato;
+    text-align: center;
+    padding: 50px;
 }
 ```
 
