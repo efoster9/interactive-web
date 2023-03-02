@@ -34,19 +34,21 @@ _Please note that there are several optional learning activities that you may ch
 ### Vocabulary
 
 * **CSS: C**ascading **S**tyle **S**heets, this is a style sheet language that describes how an HTML page can look. The CSS can change HTML elements based on their tag (h1, p, div, etc) or by their class or id.
-*
+* **Selector -** identifier for part of page to be styled with CSS
+* **Property/Value -** the property you wish to change of a page element and value you wish to change it to
+* **Declaration** - the property/values being changed by CSS
 
 ### Planning Notes && Materials
 
-| Planning Notes | Materials |
-| :------------: | :-------: |
-|                |           |
+|                                                          Planning Notes                                                          |             Materials            |
+| :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: |
+| While there are no specific planning notes, this requiers a lot of Googling and looking at documentation, so please be prepared! | _No additional materials needed_ |
 
 ### Suggestions for UDL
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :------------------------------: | :--------------------------: | :--------------------------: |
-|                                  |                              |                              |
+|           _Coming Soon_          |         _Coming Soon_        |         _Coming Soon_        |
 
 ### Suggestions for Differentiation
 
@@ -68,7 +70,11 @@ _Coming Soon_
 
 **Formative:**
 
+* Ugliest Website Creation
+
 **Summative:**
+
+* Upcoming CSS Mini Project
 
 ### **Do Now/Warm Up (\~5 minutes)**
 
