@@ -2,7 +2,6 @@ const cards = document.querySelectorAll('button');
 const boxes = document.querySelectorAll('.box');
 
 let selectedCard = null;
-let selectedBox = null;
 
 const cardClick = (e) => {
     thisCard = e.target;
@@ -24,11 +23,11 @@ boxes.forEach( box => box.addEventListener('click', (e) => {
         selectedCard.parentElement.removeChild(selectedCard);
         box.childNodes[3].appendChild(selectedCard);
         selectedCard.classList.remove('is-selected');
-        selectedCard = null;
-
-        //Extension
-        box.classList.remove('is-selected');
+        selectedCard = null; 
     }
+
+    //Extension
+    box.classList.remove('is-selected');
 }));
 
 // Extensions
@@ -47,7 +46,7 @@ getRandomCards().forEach(card => {
 boxes.forEach( box => box.addEventListener('mouseenter', (e) => {
     if(selectedCard && box !== selectedCard.parentElement.parentElement) {
         console.log("in a box!");
-        e.target.classList.add('is-selected');
+        box.classList.add('is-selected');
     }
 } ) );
 boxes.forEach( box => box.addEventListener('mouseleave', (e) => {

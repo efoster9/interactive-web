@@ -2,126 +2,148 @@
 description: How can you use advanced data structures and functional computing with DOM elements and user interaction?
 ---
 
-# 
+# Card Organizer
 
 ### Teacher Notes
-
-In this lab, students will have the opportunity to build a personality quiz with some guidance. The teacher will walk students through a trivial version (the exemplar), and students will, similar to a unit project, brainstorm ways to personalize it adding different forms of inputs, creative outputs, and implementing concepts in the previous few lessons.
 
 {tbc}
 
 ### Prompt
 
-What is your personality type? Which character from your favorite movie pr show are you most like? What color is your energy? In a personality quiz, you answer questions to discover what category you most align with. First code along as you see how it's done. Then, make it your own!
+The holding zone on the website starts with just a couple of playing cards. Can you make it so that the cards can be moved from the holding zone to their matching boxes? 
 
-**Directions**: Walk through the following steps to complete and take the sample "Fuzzy Matching Quiz" based on the Myers-Briggs personality test. Then, in the challenges, you'll have a chance to expand it and personalize it to your own Quiz.
+**Directions**: Write the code for the `script.js` so that a user can click on a card and click on a box to move the card.
 
-0. The trickiest part about doing a personality quiz is taking the user's inputs and converting it into an output. Later you will be given some ideas on different ways to do this, but for now we will do this: There are 4 questions on the website. For each question, you can be 1 of 2 personalities. At the end, you will be a culmination of 4 total personalities (indicated by 4 letters). For example:
+1. This can be broken down into 2 steps: create an event listener for all the cards on the page, and create one for all the boxes on the page. First, we'll create an event listener for the cards highlighting which has been selected and saving it in a variable. Then, we'll add an event listener to all the boxes that will, on click, "steal" the selected card from the previous box and move it there.
 
-![Myers Briggs Example](./img/MBExample.jpg)
-
-**The Input**
-1. First thing that happens is that a user selects the radio button inputs. Use `querySelectorAll()` to select all the radio inputs. Then, add an event listener to all of them. For now, just console log the value. Try this yourself before seeing the code below:
+2. Retrieve all the cards and boxes uses querySelectorAll(), and set up an event listener for each card and for each box. Also, include a variable called `selectedCard` and set it to `null` for now. Go try this with your partner before continuing here. 
     ```js
-    const inputs = document.querySelectorAll("input");
+    const cards = document.querySelectorAll('button');
+    const boxes = document.querySelectorAll('.box');
 
-    inputs.forEach(input => {
-        input.addEventListener("click", (e) => {
-            console.log("Value", e.target.value)
-        });
-    });
+    let selectedCard = null;
+
+    cards.forEach( card => card.addEventListener('click', () => {
+        //
+    }));
+
+    boxes.forEach( box => box.addEventListener('click', () => {
+        //
+    }));
     ```
 
-2. Let's make some observations: When you open the console, notice that a single letter is outputted. This letter corresponds to the matching personality. Look at the `letterDescriptions` variable in the `script.js` for some examples. Now, change `e.target.value` to `e.target.name` and notice what is outputted. With the name and the value, you can create an object with the user's results.
+3. When a card is clicked on, it should "glow" and be saved as the `selectedCard`. If it is already selected, and is therefore glowing, when it is clicked on, it should stop glowing and the `selectedCard` variable should be set to `null` again. The CSS class "is-selected" is already created for you. Try writing this tricky logic on your own before seeing one way to do it below. Here's what it looks like in pseudocode:
+    - If the card is selected (already)
+        - remove the `is-selected` class from the card and...
+        - clear the `selectedCard` variable setting it to `null`
+    - Otherwise (if the card is not already selected)
+        - First, Check if there's already a selected card. If there is,
+            - remove the `is-selected` class from that card.
+        - Then, add the `is-selected` class to this new card.
+        - Finally, make this card the selected card by setting the `selectedCard` variable to this card
+
+4. Once you've tried this on your own, this is one way to code it:
     ```js
-    let results = {
-        first_letter: 'E',
-        second_letter: 'S',
-        third_letter: 'T',
-        fourth_letter: 'J'
-    }
+    cards.forEach( card => card.addEventListener('click', () => {
+        if (card === selectedCard) {
+            card.classList.remove('is-selected');
+            selectedCard = null;
+        } else {
+            //NOTE: an if statement can be used instead of this ternary
+            selectedCard ? selectedCard.classList.remove('is-selected') : {};
+            card.classList.add('is-selected');
+            selectedCard = card;
+        }
+    }));
+    ```
+    See that this feature works on the website. You should now be able to click and un-click cards. Add a console.log(selectedCard) if you'd also like to see that that variable is tracking properly.
+
+5. Now, set up the boxes. First, we only want a click event to happen if there is a selected card and if the box we click is a different box then the one the card is coming from. Use `parentElement` to find the box that belongs to the clicked card. Then set up the if statement as follows:
+    ```js
+    boxes.forEach( box => box.addEventListener('click', () => {
+        if(selectedCard && box !== selectedCard.parentElement.parentElement) {
+            console.log("available box");
+        }
+    }));
     ```
 
-3. Create the above object with an empty string for each value `''`. Then, change the event listener so that it sets the object on click.
+6. When an available box is clicked, we want to do 4 things:
+    - Remove the card from the box it came from
+    - Add the card to this box
+    - Remove the `is-selected` class from the card
+    - Clear the current selectedCard
+    *See how far you can get with these on your own before reading on.
+
+7. To remove the selected card from the box it came from, use `parentElement` to get the element it's currently in and `removeChild()` to remove it.
     ```js
-    inputs.forEach(input => {
-        input.addEventListener("click", (e) => {
-            const name = e.target.name;
-            const value = e.target.value;
-
-            results[name] = value;
-
-            // Optional log but helpful
-            console.log(results)
-        });
-    });
+    boxes.forEach( box => box.addEventListener('click', () => {
+        if(selectedCard && box !== selectedCard.parentElement.parentElement) {
+            // Remove the card from the box it came from
+            selectedCard.parentElement.removeChild(selectedCard);
+        }
+    }));
     ```
-    You can log the results each time and notice what happens when you start filling out the quiz.
-
-**The output**
-4. Take the time to make another observation. When you click the button, notice that most of the output is set up and formatted for you. There should be 4 badges each with 1 letter, the word/title that that letter represents, and a description for that letter. However, you may have some text missing:
-
-![Badge Example](./img/extrovert.png)
-
-5. Go into the `script.js` and use the `letterDescriptions` object to fix the `displayBadges()` function so it looks like the example above. After doing so, the code segment should look as follows, and the quiz should be ready to take:
+8. We're going to use `appendChild()` to the box, but first we need to find the right element. For now, log the `box.childNodes` and check the console. This will output an array of all the child nodes that belong to the box. Index the element _"div.cards"_, and append the `selectedCard` to it.
     ```js
-    <div class="content">
-        <h1 style="text-align: center">${letter}</h1>
-        <p><b>${letterDescriptions[letter].title}</b></p>
-        <p><b>Description:</b> ${letterDescriptions[letter].description}</p>
-    </div>
+    boxes.forEach( box => box.addEventListener('click', () => {
+        if(selectedCard && box !== selectedCard.parentElement.parentElement) {
+            // Remove the card from the box it came from
+            selectedCard.parentElement.removeChild(selectedCard);
+            // Add the card to this box
+            box.childNodes[3].appendChild(selectedCard);
+        }
+    }));
+    ```
+
+9. Last, remove the `is-selected` class from the card and clear the current `selectedCard`.
+    ```js
+    boxes.forEach( box => box.addEventListener('click', () => {
+        if(selectedCard && box !== selectedCard.parentElement.parentElement) {
+            // Remove the card from the box it came from
+            selectedCard.parentElement.removeChild(selectedCard);
+            // Add the card to this box
+            box.childNodes[3].appendChild(selectedCard);
+            // Remove the `is-selected` class from the card
+            selectedCard.classList.remove('is-selected');
+            // Clear the current selectedCard
+            selectedCard = null;
+        }
+    }));
     ```
 
 ### Exemplar
 
-Take a look at this [finished example](./U3LAB2-Exemplar/index.html) for the finished version of the site.
+Take a look at this [finished example](./U3LAB3-Exemplar/index.html) for the finished version of the site.
 
 ### Culturally Responsive Best Practice
 
-Scope out the strategies students plan to use when creating the quiz to ensure they stay on track with the curriculum, but allow students to explore themes that they identify most with. Consider spending a few minutes asking the students to find the funniest or most interesting quizzes they can find. Allow them time to explore resources like [BuzzFeed](https://www.buzzfeed.com/quizzes), [PsyCatGames](https://psycatgames.com/quiz/), or [PlayBuzz](https://www.playbuzz.com/quizzes/personality)... [more](https://funpersonalityquizzes.net/)
-
-_Note: scope out the resources provided. The quizzes change constantly, and it can not be assured that they are appropriate for school. You may instead want to compile several examples that you have pre-scanned and feel comfortable using in the classroom._
+[Courtney to add]
 
 ### Extra Help?
 
-- Quizzes to get inspiration:
-    - [What Fruit Are You? - Buzzfeed](https://www.buzzfeed.com/natalyalobanova/what-fruit-are-you)
-    - [What's your road trip personality? - Truity](https://www.truity.com/test/travel-personality-test)
-    - [Another Short Myers-Briggs Test](https://dynomight.net/mbti/)
-
-- Long video on making [JS Buzzfeed-style Quiz](https://www.youtube.com/watch?v=7x2Zk1qwBBU)
+- Check out these other events that can be listened to: [mouseleave](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event), [mouseenter](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event), and [dblclick](https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event).
+- Another resource for [createElement()](https://www.w3schools.com/jsref/met_document_createelement.asp) which is used to create customized HTML before adding it to the page.
+- Not understanding DOM traversal (parent, child, grandparent nodes)? Check out [this video resource](https://youtu.be/v7rSSy8CaYE?t=470) on some more examples.
+- Need a video resource on adding and removing elements, attributes, and classes? Check the timestamps for [this video resource](https://www.youtube.com/watch?v=y17RuWkWdn8).
 
 ### Extensions
 
-Use the following steps to plan out how you will change the personality quiz to be your own.
+**Mild**
+- Add 2 more cards of your choice. Ensure that the all the functionality still works.
+- Add a 5th suit. Use which ever symbol you'd like. Add a card with that same suit and be sure that you can move the card to that new box.
 
-**Directions**
+**Medium**
+- Create a `checkBoxes()` function that checks if all the cards are sorted properly. The function should be called after every card is moved. If everything is sorted, display a message or an alert saying so.
+- Go to `randomCards.js` and notice that there is a function that returns an array of random cards from a array of all possible cards called `getRandomCards()`. Change the code so that these random cards are the cards that first appear on the screen in the holding zone.
+- Highlight an available box when the mouse hovers over it. Add a `mouseenter` and `mouseleave` event listener to the boxes. The `is-selected` class should be added when a `mouseenter` happens, and it should be remove when the `mouseleave` happens or when a box is selected. _NOTE: this effect should only happen if a card is selected, and if the hovered box is not the box of the selected card._
 
-1. With your partner, do some research and exploring and think up what kind of personality quiz you'd like to set up. It can be **silly** like "What fruit are you?" or **serious** like "What vacation is best for you?". _If you're not sure, go with the vacation spot!_
-
-2. Then, write down all the possible results your quiz can end in. Will there be **only 2** (ex. "Your more left brain than right brain" or "Your more right brain than left brain")? Or, will you have **several results** (ex. "Out of all the fruits your most likely a watermelon!")? _If you're not sure, we recommend picking 3-4 vastly different results like "Space", "Cabin in Alaska", "Staycation", and "New Orleans"._
-
-3. **Inputs**: For the walk through above, radio buttons were the inputs for the quiz. Will you use radio buttons with words or pictures to select from, will you use drop down menus, will you have checkboxes as to allow multiple selections? Also, think about how you will store the user's responses. _Most common is using radio buttons and an object. That's what we'd recommend if you're unsure._
-
-4. **Calculating Results**: Here are some ideas for how you can narrow down the user's inputs into some results. Choose 1:
-    - **[MILD]** - Each answer in the quiz can award positive **points** to a category or personality type. At the end of the quiz, which ever personality type has the most points is the one the user will get.
-    - **[MEDIUM]** - If your results can be put on **a scale**, start a score at 50 and have each question add or subtract points to the score. At the end, use the number to give the user a different personality type. _(ex. "Netflix and PJs" would be a 0-35% => always likes to be alone, "Party Animal" would be a 65-100% => never likes to be alone, and maybe even "Hard to Get" would be a 35-65% => likes a balance of both)_ You can split this in 2, have 3 zones, or how ever many zones you need.
-    - **[SPICY]** - You can use **multiple scales**! Each question can add or remove points to one or more scales. For example:
-        - Scale1 = likes to be outside vs. likes to be inside
-        - Scale2 = likes to be along vs likes to be with others
-        Based on the combination of the 2 scales, you can give the user a different personality type _(ex. outside & alone = "Vacation in Space!")_ If it helps, think of this one like an XY graph.
-
-5. **Outputs**: Finally, what will you show the user once they hit submit?
-    - [MILD] - Will it be a single output?
-    - [MEDIUM] - Will you show a few or all possible outcomes and their percentage in each category? (ex. "Your 70% lion and 30% mouse")
-    - [SPICY] - Will it have a more detailed description or a unique picture to go with it?
-
-6. Now that you have your plan, get your quiz up and running! Refrain from focussing on font, images, color and other styling for now. Also, (IMPORTANT) start with **1** question, and add more once you have it working.
-
-7. Once, you can complete the quiz and get a unique result, go back and add styling, images, and more questions. 
+**Spicy**
+- Change the code so that multiple cards can be selected at once before moving them to a new box. 
+- Add an on "double click" event (`dblclick`) to the holding zone box so that when a user double clicks that box, a new card appears.
+- Use local storage to save the last state of the card organizer upon refresh of the page. Check out [this resource on local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to lear more.
 
 **Reflection Questions:**
 
 - What are you most proud of? What did you struggle the most with?
-- How much preplanning did you do before you coded? How did it help? How would doing more or less preplanning help or hurt final outcome of your personality quiz?
-- With more time, what else would you have added or changed?
+- With more time what would you have liked to add to the page?
+- What's one thing you liked about having a partner for this lab?

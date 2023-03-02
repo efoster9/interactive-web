@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accomplishment Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-justify-content-space-between">
+    
+    <section class="hero is-small notification has-background-success has-text-centered">
+      <div class="hero-body"></div>
+    </section>
+    <section class="section">
+      
+      <section class="section p-1 is-flex is-justify-content-center">
+        <div class="box m-5 p-5">
+          <div class="title">Job Application Form</div>
+          <span id="loader" class="button is-success">Changes Saved</span>
+          <hr>
+          <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="columns">
+              <div class="control column">
+                <input class="input" type="text" placeholder="First">
+              </div>
+              <div class="control column">
+                <input class="input" type="text" placeholder="Last">
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="john.doe@example.com">
+            </div>
+          </div>
+          
+          <div class="field columns">
+            <div class="column">
+              <label class="label">What position are you applying for?</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>- Select -</option>
+                    <option>Junior Engineer</option>
+                    <option>Lead Engineer</option>
+                    <option>Senior Engineer</option>
+                    <option>Project Manager</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <label class="label">Available date</label>
+              <div class="control">
+                <input class="input" type="date"></input>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">What is your current employee status?</label>
+            <div class="control">
+              <div class="columns">
+                <label class="radio column">
+                  <input type="radio" name="status">
+                  Employed
+                </label>
+                <label class="radio column">
+                  <input type="radio" name="status">
+                  Self-Employed
+                </label>
+              </div>
+              <div class="columns">
+                <label class="radio column">
+                  <input type="radio" name="status">
+                  Unemployed
+                </label>
+                <label class="radio column">
+                  <input type="radio" name="status">
+                  Student
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Why do you want to work here?</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Your response here"></textarea>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-success is-light">Reset</button>
+            </div>
+            <div class="control">
+              <button class="button is-success">Apply</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer notification has-background-success mt-1 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
