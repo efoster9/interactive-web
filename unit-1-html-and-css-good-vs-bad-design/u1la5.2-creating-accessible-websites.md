@@ -97,4 +97,10 @@ Once students have had time to experiment, come together to discuss their findin
 
 ### Webpages Unseen and Semantic HTML (\~10 - 15 minutes)
 
-Not all&#x20;
+Not all web users are going to be able to _see_ your page. Some people are reliant on screen readers to interact with the web, and those screen readers are programmed to read very particular parts of the page. They also rely on using the tab key to move through parts of a webpage, which requires special consideration.
+
+Take a moment to pause and watch the [Screen Reader Demo for Digital Access](https://www.youtube.com/watch?v=dEbl5jvLKGQ) video. After, ask students what surprised them or what they learned from watching the video.
+
+Explain to students that there are some easy things they can do to make sure their websites are accessible: namely, they can make sure they use tags as they are intended to be used. If they're writing a heading, use an `<h1>` tag for example instead of styling something else to look like a heading. If they're making a button, make sure they code it it as a `<button>` instead of using a div and styling it to look and act like a button.
+
+This is called _**semantic HTML**._ It's a fancy way to say you're using tags the way they are intended to be used. Let's start by building a small page together!
