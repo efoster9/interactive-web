@@ -88,7 +88,7 @@ Your task is to add styling to this website. You will access elements of the pag
 
 ### Exemplar
 
-Take a look at this [finished example](./U1LAB2-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
+Take a look at this [finished example](U1LAB2/U1LAB2-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
 
 ### Culturally Responsive Best Practice
 
