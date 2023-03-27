@@ -20,5 +20,6 @@
 * [🗃 U1LA1 Lab: My Fan Page Part 1](unit-1-html-and-css-good-vs-bad-design/u1la1-lab-my-fan-page-part-1.md)
 * [U1LA2.1: Styling your page with CSS](unit-1-html-and-css-good-vs-bad-design/u1la2.1-styling-your-page-with-css.md)
 * [🗃 U1LA2 Lab: My Fan Page Part 2](unit-1-html-and-css-good-vs-bad-design/u1la2-lab-my-fan-page-part-2.md)
-* [U1LA2.4: Focus on Design in HTML && CSS](unit-1-html-and-css-good-vs-bad-design/u1la2.4-focus-on-design-in-html-and-and-css.md)
+* [🗃 U1LA3.1 Lab: Grid Interview](unit-1-html-and-css-good-vs-bad-design/u1la3.1-lab-grid-interview.md)
+* [U1LA4.1: Focus on Design in HTML && CSS](unit-1-html-and-css-good-vs-bad-design/u1la2.4-focus-on-design-in-html-and-and-css.md)
 * [U1LA5.2: Creating Accessible Websites](unit-1-html-and-css-good-vs-bad-design/u1la5.2-creating-accessible-websites.md)
