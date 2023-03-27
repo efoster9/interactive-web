@@ -32,3 +32,19 @@
 * [U1LA6.1: TBD Bulma Lesson](unit-1-html-and-css-good-vs-bad-design/u1la6.1-tbd-bulma-lesson.md)
 * [🗃 U1LA6 Lab: CheeseBook Computers with Bulma](unit-1-html-and-css-good-vs-bad-design/u1la6-lab-cheesebook-computers-with-bulma.md)
 * [🎨 Unit 1 Final Project: My Travel Page](unit-1-html-and-css-good-vs-bad-design/unit-1-final-project-my-travel-page.md)
+
+## Unit 2: Intro to DOM Manipulation Basics
+
+* [🔮 Unit 2 Overview](unit-2-intro-to-dom-manipulation-basics/unit-2-overview.md)
+
+## Unit 3: Advanced DOM
+
+* [🔮 Unit 3 Overview](unit-3-advanced-dom/unit-3-overview.md)
+
+## Unit 4: Intro to APIs
+
+* [🔮 Unit 4 Overview](unit-4-intro-to-apis/unit-4-overview.md)
+
+## Unit 5: Simple Websockets and Final Project
+
+* [🔮 Unit 5 Overview](unit-5-simple-websockets-and-final-project/unit-5-overview.md)
