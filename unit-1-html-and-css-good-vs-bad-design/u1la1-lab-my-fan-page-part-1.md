@@ -47,7 +47,7 @@ Include the following html elements in your code...
 
 ### Exemplar
 
-Take a look at this [finished example](./U1LAB1-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
+Take a look at this [finished example](U1LAB1/U1LAB1-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
 
 ### Culturally Responsive Best Practice
 
