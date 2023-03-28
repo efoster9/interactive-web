@@ -104,7 +104,7 @@ Our CSS starts with a selector which is how we identify the part of our HTML tha
 
 In the dev tools, we can even go so far as changing elements of the CSS to see how it would show up on the screen. For example, if we take this bit:
 
-```
+```css
 .w3-red, .w3-hover-red:hover {
     color: #fff!important;
     background-color: #f44336!important;
@@ -121,7 +121,7 @@ Share the [starter code for the Ugliest Website in the World](https://replit.com
 
 Before they begin, they will need a CSS file. To do this, they can click the 'New File' button the repl.it sidebar and make a file titled `style.css`. While CSS files can have _any_ name (as long as they end in `.css`), `style.css` is a typical name for their stylesheet. Once we have the sheet made, we need to link it in our HTML page. So let's go to our `index.html` and then find our `<head>` tag. Inside that tag on approximately line 9, we will add the following:
 
-```
+```html
 <link href="style.css" rel="stylesheet" type="text/css" />
 ```
 
@@ -133,7 +133,7 @@ What if we didn't know that we could use `background-color` as a property? There
 
 Once we've established how and what to change, we are ready to code. Remember that all the colons and semi-colons are VERY IMPORTANT!
 
-```
+```css
 body {
     background-color: thistle;
 }
@@ -143,7 +143,7 @@ We should now see that the background is light purple! It is recommended to give
 
 Once students have had fun with the background, let's figure out how to change the font color. We can once again google, or we can search on W3 Schools, or we can do a mix of both by googling 'CSS font color w3 Schools.' Either way, we should come to something like this:
 
-```
+```css
 body {
     background-color: thistle;
     color: #0000FF;
@@ -152,7 +152,7 @@ body {
 
 This will make our text all a bright blue! But what if we wanted titles to be a different color? Well, we could use another selector:
 
-```
+```css
 body {
     background-color: thistle;
     color: #0000FF;
@@ -167,7 +167,7 @@ As it's written, this would make anything within an `<h2>` tag turn white. If fo
 
 Now, we can add one more thing which may be especially useful with our titles - we can center them! Doing so would look something like this:
 
-```
+```css
 body {
     background-color: thistle;
     color: #0000FF;
@@ -191,7 +191,7 @@ Let's head to our page title div on line 17 in `index.html`.  This div contains 
 
 So let's update our HTML first:
 
-```
+```html
 <!-- 	page title -->
 	<div id="pagetitle">
 		<h1>The Ugliest Webpage in the World</h1>
@@ -201,7 +201,7 @@ So let's update our HTML first:
 
 And then let's go to our CSS and add the following:
 
-```
+```css
 #pagetitle {
     background-color: tomato;
 }
@@ -217,7 +217,7 @@ Now, each of these we can set individually based on sides (top, bottom, left, ri
 
 One thing we can try is to add some padding to our div so it takes up more space:
 
-```
+```css
 #pagetitle {
     background-color: tomato;
     text-align: center;
@@ -231,13 +231,13 @@ Once you've had a chance to play, there is one more relevant thing we can take a
 
 If we want to center our image from line 24, we could add a class called 'center':
 
-```
+```html
 <img src="assets/uglycomp1.jpeg" alt="an ugly computer in space" class="center">
 ```
 
 And then in our CSS, we could do the following:
 
-```
+```css
 .center {
   display: block;
   margin-left: auto;
@@ -270,7 +270,7 @@ Let's take all of the HTML `<link rel...>` tags and paste them in the `<head>` o
 
 Then, we can use the CSS rules to change our fonts, like so:
 
-```
+```css
 body {
     background-color: thistle;
     color: #0000FF;
