@@ -94,11 +94,11 @@ Make an account
 
 Navigate to 'My Repls' on the side of the page:
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 10.06.38 AM.png" alt=""><figcaption><p>Screen capture of the repl.it login page displaying the sidebar navigation with 'My Repls'</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 10.06.38 AM.png" alt=""><figcaption><p>Screen capture of the repl.it login page displaying the sidebar navigation with 'My Repls'</p></figcaption></figure>
 
 Within 'My Repls', create a new folder and name it **Unit 1: HTML && CSS**.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 10.08.43 AM.png" alt=""><figcaption><p><em>Close up screen shot of the 'New folder' button on the My Repls page.</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 10.08.43 AM.png" alt=""><figcaption><p><em>Close up screen shot of the 'New folder' button on the My Repls page.</em></p></figcaption></figure>
 
 _**When you're done, clamshell your computer.**_
 
@@ -154,19 +154,19 @@ Students will likely come up with ideas like links and images, and these are gre
 
 Let's practice adding a link to a new paragraph. We'll start with the paragraph:
 
-```
+```html
 <p>Click here to learn about links!</p>
 ```
 
 Now, let's link it to the [W3 page on anchor tags](https://www.w3schools.com/tags/tag\_a.asp), which we know as links. Notice that the anchor tag has another new component - href is the destination the tag points towards, in this case, another webpage. So let's build it:
 
-```
+```html
 <p><a href="https://www.w3schools.com/tags/tag_a.asp">Click here</a> to learn about links!</p>
 ```
 
 Notice that we are now using a _tag inside of a tag_. This is called 'nesting tags' and it happens often in HTML. It can also be really confusing to look at, and if it helps, we can space our tags out a little:
 
-```
+```html
 <p>
     <a href="https://www.w3schools.com/tags/tag_a.asp">Click here</a> to learn about links!
 </p>
@@ -176,7 +176,7 @@ This should have the exact same result, but is now a little easier to look at. S
 
 Lists come in two flavors: _ordered (numbers)_ and _unordered (bullet points)._ The structure looks similar, but the starting tag for an _ordered_ list is `<ol>` while for an _unordered_ list it's `<ul>.` (No one said HTML was super original in its naming!) Let's try making one:
 
-```
+```html
 <!-- Pick something your students will enjoy to make a list of -->
 <ul>
     Popcorn
@@ -187,7 +187,7 @@ Lists come in two flavors: _ordered (numbers)_ and _unordered (bullet points)._ 
 
 This won't show up as anticipated - and that's because while we told the page we wanted to make an unordered list, we haven't given it any _list items_ yet. Let's change that with some tags:
 
-```
+```html
 <!-- Pick something your students will enjoy to make a list of -->
 <ul>
     <li>Popcorn</li>
@@ -202,7 +202,7 @@ Images can be added two ways: either by their URL, or locally, when they are sav
 
 First, we should make a folder to house all of the images we want to use. Let's call it 'assets.' We can do that by clicking the little folder with a + button the left side of our repl:
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 11.36.32 AM.png" alt=""><figcaption><p>Close up screen shot of the 'Add folder' button in a repl</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 11.36.32 AM.png" alt=""><figcaption><p>Close up screen shot of the 'Add folder' button in a repl</p></figcaption></figure>
 
 Now, let's go find an image. When we get one we like, we will right-click (or control-click/two-finger click if we're working on a Mac) and save it somewhere we can find on our computer. Let's make sure we give it an easy-to-read name without spaces!
 
@@ -212,7 +212,7 @@ We can add an image into our folder by clicking the folder, then the three dots 
 
 If we check the [documentation](https://www.w3schools.com/tags/tag\_img.asp), we will notice that the `<img>` tag looks a little different - like `<a>`, it needs extra information, in this case, a source, or src. It also doesn't have a closing tag! That's because it is _self-closing_, which we may see in the future. So let's try getting our image in there:
 
-```
+```html
 <img src="assets/myImage.jpeg">
 
 <!--NOTE: Because it's in a folder, we need to include the whole file path.
@@ -224,7 +224,7 @@ And now we have an image! But we have some things we need to clean up here - is 
 * We can adjust the size by adding `width` and `height` to our tag, as shown below. (Just adding width will auto-adjust the height proportionally!)
 * We can add alt text with `alt` - this will display if an image can't load, or will be used by screen readers.
 
-```
+```html
 img src="assets/myImage.jpeg" alt="The alt text should describe your image" width="500">
 ```
 
@@ -238,7 +238,7 @@ Now, take \~5 minutes and try doing this all again - add your own image, another
 
 In this activity, students will pair-program to work with a partner and try to replicate a basic website. Ask students to select one computer to use as their primary, and they will both take turns adding one tag at a time to try to make their plain site look like the example below. At the end of the activity, ask students to share the link and 'fork' the project to make a copy in their account. They'll see forking again (as well as how to organize forked projects) in the next lesson!
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-15 at 1.11.11 PM.png" alt=""><figcaption><p>Sample Website to Duplicate</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 1.11.11 PM.png" alt=""><figcaption><p>Sample Website to Duplicate</p></figcaption></figure>
 
 Students will begin by [forking this code](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) that does not have any extra HTML in the body and will try to get as close to [the example](https://interactive-web-u1la11-recreation-website.qrtnycs4all.repl.co/) as possible. It's okay for them to go out and find similar, but not identical, images to what's contained in the project!
 
@@ -265,8 +265,8 @@ Have them take a look at more websites without CSS, to get a sense of exactly ho
 
 Ask students to open a webpage, right-click and select 'Inspect', then click 'Console'. In the console (there will be a > by the line they can type on) paste the following and hit enter:
 
-```
-document.head.parentNode.removeChild(document.head);
+```javascript
+document.head.parentNode.removeChild(document.head);javasc
 ```
 
 Voilá! You have removed the head tag and the CSS from a website! Allow students to explore a few sites and then, if they are real speed racers, try to recreate one in a new Repl.
