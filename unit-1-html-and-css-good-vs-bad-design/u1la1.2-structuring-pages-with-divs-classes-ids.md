@@ -61,7 +61,9 @@ _Coming soon_
 
 **Formative:**
 
-_Coming Soon_
+Do Now
+
+Div Creation Practice
 
 **Summative:**
 
@@ -81,7 +83,7 @@ Today, we are learning an important building block for our pages: the div. Divs 
 
 Let's start by forking the [starter code](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA12-Divs-Class-IDs-Starter-Code#index.html). You'll notice it looks pretty boring so far - so let's make our first div!
 
-```
+```html
 <body>
 	<h1>Div Depot</h1>
 	<h3>A playground for divs!</h3>
@@ -98,7 +100,7 @@ Notice how there's now a box on the page? That's your div! Usually, divs are bla
 
 Like we said before, divs can hold things. So let's try to put a little paragraph of text in there!
 
-```
+```html
 <body>
 	<h1>Div Depot</h1>
 	<h3>A playground for divs!</h3>
@@ -115,7 +117,7 @@ This paragraph is now _inside_ the div and when you run the program, you should 
 
 Now, as you may guess, our divs can hold a lot of things. We can, for example, put more than one paragraph in there:
 
-```
+```html
 <!-- 	my first div -->
 <div>
     <p>Hello World!</p>
@@ -138,7 +140,7 @@ This is great, but one thing you'll notice is that right now, our divs all look 
 
 Let's say, for example, that we wanted the title of our page to be in a div, and we wanted that div to look different. First, let's put the title in a div:
 
-```
+```html
 <!-- 	title div -->
 <div>
     <h1>Div Depot</h1>
@@ -148,7 +150,7 @@ Let's say, for example, that we wanted the title of our page to be in a div, and
 
 This should look the same as all the other divs. But let's try giving it an ID:
 
-```
+```html
 <!-- 	title div -->
 <div id="title">
     <h1>Div Depot</h1>
@@ -166,7 +168,7 @@ Now let's imagine a page where multiple parts of the page look the same or simil
 
 Let's go back to some of those test divs we made and try adding a class:
 
-```
+```html
 <!-- 	my first div - green -->
 <div class="green">
     <p>Hello World!</p>
