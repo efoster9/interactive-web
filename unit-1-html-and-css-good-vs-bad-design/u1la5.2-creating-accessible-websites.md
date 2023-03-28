@@ -65,11 +65,14 @@ _Coming Soon_
 
 **Formative:**
 
-*
+* Do Now
+* Semantic HTML Page
+* Accessible Form
 
 **Summative:**
 
-*
+* U1LA5 Lab: What Do You Hear? Make it Accessible (Upcoming)
+* Unit 1 Final Project (Upcoming)
 
 ### Do Now/ Warm Up (\~3-5 min)
 
