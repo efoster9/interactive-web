@@ -275,3 +275,50 @@ Let's start with our checkbox:
 
 Now, onto our last question. This will use a **radio button**, which will look like a multiple choice, single select question. We can build one out like so, again adding to our form:
 
+<pre class="language-html"><code class="lang-html">&#x3C;div>
+  &#x3C;fieldset>
+<strong>    &#x3C;legend>Preferred Contact Method:&#x3C;/legend>
+</strong>				
+<strong>    &#x3C;input id="text" type="radio" name="contact" value="text">
+</strong>    &#x3C;label for="text">Text&#x3C;/label>&#x3C;br>
+				
+    &#x3C;input id="call" type="radio" name="contact" value="call">
+    &#x3C;label for="call">Call&#x3C;/label>&#x3C;br>
+
+    &#x3C;input id="email" type="radio" name="contact" value="email">
+    &#x3C;label for="email">Email&#x3C;/label>
+  &#x3C;/fieldset>
+&#x3C;/div>
+</code></pre>
+
+Notice that in both of these examples, we've kept all the 'name' fields the same - this groups them together as all being about contact information, but with different values.
+
+You should also notice that this example uses `<br>` to break lines. That's acceptable in this instance!
+
+Finally, we are at a place where we can add buttons to submit our form. There are a few ways to add buttons, but we will keep it simple:
+
+```html
+<button type="submit">Submit Form</button>
+```
+
+**NB:** _Not all buttons will have a type, but submit is used so often that it does! Some buttons may also have a `value` attribute, but the screen reader will announce all text nested in the `<button>` tag._
+
+And there you go - you just made your first accessible form!
+
+### Student Practice (10 - 15 minutes)
+
+Ask students to add one more of each question type to their form, keeping all accessibility practices in mind as they do so. They may need a moment to brainstorm what else would be useful for this company to ask of customers before beginning!
+
+### Wrap-Up (3-5 minutes)
+
+Ask students to share their final forms, and then have them reflect on one or more of the following questions as an exit slip. (You can ask for submissions in any way you see fit, from a quick post-it check-in to a digital submission):
+
+1. What did you learn about accessibility and accessible websites today?
+2. Why is it so important to be mindful of accessibility?
+3. What questions do you still have about creating accessible pages?
+
+### Extensions
+
+There is _so much_ to learn about accessibility - we have really just scratched the tip of the iceberg in this lesson. For students looking to learn more, advise the to explore the MDN Web Docs about accessibility and try to incorporate more accessible access tags into their code. They can also look into ARIA, which has accessibility attributes for many tags.
+
+For students looking for a forms challenge, consider having them make a long and nonsensical form about anything - they can research other form attributes such as _required_ to get even more specific!
