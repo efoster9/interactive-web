@@ -16,7 +16,7 @@ We've seen the limitations HTML has when trying to build a beautiful website. It
 
 #### Directions:
 
-Your task is to add styling to this website. You will access elements of the page by ID, class name, and semantic element tag. Part 1 focusses on background color, font color, margin, and padding, and part 2 gets trickier focussing on border, shadow, centering, and more. The `style.css` has already been linked to the `index.html`. You're ready to go!
+Your task is to add styling to this website. You will access elements of the page by ID, class name, and semantic element tag. Part 1 focuses on background color, font color, margin, and padding, and part 2 gets trickier focussing on border, shadow, centering, and more. The `style.css` has already been linked to the `index.html`. You're ready to go!
 
 **Part 1**
 
@@ -42,7 +42,7 @@ Your task is to add styling to this website. You will access elements of the pag
         background-color: #a8dadc;
     }
     ```
-5. Use this same technique of accessing multiple `divs` by class name to add the following properties to each of Frida Kahlo's achievements. You'll need to locate the 4 `divs` and give them each the same class name: `class="feature"`.
+5. Use this same technique of accessing multiple `divs` by class name to add the following properties to each of Frida Kahlo's (or your own page's) achievements. You'll need to locate the 4 `divs` and give them each the same class name: `class="feature"`.
    * Change the `background-color` to `#457b9d`
    * Change the font `color` to `#f1faee`
 6. Great! Now, this webpage is desperately needing some spacing in the form of margin and padding. As a reminder, margin is the spacing around a section while padding is the spacing between the border of the section and all the contents inside. First, add margin in the following places. Be sure to check out the results after each change.
@@ -86,13 +86,15 @@ Take a look at this [finished example](U1LAB2/U1LAB2-Exemplar/index.html) before
 
 ### Culturally Responsive Best Practice
 
-\[COURTNEY TO ADD]
+Remember that this project can be a continuation of My Fan Page Part 1: you are not required to make every student use the same Frida Kahlo fan page. Additionally, students should feel free to adjust the suggested colors/margins/padding etc to best fit their preferences. While they should complete each challenge, they can modify to make their page uniquely their own.
+
+_**Allowing for student choice in this project is one of the best ways to be culturally responsive!**_ (_Please recall that communities and culture can refer to a lot of things, including just the culture of being a teen, a Minecraft player, or a KPop fan - be mindful that you are allowing students to explore choice in their creations in a way that is authentic to them!)_
 
 ### Extra Help?
 
-I can't get my images to center! Always look up your questions on w3schools.com before asking your teacher, but this one in particular is tricky. Check out [this page](https://www.w3schools.com/howto/howto\_css\_image\_center.asp) to see an example on how to do it.
+**I can't get my images to center!** Always look up your questions on w3schools.com before asking your teacher, but this one in particular is tricky. Check out the [w3schools tutorial](https://www.w3schools.com/howto/howto\_css\_image\_center.asp) to see an example on how to do it.
 
-How can I custom create some cool, unique colors? Check out [Google's Color Picker](https://hexcolorspicker.com/google-color-picker/). Simply search "Color Picker" on Google, select an exact color, and copy and paste the hex number. Check out [this CSS example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_text\_background) in w3schools on how to apply it in your `style.css` code.
+**How can I custom create some cool, unique colors?** Check out [Google's Color Picker](https://hexcolorspicker.com/google-color-picker/). Simply search "Color Picker" on Google, select an exact color, and copy and paste the hex number. Check out [this CSS example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_text\_background) in w3schools on how to apply it in your `style.css` code.
 
 ### Extensions
 
