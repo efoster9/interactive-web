@@ -4,11 +4,7 @@ description: How do you use HTML elements to build a webpage?
 
 # 🗃 U1LA1 Lab: My Fan Page Part 1
 
-## 🗃 U1LA1 Lab: My Fan Page Part 1
-
-## My Fan Page - Part 1
-
-#### Teacher Notes
+### Teacher Notes
 
 _Students pick up HTML element tags and nesting best through practice. This mini-lab is designed to have them explore these ideas through a lense they feel most comfortable with._
 
@@ -55,7 +51,9 @@ Take a look at this [finished example](U1LAB1/U1LAB1-Exemplar/index.html) before
 
 #### Culturally Responsive Best Practice
 
-\[COURTNEY TO ADD]
+Within this HTML skill challenge, you can always adjust the prompt given to students to make the project seem more relevant to them and the cultures of communities that they are a part of. While 'fan page' is our suggestion, adapt to meet the needs of your students! (_Please recall that communities can refer to a lot of things, including just the culture of being a teen, a Minecraft player, or a KPop fan - be mindful that you are allowing students to explore choice in their creations in a way that is authentic to them!)_
+
+_**Allowing for student choice in this project is one of the best ways to be culturally responsive!**_
 
 #### Extra Help?
 
