@@ -25,7 +25,7 @@
 * [🗃 U1LA4 Lab: ChefHub Goes Mobile](unit-1-html-and-css-good-vs-bad-design/u1la4-lab-chefhub-goes-mobile.md)
 * [U1LA5.1: Creating Accessible Websites](unit-1-html-and-css-good-vs-bad-design/u1la5.2-creating-accessible-websites.md)
 * [🗃 U1LA5 Lab: What Do You Hear? Make it Accessible](unit-1-html-and-css-good-vs-bad-design/u1la5-lab-what-do-you-hear-make-it-accessible.md)
-* [U1LA6.1: TBD Bulma Lesson](unit-1-html-and-css-good-vs-bad-design/u1la6.1-tbd-bulma-lesson.md)
+* [U1LA6.1: Working with CSS Frameworks - Bulma](unit-1-html-and-css-good-vs-bad-design/u1la6.1-tbd-bulma-lesson.md)
 * [🗃 U1LA6 Lab: CheeseBook Computers with Bulma](unit-1-html-and-css-good-vs-bad-design/u1la6-lab-cheesebook-computers-with-bulma.md)
 * [🎨 Unit 1 Final Project: My Travel Page](unit-1-html-and-css-good-vs-bad-design/unit-1-final-project-my-travel-page.md)
 

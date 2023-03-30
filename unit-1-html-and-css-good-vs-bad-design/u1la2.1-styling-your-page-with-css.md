@@ -248,7 +248,7 @@ And then in our CSS, we could do the following:
 
 This will change how the browser sees the image and will automatically 'balance' the margins on either side. And tah-dah! Just like that, a centered image!
 
-**NB:** _If you feel like your students may benefit from extra practice using CSS selectors, you could utilize the_ [_CSS Selector Diner Extra Learning Resource_](../Templates/Unit-template.md)_. This is a 15 - 30 minute activity (but can really be start/stopped as you see fit) that explores other ways CSS selectors can be used in a fun way._
+**NB:** _If you feel like your students may benefit from extra practice using CSS selectors, you could utilize the_ [_CSS Selector Diner Extra Learning Resource_](../Templates/Lab-md-template.md)_. This is a 15 - 30 minute activity (but can really be start/stopped as you see fit) that explores other ways CSS selectors can be used in a fun way._
 
 ### Using Different Fonts (10 - 12 minutes)
 
