@@ -99,6 +99,58 @@ The idea is that students start to think of a DOM element as something that has 
 
 ### Lesson & Demo: Approaching Problems (~35 min)
 
+0. Open the `script.js` and notice that most of the DOM selectors we'll need for this are already created. We'll be working with `inputs` for the most part. We wont be working with `spinLoader`. You can ignore that completely. 
+
+1. In the `script.js` use Object.values() to add an Event listner on each 
+> 1. for all the controls save the changes
+```js
+controls.forEach( input => input.addEventListener('input', saveChanges));
+```
+
+> 2. To save the changes, spin loader, save input to localStorage
+```js
+const saveChanges = (e) => {
+  spinLoader();
+
+  // start
+  const inputValue = e.target.value;
+
+  if( inputValue && inputValue !== '- Select -' ) {
+    localStorage.setItem(e.target.id, e.target.value);
+  } else {
+    localStorage.removeItem(e.target.id);
+  }
+  //end
+  
+}
+```
+> 3. Restoring inputs from local storage if there are any
+
+```js
+Object.keys(localStorage).forEach(key => {
+  if( key in inputs ){
+    inputs[key].value = localStorage.getItem(key);
+  }
+})
+```
+
+> 4. Practice on their own - reset button
+```js
+const reset = document.querySelector("#reset");
+
+reset.addEventListener('click', ()=>{
+  spinLoader();
+  
+  localStorage.clear();
+  Object.values(inputs).forEach(input => {
+    input.value = '';
+  })
+  inputs.dropDown.value = '- Select -';
+});
+```
+
+
+
 1. Tell students that to finish the website we need to input the two input fields and have the button display a badge in the accomplishments section. Again, demo this using the exemplar code so students have a clear visual understanding of what the goal is. We can break this into to main steps: 
     A. Save both inputs on the button click
     B. Use the inputs to display a badge or "Add Accomplishment"

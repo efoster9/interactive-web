@@ -82,7 +82,7 @@ The practice activities after the lesson are non essential, but they give studen
 
 ### Do Now/Warm Up (\~10 min)
 
-Run the website and show students that the site is meant to be a smoothie builder. However, notice that the buttons don't work. For the do now, have students connect just the banana button. When the button is clicked, the "Enjoy you Smoothie!" text should say "Enjoy your Banana Smoothie!", and the class `is-selected` should be added to that button so it glows green. Direct students to the `script.js` to begin. Uncomment and use the `demo.js` if you need to demo this solution. 
+Run the website and show students that the site is meant to be a smoothie builder. However, notice that the buttons don't work. For the do now, have students connect just the banana button. When the button is clicked, the "Enjoy your Smoothie!" text should say "Enjoy your Banana Smoothie!", and the class `is-selected` should be added to that button so it glows green. Direct students to the `script.js` to begin. Uncomment and use the `demo.js` if you need to demo this solution. 
 
 The idea is that the students are recalling `querySelector`, `addEventListener`, `innerHTML`, and how to find `ID`s for elements in the `index.html`. Have the solution ready for the Lesson & Demo (use the `demo.js` in the exemplar folder). Ask a student for consent to share their solution to the class.
 
