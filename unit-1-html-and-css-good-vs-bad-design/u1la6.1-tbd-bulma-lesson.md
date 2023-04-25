@@ -172,7 +172,7 @@ Next, look at some classes that can help with our layout. These components are m
 
 An important one is the [**hero**](https://bulma.io/documentation/layout/hero/) class. This is a class that assumes it will have nested components with a `title` and `subtitle` class; this will style it to look like a title or heading of a page automatically. Once again, allow students to review, add, play, and ask questions before moving on.
 
-****[**Sections**](https://bulma.io/documentation/layout/section/) are similar to heros in that they can have titles and subtitles. The biggest difference is that sections come in sizes, with various amounts of padding, to help separate the website into, well, _sections._ Repeat the process of looking through documentation and testing an example in code with your students.
+[**Sections**](https://bulma.io/documentation/layout/section/) are similar to heros in that they can have titles and subtitles. The biggest difference is that sections come in sizes, with various amounts of padding, to help separate the website into, well, _sections._ Repeat the process of looking through documentation and testing an example in code with your students.
 
 Finally, [**footers**](https://bulma.io/documentation/layout/footer/)**:** these come at the very bottom of the page, so this layout option has a lot of padding at the bottom to keep text from being flush against the bottom edge of the page, which may be uncomfortable to read. Footers on webpages often contain information about the page itself and/or links to important 'behind the scenes'-ish pages. Follow the process above one last time to add a footer to your webpage and allow students time to play and adjust.
 

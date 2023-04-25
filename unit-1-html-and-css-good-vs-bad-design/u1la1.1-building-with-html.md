@@ -56,11 +56,11 @@ _Didn't forget, just coming to do all of this absolutely last._
 
 ### Resources
 
-* ****[**Repl.it** ](https://replit.com/\~)- online IDE
-* ****[**W3 Schools**](https://www.w3schools.com/html/) **** - readable documentation
+* [**Repl.it** ](https://replit.com/\~)- online IDE
+* [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) **-** a robust but sometimes less student-friendly documentation
-* ****[**What is HTML, CSS, JavaScript?** ](https://youtu.be/gT0Lh1eYk78)(Youtube Video)
-* ****[**Practice: Recreating Template**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) **** (repl.it) NEED TO PUT CODE ON GITHUB
+* [**What is HTML, CSS, JavaScript?** ](https://youtu.be/gT0Lh1eYk78)(Youtube Video)
+* [**Practice: Recreating Template**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) (repl.it) NEED TO PUT CODE ON GITHUB
 
 ### Assessments
 

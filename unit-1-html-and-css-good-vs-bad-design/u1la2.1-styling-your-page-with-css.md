@@ -209,9 +209,9 @@ And then let's go to our CSS and add the following:
 
 Notice the #? That's what tells the computer we are selecting by ID! If we had been using a class called page title, we would've written `.pagetitle` **-** the . denotes that we are calling a class. Let's keep exploring our page title - we can of course make it centered by adding `text-align: center;` in our CSS. We can also start working on styling our div! Divs, those empty boxes we put content into, have some useful attributes that we can use to style our page. Each div has:
 
-* ****[**Padding**](https://www.w3schools.com/css/css\_padding.asp)**:** the space between the content and the edge of the div
-* ****[**Borders**](https://www.w3schools.com/css/css\_border.asp)**:** the (currently invisible) lines around the div, which can be styled with color/pattern in addition to be thinner and thicker
-* ****[**Margins**](https://www.w3schools.com/css/css\_margin.asp)**:** the space between the div and the content around the outside of it.
+* [**Padding**](https://www.w3schools.com/css/css\_padding.asp)**:** the space between the content and the edge of the div
+* [**Borders**](https://www.w3schools.com/css/css\_border.asp)**:** the (currently invisible) lines around the div, which can be styled with color/pattern in addition to be thinner and thicker
+* [**Margins**](https://www.w3schools.com/css/css\_margin.asp)**:** the space between the div and the content around the outside of it.
 
 Now, each of these we can set individually based on sides (top, bottom, left, right) or we can set it all at once by just using the property `padding` or `border` or `margin`. Again, if you want to do things more specific or learn exactly what can or can't be done with each, this is a great thing to google or use documentation to review!
 
