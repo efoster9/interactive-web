@@ -1,5 +1,5 @@
 const controls = document.querySelectorAll(".control");
-const loader = document.querySelector("#loader");
+
 const inputs = {
   name: document.querySelector("#name"),
   email: document.querySelector("#email"),
@@ -7,14 +7,7 @@ const inputs = {
 }
 const reset = document.querySelector("#reset");
 
-let timerID;
-const spinLoader = () => {
-  loader.classList.add("is-loading");
-  timerID && clearTimeout(timerID);
-  timerID = setTimeout( ()=>{
-    loader.classList.remove("is-loading");
-  }, 2000);
-};
+
 
 // Restoring local storage
 Object.keys(localStorage).forEach(key => {
