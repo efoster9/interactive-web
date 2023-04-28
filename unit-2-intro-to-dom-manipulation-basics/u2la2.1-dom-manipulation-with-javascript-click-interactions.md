@@ -16,13 +16,12 @@ As written, this lesson occurs entirely in JavaScript - the starting and ending 
 
 **Students will be able to:**
 
-- Add `'click'` event listeners to elements.
-Use control flow / conditionals to respond to specific user inputs.
-- Use string interpolation and the `.innerHTML` property to dynamically append elements to the DOM.
-- Explain why DOM Manipulation script tags must be included *below* the elements they will be manipulating, or include the `defer` attribute. 
-- Store HTML elements in JS variables using `document.querySelector()`.
-- Use named ES6 (arrow) functions as callback functions for event listeners.
-- Use `console.log()` and the developer console to debug code.
+* Add `'click'` event listeners to elements. Use control flow / conditionals to respond to specific user inputs.
+* Use string interpolation and the `.innerHTML` property to dynamically append elements to the DOM.
+* Explain why DOM Manipulation script tags must be included _below_ the elements they will be manipulating, or include the `defer` attribute.
+* Store HTML elements in JS variables using `document.querySelector()`.
+* Use named ES6 (arrow) functions as callback functions for event listeners.
+* Use `console.log()` and the developer console to debug code.
 
 ### Suggested Duration
 
@@ -30,18 +29,18 @@ Use control flow / conditionals to respond to specific user inputs.
 
 ### NYS Standards
 
-[Courtney to fill in]
+\[Courtney to fill in]
 
 ### Vocabulary
 
-- **DOM:** The Document Object Model is a codified way of thinking about (more technically an interface for) web documents. It considers each web page to be a document, and each element on that page to be an object.
-- **Object:** In JavaScript, an object is a collection of properties and methods.
-- **Property:** A property in JavaScript associates a key with a value. If you were to create a student profile as a JavaScript object, it might include the property `age: 18` in which `age` is the key, and `18` is the value.
-- **Method:** A method in JavaScript is an action associated to a specific object. The `.toUpperCase()` method can be used on any String to create an uppercase version of that string.
+* **DOM:** The Document Object Model is a codified way of thinking about (more technically an interface for) web documents. It considers each web page to be a document, and each element on that page to be an object.
+* **Object:** In JavaScript, an object is a collection of properties and methods.
+* **Property:** A property in JavaScript associates a key with a value. If you were to create a student profile as a JavaScript object, it might include the property `age: 18` in which `age` is the key, and `18` is the value.
+* **Method:** A method in JavaScript is an action associated to a specific object. The `.toUpperCase()` method can be used on any String to create an uppercase version of that string.
 
 ### Planning Notes && Materials
 
-|                                                                                                           Planning Notes                                                                                                           |                                                  Materials                                                   |
+|                                                                                                           Planning Notes                                                                                                           |                                                   Materials                                                  |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
 | Be sure to think through whether the default starting point is right for your students. They may need more review of earlier concepts, so you may choose to spiral in some HTML and CSS review before writing any JavaScript here. | Computer with access to the HTML, CSS, JS development environment of your choice. Replit.com is recommended. |
 
@@ -61,9 +60,10 @@ For students who excel: Consider challenging your most advanced students to impl
 
 ### Resources
 
-- **[Replit.com](https://replit.com/)**
-- **[W3 Schools: What is the DOM](https://www.w3schools.com/js/js_htmldom.asp)** - explains in brief what the Document Object Model is.
-- **[MDN: Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)** - Explains how the `.querySelector()` method works, including how it can replicate any CSS selector.
+* [**Replit.com**](https://replit.com/)
+* [**W3 Schools: What is the DOM**](https://www.w3schools.com/js/js\_htmldom.asp) - explains in brief what the Document Object Model is.
+* [**MDN: Document.querySelector()**](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) - Explains how the `.querySelector()` method works, including how it can replicate any CSS selector.
+* [**Starter Code** ](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter)| **Repl.it Version**
 
 ### Assessments
 
@@ -85,37 +85,29 @@ JavaScript DOM Manipulation Final Project (End of Unit Project)
 
 ### Do Now/Warm Up (\~3 - 5 min)
 
-Share out the starter code and ask students what they think should happen when you press any of the three buttons currently shown on screen. Additionally, ask them to study the source code and identify each of the following:
+Share out the [starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter) (repl.it version) and ask students what they think should happen when you press any of the three buttons currently shown on screen. Additionally, ask them to study the source code and identify each of the following:
 
-- What is the ID of the apple button?
-- What is the ID of the banana button?
-- What is the ID of the mango button?
-- What is the ID of the green box?
-- What is the ID of the part of the code where your total amount due will appear?
+* What is the ID of the apple button?
+* What is the ID of the banana button?
+* What is the ID of the mango button?
+* What is the ID of the green box?
+* What is the ID of the part of the code where your total amount due will appear?
 
 _Consider mocking up a small diagram of the webpage on a whiteboard and labeling each box with its ID, so you and your students can refer back to these IDs without needing to switch over into the HTML code every time._
 
 ### Lesson & Demo: Click Inputs and HTML Outputs (\~15 - 25 min)
 
 1. Students will have noticed that only one of the buttons works at all, and even that one doesn't work as intended. Open the `script.js` and see if a student can tell you why the wrong button is triggering the event.
-
 2. Explain that the left hand side of `const appleButton` is the same as the `const` and `let` declarations we've seen before. This is establishing a variable. The right hand side is new, but we can break it down.
-
-   - `document` refers to the HTML document. It tells us we're looking over at whatever HTML file loaded up this JavaScript `script.js` file.
-   - `.querySelector()` tells us we're trying to select a single element out of the HTML document to store in this variable.
-   - `"#banana"` is actually just a CSS selector. As in CSS, the `#` means it's looking at IDs, and so this whole statement will result in capturing the first HTML element with an ID of "banana".
-     - Note that `first` in this case should be superfluous! IDs shouldn't be repeated on a page.
-
+   * `document` refers to the HTML document. It tells us we're looking over at whatever HTML file loaded up this JavaScript `script.js` file.
+   * `.querySelector()` tells us we're trying to select a single element out of the HTML document to store in this variable.
+   * `"#banana"` is actually just a CSS selector. As in CSS, the `#` means it's looking at IDs, and so this whole statement will result in capturing the first HTML element with an ID of "banana".
+     * Note that `first` in this case should be superfluous! IDs shouldn't be repeated on a page.
 3. Open the preview in a new browser tab, and then open the console. Demonstrate how when we `console.log(appleButton)`, not only is the HTML visible in the console, but it also appears to highlight the corresponding element on the page - this appears to be a live link to the real thing. We didn't just capture a string or a number in this variable - we captured an entire **DOM element**!
-
-   - Important note: while Replit has a console built into the interface, it is significantly less robust than the consoles built into Chrome, Firefox, and Safari. You are strongly encouraged to model opening the preview and native console in a new tab, and to ensure that 100% of your students do likewise, so that they have the full power of the native console at their disposal.
-
+   * Important note: while Replit has a console built into the interface, it is significantly less robust than the consoles built into Chrome, Firefox, and Safari. You are strongly encouraged to model opening the preview and native console in a new tab, and to ensure that 100% of your students do likewise, so that they have the full power of the native console at their disposal.
 4. Go back to the `script.js` file and correct the error by changing the `"#banana"` to `"#apple"`. We should see that the correct button now triggers this effect.
-
 5. Before moving on, ask students to try to parse what `appleButton.addEventListener("click", addApple);` does. Together with your students, you should be able to come up with something like _"This takes the apple button and adds an event listener to it. The event listener waits (or 'listens') for you to click on the apple button, and whenever that happens, it runs the addApple function."_ Consider illustrating this by commenting out this line of code and demonstrating that the button no longer fires.
-
 6. Discuss the desired effect of pressing a button with your students and come up with a list of things that should happen when a button is clicked. Ensure that this list includes "add the item to your cart" and "adds the cost of the item to your total."
-
 7. Notice that in order for us to add to the shopping cart, we will also need to be able to access the shopping cart in JavaScript - we're going to need another `querySelector`. Select it and then log it to the console to ensure you selected the right element.
 
 ```js
@@ -133,10 +125,10 @@ const addApple = () => {
 
 9. Ask students what should happen when you click the apple button twice? Notice that the button currently only seems to work the first time you press it. That's because we're using the `=` assignment operator instead of the `+=` increment operator. Change the operator to `+=` and demonstrate that we are now able to buy more than one apple.
 
-[Mini-challenge] Give students about 7-10 minutes to complete a few or all of the following:
+\[Mini-challenge] Give students about 7-10 minutes to complete a few or all of the following:
 
-- Wire up the banana button to add bananas to your shopping cart.
-- Wire up the mango button to add mangos to your shopping cart.
+* Wire up the banana button to add bananas to your shopping cart.
+* Wire up the mango button to add mangos to your shopping cart.
 
 _Note: These challenges can also be delayed until after the total functionality has also been added. This is potentially a nice moment for a break or even a nice breakpoint if you plan to split this lesson over multiple periods._
 
@@ -158,7 +150,6 @@ const addApple = () => {
 ```
 
 12. It probably seems like our function isn't working, but in fact, the total is being updated each time an apple is added. Enter `totalInCents` directly into the console and notice that after you have pressed the button, it is no longer zero. So our variable is accurate - it's just our user interface that is not. Ask students to identify the part of our webpage where we want to display the total, and to remind you what the ID of that element is.
-
 13. Select the element that will contain our output, store it in a variable called `totalSpan`, and log it to the console.
 
 ```js
@@ -186,10 +177,10 @@ const addApple = () => {
 };
 ```
 
-[Mini-challenge] Give students about 3-5 minutes to complete a few or all of the following:
+\[Mini-challenge] Give students about 3-5 minutes to complete a few or all of the following:
 
-- Adjust the banana button to also increment the total.
-- Adjust the mango button to also increment the total.
+* Adjust the banana button to also increment the total.
+* Adjust the mango button to also increment the total.
 
 _If students have extra time or need extra practice, share the extensions listed below with them and ask them to work at whichever level puts them in their learning zone._
 
@@ -207,15 +198,15 @@ You may also want to ask one or all of the following - either for a brief discus
 
 **Mild Activities**
 
-- Add a fourth column and button in the HTML for a fourth button.
-- Style that button for the appropriate fruit in the CSS.
-- Add all the necessary JavaScript to make sure that button works as intended.
+* Add a fourth column and button in the HTML for a fourth button.
+* Style that button for the appropriate fruit in the CSS.
+* Add all the necessary JavaScript to make sure that button works as intended.
 
 **Medium Activities**
 
-- Create a variable to keep track of each fruit on offer, and use it to keep track of how many of each fruit the user has added to their cart. Using that as a jumping off point, come up with a way to display a receipt that aggregates quantity instead of just listing them, i.e. "Apple x3" instead of "Apple Apple Apple".
-- Add a reset or "clear cart" button to the screen. When clicked, it should empty your cart and reset your total.
+* Create a variable to keep track of each fruit on offer, and use it to keep track of how many of each fruit the user has added to their cart. Using that as a jumping off point, come up with a way to display a receipt that aggregates quantity instead of just listing them, i.e. "Apple x3" instead of "Apple Apple Apple".
+* Add a reset or "clear cart" button to the screen. When clicked, it should empty your cart and reset your total.
 
 **Spicy Activities**
 
-- Find a way to add a small clickable "x" or other similar button next to each item in your shopping cart. When clicked, it should remove the item and update the total accordingly.
+* Find a way to add a small clickable "x" or other similar button next to each item in your shopping cart. When clicked, it should remove the item and update the total accordingly.
