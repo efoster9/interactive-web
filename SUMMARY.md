@@ -32,6 +32,7 @@
 ## Unit 2: Intro to DOM Manipulation Basics
 
 * [🔮 Unit 2 Overview](unit-2-intro-to-dom-manipulation-basics/unit-2-overview.md)
+* [U2LA1: JavaScript Essentials - Variables to Arrow Functions](unit-2-intro-to-dom-manipulation-basics/u2la1-javascript-essentials-variables-to-arrow-functions.md)
 
 ## Unit 3: Advanced DOM
 
