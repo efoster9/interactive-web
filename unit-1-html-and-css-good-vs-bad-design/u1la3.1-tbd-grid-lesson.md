@@ -171,6 +171,6 @@ You might notice some weirdness when you run your code and inspect the grid. If 
 
 Once you have an output that looks something like this:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 1.33.59 PM (1) (1).png" alt=""><figcaption><p>Reorganized grid with colored borders</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 1.33.59 PM (1).png" alt=""><figcaption><p>Reorganized grid with colored borders</p></figcaption></figure>
 
 Use the W3 schools documentation or general Googling to figure out how you can use the `text-align`, `background-color`, and `border-radius` properties to style your output so it is a more accurate replica of the model. Have fun exploring the documentation and the resources linked above to experiment with other properties to style your grid. You can also use what you have learned in previous classes about custom fonts to further style your output!
