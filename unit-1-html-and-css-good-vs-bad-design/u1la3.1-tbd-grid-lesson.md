@@ -74,7 +74,7 @@ For students who are struggling to conceptually grasp what grids “look” like
 
 * Upcoming CSS Grid Lab
 
-### Do Now/Warm-Up (\~5-10 min)
+### Do Now/Warm-Up (\~5 min)
 
 Grab a computer and do an image search for anything school appropriate you are interested in. Be sure to click on “image” at the top so you get a page of image results only. What do you notice about the way the images are organized on the screen? How might you go about organizing elements of your HTML file to create this kind of pattern?
 
@@ -86,7 +86,7 @@ Next, take a look at the layouts on these three websites. What do you notice abo
 
 **NB**: _If students are not mentioning it already, try to nudge their attention toward the apparent rows and columns in the Google image results or in the sample websites above, especially 2 and 3._
 
-### Introducing CSS Grid (\~x - y min)
+### Introducing CSS Grid (\~2-5 min)
 
 In prior lessons, we have learned that HTML pages use a nested structure with parent elements that contain children elements. We are going to be building on this understanding today, so let’s take a minute to review some code structuring a very basic home page. In this example, the `<body>` element is the parent to three ‘children’ elements: `<header>`, `<main>`, and `<footer>`. As soon as we put one or more elements inside the `<header>`, `<main>`, or `<footer>`elements they will become parent elements to whichever elements are nested within them.
 
@@ -94,7 +94,7 @@ In prior lessons, we have learned that HTML pages use a nested structure with pa
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 10.55.43 AM.png" alt=""><figcaption><p><code>&#x3C;main></code> element as child to the <code>&#x3C;body></code> element and parent to the four elements: three <code>&#x3C;p></code> elements and an <code>&#x3C;img></code> element.</p></figcaption></figure>
 
-### Code Along: Building a Grid with CSS (x - y min)
+### Code Along: Building a Grid with CSS (15-20 min)
 
 Now that we have the parent-child nesting structure in HTML clear in our minds, we are going to learn how to leverage that structure to create CSS Grid layouts that will help us structure our pages in all kinds of cool ways. What is CSS Grid (layout)? In a nutshell, we can use CSS to create table-like layouts of columns and rows that we can then place ‘items’ on to create a specific layout. Check out the following basic example of a layout you might create using an underlying grid structure:
 
@@ -174,3 +174,74 @@ Once you have an output that looks something like this:
 <figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 1.33.59 PM (1) (1) (1) (1).png" alt=""><figcaption><p>Reorganized grid with colored borders</p></figcaption></figure>
 
 Use the W3 schools documentation or general Googling to figure out how you can use the `text-align`, `background-color`, and `border-radius` properties to style your output so it is a more accurate replica of the model. Have fun exploring the documentation and the resources linked above to experiment with other properties to style your grid. You can also use what you have learned in previous classes about custom fonts to further style your output!
+
+### Frame an Image with CSS Grid: Intro (10 - 15 min)
+
+A lot of websites use a CSS Grid layout to structure the main elements of the landing page, like we did with the header , main, sidebar, and footer elements in our first example. You have learned one way to set up a grid!  We can use grids anywhere on our webpages and we can approach building them in different ways.&#x20;
+
+In this project, you are going to learn how to use the grid line numbers to tell the computer where to place each element by using the following properties on the children elements in the grid: `grid-column-start`, `grid-column-end`, `grid-row-start`, and `grid-row-end` and the shorthand versions: `grid-column` and `grid-row` to create a frame around an image.
+
+This time around, we are going to use `<div>` elements to build our grid, which is already set up in [the starter code](https://replit.com/@KELLYJOHNSTON4/Frame-an-ImageStarter-Code). Open up the starter code and notice that the current output is what you see below. We are going to rearrange the items in the grid so that it matches the final output, also displayed below. Of course, you can spice it up by further styling the elements once you have the grid layout figured out!
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-01 at 10.31.17 AM.png" alt=""><figcaption><p>Before with row above image and after with image framed by four divs, one on each side.</p></figcaption></figure>
+
+Let’s get started! First, take note that the starter code already includes some really helpful lines of code! Take some time to look at the `<div>` elements and their class names. What do you notice? Click over to the CSS file and poke through what is there. Notice that the parent `<div>` has the name `container` and the elements nested within that parent `<div>` each have _two_ class names, one they share in common (`item`) and one that is unique. Any styling changes we want to make to _all_ children of the parent `<div>` we can attach to the `.item` selector, as you can see in the starter code. For styling changes to a specific `<div>` child element, we would use the item-# (whichevrer number) class name.
+
+{% code overflow="wrap" %}
+```html
+<div class="container">
+    <div class="item item-1">This</div>
+    <div class="item item-2">Is</div>
+    <div class="item item-3">My</div>
+    <div class="item item-4">Layout</div>
+    <div class="item item-5"><img src="escher_image.jpeg" alt="MS Escher artwork of a hand holding up a reflective globe that contains an image of the man holding up the reflective globe">
+    </div>
+</div>
+```
+{% endcode %}
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    gap: 5px;
+    height: 100vh;
+}
+
+.item{
+    height: 100%;
+    text-align: center;
+    border: 2px solid black;
+}
+```
+
+Now, open the new tab view and right click to inspect the source code. As before, click on the grid oval alongside the `<div>` container and you should see a grid like the one below with numbers labeling the various grid lines marking the start of specific rows and columns. This is really important! We are going to use these numbers to place specific elements on the grid precisely where we want them.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-01 at 10.38.36 AM.png" alt=""><figcaption><p>Layout with imposed grid</p></figcaption></figure>
+
+Notice in the starter code that the `.item-1` selector has two properties but no values. Try plugging in some numbers between one and five and notice how the output changes. For example, try:
+
+* `grid-column-start: 1;`
+* `grid-column-end: 2;`
+
+Try some different values and take note of what changes. Experiment until you figure out how to stretch .item-1 across the entire first row.&#x20;
+
+Good news! There’s a shortcut! Each time you want to indicate the start and end of a placement on a column or row, you can use one of the shorthand properties. This is how it works:
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-01 at 10.40.04 AM.png" alt=""><figcaption><p>Table of exxamples for grid column and row placement</p></figcaption></figure>
+
+### Activity (\~20-30 min)
+
+Now that you know a bit about how these properties work, add CSS properties to the children elements to frame the image. Once you have placed each of these elements in the correct area, use the documentation, other resources shared above and general Googling to style your frame! You might also want to dig into the [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-container) resource to try out additional properties, explore sizing keywords and functions or to learn how to build sub-grids!
+
+### Wrap-Up (\~5 min)
+
+Ask students to discuss or capture the answers to the following in a post-it note check-in or similar exit slip.
+
+1. We learned two approaches for placing elements on a grid: A) using the `grid-template-areas` property on the parent element selector and the `grid-area` property on the children element selectors; and B) using the `grid-column-start`, `grid-column-end`, `grid-row-start`, and `grid-row-end` properties on the children element selectors. Which approach do you prefer and why?
+2. What do you find the most satisfying about building grid layouts in CSS? What do you find most challenging?
+
+### Extensions
+
+This lesson can be very self extending - can students create a more complicated grid, or several framed grid images on a single page?
