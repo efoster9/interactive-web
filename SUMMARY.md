@@ -35,7 +35,7 @@
 * [U2LA1: JavaScript Essentials - Variables to Arrow Functions](unit-2-intro-to-dom-manipulation-basics/u2la1-javascript-essentials-variables-to-arrow-functions.md)
 * [🗃 U2LA1 Mini Project: JavaScript Essentials](unit-2-intro-to-dom-manipulation-basics/u2la1-mini-project-javascript-essentials.md)
 * [U2LA2.1: DOM Manipulation with JavaScript Click Interactions](unit-2-intro-to-dom-manipulation-basics/u2la2.1-dom-manipulation-with-javascript-click-interactions.md)
-* [Untitled](unit-2-intro-to-dom-manipulation-basics/untitled.md)
+* [U2LA2.2: Accessible Shopping Cart](unit-2-intro-to-dom-manipulation-basics/untitled.md)
 
 ## Unit 3: Advanced DOM
 
