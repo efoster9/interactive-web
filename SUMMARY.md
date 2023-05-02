@@ -18,7 +18,7 @@
 * [🗃 U1LA2 Lab: My Fan Page Part 2](unit-1-html-and-css-good-vs-bad-design/u1la2-lab-my-fan-page-part-2.md)
 * [U1LA3.1: Layout with CSS Grid](unit-1-html-and-css-good-vs-bad-design/u1la3.1-tbd-grid-lesson.md)
 * [🗃 U1LA3.1 Lab: Grid Interview](unit-1-html-and-css-good-vs-bad-design/u1la3.1-lab-grid-interview.md)
-* [U1LA3.2: TBD Flexbox Lesson](unit-1-html-and-css-good-vs-bad-design/u1la3.2-tbd-flexbox-lesson.md)
+* [U1LA3.2: Layout with Flexbox](unit-1-html-and-css-good-vs-bad-design/u1la3.2-tbd-flexbox-lesson.md)
 * [🗃 U1LA3.2 Lab: Flexbox Interview](unit-1-html-and-css-good-vs-bad-design/u1la3.2-lab-flexbox-interview.md)
 * [U1LA4.1: Focus on Design in HTML && CSS](unit-1-html-and-css-good-vs-bad-design/u1la2.4-focus-on-design-in-html-and-and-css.md)
 * [U1LA4.2: TBD Breakpoint Lesson](unit-1-html-and-css-good-vs-bad-design/u1la4.2-tbd-breakpoint-lesson.md)
