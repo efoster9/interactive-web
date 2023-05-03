@@ -37,12 +37,12 @@ Students will be able to:
 
 ### Vocabulary
 
-* Open API
-* Request
-* Endpoint
-* Response
-* JSON
-* fetch
+* **Open API** - An application programming interface is a set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.
+* **Request** - An API request is a message sent to a server asking an API to provide a service or information.
+* **Endpoint** - a point at which an API -- the code that allows two software programs to communicate with each other -- connects with the software program
+* **Response** - A response is defined by its HTTP status code and the data returned in the response body and/or headers
+* **JSON** - (JavaScript Object Notation) is purely a string with a specified data format — it contains only properties, no methods.
+* **fetch** - the retrieval of data by a software program, script, or hardware device
 
 ### Planning Notes && Materials
 

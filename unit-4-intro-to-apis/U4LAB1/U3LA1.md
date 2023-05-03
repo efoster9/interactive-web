@@ -6,22 +6,21 @@ description: What structures can I use to store and manipulate larger and more n
 
 ### Teacher Notes & Overview
 
-Students will be learning arrays, iteration using `forEach()`, `map()`, and `filter()`, and objects. This lesson is designed as a vanilla javascript lesson. There is no front end other than the console in the development tools window (the "dev tools console"). Instruction will consist of mainly a lecture style code along. However, the presentation is written with opportunities for students to engage by making predictions.
+This lesson is broken up into 2 halves.:
+1. The first half (`script1.js`) consists of more "practice with JSON-like data" i.e. an array of objects. In the first half, students will be using `sampleData` (an example of what an API would return, saved in a variable) to add information to a prebuilt website. The first half does not make any API calls and therefore can be skipped, but it could also be useful for students that need extra practice with an array of objects or innerHTML.
+2. The second half (`script2.js`) consists of solely calling APIs using fetch(). Once this part is completed, it will work with `script1.js` to complete the website.
 
-As it is now, the starter `notes.js` code is blank. Depending on where a majority of your students are coming from, you may consider modifying the amount of starter code you give to relieve the pressure of copying notes allowing students to add comments or put more of their attention on your presentation. Be mindful that students with IEPs may **require** a visual supplemental aid. 
+As always, the answers for both of these parts can be found in the exemplar folder. If you choose to skip part 1, simply use the contents of `script1.js` from the exemplar as their starting code. This is also a natural stopping point if you chose to do both parts over 2 days.
 
-Depending on the level of your specific classroom, this lesson can take 1 to 3 days. Regardless, this lesson and the lab that follows offers many activities and challenges for students to feel more comfortable with the material.
+The extensions start to connect the skill of making requests and accessing the JSON response together, but the merging of these two skills come together more consistently in the next lesson.
 
 ### Objectives
 
 Students will be able to:
 
-* Create, read, update, and delete elements of an array.
-* Iterate through an array using `.forEach`, `.map`, `.filter`, and  `.reduce`.
-* Identify the difference between array iteration methods and the standard for loop.
-* Create, read, update, and delete key values in an object.
-* Use functions as part of an object to call them like methods.
-* Recognize the difference between arrays and objects and when to use one over the other
+* Create, read, update, and delete objects in an array of objects.
+* Iterate through an array of objects using `.forEach`, `.map`, and `.filter`.
+* Make API requests and 
 
 ### Suggested Duration
 
