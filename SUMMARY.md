@@ -21,7 +21,7 @@
 * [U1LA3.2: Layout with Flexbox](unit-1-html-and-css-good-vs-bad-design/u1la3.2-tbd-flexbox-lesson.md)
 * [🗃 U1LA3.2 Lab: Flexbox Interview](unit-1-html-and-css-good-vs-bad-design/u1la3.2-lab-flexbox-interview.md)
 * [U1LA4.1: Focus on Design in HTML && CSS](unit-1-html-and-css-good-vs-bad-design/u1la2.4-focus-on-design-in-html-and-and-css.md)
-* [U1LA4.2: TBD Breakpoint Lesson](unit-1-html-and-css-good-vs-bad-design/u1la4.2-tbd-breakpoint-lesson.md)
+* [U1LA4.2: Breakpoint Lesson](unit-1-html-and-css-good-vs-bad-design/u1la4.2-tbd-breakpoint-lesson.md)
 * [🗃 U1LA4 Lab: ChefHub Goes Mobile](unit-1-html-and-css-good-vs-bad-design/u1la4-lab-chefhub-goes-mobile.md)
 * [U1LA5.1: Creating Accessible Websites](unit-1-html-and-css-good-vs-bad-design/u1la5.2-creating-accessible-websites.md)
 * [🗃 U1LA5 Lab: What Do You Hear? Make it Accessible](unit-1-html-and-css-good-vs-bad-design/u1la5-lab-what-do-you-hear-make-it-accessible.md)
