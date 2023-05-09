@@ -40,6 +40,7 @@
 * [U2LA3: Inputs and Conditionals](unit-2-intro-to-dom-manipulation-basics/u2la3-inputs-and-conditionals.md)
 * [🗃 U2LA3 Mini Project: The Interactive Site](unit-2-intro-to-dom-manipulation-basics/u2la3-mini-project-the-interactive-site.md)
 * [U2LA4: Add, Remove, and Toggle](unit-2-intro-to-dom-manipulation-basics/u2la4-add-remove-and-toggle.md)
+* [🗃 U2LA4 Mini Project: The Cross-Wired Lightbulbs Puzzle](unit-2-intro-to-dom-manipulation-basics/u2la4-mini-project-the-cross-wired-lightbulbs-puzzle.md)
 
 ## Unit 3: Advanced DOM
 
