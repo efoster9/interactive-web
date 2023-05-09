@@ -38,6 +38,7 @@
 * [U2LA2.2: Accessible Shopping Cart](unit-2-intro-to-dom-manipulation-basics/untitled.md)
 * [🗃 U2LA2 Mini Project: The National Horse Race](unit-2-intro-to-dom-manipulation-basics/u2la2-mini-project-the-national-horse-race.md)
 * [U2LA3: Inputs and Conditionals](unit-2-intro-to-dom-manipulation-basics/u2la3-inputs-and-conditionals.md)
+* [🗃 U2LA3 Mini Project: The Interactive Site](unit-2-intro-to-dom-manipulation-basics/u2la3-mini-project-the-interactive-site.md)
 
 ## Unit 3: Advanced DOM
 
