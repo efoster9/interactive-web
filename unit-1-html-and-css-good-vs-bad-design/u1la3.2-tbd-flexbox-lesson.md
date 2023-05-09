@@ -157,4 +157,31 @@ Land on the default direction (row) and ask students how they would make the gri
 
 Present the `flex-wrap` property and possible values: `nowrap` (default), `wrap`, and `wrap-reverse` on the flex container. Gie students somet ime to play around with these properties as well as the `justify-content` property and possible values: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, and `space-evenly`.
 
-Students can make use of the resource [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to learn about and experiment with other properties that can be used to style the flex container.\
+Students can make use of the resource [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to learn about and experiment with other properties that can be used to style the flex container.
+
+**NB**: _Once students have a basic understanding of the relationship between the flex container and its items, they are likely to benefit most by experimenting with various properties and values in the code editor. You might gradually release from the code-along and send students into the independent practice to experiment with properties used to style flex items. The starter code has some pre-populated properties applied to the flex items to get them started with experimenting._ [_This resource is a helpful guide_](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/) _as they begin working with properties that can be applied to flex items._
+
+### Student Activity (20 - 30 min)
+
+Use this [starter code](https://replit.com/@KELLYJOHNSTON4/Flex-the-Swag#index.html) to create at least one landing page for a school swag store. Experiment with different layouts and designs that you can present to the student council for a vote on which version will go live. Your code must meet the following requirements:
+
+* Designate a parent container as a flexbox with `display: flex`
+* Display `flex-direction` in both row and column orientations
+* Use the `justify-content` property to center or distribute content within a flexbox
+* Add minimum gaps to a flexbox with the `gap` property
+* Use the `min-height` or `min-width` property to preserve the size of a specific flexbox child
+
+Once you have created your layout witht he above specifications, you can try one or more of the following stretch challenges.
+
+* \[**Stretch**] Group elements within a flex child to bundle them together. (For example, your hats div might include three different types of hats, each contained in a new div contained within the hat div)
+* \[**Stretch**] Utilize flexbox within a flexbox to replicate common web layouts (e.g. a navbar with a cluster of items on the right hand side)
+* \[**Stretch**] Modify the behavior of a single child element within a flexbox using one or more of the following properties: `align-self`, `order`, `flex-shrink`, or `flex-grow`
+
+### Wrap-Up (5 min)
+
+Share your layout(s) with a partner and discuss:
+
+1. What aspects of CSS Flex are easiest to implement for you?
+2. Which aspects of CSS Flex are you still figuring out?
+3. What would you ike to do next with your layout/design?
+4. What advice would your partner give you as you continue working on your layout?
