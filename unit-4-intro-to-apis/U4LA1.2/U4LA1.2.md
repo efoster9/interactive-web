@@ -2,17 +2,22 @@
 description: What structures can I use to store and manipulate larger and more nuanced data?
 ---
 
-# U3LA1: Javascript Arrays, Iteration, and Objects
+# U4LA1.2: Javascript Arrays, Iteration, and Objects
 
 ### Teacher Notes & Overview
 
-Tbc
+In this lesson, students will have the opportunity to apply the idea of API requests and responses to a prebuilt website. The walkthrough can be done as a code along or can be an independent challenge that is reviewed. There are plenty of hints and answers throughout the walkthrough that students can use to check that they are on the right track. Then, before the extensions, you can review the answers with students that need it, or offer the exemplar solutions.
+
+As in the first lesson of the unit, there are plenty of extensions here to stretch this out into 2 days if needed. Multiple API calls are not needed until the Spicy extensions, but if students can get passed the Mild extensions, they will have been able to navigate the javascript code well enough to understand it in context.
 
 ### Objectives
 
 Students will be able to:
 
-* 
+* Use async-await functions to make API requests
+* Iterate over JSON data structures
+* Craft endpoints to access particular data from an API
+* Populate a webpage based on API data.
 
 ### Suggested Duration
 
@@ -45,14 +50,11 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
+| _Allow students an opportunity to search through the list of available categories in the "categories" endpoint. They can do this straight in the browser. Once students are in the extensions, give them the liberty to incorporate which ever categories appeal to them. _ | _This being a game, consider finding time to allow students to share the results of their code with a partner or full group to engage in the game. You can even allude to this conclusion while they are searching for categories they enjoy._  | _Assessments_ |
 
 ### Suggestions for Differentiation
 
-[To be edited]
-
-- Reference to basic fetch response data syntax
-- 
+Consider making a reference sheet to basic async await function that uses a simple rendition of the fetch response syntax. 
 
 ### Resources
 
@@ -93,8 +95,6 @@ const jeopardy = {
 In the lesson walkthrough, students will get a chance to see how data transfers from an API all the way to the UI. The extensions will consist of more ways to enhance the site offering more opportunities to practice making requests and navigating JSON data.
 
 ### Lesson Walkthrough: From API to UI (~25 min)
-
-> TEACHER NOTE: This is a great lesson walkthrough to have students try in pairs, on their own, first. There's plenty of hints and answers throughout. Then, before the activities, you can review the answers with students that need it, or offer the exemplar solutions.
 
 **Accessing the Random Endpoint**
 

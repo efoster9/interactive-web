@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Higher Lower</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <header id="head"></header>
+
+    <main id="main-content">
+      <!-- Title -->
+      <section id="banner">
+        <h1>Higher Lower</h1>
+      </section>
+      <!-- Card Draw -->
+      <section id="game">
+        <h2>Will the next card be higher or lower than this one?</h2>
+        <div class="cards">
+          <img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck">
+          <span id="draw"><img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck"></span>
+        </div> 
+      </section>
+      <!-- Score -->
+      <p id="score">Correct Guesses = <span id="scoreCount">0</span></p>
+      <!-- Buttons -->
+      <section id="buttons">
+        <button id="lower" class="button">Lower</button>
+        <button id="higher" class="button">Higher</button>
+      </section>
+    </main>
+
+    <footer id="foot"></footer>
+    
+    <!-- Scripts -->
+    <script src="sampleApi.js"></script>
+    <!-- <script src="api.js"></script> -->
+    <script src="script2.js"></script>
+  </body>
+</html>

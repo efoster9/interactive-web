@@ -10,9 +10,9 @@ Most of this lesson will take place in the browser. The goal is to get students 
 
 Open APIs with multiple endpoints are hard to come by, but if you find one that is more appropriate for your students, feel empowered to choose that one instead. The activities below should work with any open API with at least 3 endpoints.
 
-This activity works best with the chrome extension [JSONView](https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd?hl=en) or a similar extension. We recommend downloading one and having your students do this as well before beginning the lesson. However, this can also be effective with a free online JSON viewer like [CodeBeautify.Org](https://codebeautify.org/jsonviewer) or something similar.
+This activity works best with the chrome extension [JSONView](https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd?hl=en) or a similar extension that allows for formatted JSON response. We recommend downloading one and having your students do this as well before beginning the lesson. However, this can also be effective with a free online JSON viewer like [CodeBeautify.Org](https://codebeautify.org/jsonviewer) or something similar.
 
-Lastly, there are plenty of extensions to do this lesson over 2 or 3 days if needed. However, this is an introduction to APIs and should not overwhelm students. Most of the extensions (Medium and Spicy) are for the students who will immediately click with the topic. Students are only required to feel comfortable with the Mild in both extension sections.
+Lastly, there are plenty of student extensions to do this lesson over 2 or 3 days if needed. However, this is meant to be an introduction to APIs and should not overwhelm students. Most of the extensions (Medium and Spicy) are for the students who will immediately click with the idea of requests and responses. Students are only required to feel comfortable with the Mild in both extension sections. In the next lesson (Unit 4 lesson 1.2) students will have more of an opportunity to dive into code.
 
 ### Objectives
 
@@ -54,11 +54,13 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
+| Consider having students research and discuss websites they've used that contain large amounts of data. Have them discuss whether they needed to see all of it at one time, and the predicted pros and cons of such a requirement on a website. | This lesson involves a lot of new vocabulary. It may be wise to have a resource or reference to these definitions that is easily accessible to students. | Students will be exploring and documenting endpoints and programming a bit of requests. Consider giving them an opportunity to communicate their understanding with each other and write their explanations on paper to practice the use of vocabulary and solidify their understanding. |
 
 ### Suggestions for Differentiation
 
+If students have a hard time starting the extensions consider spending more time going through more examples of API calls from the browser as this is the critical endpoint for them to be able to move forward. The _"Mini Lesson 1 Activity: Scavenger Hunt"_ has questions that fall in this category.
 
+Furthermore, if students need more time to digest the first mini activity, allow them to stay on that while others move on to the second mini activity section.
 
 ### Resources
 
@@ -73,7 +75,7 @@ Students will be able to:
 
 **Formative:**
 
-- **Mini Lesson Activities Code** can be collected and assessed as needed
+- **"Mini Lesson Activity"s Code** can be collected and assessed as needed
 
 - **Wrap Up** reflection questions and shares can serve as formative assessments.
 
