@@ -46,6 +46,7 @@
 ## Unit 3: Advanced DOM
 
 * [🔮 Unit 3 Overview](unit-3-advanced-dom/unit-3-overview.md)
+* [U3LA1: JavaScript Arrays, Iteration, and Objects](unit-3-advanced-dom/u3la1-javascript-arrays-iteration-and-objects.md)
 
 ## Unit 4: Intro to APIs
 
