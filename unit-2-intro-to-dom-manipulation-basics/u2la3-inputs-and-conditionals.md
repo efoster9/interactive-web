@@ -24,6 +24,7 @@ Students will be able to:
 
 ### NYS Computing Standards
 
+* **9-12.CT.8** Develop a program that effectively uses control structures in order to create a computer program for practical intent, personal expression, or to address a societal issue.
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
 * **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
