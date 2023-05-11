@@ -24,7 +24,7 @@ Take a look at this [finished example](unit-3-advanced-dom/U3LAB1-Exemplar/index
 
 ### Culturally Responsive Best Practice
 
-\[Courtney to add]
+_Coming Soon_
 
 ### Extra Help?
 
