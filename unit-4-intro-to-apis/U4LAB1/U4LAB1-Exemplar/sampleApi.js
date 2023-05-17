@@ -8,57 +8,23 @@ const randomId = function (length = 10) {
 // returns new Deck ID
 const getNewDeck = () => {
   return new Promise(function (resolve, reject) {
-    setTimeout(() => resolve(randomId()), 500);
+    setTimeout(() => resolve(randomId()), 200);
   });
 };
 
 // returns array of cards
-const dealCards = (deckId, count) => {
-  let value = cards.splice(i, count);
+const getNextCard = (deckId) => {
   return new Promise(function (resolve, reject) {
     setTimeout(() => {
-      if (typeof deckId === "string" && count <= 52) {
-        resolve(value);
-        i++;
+      if ( cards.length )  {
+        resolve(cards.shift());
       } else {
-        reject("404: Either no deckId found or count is above 52");
+        reject("No more cards in the deck");
       }
-    }, 500);
+    }, 200);
   });
 };
 
-// // adds cards to pile
-// const addToPile = (deckId, pileName, cardsArray) => {
-//   let errMessage = null;
-//   if (typeof cardsArray[0] !== "string") {
-//     errMessage =
-//       "404: cardsArray should be an array of card codes (eg. ['AS', '9D', 'KC', '2H'])";
-//   }
-//   if (typeof deckId !== "string") {
-//     errMessage = "404: deckId not found (did you await it?)";
-//   }
-//   if (errMessage) {
-//     throw new Error(errMessage);
-//   } else {
-//     console.log("Cards added to Pile successfully");
-//   }
-// };
-
-// // creates new pile with added cards or adds to existing pile (no return)
-// const drawCard = (deckID, pileName) => {
-//   return new Promise(function (resolve, reject) {
-//     setTimeout(() => {
-//       if (typeof deckID === "string") {
-//         resolve(cards[i]);
-//         i++;
-//       } else {
-//         reject("404: No deckId found");
-//       }
-//     }, 500);
-//   });
-// };
-
-let i = 0;
 const cards = [
   {
     code: "KC",

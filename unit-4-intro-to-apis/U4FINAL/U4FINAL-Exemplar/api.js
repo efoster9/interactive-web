@@ -8,7 +8,7 @@ const getNewDeck = async () => {
   const response = await fetch(endpoint);
   const data = await response.json();
 
-  return await data.deck_id;
+  return data.deck_id;
 };
 
 //deals out how ever many cards you need
@@ -17,7 +17,7 @@ const dealCards = async (deckID, count) => {
   const response = await fetch(endpoint);
   const data = await response.json();
 
-  return await data.cards;
+  return data.cards;
 };
 
 // creates new pile with added cards or adds to existing pile (no return)
@@ -28,7 +28,7 @@ const addToPile = async (deckID, pileName, cardsArray) => {
 
   console.log(data.success ? "Added cards to pile" : "Failed to add cards");
 
-  return await data.piles[pileName].remaining;
+  return data.piles[pileName].remaining;
 };
 
 const listCount = async (deckID, pileName) => {
@@ -36,7 +36,7 @@ const listCount = async (deckID, pileName) => {
   const response = await fetch(endpoint);
   const data = await response.json();
 
-  return await data.piles[pileName].remaining;
+  return data.piles[pileName].remaining;
 }
 
 //returns count of cards in pile
@@ -45,7 +45,7 @@ const pileCount = async (deckID, pileName) => {
   const response = await fetch(endpoint);
   const data = response.json();
 
-  return await data.piles[pileName].remaining;
+  return data.piles[pileName].remaining;
 };
 
 // shuffles pile and clears/draws cards from pile

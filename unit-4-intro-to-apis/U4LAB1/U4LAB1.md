@@ -2,34 +2,166 @@
 description: What does the use of APIs look like in a website.
 ---
 
-# Higher Lower
+# Deck of Cards: Higher Lower
 
 ### Teacher Notes
 
-In this lab, students will have the opportunity to build a personality quiz with some guidance. The teacher will walk students through a trivial version (the exemplar), and students will, similar to a unit project, brainstorm ways to personalize it adding different forms of inputs, creative outputs, and implementing concepts in the previous few lessons.
+In this lab, students will be working off a new open API, the [DeckOfCardsAPI](https://deckofcardsapi.com/). The goal is to give students another chance to familiarize with another open API by practicing both writing API calls and reading responses.
 
-{tbc}
+The walkthrough consists of 3 parts where parts 1 and 2 are interchangeable.
+1. **"Familiarize yourself with the API"** - A chance to learn the new API through the browser
+2. **"Program the front end using the sample API"** - Students can focus on getting something visual up and running. `script.js` 
+3. **"Use real API calls"** - Students replace the sample API calls with the use of async await. `api.js`
+
+In the extensions, after students feel comfortable using this new API, students have the opportunity to turn the website into a card game "Higher or Lower". _NOTE: this is a spicy extension and students shouldn't feel like they've failed if they don't get to this._
 
 ### Prompt
 
-I DE-CLARE WAR. The front end for this website has been designed to simulate a game of war. 2 players flip their cards and the higher card wins. The winning player takes the 2 face up cards and adds them to their deck. This lab uses an open API [DeckOfCardsAPI.com](https://deckofcardsapi.com/) to manage the deck and the two players' hands. 
+We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofcardsapi.com/) has endpoints that allows for users to get an ID for a deck of cards and do things like shuffle, deal, create piles and more. In the walkthrough, you will get a chance to get familiar with API and put together a simple website that deals cards. In the extensions, you'll create a game of "Higher or Lower".
 
-**Directions**: Finish the code so that the API is incorporated and the responses are properly displayed on the website.
+**Familiarize yourself with the API**: 
 
-1. In `api.js`, create the following async functions:
-    - getNewDeck()
+1. Head over to https://deckofcardsapi.com/ and look at the first 4 endpoints. We can test them out right in a new tab. The goal is to:
+    - Get a new shuffled deck and its `deck_id`
+    - Use the `deck_id` to draw a card.
+    - Return and shuffle the cards to the deck.
+2. Open a new tab and enter the following endpoint: `https://deckofcardsapi.com/api/deck/new/shuffle/`. Copy and save your `deck_id`. The one I got is `1aw91nywwotz`. I'll be using it in the examples to follow.
+3. Now, there's no way to see all the cards and their order in the deck, but we can start dealing or drawing them. Use the following endpoint to deal the top card of your shuffled deck: `https://deckofcardsapi.com/api/deck/YOUR_DECK_ID/draw/`. When I put my ID in, the link looks like this `https://deckofcardsapi.com/api/deck/1aw91nywwotz/draw/`.
+
+    You should have gotten a response like this:
+    ![8 of CLUBS response](./response.png)
+
+4. I got the 8 of clubs! Notice how there's even a link to a static image that can potentially be used in a website. If you visit the same endpoint again, notice how you will draw a different card. Do this a couple times and notice the different cards that come up and how the `remaining` attribute goes down.
+5. Last, lets return the cards you drew back to the deck and shuffle the deck at the same time. See if you can find this endpoint before checking here for the answer.
+    <details>
+    <summary>How to return and shuffle</summary>
+
+    `https://deckofcardsapi.com/api/deck/YOUR_DECK_ID/shuffle/`
+
+    Turns out, when you shuffle the deck, it automatically returns all dealt cards.
+    </details>
+
+**Program the front end using the sample API**
+
+1. Open the `script.js`, and run the code to see what the website looks like. In the `sampleApi.js` there are 2 functions we'll be using to deal cards:
+    1. `getNewDeck()` - This will create a new deck and return the deck ID. 
+    2. `getNextCard(deck_id)` - This will draw a single card and return the object of that card.
+
+2. In the `script.js`, finish the `startGame()` function:
+    - Turn the function to an async function, and await a call to `getNewDeck()`. Console log the deck ID that's returned.
+        ```js
+        const startGame = async () => {
+            // create a new deck and save the deck ID
+            deckId = await getNewDeck();
+            console.log(deckId);
+        };
+        ```
+    - Then, await for the response for `getNextCard(deck_id)`, and console log that as well. 
+        ```js
+        const startGame = async () => {
+            // create a new deck and save the deck ID
+            deckId = await getNewDeck();
+            console.log(deckId);
+
+            let firstCard = await getNextCard(deckId);
+            console.log(firstCard);
+        };
+        ```
+    Run the code and check the console for the response. You should see the King of Clubs.
+
+3. Now, finish the `drawCard()` function that will be activated when the draw button is clicked. It should get the next card using the function `getNextCard()` and log it to the console for now (in the same way it's done in startGame).
+    ```js
+    const drawCard = async () => {
+        // draw a card from deck
+        let nextCard = await getNextCard(deckId);
+        console.log(nextCard);
+    };
+    ```
+
+4. Since the second half of `startGame()` is doing the same thing that `drawCard()` is doing, replace that code with the function call instead:
+    ```js
+    const startGame = async () => {
+        // create a new deck and save the deck ID
+        deckId = await getNewDeck();
+        console.log(deckId);
+
+        drawCard();
+    };
+    ```
+
+5. Last, adjust the `drawCard()` function so that the image of the card displays on the website.
+    - In the `index.html`, find the Span ID that is holding the image of the drawn card.
+    - In the `script.js`, every time `drawCard()` is called, it should use the card object to put the image in the innerHTML of the span.
+    
+    Try this on your own before peeking at the answer below:
+    <details>
+    <summary> <b>script.js</b> answer for <b>drawCard()</b> </summary>
+
+    ```js
+    const drawCard = async () => {
+        // draw a card from deck
+        let nextCard = await getNextCard(deckId);
+        console.log(nextCard);
+
+        const drawPile = document.querySelector("#draw-pile");
+        drawPile.innerHTML = `<img src="${nextCard.image}" alt="${nextCard.value} of ${nextCard.suit}"></img>`;
+    };
+    ```
+    </details>
+
+**Use real API calls**
+
+1. Remember the 2 API endpoints we used in the browser:
+    - `https://deckofcardsapi.com/api/deck/new/shuffle/` - gets us a new deck that is shuffled.
+    - `https://deckofcardsapi.com/api/deck/YOUR_DECK_ID/draw/` - get us the next card off the top of the deck.
+2. In `api.js`, complete the two functions so that they return the following data:
+    - `getNewDeck()` - This will create a new deck and return the deck ID. 
+    - `getNextCard(deck_id)` - This will draw a single card and return the object of that card.
+
+3. When your done, it should look like this:
+    ```js
+    const BASE_URL = "https://deckofcardsapi.com/api/deck";
+
+    // creates new shuffled deck - returns deckId
+    const getNewDeck = async () => {
+        const endpoint = `${BASE_URL}/new/shuffle/`;
+        const response = await fetch(endpoint);
+        const data = await response.json();
+
+        return data.deck_id;
+    };
+    ```
+    <details>
+    <summary> And this is what <b>getNextCard(deckId)</b> looks like:</summary>
+
+    ```js
+    //deals out how ever many cards you need
+    const getNextCard = async (deckId) => {
+        const endpoint = `${BASE_URL}/${deckId}/draw/`;
+        const response = await fetch(endpoint);
+        const data = await response.json();
+
+        return data.cards[0];
+    };
+    ```
+    </details>
+
+4. Lastly, in `index.html`, comment the `sampleApi.js` script and uncomment the `api.js` script. Test the website and see if your deck is now dealing random cards! (Note: the first card should most likely not be the King of Clubs any more)
 
 ### Exemplar
 
 Take a look at this [finished example](./U3LAB2-Exemplar/index.html) for the finished version of the site.
 
 ### Culturally Responsive Best Practice
+TBD
 
 Scope out the strategies students plan to use when creating the quiz to ensure they stay on track with the curriculum, but allow students to explore themes that they identify most with. Consider spending a few minutes asking the students to find the funniest or most interesting quizzes they can find. Allow them time to explore resources like [BuzzFeed](https://www.buzzfeed.com/quizzes), [PsyCatGames](https://psycatgames.com/quiz/), or [PlayBuzz](https://www.playbuzz.com/quizzes/personality)... [more](https://funpersonalityquizzes.net/)
 
-_Note: scope out the resources provided. The quizzes change constantly, and it can not be assured that they are appropriate for school. You may instead want to compile several examples that you have pre-scanned and feel comfortable using in the classroom._
+_Note: scope out the resources provided. The quizzes change constantly, and it can not be assured that they are appropriate for school. You may instead want to compile several examples that you have pre-scanned and feel comfortable using in the classroom.
 
 ### Extra Help?
+
+TBD
 
 - Quizzes to get inspiration:
     - [What Fruit Are You? - Buzzfeed](https://www.buzzfeed.com/natalyalobanova/what-fruit-are-you)
@@ -42,24 +174,39 @@ _Note: scope out the resources provided. The quizzes change constantly, and it c
 
 **Mild**
 
-- Add a `shuffleDeck(deckId)` function in the `api.js`. In the `script.js`
-- Create a function `convertValue(value)` that takes in a value (eg. '9', 'ACE', 'KING') and returns the numeric representation of the value ('9' => 9, 'ACE' => 1, 'KING' => 13).
-- In the `nextCard()` function, use `convertValue()` instead of doing it manually. 
+- Instead of console logging the whole object, log just the value. 
+- Create a function `convertValue(value)` in the `script.js` that takes in a value (eg. '9', 'ACE', 'KING') and returns the numeric representation of the value ('9' => 9, 'ACE' => 1, 'KING' => 13).
+- In the `drawCard()` function, use `convertValue(value)` to console log the true numerical value of the card being drawn. 
 
 **Medium**
 
-- "Higher, Between, Lower" Make a second face up card and a third button. Change the game so that you can guess that the next card is either "Lower" than both cards, "Between" the 2 cards, or "Higher" than both cards. 
-    - If it's lower, replace the low card, if its higher, replace the high card, and if its in between, alternate between the two.
-- Add an input for an exact guess. Each turn, the user has the option to guess the exact value. If they guess correctly, they should get a bonus 5 points.
+- Program the Refresh Button. Add a `shuffleDeck(deckId)` function in the `api.js`.
+- ?
 
 **Spicy**
 
-- When there's a tie, 
-- Use this deck of cards API to make a different game. I DE-CLARE War is a good simple rules game, but feel free to pick one that you've played before
+"Higher Lower" - Follow the following steps to turn this use of an API into a little game:
+
+- In the `index.html`, replace the section id="buttons" with the following html code:
+    ```html
+    <!-- Score -->
+    <p id="score">Correct Guesses = <span id="scoreCount">0</span></p>
+
+    <!-- Buttons -->
+    <section id="buttons">
+        <button id="lower" class="button">Lower</button>
+        <button id="higher" class="button">Higher</button>
+    </section>
+    ```
+    You should now see a score and two new buttons.
+- In the `script.js`, in the `drawCard()` function, instead of logging the value of the card, return it. Then, create 2 global variables: `previousValue` and `newValue`. The first card should be set to the `previousValue` when the game is started, and any other time the function is called, save it to `newValue`.
+- Create a new function that will trigger when the buttons higher or lower are clicked. It should...
+    - Draw a card
+    - If the user picked the button that represents the value of the new card compared to the previous card, give them a point. (For example, if a 3 is showing and an ACE (value 1) is drawn, then the ACE is "lower". So if the user clicked lower, then award them a point, and if they predicted higher by clicking higher, then do not give them a point.)
+    - If the same value comes out, automatically draw the next card.
 
 
 **Reflection Questions:**
 
 - What are you most proud of? What did you struggle the most with?
-- How much preplanning did you do before you coded? How did it help? How would doing more or less preplanning help or hurt final outcome of your personality quiz?
-- With more time, what else would you have added or changed?
+- 

@@ -45,10 +45,16 @@ body {
   border-radius: 5px;
   height: 50px;
   width: 125px;
+  font-size: large;
 }#lower {
   background-color: lightsalmon;
 } #higher {
   background-color: lightskyblue;
+} #draw-button {
+  background-color: brown;
+  color: azure;
+} #refresh-button {
+  background-color: rgb(227, 184, 184);
 }
 
 .cards {

@@ -69,12 +69,14 @@ continueButton.addEventListener("click", () => {
 });
 
 /** Draw a card, determine winner, and collect cards to corresponding discard */
-drawButton.addEventListener("click", async() => {
+drawButton.addEventListener("click", async () => {
   drawButton.disabled = true;
 
   // draw a card for each player
-  Object.values(players).forEach(async (player) => {
-    let card = player.cards.shift();
+  let thesePlayers = Object.keys(players);
+  for(const player of thesePlayers){
+    const playerObj = players[player]
+    let card = playerObj.cards.shift();
     if (!card) {
       let numberInDiscard = await listCount(deckId, player);
       if (numberInDiscard === 0) {
@@ -82,21 +84,21 @@ drawButton.addEventListener("click", async() => {
         return 0;
       } else {
         //shuffle discard, and draw
-        player.cards = await shuffleClearPile(
+        playerObj.cards = await shuffleClearPile(
           deckId,
           player,
           numberInDiscard,
         );
-        card = player.cards.shift();
-        player.discardCount = 0;
+        card = playerObj.cards.shift();
+        playerObj.discardCount = 0;
       }
     }
-    player.drawnCard = card;
-    player.deckCount.innerHTML =
-      Number(player.deckCount.innerHTML) - 1;
-    player.cardImage.innerHTML = 
+    playerObj.drawnCard = card;
+    playerObj.deckCount.innerHTML =
+      Number(playerObj.deckCount.innerHTML) - 1;
+      playerObj.cardImage.innerHTML = 
       `<img src="${card.image}" alt="${card.value} of ${card.suit}">`;
-  });
+  }
 
   // Determine the winner of the round
   let roundWinner = null;

@@ -14,14 +14,15 @@ const getNewDeck = () => {
 
 // returns array of cards
 const dealCards = (deckId, count) => {
-  let value = cards.splice(i, count);
   return new Promise(function (resolve, reject) {
     setTimeout(() => {
-      if (typeof deckId === "string" && count <= 52) {
-        resolve(value);
-        i++;
+      const err1 = typeof deckId === "string" ? '' : "Invalid DeckID. ";
+      const err2 = (i+count) <= 52 ? '' : `There are fewer than ${count} cards in the deck`;
+      if ( err1 || err2 )  {
+        reject(err1+err2);
       } else {
-        reject("404: Either no deckId found or count is above 52");
+        resolve(cards.splice(i, count));
+        i++;
       }
     }, 500);
   });
