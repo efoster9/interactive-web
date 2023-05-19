@@ -52,9 +52,6 @@ Consider adding more to your website in any of the following ways:
 - **Combine older topics** - Is your site _accessible_? Is there an opportunity to store user data in local storage? Do you have big chunks of HTML code in your Javascript file, or are you adding HTML using `createElement()` and `appendChild()` for example?
 
 **Reflection Questions:**
-
-TBD
-
-- What are you most proud of? What did you struggle the most with?
-- How much preplanning did you do before you coded? How did it help? How would doing more or less preplanning help or hurt final outcome of your personality quiz?
 - With more time, what else would you have added or changed?
+- What are you most proud of? What did you struggle the most with?
+- What's one thing you'd like to get better at in regards to APIs?
