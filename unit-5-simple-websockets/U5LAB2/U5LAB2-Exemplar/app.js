@@ -9,18 +9,18 @@ const server = createServer(app);
 const io = new Server(server);
 
 io.on('connection', (socket) => {
-  socket.on('join', (screenName) => {
-    socket.screenName = screenName;
-    socket.broadcast.emit('join', screenName);
-  });
-  socket.on('chat', ({ screenName, message }) => {
-    io.emit('chat', { screenName, message });
-  });
-  socket.on('disconnect', () => {
-    if (socket.screenName) {
-      socket.broadcast.emit('leave', socket.screenName);
-    }
-  });
+	socket.on('join', (screenName) => {
+		socket.screenName = screenName;
+		socket.broadcast.emit('join', screenName);
+	});
+	socket.on('chat', ({ screenName, message }) => {
+		io.emit('chat', { screenName, message });
+	});
+	socket.on('disconnecting', () => {
+		if (socket.screenName) {
+			socket.broadcast.emit('leave', socket.screenName);
+		}
+	});
 });
 
 export default server;

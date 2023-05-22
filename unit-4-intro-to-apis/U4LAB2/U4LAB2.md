@@ -6,7 +6,9 @@ description: What makes an API closed and how do we safely incorporate our API k
 
 ### Teacher Notes
 
+Students will be building a website that accesses a Dictionary API. The API requires a user's _"api key"_ and a _word_. It will return the definition, synonyms, and more. The instructions below loosely walk through retrieving the API key before guiding students to a finished version of the website represented by the exemplar.
 
+The DictionaryAPI was chosen because of its relatively simple and free sign up process. Realistically, the sign up process can be much more difficult. However, this lab aims to give students a glimpse into closed APIs and, more importantly, another chance to practice using APIs in general. The final lab would therefore be a good chance for students to explore other APIs that match the difficulty they desire.
 
 ### Prompt
 
@@ -87,11 +89,11 @@ Notice that a lot of the code is already pre-written. For this section, you'll j
 
 ### Exemplar
 
-Take a look at this [finished example](./U3LAB2-Exemplar/index.html) for the finished version of the site.
+Take a look at this [finished example](./U4LAB2-Exemplar/index.html) for the finished version of the site.
 
 ### Culturally Responsive Best Practice
 
-TBD
+Consider giving students a list of 5-10 words that the students can look up once they have their website running properly. This way, they won't stuck on searching for which word to use (NOTE: this is also a good opportunity to sneak in some vocabulary from other subject areas). Otherwise, you can have students come up with 5-10 words from their favorite subject or domaine that they will plan to test using their site. 
 
 ### Extra Help?
 
@@ -101,26 +103,26 @@ TBD
 
 ### Extensions
 
-- Include synonyms
-- Create a card for each def
-- Turn all synonyms into a link - when clicked show results for that word
-- Add a translate button on the card that shows the translation to Spanish (NOTE: you’ll need the other API key for this new api call)
-
 **Mild**
 
-- 
+- Include synonyms in the definitions. If you look at the response, you should notice an array of synonyms for the word. Add another `<p>` element in the `index.html` and adjust the `script.js` to incorporate these synonyms.
+- Handle the error when the submitted word doesn't exist. You can choose how your site will respond: will you clear the current card or maybe display a message that says "No such word found in the dictionary".
 
 **Medium**
 
-- 
+- Include all definitions that come with each word. Some words have more than one definition (ex. umpire has a noun and verb definition). When a word is submitted, create a card for each of its definitions.
+- Turn all the synonyms into a link! When clicked, automatically look up the clicked word and show results for that word. Also, include the clicked word in the search bar.
 
 **Spicy**
 
-- 
+- The other API you should have access to is the [Spanish/ English dictionary](https://dictionaryapi.com/products/api-spanish-dictionary). Add a translate button on the card that when clicked shows the translation of the word into Spanish.
+- When the searched word doesn't exist, check out your response! You should get an array of suggested words. Use this array to make recommendations for your user in some way. For example:
+    - After a word submission you can display links to the other suggested words, or
+    - It could be a drop down of suggestions after each letter is typed in the search bar.
+
 
 **Reflection Questions:**
 
-TBD
-
-- What are you most proud of? What did you struggle the most with?
-- What do you think would be the benefit of using an API to access data instead of accessing the data straight from the database? What are the drawbacks?
+- Why might one favor a closed API over an open one? What would you assume are the benefits of making your API closed.
+- Why might someone else favor an open API over a closed one? What are the drawbacks of making your API closed?
+- What is something about APIs that you still would like to explore?

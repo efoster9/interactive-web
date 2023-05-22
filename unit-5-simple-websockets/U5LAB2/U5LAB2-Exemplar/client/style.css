@@ -120,7 +120,7 @@ h1 {
   max-height: inherit;
   margin-top: 24px;
 }
-.chat-message, .join-notice, .disconnect-notice {
+.chat-message, .join-notice, .leave-notice {
   margin-bottom: 16px;
 }
 .chat-message {
@@ -142,7 +142,7 @@ h1 {
   line-height: 1.3;
   font-family: inherit;
 }
-.join-notice, .disconnect-notice {
+.join-notice, .leave-notice {
   font-style: italic;
   color: hsl(0, 10%, 50%);
 }

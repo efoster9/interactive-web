@@ -26,6 +26,7 @@ All of your work for this lab takes place in [index.js](./U5LAB3-Starter/index.j
 Start by importing Socket.io and the existing Express server. Recall that importing ECMAScript Modules uses the following syntax:
 
 ```js
+// Example, not solution
 import SomeLibraryDefaultExport from "some-library"
 import { SomeLibraryNamedExport } from "some-library"
 
@@ -39,9 +40,13 @@ Follow these three steps to initialize your server:
 2. **Import the default export from `"./http-server.js"` into a variable called `server`**
 3. **Create a new variable named `io` and set it to `new Server(server)`**
 
-If you did this correctly, you should be able to **run `npm start`** and get a notification that your server is listening. **Open `http://localhost:3000` to see the running chat room**. You'll use this website to monitor the progress of your socket server. As you add new handlers on the server, you'll see new messages showing up on the page. Right now, you'll see whichever messages your selected user is sending.
+If you did this correctly, you should be able to **run `npm start`** and get a notification that your server is listening. You should also have a webview showing the running chat room. You'll use this website to monitor the progress of your socket server. As you add new handlers on the server, you'll see new messages showing up on the page. Right now, you'll see any messages your currently selected user (Ashley by default) is sending but nothing else.
 
-Note that [app.js](./U5LAB3-Starter/app.js) and [http-server.js](./U5LAB3-Starter/http-server.js) contains the rest of the server code, which should look familiar from the previous lab.
+Note that [app.js](./U5LAB3-Starter/app.js) and [http-server.js](./U5LAB3-Starter/http-server.js) contains the rest of the server code, which should look familiar from the Express lab.
+
+If you've done it correctly, it should look like this:
+
+![Chat room with Ashley talking](U5LAB3-1.png)
 
 ### Listening For Connections
 
@@ -58,6 +63,7 @@ io.on("connection", (socket) => {
 You'll write all of your socket logic inside this function. This logic is primarily event listeners with handlers that either update something on the server or send messages to clients. For example:
 
 ```js
+// Example, not solution
 let votes = 0
 
 io.on("connection", (socket) => {
@@ -79,11 +85,12 @@ These two patterns, updating state and sending messages, are powerful enough to 
 
 ## Sign In
 
-Your app already listens for WebSocket connections from clients, but that's a technical detail. Connections don't necessarily contain details about usernames, for example. That kind of thing is an application detail and needs to be handled on its own.
+Your app already listens for Socket.io connections from clients, but that's a technical detail. Connections don't necessarily contain details about usernames, for example. That kind of thing is an application detail and needs to be handled on its own.
 
 The first thing the handler should do is let everyone else know the sender has logged in. The sender already knows this, so the message should go to everyone but them. This is a really common pattern in socket communications and is called broadcasting. This code listens for any socket to send it a `set price` event and then broadcast that same event to every other socket:
 
 ```js
+// Example, not solution
 // Server
 io.on("connection", (socket) => {
   socket.on("set price", (price) => {
@@ -95,6 +102,7 @@ io.on("connection", (socket) => {
 The first argument to `.emit()` is the name of the event and the second can be any data type. That data will be sent to every handler any client has for that event.
 
 ```js
+// Example, not solution
 // One Client
 socket.emit("set price", price: 99)
 
@@ -107,6 +115,8 @@ socket.on("set price", (price) => {
 **Add an event listener to every socket for the `"sign in"` event.** The handler will be called with a username. **Broadcast the "sign in" event to every other connected client, resending the username.**
 
 If you've done this correctly, you should see sign in messages displaying in the chat log of the website and socket messages starting to display in the socket messages log.
+
+![Chat room showing socket and chat messages](U5LAB3-2.png)
 
 ## DMs
 
@@ -122,6 +132,7 @@ Rooms are a unique Socket.io feature that allows servers to give a name to an ar
 To add a socket to a room, use `.join()`:
 
 ```js
+// Example, not solution
 socket.join("Some Room")
 ```
 
@@ -132,6 +143,7 @@ Note that broadcasting and rooms are server-only concepts. Clients are connected
 To send a message to a room, put `.to("room name")` before the `.emit()`:
 
 ```js
+// Example, not solution
 socket.to("socket club").emit("chat", "Let's get real-time!");
 ```
 
@@ -139,11 +151,14 @@ socket.to("socket club").emit("chat", "Let's get real-time!");
 
 If you did all of this correctly, you should see DMs starting to display in the chat log of the app and new socket messages displaying. Take a moment to examine the structure of the data in the DM objects.
 
+![Chat room with chat, socket, and DMs](U5LAB3-3.png)
+
 ## Channels
 
 Much like connecting/signing on and socket messaging/DMing are distinct technical vs. application concepts, Socket.io rooms are a technical companion to the chat room concept of channels. Clients will send a `"new message"` event with details about the new room. In production servers, creating a room ordinarily involves additional server work such as adding it to a database. These kinds of operations may or may not succeed, so it makes sense to send this message to every socket--including the sender. To send a message to the entire server, use `io.emit()`:
 
 ```js
+// Example, not solution
 io.on("connection", (socket) => {
   socket.on("announce", (announcement) => {
     io.emit(`Attention everyone: ${announcement}`)
@@ -157,9 +172,13 @@ Note that entire server (`io`) is emitting, _not_ an individual `socket`.
 
 If you do this correctly, the `#general` channel should start showing up under the Rooms log.
 
+![#general showing up in the rooms log](U5LAB3-4.png)
+
 Clients will also send `"join"` events to the server to request to join a room.
 
 **Listen for the `"join"` event.** The handler will be called with an object representing the join request. Its `.channel` property contains a channel name. **Use the channel name to add the socket to the appropriate Socket.io room. Then, broadcast a `"join"` event to every socket beside the sender, resending the entire join request.**
+
+![Channel join events displaying](U5LAB3-5.png)
 
 Clients will send `"chat"` events to the server to send a message to a room. Note that this is distinct from `"dm"` events.
 
@@ -167,11 +186,14 @@ Clients will send `"chat"` events to the server to send a message to a room. Not
 
 If you did this correctly, you should see channel messages appear in the chat log and additional socket messages display as well.
 
+![Room messages displaying](U5LAB3-6.png)
+
 ## Clean Up
 
 The last step is to end the socket connection, freeing up resources for the server. To do this, use the `.disconnect` method on the socket:
 
 ```js
+// Example, not solution
 socket.disconnect();
 ```
 
@@ -224,6 +246,7 @@ These change something about the socket:
 Right now, the server can't tell you which channels and users already existed when you signed on. The `Set` data type is useful for things like this. Sets are similar to arrays, but every item is guaranteed to be unique. If you try to add something to a Set that already exists, nothing will change. Sets are created with the `new` keyword:
 
 ```js
+// Example, not solution
 const someSet = new Set()
 ```
 
@@ -232,11 +255,12 @@ const someSet = new Set()
 To add data to a set, call its `.add()` method. To remove data, use its `.delete()` method.
 
 ```js
+// Example, not solution
 const someSet = new Set() // Set is empty
 someSet.add("Some Item") // Set has 1 item
 someSet.add("Another Item") // Set has 2 items
 someSet.add("Some Item") // Doesn't do anything, already exists
-someSet.delete("Some Item") // Set is empty again
+someSet.delete("Some Item") // Set has 1 item again
 ```
 
 **In the `"sign in"` event handler, add the user to the users Set. In the `"new channel"` event handler, add the channel name to the channels Set. Note that the channel name is in the `.channel` property of the new channel request object.**
@@ -244,6 +268,7 @@ someSet.delete("Some Item") // Set is empty again
 Finally, let the new client know what the current rooms and users are when they sign on. Sets are similar to arrays, but not identical and need to be converted to arrays before they can be emitted. The easiest way to convert a Set to an array is to spread it into one:
 
 ```js
+// Example, not solution
 const someSet = new Set()
 const someArray = [...someSet]
 ```

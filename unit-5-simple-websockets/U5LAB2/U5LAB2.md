@@ -30,13 +30,26 @@ Are you ready to build a chat room? This app, MESG, works just like any other we
 
 This lab uses Socket.io, which is a library for making common real-time operations easier. It's built on top of `WebSocket` and uses similar syntax.
 
+Note that in this lab, DOM elements are prefixed with a `$`. There's nothing special about this character, it's just an easy way to quickly distinguish variables that contain DOM elements. For example:
+
+```javascript
+const $input = document.querySelector("input#first-name")
+const input = $input.value
+```
+
+The lab also contains several included functions in [`client/utilities.js`](./U5LAB1-Starter/client/script.js) that you can use just by calling them. You won't need to modify these at all, but you can look at them if you're curious how they work.
+
 ## Directions
 
 All of your code will be written in [`client/script.js`](./U5LAB1-Starter/client/script.js):
 
 ### Connect to the socket server
 
-Socket.io is already available in the app as a function called `io`. **Call it to connect to the provided socket server and save the connection in a variable called `socket`**.
+Socket.io is already available in the app as a function called `io`. **Call it to connect to the provided socket server and save the connection in a variable called `socket`**. It should look like this:
+
+```javascript
+const socket = io()
+```
 
 Check the network tab of the browser's developer tools to confirm that the connection was made before moving on. You should see 1 or more successful requests to `/socket.io` on your server.
 
@@ -57,9 +70,29 @@ The events can be named anything you want and represent a category of messages i
 
 1. Add an event listener to the `"submit"` event of `$joinForm`
 2. Prevent the default browser behavior with `event.preventDefault()`
-3. Get the user's screen name by retrieving `screen-name` from the form with `event.target["screen-name"]` or other method for extracting form data
+3. Get the user's screen name by retrieving `screen-name` from the form with `FormData`, `event.target["screen-name"]` or other method for extracting form data
 4. Save the screen name to the app by passing it to `registerUser` (an included function)
 5. Emit a `"join"` event on the socket with the screen name with something like `socket.emit("join", "some-name")`
+
+<details>
+	<summary>
+		Solution
+	</summary>
+	<code>
+		<pre>
+$joinForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const screenName = formData.get('screen-name');
+
+  registerUser(screenName);
+
+  socket.emit('join', screenName);
+});
+		</pre>
+	</code>
+</details>
 
 ### Send messages to the chat room
 
@@ -77,10 +110,31 @@ socket.emit("chat", {
 
 1. Add an event listener for the submit event on the `$newMessageForm` element
 2. Prevent the default browser behavior
-3. Get the chat message by retrieving `"message"` from the form with `event.target["message"]` or other technique for extracting form data
+3. Get the chat message by retrieving `"message"` from the form with `event.target["message"].value` or other technique for extracting form data.
 4. Reset the form by calling the included function `resetNewMessageForm()`
 5. Get the user's screen name by calling the included `getUser()` function with no arguments and accessing the `screenName` property of the object it returns
 6. Emit a `chat` event on the socket with an object containing the `screenName` and the `message` you got from the form
+
+<details>
+	<summary>
+		Solution
+	</summary>
+	<code>
+		<pre>
+$newMessageForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const message = formData.get('message');
+
+  resetNewMessageForm();
+
+  const { screenName } = getUser();
+  socket.emit('chat', { screenName, message });
+});
+		</pre>
+	</code>
+</details>
 
 Note that Socket.io clients can't actually send each other messages directly; they must go through a server they're both connected to. In this case, when this socket emits the `"chat"` event, the server (which is listening for it with its own `.on()` handler in `app.js`) emits its own `"chat"` event on every connected socket. It could have sent the message right back to that original socket, sent it to all connected sockets, sent it to some subset of them, sent a different message entirely, or done nothing at all.
 
@@ -103,7 +157,7 @@ The handler will be called with whatever was sent in the matching `emit`. Note t
 1. Add an event listener to the socket for the `chat` event
 2. Extract the `screenName` and `message` values out of the object in the handler
 3. Call the included `getUser` function with the screen name and extract the `colorClass` out of the returned user object (such as `const colorClass = user.colorClass`)
-4. Save a formatted version of the message into a new variable by calling `.trim()` on it
+4. Save a formatted version of the message into a new variable after calling `.trim()` on it
 5. Create a new chat message DOM element by calling the included `createMessage` function with `"chat-message"` as the first argument and this HTML string as the second:
 
 ```js
@@ -111,9 +165,33 @@ The handler will be called with whatever was sent in the matching `emit`. Note t
   ${screenName || 'Unknown user'}
 </address> <pre>${formattedMessage}</pre>`
 ```
+6. Append the chat message DOM element you created to the `$message` element
+7. Call the `scrollTo` method of the `$messages` object. Pass it an object with `top` set to `$messages.scrollHeight` and `behavior` set to `"smooth"`
 
 Make sure your variables line up with the ones in the template and that you called `.on` on the socket instead of `.addEventListener()`.
-6. Append the chat message DOM element you created to the `$message` element
+
+<details>
+	<summary>
+		Solution
+	</summary>
+	<code>
+		<pre>
+socket.on('chat', ({ screenName, message }) => {
+  const { colorClass } = getUser(screenName);
+  const formattedMessage = message.trim();
+  const $chatMessage = createMessage(
+    'chat-message',
+    `<address class="${colorClass}">
+      ${screenName || 'Unknown user'}
+    </address> <pre>${formattedMessage}</pre>`,
+  );
+  $messages.append($chatMessage);
+
+  $messages.scrollTo({ top: $messages.scrollHeight, behavior: 'smooth' });
+});
+		</pre>
+	</code>
+</details>
 
 ## Exemplar
 
