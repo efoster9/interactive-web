@@ -10,7 +10,7 @@ This lesson is sort of a cross between a lab and a lesson. The goal is give stud
 
 The data used in this lab is the Billboard top 200 songs as of December 31, 2021. Feel empowered to change this to meet the needs more closely of your specific students. We highly recommend, for example, you survey your students and ask them to give you their favorite 5-10 songs. Then, replace the `top200.js` file with a similar array of objects. _NOTE: The artist "Kodak Black" is used as an example. You will need a different example if you do this._
 
-
+In the extensions, you can give students the chance to implement their own fuzzy matching algorithm. If you choose to do this, consider giving them an extra day or two to work this out with their partner.
 
 ### Objectives
 
@@ -53,7 +53,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+| In the last lesson, students picked sites that give suggestions while searching. Have the students that were absent do this, and have the other students go back to those sites and see how they handle misspellings. Again, ask them to predict what may be happening behind the scenes. | Print a reference sheet or form a slide deck on required Javascript syntax that students can reference while completing the challenges. This lab focusses on problem solving and creating a plan more so than syntax. Consider forcing some students to take some time to sketch ideas on pencil and paper before coding. | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
 
 ### Suggestions for Differentiation
 

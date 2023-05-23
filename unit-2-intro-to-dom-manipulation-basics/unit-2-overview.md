@@ -1,22 +1,16 @@
 ---
-description: How can I create well designed and accessible webpages with HTML and CSS?
+description: How can I create a more interactive webpage using Javascript?
 ---
 
-# 🔮 Unit 1 Overview
+# 🔮 Unit 2 Overview
 
 ### Overview
 
-In this first unit, students begin building webpages using HTML and CSS. They will learn how to organize their pages using CSS Grid and Flexbox, as well as CSS Frameworks such as Bulma. Students will also focus on Breakpoints to ensure their pages work on a variety of devies, as well as accessibility so the pages are usable by everyone who may want to engage with them.
+In this second unit, students learn to make interactive websites using javascript event listeners, and DOM manipulation. In the earlier part of the unit, students learn data types, arrow functions, and `querySelector()`. They learn to change the class list of DOM elements and add or remove innerHTML text from the webpage based on clicks and user inputs. Later in the unit, the students will use if else conditional flow in their code.
 
-To finish the unit, students will create a final project page utilizing all of the skills they have learned before continuing on to learn about making websites interactive in unit 2.
+To finish the unit, students will create a final project page utilizing all of the skills they have learned in the unit to create an accessible interactive website that is meant to help the user in some way.
 
-### Nota Bene
-
-This unit, as much of the curriculum, is structured in both _lessons_ and _labs._ Lessons are primarily teacher-led activities - often via code alongs - supplemented with some space for students to practice. Labs are _exclusively_ opportunities for students to practice and express themselves.
-
-Suggested durations are given for each, but assume that most will take more than one day; a good pacing goal is to get through 1-2 lessons and 1-2 labs per week, which will vary week to week based on the depth of content being covered.
-
-### NYS Standards
+### NYS Standards [Courtney Add]
 
 **NB:** _HTML and CSS are considered 'mark-up' languaes, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
 
@@ -29,10 +23,10 @@ Suggested durations are given for each, but assume that most will take more than
 
 ### Suggested Duration
 
-Approx. 5-6 weeks for core content and 1-2 weeks for the Final Project.
+Approx. 2-3 weeks for core content and 1-2 weeks for the Final Project.
 
 ### Prerequisite Skills
 
-This first unit assumes little to no prior knowledge of HTML/CSS, but it does dive immediately into coding.&#x20;
+This second unit assumes little to no prior knowledge of Javascript, but does require familiarity with HTML and CSS. Though heavily javascript focussed, many labs will require identifying IDs and classes in HTML for javascript querySelectors, and extensions will now and then encourage CSS styling. Lesson 1 and Lab 1 are completely javascript focussed.
 
 As this is an intermediate course, students are recommended to have had some computer science exposure prior to starting; being able to interact with an IDE/editor and code documentation will make life easier and allow students to move through content more quickly.

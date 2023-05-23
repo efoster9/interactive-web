@@ -54,7 +54,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+| Have students find 3 websites or apps that give suggestions while doing a search. (1 example could be Google) Have them talk to each other about the differences between websites and or predictions in how this is happening. | Conditional statements, functions, and filter() is being used here. Consider offering a resource of some kind (Google slide deck, paper print out, etc.) to support students as they think through the challenges. | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
 
 ### Suggestions for Differentiation
 

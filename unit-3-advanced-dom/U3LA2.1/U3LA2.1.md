@@ -49,7 +49,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+| Ask students to pick their favorite 2 to 3 fruits, and their favorite way to eat them: smoothie, acai bowl, raw, with tajin/chili, etc. For an extra curve consider asking students how much they would charge for that meal. | Print a reference sheet or form a slide deck on the querySelectorAll() syntax that students can reference while walking through the lesson. Also, consider summative notes from the previous lesson on arrays. | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
 
 ### Suggestions for Differentiation
 

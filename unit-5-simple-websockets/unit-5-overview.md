@@ -1,20 +1,14 @@
 ---
-description: How can I create well designed and accessible webpages with HTML and CSS?
+description: How can I use websockets to communicate between a client and server.
 ---
 
-# 🔮 Unit 1 Overview
+# 🔮 Unit 5 Overview
 
 ### Overview
 
 In this first unit, students begin building webpages using HTML and CSS. They will learn how to organize their pages using CSS Grid and Flexbox, as well as CSS Frameworks such as Bulma. Students will also focus on Breakpoints to ensure their pages work on a variety of devies, as well as accessibility so the pages are usable by everyone who may want to engage with them.
 
 To finish the unit, students will create a final project page utilizing all of the skills they have learned before continuing on to learn about making websites interactive in unit 2.
-
-### Nota Bene
-
-This unit, as much of the curriculum, is structured in both _lessons_ and _labs._ Lessons are primarily teacher-led activities - often via code alongs - supplemented with some space for students to practice. Labs are _exclusively_ opportunities for students to practice and express themselves.
-
-Suggested durations are given for each, but assume that most will take more than one day; a good pacing goal is to get through 1-2 lessons and 1-2 labs per week, which will vary week to week based on the depth of content being covered.
 
 ### NYS Standards
 

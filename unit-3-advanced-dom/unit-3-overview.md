@@ -1,24 +1,20 @@
 ---
-description: How can I create well designed and accessible webpages with HTML and CSS?
+description: What data structures, algorithms, and resources can I use to enhance the quality and efficiency of my Javascript backend.
 ---
 
-# 🔮 Unit 1 Overview
+# 🔮 Unit 3 Overview
 
 ### Overview
 
-In this first unit, students begin building webpages using HTML and CSS. They will learn how to organize their pages using CSS Grid and Flexbox, as well as CSS Frameworks such as Bulma. Students will also focus on Breakpoints to ensure their pages work on a variety of devies, as well as accessibility so the pages are usable by everyone who may want to engage with them.
+In this unit, students learn fundamental data structures, iterative methods, and mutability. They get an opportunity to see and create algorithms, and later in the unit, they learn to use javascript methods that create DOM elements and store data in local storage. 
 
-To finish the unit, students will create a final project page utilizing all of the skills they have learned before continuing on to learn about making websites interactive in unit 2.
+The main concepts that students should take away from this unit is working with arrays, objects, and iteration with them. The other topics though essential for a well rounded programmer are not essential to master in order to move on to the next unit.
 
-### Nota Bene
-
-This unit, as much of the curriculum, is structured in both _lessons_ and _labs._ Lessons are primarily teacher-led activities - often via code alongs - supplemented with some space for students to practice. Labs are _exclusively_ opportunities for students to practice and express themselves.
-
-Suggested durations are given for each, but assume that most will take more than one day; a good pacing goal is to get through 1-2 lessons and 1-2 labs per week, which will vary week to week based on the depth of content being covered.
+There is no final project for this unit. [Insert rationale]
 
 ### NYS Standards
 
-**NB:** _HTML and CSS are considered 'mark-up' languaes, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
+**NB:** _HTML and CSS are considered 'mark-up' languages, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
 
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
@@ -29,10 +25,10 @@ Suggested durations are given for each, but assume that most will take more than
 
 ### Suggested Duration
 
-Approx. 5-6 weeks for core content and 1-2 weeks for the Final Project.
+Approx. 3-6 weeks for core content. There is no Final Project.
 
 ### Prerequisite Skills
 
-This first unit assumes little to no prior knowledge of HTML/CSS, but it does dive immediately into coding.&#x20;
+This unit builds off the previous 2 units, namely unit 2. The more comfortable students are with topics in unit 2, the more quickly you can move through this unit.
 
-As this is an intermediate course, students are recommended to have had some computer science exposure prior to starting; being able to interact with an IDE/editor and code documentation will make life easier and allow students to move through content more quickly.
+There are also some opportunities to circle back to topics from unit 2 in this unit. Lesson 1, lesson 2.1 and lab 1 are good opportunities to review skills from the early part of Unit 2. Typeahead Search and Fuzzy matching can be a good opportunity to review input and conditionals, and Chapter 3 (Mutability) would be a good time to review the use of classList. x

@@ -6,7 +6,11 @@ description: How can you use advanced data structures and functional computing w
 
 ### Teacher Notes
 
-{tbc}
+Students will be using the concepts from the previous lessons to create a card organizing webpage. Small `divs` in the shapes of playing cards will be moved from one parent `div` to another. The medium and spicy extensions introduce new events that javascript can listen for such as: mouseenter, mouseleave, and dblclick.
+
+As students get stuck trying to navigate the DOM tree in search for the right element, continue to encourage them to refer to the actual HTML code both in the `index.html` and in the devtools on the webpage, and encourage them to constantly use `console.log`. 
+
+> Note: This site is not a good example of accessibility, but has been purposely structured for instructional purposes. 
 
 ### Prompt
 
@@ -117,7 +121,7 @@ Take a look at this [finished example](./U3LAB3-Exemplar/index.html) for the fin
 
 ### Culturally Responsive Best Practice
 
-[Courtney to add]
+Students may be color blind, or may not have any experience with playing cards and their suits. This lab doesn't require prior experience with a deck of cards, and the suits' shapes are distinct enough to distinguish regardless of visual deficiencies. However, consider having students play a couple of matching games with a deck of cards to become more familiar and comfortable with the idea. 
 
 ### Extra Help?
 

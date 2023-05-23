@@ -54,7 +54,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
+| The themes here were randomly chosen merely to illustrate the programmatic concepts. Consider having students fill out a survey giving you an array or object of data in the theme they choose that you can use in place of the arbitrary themes used here for the examples.  | Students will be engaged in a code along with multiple examples of several different themes. Consider having a resource like a slide deck to consolidate the examples for students to reference at a later time. | Student will mainly be note taking and writing their reflections. Consider having them write down their questions whether or not they choose to ask them. This can then be anonymously collected, or asked on a follow up day.  |
 
 ### Suggestions for Differentiation
 
@@ -113,7 +113,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     ```
     _"numX 10"
     "numY 15"_
-    It may help to breakdown the statements one line at a time i this is not clear for your students. 
+    It may help to breakdown the statements one line at a time if this is not clear for your students. 
 
 2. Now, copy down the following code and give students a minute again to analyze and predict the output before taking predictions:
     ```js

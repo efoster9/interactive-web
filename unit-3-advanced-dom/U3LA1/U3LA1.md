@@ -54,7 +54,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
+| Consider having students share a social media page or area in life they are familiar with that warrants a **profile**. Have them create one for themselves; it should contain attributes such as a name, birthday or age, followers, strength, or similar attributes. They'll be learning about arrays and objects which are single variables that can hold all this information.  | Students struggle most with syntax in dealing with advanced data structures. Consider giving them a resource that has a clear/simple example of accessing array elements or object key/values. For extra practice, have them write their profile with pencil and paper as an object and array. | Students will mostly be coding. Reflection questions give them an opportunity to reflect and articulate their thoughts and potential anxieties. Consider having students use pencil and paper to sketch arrays or objects before coding on the computer.  |
 
 ### Suggestions for Differentiation
 
