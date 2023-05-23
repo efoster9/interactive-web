@@ -78,20 +78,19 @@ The events can be named anything you want and represent a category of messages i
 	<summary>
 		Solution
 	</summary>
-	<code>
-		<pre>
-$joinForm.addEventListener('submit', (event) => {
-  event.preventDefault();
 
-  const formData = new FormData(event.target);
-  const screenName = formData.get('screen-name');
+  ```js
+  $joinForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  registerUser(screenName);
+    const formData = new FormData(event.target);
+    const screenName = formData.get('screen-name');
 
-  socket.emit('join', screenName);
-});
-		</pre>
-	</code>
+    registerUser(screenName);
+
+    socket.emit('join', screenName);
+  });
+  ```
 </details>
 
 ### Send messages to the chat room
@@ -119,21 +118,20 @@ socket.emit("chat", {
 	<summary>
 		Solution
 	</summary>
-	<code>
-		<pre>
-$newMessageForm.addEventListener('submit', (event) => {
-  event.preventDefault();
 
-  const formData = new FormData(event.target);
-  const message = formData.get('message');
+  ```js
+  $newMessageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  resetNewMessageForm();
+    const formData = new FormData(event.target);
+    const message = formData.get('message');
 
-  const { screenName } = getUser();
-  socket.emit('chat', { screenName, message });
-});
-		</pre>
-	</code>
+    resetNewMessageForm();
+
+    const { screenName } = getUser();
+    socket.emit('chat', { screenName, message });
+  });
+  ```
 </details>
 
 Note that Socket.io clients can't actually send each other messages directly; they must go through a server they're both connected to. In this case, when this socket emits the `"chat"` event, the server (which is listening for it with its own `.on()` handler in `app.js`) emits its own `"chat"` event on every connected socket. It could have sent the message right back to that original socket, sent it to all connected sockets, sent it to some subset of them, sent a different message entirely, or done nothing at all.
@@ -171,26 +169,25 @@ The handler will be called with whatever was sent in the matching `emit`. Note t
 Make sure your variables line up with the ones in the template and that you called `.on` on the socket instead of `.addEventListener()`.
 
 <details>
-	<summary>
-		Solution
+  <summary>
+    Solution
 	</summary>
-	<code>
-		<pre>
-socket.on('chat', ({ screenName, message }) => {
-  const { colorClass } = getUser(screenName);
-  const formattedMessage = message.trim();
-  const $chatMessage = createMessage(
-    'chat-message',
-    `<address class="${colorClass}">
-      ${screenName || 'Unknown user'}
-    </address> <pre>${formattedMessage}</pre>`,
-  );
-  $messages.append($chatMessage);
+  
+  ```js
+  socket.on('chat', ({ screenName, message }) => {
+    const { colorClass } = getUser(screenName);
+    const formattedMessage = message.trim();
+    const $chatMessage = createMessage(
+      'chat-message',
+      `<address class="${colorClass}">
+        ${screenName || 'Unknown user'}
+      </address> <pre>${formattedMessage}</pre>`,
+    );
+    $messages.append($chatMessage);
 
-  $messages.scrollTo({ top: $messages.scrollHeight, behavior: 'smooth' });
-});
-		</pre>
-	</code>
+    $messages.scrollTo({ top: $messages.scrollHeight, behavior: 'smooth' });
+  });
+  ```
 </details>
 
 ## Exemplar
