@@ -6,13 +6,13 @@ description: How can I use websockets to communicate between a client and server
 
 ### Overview
 
-In this first unit, students begin building webpages using HTML and CSS. They will learn how to organize their pages using CSS Grid and Flexbox, as well as CSS Frameworks such as Bulma. Students will also focus on Breakpoints to ensure their pages work on a variety of devies, as well as accessibility so the pages are usable by everyone who may want to engage with them.
+This 5th unit takes students through Websockets. In the first section, students will learn server vs client side programming with Node and Express. In the second section, students will build a naive chatroom and get introduced to Websockets and socket.io mainly from the client side. In the last section, students will fully build out a chatroom from both the client and server side. With socket.io they will ultimately learn to build a socket server and broadcast messages.
 
-To finish the unit, students will create a final project page utilizing all of the skills they have learned before continuing on to learn about making websites interactive in unit 2.
+To finish the unit, students will create the course final project utilizing all of the skills they have learned up until this point.
 
 ### NYS Standards
 
-**NB:** _HTML and CSS are considered 'mark-up' languaes, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
+**NB:** _HTML and CSS are considered 'mark-up' languages, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
 
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
@@ -23,10 +23,8 @@ To finish the unit, students will create a final project page utilizing all of t
 
 ### Suggested Duration
 
-Approx. 5-6 weeks for core content and 1-2 weeks for the Final Project.
+Approx. 3-6 weeks for core content and 3-5 weeks for the Course Final Project.
 
 ### Prerequisite Skills
 
-This first unit assumes little to no prior knowledge of HTML/CSS, but it does dive immediately into coding.&#x20;
-
-As this is an intermediate course, students are recommended to have had some computer science exposure prior to starting; being able to interact with an IDE/editor and code documentation will make life easier and allow students to move through content more quickly.
+Unit 5 is a challenging unit designed for advanced individuals. There is a lot of new vocabulary, new syntax, and links to documentation. At this point in the curriculum, students should be fluent in javascript and comfortable with both HTML and basic API concepts. 

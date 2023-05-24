@@ -23,7 +23,7 @@ To finish the unit, students will create a final project page utilizing all of t
 
 ### Suggested Duration
 
-Approx. 2-3 weeks for core content and 1-2 weeks for the Final Project.
+Approx. 3-5 weeks for core content and 2-3 weeks for the Final Project.
 
 ### Prerequisite Skills
 

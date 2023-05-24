@@ -1,24 +1,22 @@
 ---
-description: How can I create well designed and accessible webpages with HTML and CSS?
+description: How can access remote data and incorporate it into a webpage?
 ---
 
-# 🔮 Unit 1 Overview
+# 🔮 Unit 4 Overview
 
 ### Overview
 
-In this first unit, students begin building webpages using HTML and CSS. They will learn how to organize their pages using CSS Grid and Flexbox, as well as CSS Frameworks such as Bulma. Students will also focus on Breakpoints to ensure their pages work on a variety of devies, as well as accessibility so the pages are usable by everyone who may want to engage with them.
+This unit is all about APIs. Section 1 guides students from primarily accessing endpoints straight on the browser to gradually adding code until students are using async/await functions to hit the API. Section 2 is similar but focusses on closed APIs and SDKs.
 
-To finish the unit, students will create a final project page utilizing all of the skills they have learned before continuing on to learn about making websites interactive in unit 2.
+To finish the unit, students will create a final project, a graphical user interface (GUI) for the API of their choosing. They'll have the flexibility to design a website from scratch that allows the user to visualize and access data from the API more easily. 
 
-### Nota Bene
+If you are following the curriculum and have decided not to add a final project for Unit 3, most likely you will plan to incorporate Unit 5. Therefore, consider adding Unit 3 topics (namely local storage and methods that create DOM elements) as a requirement in your rubric for the final project here.
 
-This unit, as much of the curriculum, is structured in both _lessons_ and _labs._ Lessons are primarily teacher-led activities - often via code alongs - supplemented with some space for students to practice. Labs are _exclusively_ opportunities for students to practice and express themselves.
-
-Suggested durations are given for each, but assume that most will take more than one day; a good pacing goal is to get through 1-2 lessons and 1-2 labs per week, which will vary week to week based on the depth of content being covered.
+If you have done a final project for Unit 3, you most likely will not have time to get to the stretch content in Unit 5. Therefore, at the end of this unit students will be completing the Course Final Project, and the duration will be on the higher end of 4-5 weeks for the final alone.
 
 ### NYS Standards
 
-**NB:** _HTML and CSS are considered 'mark-up' languaes, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
+**NB:** _HTML and CSS are considered 'mark-up' languages, not programming languages. As such, many Computational Thinking skills will be better addressed in future units._
 
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
@@ -29,10 +27,10 @@ Suggested durations are given for each, but assume that most will take more than
 
 ### Suggested Duration
 
-Approx. 5-6 weeks for core content and 1-2 weeks for the Final Project.
+_Approx. 3-5 weeks for core content and 2-5 weeks for the Final Project (depending on if this is the course final project or not)._
 
 ### Prerequisite Skills
 
-This first unit assumes little to no prior knowledge of HTML/CSS, but it does dive immediately into coding.&#x20;
+Students should feel comfortable creating, reading, updating, and iterating through objects. To design a strong final project, they should also feel confident writing HTML and CSS. A solid understanding in mutability is encouraged. 
 
-As this is an intermediate course, students are recommended to have had some computer science exposure prior to starting; being able to interact with an IDE/editor and code documentation will make life easier and allow students to move through content more quickly.
+Local storage and methods to create DOM elements are proposed in the extensions. However, these concepts are not essential to understand APIs. They are however essential topics in Javascript programming. Consider balancing the incorporation of these topics based on the level of your students.

@@ -10,7 +10,9 @@ In this unit, students learn fundamental data structures, iterative methods, and
 
 The main concepts that students should take away from this unit is working with arrays, objects, and iteration with them. The other topics though essential for a well rounded programmer are not essential to master in order to move on to the next unit.
 
-There is no final project for this unit. [Insert rationale]
+There is no final project for this unit. As your class moves into the second semester, consider the pace that your students need go in order to do well. If you'd like to slow down, plan on omitting the stretch content (Unit 5) and adding a final project here to give students another chance to get a grasp on these topics. Otherwise, so long as your students are strong in creating, reading, updating, and iterating through objects, you can move on to Unit 4 APIs as if it were an extension to this unit. 
+
+> _Note: this curriculum is used city wide and is designed intentionally to be flexible in order to account for classes that are moving at various tempos._
 
 ### NYS Standards
 
@@ -25,10 +27,10 @@ There is no final project for this unit. [Insert rationale]
 
 ### Suggested Duration
 
-Approx. 3-6 weeks for core content. There is no Final Project.
+Approx. 5-7 weeks for core content. There is no designated Final Project.
 
 ### Prerequisite Skills
 
 This unit builds off the previous 2 units, namely unit 2. The more comfortable students are with topics in unit 2, the more quickly you can move through this unit.
 
-There are also some opportunities to circle back to topics from unit 2 in this unit. Lesson 1, lesson 2.1 and lab 1 are good opportunities to review skills from the early part of Unit 2. Typeahead Search and Fuzzy matching can be a good opportunity to review input and conditionals, and Chapter 3 (Mutability) would be a good time to review the use of classList. x
+There are also some opportunities to circle back to topics from unit 2 in this unit. Lesson 1, lesson 2.1 and lab 1 are good opportunities to review skills from the early part of Unit 2. Typeahead Search and Fuzzy matching can be a good opportunity to review input and conditionals, and Section 3 (Mutability) would be a good time to review the use of classList.
