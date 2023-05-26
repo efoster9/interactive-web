@@ -73,9 +73,9 @@ Consider making a reference sheet to basic async await function that uses a simp
 
 **Summative:**
 
-- Unit 3, Arrays, Iteration, and Objects Lab 1 (Upcoming Lab)
+- Unit 4, Open API Lab 1 (Upcoming Lab)
 
-- Final Project (End of Unit Project)
+- Unit 4 Final Project (End of Unit Project)
 
 ### Do Now/Warm Up (\~5 min)
 

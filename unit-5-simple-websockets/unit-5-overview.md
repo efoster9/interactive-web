@@ -6,7 +6,7 @@ description: How can I use websockets to communicate between a client and server
 
 ### Overview
 
-This 5th unit takes students through Websockets. In the first section, students will learn server vs client side programming with Node and Express. In the second section, students will build a naive chatroom and get introduced to Websockets and socket.io mainly from the client side. In the last section, students will fully build out a chatroom from both the client and server side. With socket.io they will ultimately learn to build a socket server and broadcast messages.
+This 5th unit takes students through Websockets. This is the first time students transition from thinking in terms of front end to thinking full stack. In the first section, students will learn server vs client side programming with Node and Express. In the second section, students will build a naive chatroom and get introduced to Websockets and socket.io mainly from the client side. In the last section, students will fully build out a chatroom from both the client and server side. With socket.io they will ultimately learn to build a socket server and broadcast messages.
 
 To finish the unit, students will create the course final project utilizing all of the skills they have learned up until this point.
 

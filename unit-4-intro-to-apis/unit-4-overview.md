@@ -10,9 +10,9 @@ This unit is all about APIs. Section 1 guides students from primarily accessing 
 
 To finish the unit, students will create a final project, a graphical user interface (GUI) for the API of their choosing. They'll have the flexibility to design a website from scratch that allows the user to visualize and access data from the API more easily. 
 
-If you are following the curriculum and have decided not to add a final project for Unit 3, most likely you will plan to incorporate Unit 5. Therefore, consider adding Unit 3 topics (namely local storage and methods that create DOM elements) as a requirement in your rubric for the final project here.
+If you are following the curriculum and have decided not to add a final project for Unit 3, most likely you will plan to incorporate Unit 5. Therefore, consider adding Unit 3 topics (namely local storage and methods that create DOM elements) as a requirement in your rubric for the final project here. Otherwise, if you have done a final project for Unit 3, you most likely will not have time to get to the stretch content in Unit 5. Therefore, at the end of this unit students will be completing the Course Final Project, and the duration will be on the higher end of 4-5 weeks for the final project.
 
-If you have done a final project for Unit 3, you most likely will not have time to get to the stretch content in Unit 5. Therefore, at the end of this unit students will be completing the Course Final Project, and the duration will be on the higher end of 4-5 weeks for the final alone.
+Regardless, it isn't unusual or superfluous to do a unit 4 final project, skip unit 5, and do a final project (ie. 2 projects back to back) if this is what time allows. Simply use the course final project as a pivot or extension of this projects. Students can either build on top of their existing projects, pivot in a slight different direction, or start a new project with a different trajectory.
 
 ### NYS Standards
 
