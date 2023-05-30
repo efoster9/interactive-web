@@ -37,7 +37,7 @@ Students will be able to:
 * **grid parent properties**: CSS properties that are applied to the parent element when creating a grid; common examples include: `display` , `grid-template-columns` , `grid-template-rows` , and `grid-template-areas`
 * **grid child properties**: CSS properties that are applied to the grid items/ child elements contained within the grid parent; common examples include: `grid-area` , `grid-column-start` , `grid-column-end` , `grid-row-start` , `grid-row-end`
 
-**NB**: _Many students will benefit from visualizations of the above terms. You can find great visual representations of many of the above terms in the_ [_Important CSS Grid Terminology_](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-important-css-grid-terminology) _section of the_ [_A Complete Guide to CSS Grid_](https://css-tricks.com/snippets/css/complete-guide-grid/) _resource. Students might also find the illustrations included in the_ [_FreeCodeCamp Grid Tutorial with Cheatsheet_](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/) _helpful._&#x20;
+**NB**: _Many students will benefit from visualizations of the above terms. You can find great visual representations of many of the above terms in the_ [_Important CSS Grid Terminology_](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-important-css-grid-terminology) _section of the_ [_A Complete Guide to CSS Grid_](https://css-tricks.com/snippets/css/complete-guide-grid/) _resource. Students might also find the illustrations included in the_ [_FreeCodeCamp Grid Tutorial with Cheatsheet_](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/) _helpful._
 
 ### Planning Notes && Materials
 
@@ -111,7 +111,7 @@ Let’s build this example together! We can see that there are four elements ‘
 </body>
 ```
 
-Without any CSS applied, this HTML produces very boring output! (Try it!)&#x20;
+Without any CSS applied, this HTML produces very boring output! (Try it!)
 
 In order to replicate the layout we see in the image above, we are going to begin by using the following CSS grid parent properties, which we will assign to the `<body>` element: `display`, `grid-template-columns`, `grid-template-rows`, and `grid-template-areas`.
 
@@ -143,9 +143,9 @@ Since we have only two rows (by default) in our grid, we need to override the de
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 12.27.06 PM.png" alt=""><figcaption><p>Updated grid display of four columns and three rows</p></figcaption></figure>
 
-At this point, you might be wondering what this “1fr” is. This stands for “fractional unit” and if you use it in a CSS grid to create X number of columns or Y number of rows, it will make those columns/ rows an equal size. You can use other units to define the shape of your grid.&#x20;
+At this point, you might be wondering what this “1fr” is. This stands for “fractional unit” and if you use it in a CSS grid to create X number of columns or Y number of rows, it will make those columns/ rows an equal size. You can use other units to define the shape of your grid.
 
-**OPTIONAL**: Take a few minutes to experiment with using different units to define your columns and rows in the grid. Try plugging in some of these examples: 200px auto  15em 1fr. Experiment with shrinking and expanding the window after you change from 1fr to the other units? What do you notice? You might also want to experiment with using the repeat function!
+**OPTIONAL**: Take a few minutes to experiment with using different units to define your columns and rows in the grid. Try plugging in some of these examples: 200px auto 15em 1fr. Experiment with shrinking and expanding the window after you change from 1fr to the other units? What do you notice? You might also want to experiment with using the repeat function!
 
 **NB**: _The_ [_Grid Attack!_](https://codingfantasy.com/games/css-grid-attack) _Game provides lots of exposure to using different units of measurement as values for the properties `grid-template-columns` and `grid-template-rows` and will help students build a deeper visual and conceptual understanding of grids. And, it's fun! If you feel students need more practice, feel free to pause or extend to give playtime with the game._
 
@@ -171,13 +171,13 @@ You might notice some weirdness when you run your code and inspect the grid. If 
 
 Once you have an output that looks something like this:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 1.33.59 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reorganized grid with colored borders</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 1.33.59 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Reorganized grid with colored borders</p></figcaption></figure>
 
 Use the W3 schools documentation or general Googling to figure out how you can use the `text-align`, `background-color`, and `border-radius` properties to style your output so it is a more accurate replica of the model. Have fun exploring the documentation and the resources linked above to experiment with other properties to style your grid. You can also use what you have learned in previous classes about custom fonts to further style your output!
 
 ### Frame an Image with CSS Grid: Intro (10 - 15 min)
 
-A lot of websites use a CSS Grid layout to structure the main elements of the landing page, like we did with the header , main, sidebar, and footer elements in our first example. You have learned one way to set up a grid!  We can use grids anywhere on our webpages and we can approach building them in different ways.&#x20;
+A lot of websites use a CSS Grid layout to structure the main elements of the landing page, like we did with the header , main, sidebar, and footer elements in our first example. You have learned one way to set up a grid! We can use grids anywhere on our webpages and we can approach building them in different ways.
 
 In this project, you are going to learn how to use the grid line numbers to tell the computer where to place each element by using the following properties on the children elements in the grid: `grid-column-start`, `grid-column-end`, `grid-row-start`, and `grid-row-end` and the shorthand versions: `grid-column` and `grid-row` to create a frame around an image.
 
@@ -225,7 +225,7 @@ Notice in the starter code that the `.item-1` selector has two properties but no
 * `grid-column-start: 1;`
 * `grid-column-end: 2;`
 
-Try some different values and take note of what changes. Experiment until you figure out how to stretch .item-1 across the entire first row.&#x20;
+Try some different values and take note of what changes. Experiment until you figure out how to stretch .item-1 across the entire first row.
 
 Good news! There’s a shortcut! Each time you want to indicate the start and end of a placement on a column or row, you can use one of the shorthand properties. This is how it works:
 
