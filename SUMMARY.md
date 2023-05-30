@@ -52,6 +52,11 @@
 * [U3LA2.2: Typeahead Search](unit-3-advanced-dom/u3la2.2-typeahead-search.md)
 * [U3LA2.3: Fuzzy Matching - Autocorrect](unit-3-advanced-dom/u3la2.3-fuzzy-matching-autocorrect.md)
 * [🗃 U3LA2 Mini Project: Fuzzy Matching Personality Quiz](unit-3-advanced-dom/u3la2-mini-project-fuzzy-matching-personality-quiz.md)
+* [U3LA3.1 JavaScript Mutability](unit-3-advanced-dom/u3la3.1-javascript-mutability.md)
+* [U3LA3.2: Advanced DOM Manipulation](unit-3-advanced-dom/u3la3.2-advanced-dom-manipulation.md)
+* [🗃 U3LA3 Mini Project: Card Organizer](unit-3-advanced-dom/u3la3-mini-project-card-organizer.md)
+* [U3LA4: Local Storage](unit-3-advanced-dom/u3la4-local-storage.md)
+* [🎨 Unit Final/U3LA4 Project: Twenty in Ten Game](unit-3-advanced-dom/unit-final-u3la4-project-twenty-in-ten-game.md)
 
 ## Unit 4: Intro to APIs
 
