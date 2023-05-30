@@ -112,7 +112,7 @@ Use the following steps to plan out how you will change the personality quiz to 
      * Scale2 = likes to be along vs likes to be with others Based on the combination of the 2 scales, you can give the user a different personality type _(ex. outside & alone = "Vacation in Space!")_ If it helps, think of this one like an XY graph.
 5. **Outputs**: Finally, what will you show the user once they hit submit?
    * \[MILD] - Will it be a single output?
-   * \[MEDIUM] - Will you show a few or all possible outcomes and their percentage in each category? (ex. "Your 70% lion and 30% mouse")
+   * \[MEDIUM] - Will you show a few or all possible outcomes and their percentage in each category? (ex. "You're 70% lion and 30% mouse")
    * \[SPICY] - Will it have a more detailed description or a unique picture to go with it?
 6. Now that you have your plan, get your quiz up and running! Refrain from focussing on font, images, color and other styling for now. Also, (IMPORTANT) start with **1** question, and add more once you have it working.
 7. Once, you can complete the quiz and get a unique result, go back and add styling, images, and more questions.
