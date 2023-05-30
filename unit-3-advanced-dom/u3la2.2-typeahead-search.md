@@ -10,7 +10,7 @@ description: >-
 
 In this lesson, students will be working with an array of objects using the iterative techniques learned in prior lessons. Typeahead search is combination of an input field, dropdown menu, and array filtering behind the scenes.
 
-This lab can be done in 1 day or can be spread up to about 3 days depending on the level of your students. The Warmup is set for \~15 minutes allowing students to kick start the lesson by reviewing material they should know up until this point. This can be stretched to a whole day if students struggle with it and need the extra time, or it can be shortened to 5 minutes if your students are stronger.
+This lab can be done in 1 day or can be spread across \~3 days depending on the level of your students. The Warmup is set for \~15 minutes allowing students to kick start the lesson by reviewing material they should know up until this point. This can be stretched to a whole day if students struggle with it and need the extra time, or it can be shortened to 5 minutes if your students are coming in with more knowledge.
 
 Furthermore, the practice activities give students more time with the code from this lesson allowing them to explore function calls, iteration, and DOM manipulation. If your students need the practice, this too can span \~1 day. Otherwise, if they are more comfortable, feel empowered to cherry pick the activities that make the most sense for your class.
 
@@ -29,8 +29,10 @@ Students will be able to:
 
 ### NYS Computing Standards
 
-\[Courtney to Edit]
-
+* **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
+* **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
+* **9-12.CT.8** Develop a program that effectively uses control structures in order to create a computer program for practical intent, personal expression, or to address a societal issue.
+* **9-12.CT.9** Systematically test and refine programs using a range of test cases, based on anticipating common errors and user behavior.
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
 * **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
@@ -51,9 +53,9 @@ Students will be able to:
 
 ### Suggestions for UDL
 
-|                                                                                                Multiple Means of Representation                                                                                                |                                                                                            Multiple Means of Engagement                                                                                            |                                                  Multiple Means of Expression                                                  |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| Have students find 3 websites or apps that give suggestions while doing a search. (1 example could be Google) Have them talk to each other about the differences between websites and or predictions in how this is happening. | Conditional statements, functions, and filter() is being used here. Consider offering a resource of some kind (Google slide deck, paper print out, etc.) to support students as they think through the challenges. | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+|                                                                                        Multiple Means of Representation                                                                                       |                                                                                              Multiple Means of Engagement                                                                                             |                                                  Multiple Means of Expression                                                  |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| Have students find 3 websites or apps that give suggestions while doing a search. (1 example could be Google) Have them discuss the differences between websites and or predictions in how this is happening. | Conditional statements, functions, and `filter()` are being used here. Consider offering a resource of some kind (Google slide deck, paper print out, etc.) to support students as they think through the challenges. | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
 
 ### Suggestions for Differentiation
 
@@ -68,7 +70,6 @@ As with previous code-along lessons, consider preparing partially completed code
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
-* [**Practice: "NYC Boroughs"**](../unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/index.html)
 
 ### Assessments
 
@@ -84,7 +85,7 @@ As with previous code-along lessons, consider preparing partially completed code
 
 ### Do Now/Warm Up (\~15 min)
 
-Have students open up the starter code and give them a tour of the `script.js`. There are 4 DOM elements, 3 functions, and 1 incomplete `addEventListener()` for the user's input. Run up the webpage and show them that there is an input bar where users can search for a state by state name or capital.
+Have students open up [the starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits-2/unit-3-advanced-dom/U3LA2.2/U3LA2.2-Starter) and give them a tour of the `script.js`. There are 4 DOM elements, 3 functions, and 1 incomplete `addEventListener()` for the user's input. Run up the webpage and show them that there is an input bar where users can search for a state by state name or capital.
 
 There are 3 mini-goals that students should work together on as a warm up to get this going:
 
@@ -163,7 +164,7 @@ Review the solution with the following questions in mind. Alternatively, you can
     };
     ```
 
-    _NOTE: There are many ways to do the setMatches() function! The map and filter can be joined into 1, a for.. of loop can be used instead, etc. See the exemplar for a different solution that doesn't use filter() or map(). Use what makes the most sense for your particular class._
+    _**NOTE**: There are many ways to do the setMatches() function! The map and filter can be joined into 1, a for.. of loop can be used instead, etc. See the exemplar for a different solution that doesn't use filter() or map(). Use what makes the most sense for your particular class._
 6.  Last step is to call `setMatches()` from `updateDropdown()` when there is text in the input bar. Be sure to pass the user's input to `setMatches()`.
 
     ```js
