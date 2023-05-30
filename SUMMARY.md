@@ -51,6 +51,7 @@
 * [U3LA2.1: JavaScript Essentials - Variables to Arrow Functions](unit-3-advanced-dom/u3la2.1-javascript-essentials-variables-to-arrow-functions.md)
 * [U3LA2.2: Typeahead Search](unit-3-advanced-dom/u3la2.2-typeahead-search.md)
 * [U3LA2.3: Fuzzy Matching - Autocorrect](unit-3-advanced-dom/u3la2.3-fuzzy-matching-autocorrect.md)
+* [🗃 U3LA2 Mini Project: Fuzzy Matching Personality Quiz](unit-3-advanced-dom/u3la2-mini-project-fuzzy-matching-personality-quiz.md)
 
 ## Unit 4: Intro to APIs
 
@@ -59,7 +60,3 @@
 ## Unit 5: Simple Websockets and Final Project
 
 * [🔮 Unit 5 Overview](unit-5-simple-websockets-and-final-project/unit-5-overview.md)
-
-***
-
-* [🗃 U3LA2 Mini Project: Fuzzy Matching Personality Quiz](u3la2-mini-project-fuzzy-matching-personality-quiz.md)
