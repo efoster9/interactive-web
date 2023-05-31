@@ -204,7 +204,7 @@ Review the solution with the following questions in mind. Alternatively, you can
 * Add a "See All" checkbox on the page that allows you to see any remaining _Capital, State_ badges that haven't been selected. The styling of these badges should be slightly different then the ones that have been selected. When you uncheck the checkbox, these unselected badges should disappear again.
 * Add a bold font to the search results. If a user searches for "son", then the results in the drop down should bold all `son`s.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Typeahead Example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Typeahead Example</p></figcaption></figure>
 
 ### Wrap Up (\~5 minutes)
 
