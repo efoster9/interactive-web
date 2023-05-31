@@ -36,13 +36,13 @@ Students will be able to:
 
 ### Vocabulary
 
-* **pass-by-reference**: []
-* **pass-by-value**: []
-* **spread operator**: []
-* **mutability**: []
-* **deep copy**: []
-* **shallow copy**: []
-* **memory location**: []
+* **pass-by-reference**: a method of passing the address of an argument in the calling function to a corresponding parameter in the called function. (ie. pass the entire reference of the data)
+* **pass-by-value**: you are making a copy in memory of the actual parameter's value that is passed in, a copy of the contents of the actual parameter (ie. pass the data itself)
+* **spread operator**: expands iterable into individual elements. The spread operator is commonly used to make deep copies of JS objects.
+* **mutable object**: An object that allows you to change its values without changing its identity
+* **deep copy**: a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. (ie. released of all variable references)
+* **shallow copy**: a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made.
+* **memory location**: location in computer memory that holds data in the form of a binary number or decimal number of some sort.
 
 ### Planning Notes && Materials
 
