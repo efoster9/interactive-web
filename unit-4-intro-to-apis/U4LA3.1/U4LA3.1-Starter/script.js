@@ -1,7 +1,7 @@
 import { GiphyFetch } from "@giphy/js-fetch-api"
 const $gif = document.querySelector("#gif")
 
-async function app() {
+const app = async () => {
 	// YOUR CODE STARTS HERE
 
 	// Create a new instance of the SDK with your API key

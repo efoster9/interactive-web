@@ -12,6 +12,8 @@ In this lesson, students will integrate the Giphy API into a web app. You should
 
 You have the option of putting the API key directly in the code for simplicity or using environment variables to demonstrate keeping the key out of the code. Either way, make sure you highlight the importance of keeping sensitive data like keys out of source code. Discuss the dangers of a key being leaked.
 
+There is a natural splitting point in the lesson to teach it over 2 days. The first half covers closed APIs and is meant to walk students through signing up with the Giphy API to get a feel for that process. The second half goes over the try/catch block and has students experiment with errors and error handling. 
+
 ### Objectives
 
 Students will be able to:
@@ -73,32 +75,35 @@ API Final Project (End of Unit Project)
 
 ## Lesson
 
-### Do Now/Warm Up (\~3 - 5 min)
+### Do Now/Warm Up (\~10 min)
 
 Have students research online and find a public web API they think sounds interesting. They can look through the [Public API List](https://github.com/public-apis/public-apis) or use their own resources.
-
-### Intro (\~5 min)
 
 * Discuss the APIs the students found. As a group, pick one of them and come up with a list of potential applications that could be built with them.
 * Explain the concept of HTTP APIs and how they allow developers to access and use certain functionality or data provided by a service
 * Introduce the Giphy API as an example of a closed API that provides a vast collection of GIFs. You may wish to explain what a GIF is or ask students to share some of their favorites.
 
-### API Keys (\~10 min)
+### Closed APIs and API Keys (\~10 min)
 
-* Discuss the differences between open and closed APIs. Open APIs can be accessed by anyone, closed APIs require getting a token or other means of access.
-* Ask the students to write a list of reasons why someone who provides data through a public API would want to limit access by requiring a key. You can have them share these out, as well as submit them for review. You may wish to use some technique for finding shared and unique entries. Make sure you highlight things like selling access, selling additional usage, throttling usage to stop from overwhelming the server, and to limit malicious access.
+Open APIs can be accessed by anyone, closed APIs require getting a token or other means of access. Ask the students to write a list of reasons why someone who provides data through a public API would want to limit access by requiring a key. You can have them share these out, as well as submit them for review. You may wish to use some technique for hearing and documenting shared and unique entries. Make sure you highlight the following:
+- selling access,
+- selling additional usage
+- throttling usage to stop from overwhelming the server
+- limiting malicious access.
 
 ### Making an API Request (\~15 min)
 
-* Explain the concept of making HTTP requests, particularly GET requests, to retrieve data from the Giphy API. Mention that a client (like a browser) makes a request to a server (like an API server). The server decides what to send back as a response.
-* Demonstrate how to construct a basic API request URL path, briefly discussing the idea of using paths to represent resources. For example, `GET /users/23/favorites` probably means "Show me a list of user 23's favorites".
-* Show the Giphy API documentation and briefly explain its structure, including API endpoints, request parameters, and response formats.
-* Discuss the concept of API keys and how they are used to authenticate API requests. Show how to add an API key to a query parameter:
-
-```javascript
-const response = await fetch(`https://some-api.com/some-resource?api_key=${your-api-key-goes-here}`)
+A client (like a browser) makes a request to a server (like an API server). The server then decides what to send back as a response. We've already seen a couple of basic API requests, but this is what one of the endpoints looks like for the Giphy API. It gets a trending Gif.
+```js
+// NOTE: This is just an example. 'await' should live in an async function.
+const API_KEY = "INSERT API KEY"
+const response = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}`)
 const { data } = await response.json()
 ```
+
+* Show the Giphy API documentation and briefly explain its structure, including some examples of API endpoints, request parameters, and response formats.
+* Discuss the concept of API keys and how they are used to authenticate API requests.
+* Notice how the API key is a query parameter like we saw in the Jeopardy lab.
 
 ### Obtain an API Key (\~10 min)
 
@@ -107,7 +112,7 @@ const { data } = await response.json()
 
 ### Displaying GIFs (\~15 min)
 
-Using the [starter code](U4LA2-Starter/script.js), assist students in integrating the retrieved GIF data into their applications. Encourage creativity in designing the user interface to showcase the GIFs effectively.
+Using the [starter code](U4LA2-Starter/script.js), complete the following steps to demonstrate to students how to integrate the retrieved GIF data into their applications. 
 
 In `script.js`:
 
@@ -145,39 +150,56 @@ const app = async () => {
 app()
 ```
 </details>
+<br>
+Consider encouraging creativity by designing the user interface, manipulating the CSS to showcase the GIFs effectively.
 
-### Try/Catch and Error Handling (\~15 min)
+### Try/Catch and Error Handling (\~25 min)
 
-Explain the try/catch workflow:
+- In the try/catch workflow, flow control goes to the `try` block. If anything in it throws an error, control goes to the `catch` block. The `catch` block has access to an `error` object containing details about what errored.
+	```javascript
+	try {
+		// Something that might error
+	} catch (error) {
+		// How the error should be handled
+	}
+	```
 
-```javascript
-try {
-	// Something that might error
-} catch (error) {
-	// How the error should be handled
-}
-```
+- Ask students to predict what kinds of things can error when making API calls. Follow up with their ideas of how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display and error message and redirect the user to try something else.
 
-Flow control goes to the `try` block. If anything in it throws an error, control goes to the `catch` block. The `catch` block has access to an `error` object containing details about what errored.
+- Some examples of errors include syntax, invalid endpoint, invalid query, 404, or accessing an attribute in the response that doesn't exist.
 
-Discuss the kinds of things that can error, such as user input or things that depend on networks. Lead into integrating this into an API integration. Ask students to draw a diagram or flow chart of how the logic flows in this example:
+- Present this code block to students:
+	```javascript
+	const $message = document.querySelector(".message")
 
-```javascript
-const $message = document.querySelector(".message")
+	try {
+		const response = await fetch("http://example-api.com/some-endpoint")
+		const data = await response.json()
+		$message.textContent = `Successfully fetched ${data.message}`
+	} catch (error) {
+		$message.textContent = `Request failed: ${error.message}`
+	}
+	```
+	In this example, the following happens:
+	-  `$message` is saved.
+	- In the `try` block, the browser attempts to get an HTTP response from that URL and save the response in `response`. If it fails, control will go to the `catch` block.
+	- Then, the browser will attempt to parse the response and save it in `data`. If it fails, control will go to the `catch` block. 
+	- Finally, the browser will set the `$message`'s text to the parsed data's message. 
+	
+	If any of the processes errored, the `$message`'s text will display the error's message.
 
-try {
-	const response = await fetch("http://example-api.com/some-endpoint")
-	const data = await response.json()
-	$message.textContent = `Successfully fetched ${data.message}`
-} catch (error) {
-	$message.textContent = `Request failed: ${error.message}`
-}
-```
+- In the example above, we can see that the endpoint doesn't exist when we try to run it. In this simpler example, we try to access an element of the array that doesn't exist. `try`/`catch` blocks can also be used for other purposes, like debugging!
+	```js
+	const numbers = [1, 2, 3, 4];
 
-`$message` is saved. Then in the `try` block, the browser attempts to get an HTTP response from that URL. If it fails, control will go to the `catch` block. Then the browser will attempt to parse the response. If it fails, control will go to the `catch` block. Then the browser will set the `$message`'s text to the parsed data's message. If any of the processes errored, the `$message`'s text will display the error's message.
+	try {
+		console.log(numbers[9]);
+	} catch (err) {
+		console.log("Error caught", err);
+	}
+	```
 
-* Discuss potential errors or exceptions that can occur when connecting to APIs and how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display and error message and redirect the user to try something else.
-* Discuss using `try`/`catch` blocks for other purposes, like debugging.
+- Have students spend some time purposely creating bugs in a try/catch block and see how many different kinds of errors they can get. Spend some time sharing some of these errors in a demo with the whole class. 
 
 ### Wrap Up (\~5 min)
 
