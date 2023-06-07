@@ -2,9 +2,7 @@
 description: How do you integrate other people's software into yours?
 ---
 
-# U4LA3: APIs vs. SDKs
-
-## Preface && Context
+# U4LA3.1: APIs vs SDKs
 
 ### Teacher Notes && Overview
 
@@ -36,16 +34,16 @@ Students will be able to:
 
 ### Planning Notes && Materials
 
-|  Planning Notes  |  Materials  |
-| :--------------: | :---------: |
-| Familiarize yourself with the Giphy Web SDK documentation (https://developers.giphy.com/docs/sdk) and sample code. | [Starter Code](./U4LA3-Starter) |
-| Review the exemplar | [Exemplar Code](./U4LA3-Exemplar) |
-| Practice signing up for an API key so you'll be able to walk students through it | |
+|                                                   Planning Notes                                                   |             Materials            |
+| :----------------------------------------------------------------------------------------------------------------: | :------------------------------: |
+| Familiarize yourself with the Giphy Web SDK documentation (https://developers.giphy.com/docs/sdk) and sample code. |  [Starter Code](U4LA3-Starter/)  |
+|                                                 Review the exemplar                                                | [Exemplar Code](U4LA3-Exemplar/) |
+|                  Practice signing up for an API key so you'll be able to walk students through it                  |                                  |
 
 ### Suggestions for UDL
 
-| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
+|                                                                       Multiple Means of Representation                                                                       |                                                                                                       Multiple Means of Engagement                                                                                                      |                                             Multiple Means of Expression                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | Students may need additional examples for understanding what a GIF is. In particular, pay attention to how they're commonly used as an expressive way to communicate online. | Students may have trouble with the abstract concept of an API. It may help to find ways to make it more concrete, such as mailing a letter asking for something or playing a game sending each other instructions in a specific format. | The discussions can be done async or virtual, the hands-on parts can be done individually, in groups, or as a class |
 
 ### Suggestions for Differentiation
@@ -75,8 +73,9 @@ API Final Project (End of Unit Project)
 ### Do Now/Warm Up (\~5 min)
 
 In the previous two labs, we had an `api.js`. Pull up the exemplar `api.js` for either _LAB 1_ or _LAB 2_, and ask students the following questions:
-- Why do you think it's a good idea to have this stuff separated from the `script.js`?
-- What might cause this file to grow or shrink in size?
+
+* Why do you think it's a good idea to have this stuff separated from the `script.js`?
+* What might cause this file to grow or shrink in size?
 
 The `api.js` consists of all the functions being used to communicate with the API. When programming in this file, the focus is having of the proper endpoint, parameters, and try catch blocks. In the main `script.js`, the focus is everything else. These methods are called but expected to operate as designed.
 
@@ -84,7 +83,8 @@ If the API is more complicated or if there are more unique calls that need to be
 
 ### Understanding SDKs (\~15 min)
 
-* An SDK (Software Development Kit) is a collection of software tools, libraries, and documentation that simplifies the process of building software applications for a specific platform or service. Some examples of popular SDKs include the Facebook SDK, the Amazon Web Services SDK, or the Giphy Web SDK.
+*   An SDK (Software Development Kit) is a collection of software tools, libraries, and documentation that simplifies the process of building software applications for a specific platform or service. Some examples of popular SDKs include the Facebook SDK, the Amazon Web Services SDK, or the Giphy Web SDK.
+
     ```js
     // Example of API
 
@@ -99,24 +99,25 @@ If the API is more complicated or if there are more unique calls that need to be
         return `<img src={data}/>`
     }
     ```
-    ```js
+
+    ````js
     // Example of SDK
 
     // Put this line in the index.html
     ```<script src="https://someapi.com/js?key=YOUR_API_KEY&callback=init"></script>```
-    
+
     // Call special function to make requests
     const imgLink = new someapi.ImgLink({size:"large"});
-    ```
+    ````
 * In the first example, we can see all the steps to directly request the API. In the second, the steps are hidden, and we only have to write 1 line in the `index.html`! Ask students what might be the pros and cons of these two methods.
-    - SDKs have less code, but more "magic" or behind the scenes logic.
-    - APIs allow us to personalize and customize more.
-    - APIs are usually more flexible and follow more customizable patterns than SDKs. SDKs usually require less code to work with. You may compare this to using a standard `for` loop vs using a `forEach()` loop.
+  * SDKs have less code, but more "magic" or behind the scenes logic.
+  * APIs allow us to personalize and customize more.
+  * APIs are usually more flexible and follow more customizable patterns than SDKs. SDKs usually require less code to work with. You may compare this to using a standard `for` loop vs using a `forEach()` loop.
 
 ### Exploring the Giphy Web SDK (\~15 minutes)
 
-- The Giphy Web SDK is a tool that enables developers to integrate the Giphy service into their web applications. Gifs! You can search for GIFs, display trending GIFs, or create custom GIF stickers.
-- Show the students some of the Gifs and the Giphy Web SDK documentation and highlight the available methods and parameters. Provide a brief overview of the code provided in the exemplar to illustrate some examples of use. There is also an example below:
+* The Giphy Web SDK is a tool that enables developers to integrate the Giphy service into their web applications. Gifs! You can search for GIFs, display trending GIFs, or create custom GIF stickers.
+* Show the students some of the Gifs and the Giphy Web SDK documentation and highlight the available methods and parameters. Provide a brief overview of the code provided in the exemplar to illustrate some examples of use. There is also an example below:
 
 ```js
 // script.js
@@ -129,15 +130,14 @@ const result = await gf.search("cats")
 $gif.src = result.data[0].images.original.url
 ```
 
-- Have student work along side you to obtain an API key from the Giphy Developer Portal. 
+* Have student work along side you to obtain an API key from the Giphy Developer Portal.
 
 ### Hands-on Activity: Integrating Giphy Web SDK (\~20 minutes)
 
 * Have students open the `script.js` in the starter code, and have them try to:
-    - Connect to the API
-    - Display 5 images from the API.
-    - Make adjustments to the HTML and CSS and pretty up your display of Gifs. [Stretch]
-
+  * Connect to the API
+  * Display 5 images from the API.
+  * Make adjustments to the HTML and CSS and pretty up your display of Gifs. \[Stretch]
 * Have one or more groups present their web page and demonstrate code for the integration of the Giphy Web SDK.
 * Discuss the challenges faced by students during the activity and how they overcame them.
 * Ask students if they like SDKs over APIs? Why or why not? Lead a brief discussion on the advantages and limitations of using SDKs. _The primary benefit is simplicity, the primary limitations are non-standard interfaces and not as flexible._
