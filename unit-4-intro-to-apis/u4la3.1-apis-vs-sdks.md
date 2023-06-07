@@ -1,128 +1,164 @@
 ---
-description: What makes an API closed and how do we safely incorporate our API key.
+description: How do you integrate other people's software into yours?
 ---
 
-# DIY Dictionary
+# U4LA3: APIs vs. SDKs
 
-### Teacher Notes
+## Preface && Context
 
-Students will be building a website that accesses a Dictionary API. The API requires a user's _"api key"_ and a _word_. It will return the definition, synonyms, and more. The instructions below loosely walk through retrieving the API key before guiding students to a finished version of the website represented by the exemplar.
+### Teacher Notes && Overview
 
-The DictionaryAPI was chosen because of its relatively simple and free sign up process. Realistically, the sign up process can be much more difficult. However, this lab aims to give students a glimpse into closed APIs and, more importantly, another chance to practice using APIs in general. The final lab would therefore be a good chance for students to explore other APIs that match the difficulty they desire.
+In this lesson, students will integrate the Giphy SDK into a web app. You should familiarize yourself with the SDK through the exemplar and the documentation. Pay special attention to the API key sign-up process, which is likely to evolve over time and trip up students. If you've already done the closed API lesson, you can either reuse the key for simplicity or have them create an additional key to demonstrate keeping keys for different apps separate.
 
-### Prompt
+Note that the sample code is _not_ raw HTML/CSS/JS, but needs to be bundled with Parcel to run. All of this is already scripted; the `npm start` command will bundle and host the app automatically, as well as live-reload on changes. The need for Parcel (and the unusual code in the `index.html` file) comes from the Giphy SDK being delivered as a Node module. It's not important to the lesson to understand how this works, so feel free to skim over it with the students. _Note: Replit should automatically run `npm install` upon the first Run to install the dependencies, but if you're running the repo independently you'll need to do that first._
 
-Most APIs you will run into are closed. For the most part, closed and open APIs are similar in how they function. However, closed APIs have the addition of an API key. Sign up for an API key at Merriam Webster's DictionaryApi.com and follow the directions below to make a Dictionary Look Up website.
+You have the option of putting the API key directly in the code for simplicity or using environment variables to demonstrate keeping the key out of the code. Either way, make sure you highlight the importance of keeping sensitive data like keys out of source code. Discuss the dangers of a key being leaked.
 
-**Directions**: Walk through the following steps to get connected to the closed Dictionary API.
-1. First, you will need to register for an API key
-2. Next, you will connect to the API in the `api.js`.
-3. Then, you will finish the code in the `script.js` to manage user input and API output. 
-4. Last, you will explore the extensions and make this DIY Dictionary site really special. 
+### Objectives
 
+Students will be able to:
 
-**Register for an API key**: 
+* Define APIs and SDKs
+* Identify the benefits of using APIs and SDKs
+* Use the Giphy Web SDK to retrieve and display GIFs on a web page
 
-1. Go to Merriam Webster's [DictionaryAPI.com](https://dictionaryapi.com/), scroll down, and register for an api key. Once you do, you'll have to confirm with the link provided in your email. This process should take about 1 minute. The picture below will give you an idea on how to fill out the registration form.
-![Registration example](register.png)
+### Suggested Duration
 
-> Note: be sure to pick the thesaurus as the first API request as this is the main endpoint being used in this lab. The spanish english dictionary is being used for the extensions in this lab.
+\~1 Period (\~45 min)
 
-2. Once you successfully register and confirm your email address, you should be able to sign in and access [your 2 api keys](https://dictionaryapi.com/account/my-keys). Copy and save them in a safe place on your computer.
+### NYS Standards
 
-3. In the `api.js`, save your API keys in a variable. For example:
+### Vocabulary
+
+* **API:** Application Programming Interface; A set of rules and protocols that allow different software applications to communicate and interact with each other
+* **API Key:** A string that securely identifies you to an API
+* **SDK:** Software Development Kit; a collection of software tools, libraries, and documentation that simplifies the process of building software applications for a specific platform or service
+
+### Planning Notes && Materials
+
+|  Planning Notes  |  Materials  |
+| :--------------: | :---------: |
+| Familiarize yourself with the Giphy Web SDK documentation (https://developers.giphy.com/docs/sdk) and sample code. | [Starter Code](./U4LA3-Starter) |
+| Review the exemplar | [Exemplar Code](./U4LA3-Exemplar) |
+| Practice signing up for an API key so you'll be able to walk students through it | |
+
+### Suggestions for UDL
+
+| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
+| :------------------------------: | :--------------------------: | :--------------------------: |
+| Students may need additional examples for understanding what a GIF is. In particular, pay attention to how they're commonly used as an expressive way to communicate online. | Students may have trouble with the abstract concept of an API. It may help to find ways to make it more concrete, such as mailing a letter asking for something or playing a game sending each other instructions in a specific format. | The discussions can be done async or virtual, the hands-on parts can be done individually, in groups, or as a class |
+
+### Suggestions for Differentiation
+
+* You have some flexibility in how much this lesson is independent research vs. following along directly with you.
+* Likewise, you can flex how much of the lesson is spent discussing the concepts vs. playing with different SDK features
+* You can try having students incorporate what they know about forms to build a like app with the SDK, such as passing on a search term and displaying the top 10 results
+
+### Resources
+
+* [Giphy SDK docs](https://developers.giphy.com/docs/sdk/#web)
+
+### Assessments
+
+**Formative:**
+
+* Observe student engagement and participation during the hands-on activity
+* Evaluate the completeness and functionality of the web pages created by each group
+* Encourage students to ask questions and participate in group discussions
+
+**Summative:**
+
+API Final Project (End of Unit Project)
+
+## Lesson
+
+### Do Now/Warm Up (\~5 min)
+
+In the previous two labs, we had an `api.js`. Pull up the exemplar `api.js` for either _LAB 1_ or _LAB 2_, and ask students the following questions:
+- Why do you think it's a good idea to have this stuff separated from the `script.js`?
+- What might cause this file to grow or shrink in size?
+
+The `api.js` consists of all the functions being used to communicate with the API. When programming in this file, the focus is having of the proper endpoint, parameters, and try catch blocks. In the main `script.js`, the focus is everything else. These methods are called but expected to operate as designed.
+
+If the API is more complicated or if there are more unique calls that need to be made, the `api.js` will grow. As it grows, programmers consider another less tedious way to access data through the API.
+
+### Understanding SDKs (\~15 min)
+
+* An SDK (Software Development Kit) is a collection of software tools, libraries, and documentation that simplifies the process of building software applications for a specific platform or service. Some examples of popular SDKs include the Facebook SDK, the Amazon Web Services SDK, or the Giphy Web SDK.
     ```js
-    const THESAURUS_API_KEY = 'YOUR_API_KEY123';
-    const SPANISH_API_KEY = 'SPANISH_API_KEY456';
+    // Example of API
+
+    // Save API key once
+    const apiKey = 'YOUR_API_KEY';
+
+    // Create a custom made function every time you need to request.
+    const getSetImage = async () => {
+        const response = await fetch(`https://someapi.com/image?size=large&api_key={apiKey}`);
+        const data = await response.json();
+
+        return `<img src={data}/>`
+    }
     ```
-
-**Connect to the API**: 
-
-For this section, we'll be working from the browser to quickly test the endpoint and your API key. Then, we'll code in the `api.js`.
-
-4. There are several APIs that are provided by DictionaryAPI found at [this site](https://dictionaryapi.com/products/index). You should have signed up for the [Thesaurus API](https://dictionaryapi.com/products/api-collegiate-thesaurus) and the [Spanish/English API](https://dictionaryapi.com/products/api-spanish-dictionary). At those links, you can find the endpoint you will need to access. Here's the one for the thesaurus, the first one we'll be using:
     ```js
-    'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/WORD?key=YOUR-API-KEY'
+    // Example of SDK
+
+    // Put this line in the index.html
+    ```<script src="https://someapi.com/js?key=YOUR_API_KEY&callback=init"></script>```
+    
+    // Call special function to make requests
+    const imgLink = new someapi.ImgLink({size:"large"});
     ```
+* In the first example, we can see all the steps to directly request the API. In the second, the steps are hidden, and we only have to write 1 line in the `index.html`! Ask students what might be the pros and cons of these two methods.
+    - SDKs have less code, but more "magic" or behind the scenes logic.
+    - APIs allow us to personalize and customize more.
+    - APIs are usually more flexible and follow more customizable patterns than SDKs. SDKs usually require less code to work with. You may compare this to using a standard `for` loop vs using a `forEach()` loop.
 
-5. In the browser, in a new tab, copy and past this endpoint, and replace `WORD` with any word like _"umpire"_ and `YOUR-API-KEY` with the API key your received when you registered. 
-    ```js
-    //Note: not a real API key
-    'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/umpire?key=123456789abcdefghi'
-    ```
-    If you do this right, you should see a JSON response for the word umpire!
+### Exploring the Giphy Web SDK (\~15 minutes)
 
-6. In the `api.js`, finish the function `getDef(word)`. Use the endpoint above as the template, and use string formatting to include the "word" parameter and your API key. For now, console log the data. To see if it works, call the function in the `api.js` with any word. For example, `getDef("umpire");`
+- The Giphy Web SDK is a tool that enables developers to integrate the Giphy service into their web applications. Gifs! You can search for GIFs, display trending GIFs, or create custom GIF stickers.
+- Show the students some of the Gifs and the Giphy Web SDK documentation and highlight the available methods and parameters. Provide a brief overview of the code provided in the exemplar to illustrate some examples of use. There is also an example below:
 
-7. If you can see the object in the console, celebrate! Return the data instead of logging it. Your finished version should look like this.
+```js
+// script.js
 
-    ```js
-    const BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/';
-    const THESAURUS_API_KEY = 'YOUR_API_KEY123';
-    const SPANISH_API_KEY = 'SPANISH_API_KEY456';
+// Your API key here instead of this one
+const gf = new GiphyFetch("4VKguYeR2btOeGHQK13652HEZK0AdO2Y")
+// Search the SDK for the term "cats". Note that the SDK makes the request over a network, meaning it's asynchronous and must be awaited
+const result = await gf.search("cats")
+// This path contains a URL to the first matching Gif
+$gif.src = result.data[0].images.original.url
+```
 
-    const getDef = async (word) => {
-        const word_endpoint = BASE_URL + word + '?key=' + THESAURUS_API_KEY;
-        try {
-            const response = await fetch(word_url);
-            const res = await response.json();
-            return res;
-        } catch (error) {
-            console.error(error);
-        }
-    };
-    ```
+- Have student work along side you to obtain an API key from the Giphy Developer Portal. 
 
-**Finish the `script.js`**: 
+### Hands-on Activity: Integrating Giphy Web SDK (\~20 minutes)
 
-Notice that a lot of the code is already pre-written. For this section, you'll just need to fill in the variables to connect the website with the API calls.
+* Have students open the `script.js` in the starter code, and have them try to:
+    - Connect to the API
+    - Display 5 images from the API.
+    - Make adjustments to the HTML and CSS and pretty up your display of Gifs. [Stretch]
 
-8. In the `script.js`, the `getSimpInfo(word)` function should return a simplified object with just the word, the part of speech (noun, verb, etc.), and the definition. Replace `'PART_OF_SPEECH'` and `'DEFINITION'` with the actual data from the response. Console log this new `finalData` to check that it works.
+* Have one or more groups present their web page and demonstrate code for the integration of the Giphy Web SDK.
+* Discuss the challenges faced by students during the activity and how they overcame them.
+* Ask students if they like SDKs over APIs? Why or why not? Lead a brief discussion on the advantages and limitations of using SDKs. _The primary benefit is simplicity, the primary limitations are non-standard interfaces and not as flexible._
 
-9. For the makeCard(finalData), do the same thing. The object you just created will be passed to this function, so it will have the same 3 features.
+### Wrap Up (\~5 min)
 
-10. Last, for the event listener:
-    - Call `getSimpInfo(word)` to get the `finalData`, and
-    - Call `makeCard(finalData)` to get the html string that you will set as the innerHTML of the card. (NOTE: the card div is queried at the top of the `script.js`)
-
-11. When you're done, the site should allow you to input a word and see the definition displayed in the blue card.
-
-### Exemplar
-
-Take a look at this [finished example](./U4LAB2-Exemplar/index.html) for the finished version of the site.
-
-### Culturally Responsive Best Practice
-
-Consider giving students a list of 5-10 words that the students can look up once they have their website running properly. This way, they won't stuck on searching for which word to use (NOTE: this is also a good opportunity to sneak in some vocabulary from other subject areas). Otherwise, you can have students come up with 5-10 words from their favorite subject or domaine that they will plan to test using their site. 
-
-### Extra Help?
-
-- [Using Fetch API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- Video on [async/await](https://www.youtube.com/watch?v=_9vgd9XKlDQ), try catch errors, and more.
-- [Try Catches](https://javascript.info/try-catch) and how to use them.
+* Having worked with APIs and SDKs, which did you prefer? Are there things that you think one is better suited for over the other?
+* Encourage students to explore other APIs and SDKs in their future projects or areas of interest.
+* Discuss how SDKs are often provided by companies or developers to allow others to integrate their services more easily. You may wish to lead a discussion on what kinds of motivations companies could have to provide SDKS, such as broadening their reach and increasing their functionality for free.
+* Explain that SDKs often include pre-built functions, code samples, and other resources to assist developers in incorporating specific functionalities into their applications.
 
 ### Extensions
 
-**Mild**
+#### Mild
 
-- Include synonyms in the definitions. If you look at the response, you should notice an array of synonyms for the word. Add another `<p>` element in the `index.html` and adjust the `script.js` to incorporate these synonyms.
-- Handle the error when the submitted word doesn't exist. You can choose how your site will respond: will you clear the current card or maybe display a message that says "No such word found in the dictionary".
+Incorporate additional features from the Giphy Web SDK, such as stickers or GIF reactions. Start by incorporating the [Search feature](https://github.com/Giphy/giphy-js/blob/master/packages/fetch-api/README.md).
 
-**Medium**
+#### Medium
 
-- Include all definitions that come with each word. Some words have more than one definition (ex. umpire has a noun and verb definition). When a word is submitted, create a card for each of its definitions.
-- Turn all the synonyms into a link! When clicked, automatically look up the clicked word and show results for that word. Also, include the clicked word in the search bar.
+Explore other popular SDKs, such as the [GitHub SDK](https://github.com/octokit/app.js/#readme) and discuss their use cases and benefits.
 
-**Spicy**
+#### Spicy
 
-- The other API you should have access to is the [Spanish/ English dictionary](https://dictionaryapi.com/products/api-spanish-dictionary). Add a translate button on the card that when clicked shows the translation of the word into Spanish.
-- When the searched word doesn't exist, check out your response! You should get an array of suggested words. Use this array to make recommendations for your user in some way. For example:
-    - After a word submission you can display links to the other suggested words, or
-    - It could be a drop down of suggestions after each letter is typed in the search bar.
-
-
-**Reflection Questions:**
-
-- Why might one favor a closed API over an open one? What would you assume are the benefits of making your API closed.
-- Why might someone else favor an open API over a closed one? What are the drawbacks of making your API closed?
-- What is something about APIs that you still would like to explore?
+Do a brief research project on the history and evolution of APIs and SDKs in software development.
