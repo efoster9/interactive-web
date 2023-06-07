@@ -78,7 +78,7 @@ _Coming Soon_
 
 ### **Do Now/Warm Up (\~5 minutes)**
 
-What do you think makes a website _well-designed_**,** or good-looking_?_ What makes a website _badly-designed_, or ugly-looking?
+What do you think makes a website _well-designed_**,** or good-looking\_?\_ What makes a website _badly-designed_, or ugly-looking?
 
 Time permitting, grab a computer and find as many examples as you can of pretty and ugly websites.
 
@@ -127,7 +127,7 @@ Before they begin, they will need a CSS file. To do this, they can click the 'Ne
 
 This links our style sheet from the reference of the file name, sets it up as a stylesheet, and prepares the browser to read our page to understand that it is a text/CSS file. Now to ensure it's linked, let's add some CSS!
 
-Back in the `style.css` page, let's add some style to the body of our page. We will use `body` as our selector and `background-color` as our property.&#x20;
+Back in the `style.css` page, let's add some style to the body of our page. We will use `body` as our selector and `background-color` as our property.
 
 What if we didn't know that we could use `background-color` as a property? There is so much to CSS that this is a _great_ time to demo to students how to Google for what they want - no one should be expected to know everything when they have the internet to help them - and to use documentation such as the [CSS Reference on W3 Schools](https://www.w3schools.com/cssref/index.php).
 
@@ -187,7 +187,7 @@ One thing we should notice is that so far, when we change something, it changes 
 
 That's where we can use the classes and IDs that we saw in our last lesson! This starter code does not have any classes or IDs added yet, but we can add them in and then utilize them in our CSS file.
 
-Let's head to our page title div on line 17 in `index.html`.  This div contains the page title, which we may want to have a different style than anything else on the page. In this instance, we may want to use an ID because we will not be repeating this style again elsewhere. If we wanted to use a style we created on multiple elements, we would want to use a class.
+Let's head to our page title div on line 17 in `index.html`. This div contains the page title, which we may want to have a different style than anything else on the page. In this instance, we may want to use an ID because we will not be repeating this style again elsewhere. If we wanted to use a style we created on multiple elements, we would want to use a class.
 
 So let's update our HTML first:
 
@@ -248,7 +248,7 @@ And then in our CSS, we could do the following:
 
 This will change how the browser sees the image and will automatically 'balance' the margins on either side. And tah-dah! Just like that, a centered image!
 
-**NB:** _If you feel like your students may benefit from extra practice using CSS selectors, you could utilize the_ [_CSS Selector Diner Extra Learning Resource_](../Templates/Lab-md-template.md)_. This is a 15 - 30 minute activity (but can really be start/stopped as you see fit) that explores other ways CSS selectors can be used in a fun way._
+**NB:** _If you feel like your students may benefit from extra practice using CSS selectors, you could utilize the_ [_CSS Selector Diner Extra Learning Resource_](broken-reference)_. This is a 15 - 30 minute activity (but can really be start/stopped as you see fit) that explores other ways CSS selectors can be used in a fun way._
 
 ### Using Different Fonts (10 - 12 minutes)
 

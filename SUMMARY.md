@@ -1,12 +1,6 @@
 # Table of contents
 
 * [Curriculum Overview](README.md)
-* [Templates](templates/README.md)
-  * [Lab-md-template](Templates/Lab-md-template.md)
-* [Templates](templates-1/README.md)
-  * [Lesson-template](Templates/Lesson-template.md)
-* [Templates](templates-2/README.md)
-  * [Unit-template](Templates/Unit-template.md)
 
 ## Unit 1: HTML & CSS: Good vs Bad Design
 
@@ -61,7 +55,23 @@
 ## Unit 4: Intro to APIs
 
 * [🔮 Unit 4 Overview](unit-4-intro-to-apis/unit-4-overview.md)
+* [U4LA1: Intro to APIs](unit-4-intro-to-apis/u4la1-intro-to-apis.md)
+* [U4LA1.2: JavaScript Arrays, Iteration, and Objects](unit-4-intro-to-apis/u4la1.2-javascript-arrays-iteration-and-objects.md)
+* [🗃 U4LA1 Mini Project: Deck of Cards: Higher Lower](unit-4-intro-to-apis/u4la1-mini-project-deck-of-cards-higher-lower.md)
+* [U4LA2: Connecting to Closed APIs using the Giphy API](unit-4-intro-to-apis/u4la2-connecting-to-closed-apis-using-the-giphy-api.md)
+* [🗃 U4LA2 Mini Project: DIY Dictionary](unit-4-intro-to-apis/u4la2-mini-project-diy-dictionary.md)
+* [U4LA3.1: APIs vs SDKs](unit-4-intro-to-apis/u4la3.1-apis-vs-sdks.md)
+* [U4LA3.2: Requests on the Web - GET & POST](unit-4-intro-to-apis/u4la3.2-requests-on-the-web-get-and-post.md)
+* [🎨 Unit 4 Final Project: API GUIs](unit-4-intro-to-apis/unit-4-final-project-api-guis.md)
 
 ## Unit 5: Simple Websockets and Final Project
 
 * [🔮 Unit 5 Overview](unit-5-simple-websockets-and-final-project/unit-5-overview.md)
+* [U5LA1: Servers and Express](unit-5-simple-websockets-and-final-project/u5la1-servers-and-express.md)
+* [🗃 U5LA1 Mini Project: Express Lab](unit-5-simple-websockets-and-final-project/u5la1-mini-project-express-lab.md)
+* [U5LA2: Intro to WebSockets](unit-5-simple-websockets-and-final-project/u5la2-intro-to-websockets.md)
+* [🗃 U5LA2 Mini Project: Simple Sockets Lab](unit-5-simple-websockets-and-final-project/u5la2-mini-project-simple-sockets-lab.md)
+* [U5LA3: Socket Servers](unit-5-simple-websockets-and-final-project/u5la3-socket-servers.md)
+* [🗃 U5LA3 Mini Project: Socket Server Lab](unit-5-simple-websockets-and-final-project/u5la3-mini-project-socket-server-lab.md)
+* [U5LA4 \[TBD\]](unit-5-simple-websockets-and-final-project/u5la4-tbd.md)
+* [🎨 Course Final Project Guide](unit-5-simple-websockets-and-final-project/course-final-project-guide.md)
