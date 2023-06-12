@@ -19,7 +19,7 @@ The app includes a script that will automatically send socket messages to your s
 
 ## Directions
 
-All of your work for this lab takes place in [index.js](./U5LAB3-Starter/index.js).
+All of your work for this lab takes place in [index.js](U5LAB3-Starter/index.js).
 
 ### Initialization
 
@@ -42,11 +42,11 @@ Follow these three steps to initialize your server:
 
 If you did this correctly, you should be able to **run `npm start`** and get a notification that your server is listening. You should also have a webview showing the running chat room. You'll use this website to monitor the progress of your socket server. As you add new handlers on the server, you'll see new messages showing up on the page. Right now, you'll see any messages your currently selected user (Ashley by default) is sending but nothing else.
 
-Note that [app.js](./U5LAB3-Starter/app.js) and [http-server.js](./U5LAB3-Starter/http-server.js) contains the rest of the server code, which should look familiar from the Express lab.
+Note that [app.js](U5LAB3-Starter/app.js) and [http-server.js](U5LAB3-Starter/http-server.js) contains the rest of the server code, which should look familiar from the Express lab.
 
 If you've done it correctly, it should look like this:
 
-![Chat room with Ashley talking](U5LAB3-1.png)
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Chatroom with Ashley talking</p></figcaption></figure>
 
 ### Listening For Connections
 
@@ -116,7 +116,7 @@ socket.on("set price", (price) => {
 
 If you've done this correctly, you should see sign in messages displaying in the chat log of the website and socket messages starting to display in the socket messages log.
 
-![Chat room showing socket and chat messages](U5LAB3-2.png)
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Chatroom showing socket and chat message</p></figcaption></figure>
 
 ## DMs
 
@@ -151,7 +151,7 @@ socket.to("socket club").emit("chat", "Let's get real-time!");
 
 If you did all of this correctly, you should see DMs starting to display in the chat log of the app and new socket messages displaying. Take a moment to examine the structure of the data in the DM objects.
 
-![Chat room with chat, socket, and DMs](U5LAB3-3.png)
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Chatroom with chat, sockets, and DMs</p></figcaption></figure>
 
 ## Channels
 
@@ -172,21 +172,21 @@ Note that entire server (`io`) is emitting, _not_ an individual `socket`.
 
 If you do this correctly, the `#general` channel should start showing up under the Rooms log.
 
-![#general showing up in the rooms log](U5LAB3-4.png)
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>#general showing up in the rooms log</p></figcaption></figure>
 
 Clients will also send `"join"` events to the server to request to join a room.
 
 **Listen for the `"join"` event.** The handler will be called with an object representing the join request. Its `.channel` property contains a channel name. **Use the channel name to add the socket to the appropriate Socket.io room. Then, broadcast a `"join"` event to every socket beside the sender, resending the entire join request.**
 
-![Channel join events displaying](U5LAB3-5.png)
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Channel with join event showing</p></figcaption></figure>
 
 Clients will send `"chat"` events to the server to send a message to a room. Note that this is distinct from `"dm"` events.
 
-**Listen for `"chat"` events.** The handler will be called with an object representing the chat message. Its `.channel` property contains a channel name. **Use the channel name to emit a `"chat" message to the appropriate Socket.io room, resending the entire message object.**
+**Listen for `"chat"` events.** The handler will be called with an object representing the chat message. Its `.channel` property contains a channel name. **Use the channel name to emit a \`"chat" message to the appropriate Socket.io room, resending the entire message object.**
 
 If you did this correctly, you should see channel messages appear in the chat log and additional socket messages display as well.
 
-![Room messages displaying](U5LAB3-6.png)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Room messages displaying</p></figcaption></figure>
 
 ## Clean Up
 
@@ -201,7 +201,7 @@ socket.disconnect();
 
 ## Exemplar
 
-![Finished chat room example](./U5LAB3-exemplar.png)
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Finished chatroom example</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
 
@@ -219,20 +219,20 @@ socket.disconnect();
 
 These send a message from the server to one or more connected clients:
 
-| Method | Recipient |
-| --- | --- |
-| `socket.emit("some event", "Some value")` | Sender |
-| `socket.to("some room").emit("some event", "Some value")` | Everyone in a room |
-| `socket.broadcast.emit("sign on", "Some value")` | Everyone except sender |
-| `io.emit("some event", "Some value")` | Everyone (note the `io`) |
+| Method                                                    | Recipient                |
+| --------------------------------------------------------- | ------------------------ |
+| `socket.emit("some event", "Some value")`                 | Sender                   |
+| `socket.to("some room").emit("some event", "Some value")` | Everyone in a room       |
+| `socket.broadcast.emit("sign on", "Some value")`          | Everyone except sender   |
+| `io.emit("some event", "Some value")`                     | Everyone (note the `io`) |
 
 These change something about the socket:
 
-| Method | What it does |
-| --- | --- |
-| `socket.join("some room")` | Join a room |
-| `socket.leave("some room")` | Leave a room |
-| `socket.disconnect()` | Close a socket connection |
+| Method                      | What it does              |
+| --------------------------- | ------------------------- |
+| `socket.join("some room")`  | Join a room               |
+| `socket.leave("some room")` | Leave a room              |
+| `socket.disconnect()`       | Close a socket connection |
 
 ## Extensions
 
@@ -277,7 +277,7 @@ const someArray = [...someSet]
 
 ### Spicy
 
-Explore [client/actions.js](./U5LAB3-Starter/client/actions.js). Read through the `actions` array to understand the format of the chat script. Modify the `actions` array to be a chat script of your own.
+Explore [client/actions.js](U5LAB3-Starter/client/actions.js). Read through the `actions` array to understand the format of the chat script. Modify the `actions` array to be a chat script of your own.
 
 ## Reflection Questions
 

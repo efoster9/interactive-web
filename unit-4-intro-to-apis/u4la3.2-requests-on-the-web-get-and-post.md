@@ -116,7 +116,7 @@ https://www.google.com/search?q=beyonce&oq=beyonce&aqs=chrome.0.69i59l2j0i271l2j
 
 5.  Head back to Google and this time before making a search, open the Network tab in the Devtools. Be sure you have the column titled Method. It should show a couple of GET requests as shown below.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 6. Now have students do the same search they did before one letter at a time, and give them a few minutes to explore the following:
    * What do you notice?
    * When you complete the search what happens? Are we GETting or POSTing? Why?

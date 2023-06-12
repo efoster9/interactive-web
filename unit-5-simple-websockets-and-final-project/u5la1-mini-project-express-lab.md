@@ -27,18 +27,19 @@ You've been building websites for a while. Have you ever wondered how the comput
 ## Directions
 
 > Replit users:
-> - No need to install anything! Upon the first time you hit Run, Replit will automatically install any dependencies. Depending how you structure your lesson, you may (and can) also do this manually.
-> - `npm test` should and can still be used from the `Shell` tab.
+>
+> * No need to install anything! Upon the first time you hit Run, Replit will automatically install any dependencies. Depending how you structure your lesson, you may (and can) also do this manually.
+> * `npm test` should and can still be used from the `Shell` tab.
 
 ### Install Dependencies
 
-The starter code for this lab contains tests to give you feedback on your progress. **Download the lab's dependencies by running `npm install on the terminal**. This may take a while and a lot of lines may go by on your screen. The platform you're working on may also already have done this. That's OK, it doesn't hurt anything to run this command multiple times.
+The starter code for this lab contains tests to give you feedback on your progress. **Download the lab's dependencies by running \`npm install on the terminal**. This may take a while and a lot of lines may go by on your screen. The platform you're working on may also already have done this. That's OK, it doesn't hurt anything to run this command multiple times.
 
 ### Run the tests
 
 Next, run the tests to make sure everything was installed correctly. **Run `npm test` in your terminal**. You should see an error that looks like this:
 
-```text
+```
 SyntaxError: The requested module './app' does not provide an export named 'default'
 ```
 
@@ -53,7 +54,7 @@ Therefore, Node is giving up.
 
 This is also explaining what the next step should be: Because the test code can't find a default export in the file `app.js`, adding a default export should fix the error. **In the file `app.js`, add `export default "Hello, world!"`.** Run `npm test` in your terminal again and you should see an error that looks like this:
 
-```text
+```
 app.js should export an Express app.
 ```
 
@@ -86,7 +87,7 @@ Express is an open source package. That means a group of volunteers works on thi
 
 We could download the Express files and try to set it all up by hand, but Node comes with a better tool for this called npm. npm (informally known as "node package manager") is a tool for installing packages like Express. It's also used for configuration and storing scripts, such as the `npm test` and `npm run test:watch` scripts you've used. npm packages are hosted at [npmjs.org](https://www.npmjs.com/), which also includes details about how to install them.
 
-**Go to the [npmjs.org](https://www.npmjs.com/) and find Express. Follow the instructions on the site to install it.**
+**Go to the** [**npmjs.org**](https://www.npmjs.com/) **and find Express. Follow the instructions on the site to install it.**
 
 If you've done this correctly, you should see a line in the file `package.json` that looks something like this (it's OK if the numbers don't match):
 
@@ -127,7 +128,7 @@ The module that the Express package exports is a function and calling it creates
 
 You should get a new error now, something like:
 
-```text
+```
 The response needs to be HTML
 ```
 
@@ -177,7 +178,7 @@ You can stop the server with `Control` + `c`.
 
 ## Exemplar
 
-![Website displaying 'you did it!'](U5LAB1-exemplar.png)
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Website displaying 'You did it!'</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
 
@@ -212,6 +213,7 @@ Serve an image from a linked page:
 Add additional HTTP routes to the Express server to create a custom web API. Use the documentation in [Express Routing](https://expressjs.com/en/guide/routing.html) to create GET routes that respond to browser requests with JSON responses. Your website can give links to photos, information about species or factions, a random question of the day, or any other type of data. Check out this [list of open APIs](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/) to get some inspiration.
 
 For example:
+
 ```js
 const dogLinks = [
     "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",

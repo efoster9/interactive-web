@@ -35,7 +35,7 @@ We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofc
 
     You should have gotten a response like this:&#x20;
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 4. I got the 8 of clubs! Notice how there's even a link to a static image that can potentially be used in a website. If you visit the same endpoint again, notice how you will draw a different card. Do this a couple times and notice the different cards that come up and how the `remaining` attribute goes down.
 5. **Return and shuffle the cards to the deck:** Last, lets return the cards you drew back to the deck and shuffle the deck at the same time. See if you can find this endpoint before checking here for the answer.
 

@@ -37,11 +37,11 @@ const $input = document.querySelector("input#first-name")
 const input = $input.value
 ```
 
-The lab also contains several included functions in [`client/utilities.js`](./U5LAB1-Starter/client/script.js) that you can use just by calling them. You won't need to modify these at all, but you can look at them if you're curious how they work.
+The lab also contains several included functions in [`client/utilities.js`](U5LAB1-Starter/client/script.js) that you can use just by calling them. You won't need to modify these at all, but you can look at them if you're curious how they work.
 
 ## Directions
 
-All of your code will be written in [`client/script.js`](./U5LAB1-Starter/client/script.js):
+All of your code will be written in [`client/script.js`](U5LAB1-Starter/client/script.js):
 
 ### Connect to the socket server
 
@@ -66,7 +66,7 @@ socket.emit("direct message", {
 
 The events can be named anything you want and represent a category of messages in your app.
 
-**Add the following to [`client/script.js`](./U5LAB1-Starter/client/script.js)**:
+**Add the following to** [**`client/script.js`**](U5LAB1-Starter/client/script.js):
 
 1. Add an event listener to the `"submit"` event of `$joinForm`
 2. Prevent the default browser behavior with `event.preventDefault()`
@@ -75,22 +75,22 @@ The events can be named anything you want and represent a category of messages i
 5. Emit a `"join"` event on the socket with the screen name with something like `socket.emit("join", "some-name")`
 
 <details>
-	<summary>
-		Solution
-	</summary>
 
-  ```js
-  $joinForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+<summary>Solution</summary>
 
-    const formData = new FormData(event.target);
-    const screenName = formData.get('screen-name');
+```js
+$joinForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    registerUser(screenName);
+  const formData = new FormData(event.target);
+  const screenName = formData.get('screen-name');
 
-    socket.emit('join', screenName);
-  });
-  ```
+  registerUser(screenName);
+
+  socket.emit('join', screenName);
+});
+```
+
 </details>
 
 ### Send messages to the chat room
@@ -105,7 +105,7 @@ socket.emit("chat", {
 })
 ```
 
-**Add the following to [`client/script.js`](./U5LAB1-Starter/client/script.js)**:
+**Add the following to** [**`client/script.js`**](U5LAB1-Starter/client/script.js):
 
 1. Add an event listener for the submit event on the `$newMessageForm` element
 2. Prevent the default browser behavior
@@ -115,23 +115,23 @@ socket.emit("chat", {
 6. Emit a `chat` event on the socket with an object containing the `screenName` and the `message` you got from the form
 
 <details>
-	<summary>
-		Solution
-	</summary>
 
-  ```js
-  $newMessageForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+<summary>Solution</summary>
 
-    const formData = new FormData(event.target);
-    const message = formData.get('message');
+```js
+$newMessageForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    resetNewMessageForm();
+  const formData = new FormData(event.target);
+  const message = formData.get('message');
 
-    const { screenName } = getUser();
-    socket.emit('chat', { screenName, message });
-  });
-  ```
+  resetNewMessageForm();
+
+  const { screenName } = getUser();
+  socket.emit('chat', { screenName, message });
+});
+```
+
 </details>
 
 Note that Socket.io clients can't actually send each other messages directly; they must go through a server they're both connected to. In this case, when this socket emits the `"chat"` event, the server (which is listening for it with its own `.on()` handler in `app.js`) emits its own `"chat"` event on every connected socket. It could have sent the message right back to that original socket, sent it to all connected sockets, sent it to some subset of them, sent a different message entirely, or done nothing at all.
@@ -150,7 +150,7 @@ socket.on("some event", (someData) => {
 
 The handler will be called with whatever was sent in the matching `emit`. Note the slight syntax difference: DOM events use `element.addEventListener("some event", someHandler)`, while both WebSocket and socket.io events use `socket.on("some event", someHandler)`.
 
-**Add the following to [`client/script.js`](./U5LAB1-Starter/client/script.js)**:
+**Add the following to** [**`client/script.js`**](U5LAB1-Starter/client/script.js):
 
 1. Add an event listener to the socket for the `chat` event
 2. Extract the `screenName` and `message` values out of the object in the handler
@@ -163,36 +163,37 @@ The handler will be called with whatever was sent in the matching `emit`. Note t
   ${screenName || 'Unknown user'}
 </address> <pre>${formattedMessage}</pre>`
 ```
+
 6. Append the chat message DOM element you created to the `$message` element
 7. Call the `scrollTo` method of the `$messages` object. Pass it an object with `top` set to `$messages.scrollHeight` and `behavior` set to `"smooth"`
 
 Make sure your variables line up with the ones in the template and that you called `.on` on the socket instead of `.addEventListener()`.
 
 <details>
-  <summary>
-    Solution
-	</summary>
-  
-  ```js
-  socket.on('chat', ({ screenName, message }) => {
-    const { colorClass } = getUser(screenName);
-    const formattedMessage = message.trim();
-    const $chatMessage = createMessage(
-      'chat-message',
-      `<address class="${colorClass}">
-        ${screenName || 'Unknown user'}
-      </address> <pre>${formattedMessage}</pre>`,
-    );
-    $messages.append($chatMessage);
 
-    $messages.scrollTo({ top: $messages.scrollHeight, behavior: 'smooth' });
-  });
-  ```
+<summary>Solution</summary>
+
+```js
+socket.on('chat', ({ screenName, message }) => {
+  const { colorClass } = getUser(screenName);
+  const formattedMessage = message.trim();
+  const $chatMessage = createMessage(
+    'chat-message',
+    `<address class="${colorClass}">
+      ${screenName || 'Unknown user'}
+    </address> <pre>${formattedMessage}</pre>`,
+  );
+  $messages.append($chatMessage);
+
+  $messages.scrollTo({ top: $messages.scrollHeight, behavior: 'smooth' });
+});
+```
+
 </details>
 
 ## Exemplar
 
-![Two working socket clients sending messages](U5LAB2-exemplar.png)
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Two working socket clients sending messages</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
 
@@ -228,7 +229,7 @@ Implement "optimistic rendering." Right now, when you send a message, it display
 * You can reuse the `createMessage` function you're using in the `chat` handler
 * You'll need to modify the server code in `app.js` to not repeat the `"chat"` event to its original sender. This is called "broadcasting", and the `"join"` and `"leave"` handlers already work this way. See if you can adapt the code in the `"chat"` handler to do this as well.
 
----
+***
 
 You can test sockets either by going to your app in multiple browser tabs or by connecting to someone else's server instead of yours. If `io` is given no arguments, it will attempt to connect to a socket on the same server that's hosting the web page. If you give it another address, such as `io(https://some-server.com/some-path)`, it will connect to that server instead. If you're working with a partner, try connecting to their server instead of yours!
 

@@ -25,7 +25,7 @@ Most APIs you will run into are closed. For the most part, closed and open APIs 
 
 1. Go to Merriam Webster's [DictionaryAPI.com](https://dictionaryapi.com/), scroll down, and register for an api key. Once you do, you'll have to confirm with the link provided in your email. This process should take about 1 minute. The picture below will give you an idea on how to fill out the registration form.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 > Note: be sure to pick the thesaurus as the first API request as this is the main endpoint being used in this lab. The spanish english dictionary is being used for the extensions in this lab.
 

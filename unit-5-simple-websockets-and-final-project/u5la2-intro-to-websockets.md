@@ -54,16 +54,16 @@ Watch out:
 
 ### Planning Notes && Materials
 
-|  Planning Notes  |  Materials  |
-| :--------------: | :---------: |
-| This contains an Express app that serves static HTML/CSS and runs a socket server. Most of the work is done already, but make sure you can run this server and work through the steps first. | [Postra](./U5LA1-Starter) |
-| You'll need to find some relevant examples of sites that use WebSockets. As of 2023, there's a working example at [javascript.info](https://javascript.info/websocket#chat-example). Check social media, news feeds, chat sites, traffic and weather sites, stock tickers, and browser-based multiplayer games. Check the dev tools to make sure that the site still uses sockets. The network tab should show a `101 Switching Protocols` response. | |
+|                                                                                                                                                                                                                    Planning Notes                                                                                                                                                                                                                    |         Materials        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------: |
+|                                                                                                                             This contains an Express app that serves static HTML/CSS and runs a socket server. Most of the work is done already, but make sure you can run this server and work through the steps first.                                                                                                                             | [Postra](U5LA1-Starter/) |
+| You'll need to find some relevant examples of sites that use WebSockets. As of 2023, there's a working example at [javascript.info](https://javascript.info/websocket#chat-example). Check social media, news feeds, chat sites, traffic and weather sites, stock tickers, and browser-based multiplayer games. Check the dev tools to make sure that the site still uses sockets. The network tab should show a `101 Switching Protocols` response. |                          |
 
 ### Suggestions for UDL
 
-| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| Exercise instructions can be read or dictated. Discussions can take place with voice or in print.  Lesson begins with priming, which is immediately activated through critical problem solving. | Students end the lesson by reflecting on how they could personally use this technology, examples are shown from a variety of sources, students discuss as a community, students work individually implementing the skill. Feedback is real-time through a realistic example. | Students listen, discuss, write, draw, and use. |
+|                                                                                Multiple Means of Representation                                                                                |                                                                                                                         Multiple Means of Engagement                                                                                                                         |           Multiple Means of Expression          |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------: |
+| Exercise instructions can be read or dictated. Discussions can take place with voice or in print. Lesson begins with priming, which is immediately activated through critical problem solving. | Students end the lesson by reflecting on how they could personally use this technology, examples are shown from a variety of sources, students discuss as a community, students work individually implementing the skill. Feedback is real-time through a realistic example. | Students listen, discuss, write, draw, and use. |
 
 ### Suggestions for Differentiation
 
@@ -80,7 +80,7 @@ Watch out:
 
 ### Resources
 
-* [**MDN: WebSockets API**](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) - MDN's guide to the WebSocket API
+* [**MDN: WebSockets API**](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets\_API) - MDN's guide to the WebSocket API
 
 ### Assessments
 
@@ -88,10 +88,8 @@ Watch out:
 
 Questions:
 
-* Q: What are WebSockets?
-    A: A browser API for sending and receiving 1-way messages with a compatible server
-* Q: What are two examples of how WebSockets are used?
-    A: Real-time interaction, online multiplier games, chat, server notifications
+* Q: What are WebSockets? A: A browser API for sending and receiving 1-way messages with a compatible server
+* Q: What are two examples of how WebSockets are used? A: Real-time interaction, online multiplier games, chat, server notifications
 
 Student work on Postra can be collected, as can the reflection question.
 
@@ -123,20 +121,27 @@ Introduce the idea of WebSockets; a way for clients and servers to send each oth
 
 ### I Do (\~5 - 10 minutes)
 
-Using the [starter code](./U5LA1-Starter), demonstrate how to create a WebSocket connection, listen for messages, and use data from them.
+Using the [starter code](U5LA1-Starter/), demonstrate how to create a WebSocket connection, listen for messages, and use data from them.
 
 Start by writing out all of the steps you'll follow:
 
 1. Get the DOM element for the `.likes` element
-  * `const element = document.querySelector(".likes")`
-2. Create a new WebSocket that connects to the embedded socket server
-  * `const ws = new WebSocket(`wss://${location.host}/socket-server`)`
-3. Attach a `message` event listener to the WebSocket
-  * `ws.addEventListener("message", (message) => { })`
-4. In its event handler, update the DOM element
-  * `element.textContent = message.data`
 
-Demonstrate implementing these steps in the [client/script.js](./U5LA1-Starter/client/script.js), discussing what's happening at each step. Your finished code should look something like this:
+* `const element = document.querySelector(".likes")`
+
+2. Create a new WebSocket that connects to the embedded socket server
+
+* `const ws = new WebSocket(`wss://${location.host}/socket-server`)`
+
+3. Attach a `message` event listener to the WebSocket
+
+* `ws.addEventListener("message", (message) => { })`
+
+4. In its event handler, update the DOM element
+
+* `element.textContent = message.data`
+
+Demonstrate implementing these steps in the [client/script.js](U5LA1-Starter/client/script.js), discussing what's happening at each step. Your finished code should look something like this:
 
 ```js
 // client/script.js
@@ -157,13 +162,20 @@ Clear the code you wrote in `client/script.js`, rollback your commit, or make a 
 As a reminder, these steps are:
 
 1. Get the DOM element for the `.likes` element
-  * `const element = document.querySelector(".likes")`
+
+* `const element = document.querySelector(".likes")`
+
 2. Create a new WebSocket that connects to the embedded socket server
-  * `const ws = new WebSocket(`wss://${location.host}/socket-server`)`
+
+* `const ws = new WebSocket(`wss://${location.host}/socket-server`)`
+
 3. Attach a `message` event listener to the WebSocket
-  * `ws.addEventListener("message", (message) => { })`
+
+* `ws.addEventListener("message", (message) => { })`
+
 4. In its event handler, update the DOM element
-  * `element.textContent = message.data`
+
+* `element.textContent = message.data`
 
 Your finished code should look something like this:
 
@@ -208,22 +220,17 @@ You can tease the lab by mentioning that there are tools that make it simple to 
 
 **For students who move through this quickly:**
 
-From the `script.js`, If you send the message `"all"` to the socket server, you'll upgrade the feed from the socket server from one count to an array of counts. 
+From the `script.js`, If you send the message `"all"` to the socket server, you'll upgrade the feed from the socket server from one count to an array of counts.
 
 1. Copy the existing HTML to create four `.card` divs. Use any name, image, and message you like. In the same file, give each `<span>` an `id` of `"A"`, `"B"`, `"C"`, and `"D"` respectively. Read the response to get the data schema.
-2. The socket (in `app.js`) is already configured to send you 4 data points when you send it the string “all” using `ws.send(“all”)`. However, if you try and send “all” before the socket connection opens, you will get an error. Try to find a solution on your own before coming here for 1 way to do it. HINT: use `ws.send()` in both files to communicate back and forth between files.
-    <details>
-    <summary>See Answer</summary>
+2.  The socket (in `app.js`) is already configured to send you 4 data points when you send it the string “all” using `ws.send(“all”)`. However, if you try and send “all” before the socket connection opens, you will get an error. Try to find a solution on your own before coming here for 1 way to do it. HINT: use `ws.send()` in both files to communicate back and forth between files.
 
-    - in `app.js`, use `ws.send("connected")` in the `on.("connection")` function. 
-    - in `client/script.js` listen for "connected", `ws.addEventListener("connected")` before sending "all" back to the `app.js`.
-    </details>
-    <br>
+    \
 
 3. Use `.forEach()` to iterate through the data and update each of the 4 cards.
 4. Display the cards in a 2x2 grid by styling it in the `client/index.css`
 
----
+***
 
 Follow the exercise instructions with tasks instead of steps:
 
