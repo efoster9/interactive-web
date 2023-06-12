@@ -1,5 +1,5 @@
 ---
-description: How can I use websockets to communicate between a client and server.
+description: How can I use websockets to communicate between a client and server?
 ---
 
 # 🔮 Unit 5 Overview
@@ -27,4 +27,4 @@ Approx. 3-6 weeks for core content and 3-5 weeks for the Course Final Project.
 
 ### Prerequisite Skills
 
-Unit 5 is a challenging unit designed for advanced individuals. There is a lot of new vocabulary, new syntax, and links to documentation. At this point in the curriculum, students should be fluent in javascript and comfortable with both HTML and basic API concepts. 
+Unit 5 is a challenging unit designed for advanced individuals. There is a lot of new vocabulary, new syntax, and links to documentation. At this point in the curriculum, students should be fluent in javascript and comfortable with both HTML and basic API concepts.
