@@ -179,7 +179,7 @@ After, have students open up and run the starter code. Fill out the Job Applicat
 
 * Use `window.onbeforeunload` to alert the user they are about to lose data if they reload. This should only happen if they forgot to enter an email. [Use this link to learn more](https://dev.to/chromiumdev/sure-you-want-to-leavebrowser-beforeunload-event-4eg5). Below is an example of what it looks like on Chrome.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Example of alert message</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Example of alert message</p></figcaption></figure>
 
 ### Wrap Up (\~5 minutes)
 
