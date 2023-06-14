@@ -4,15 +4,13 @@ description: How do you work with APIs that require authentication?
 
 # U4LA2: Connecting to Closed APIs using the Giphy API
 
-## Preface && Context
-
 ### Teacher Notes && Overview
 
 In this lesson, students will integrate the Giphy API into a web app. You should familiarize yourself with the API through the exemplar and the API documentation. Pay special attention to the API key sign-up process, which is likely to evolve over time and trip up students. This lesson is paired with the lesson on SDKs and is intended to highlight the differences between APIs and SDKs by mirroring the lesson structure.
 
 You have the option of putting the API key directly in the code for simplicity or using environment variables to demonstrate keeping the key out of the code. Either way, make sure you highlight the importance of keeping sensitive data like keys out of source code. Discuss the dangers of a key being leaked.
 
-There is a natural splitting point in the lesson to teach it over 2 days. The first half covers closed APIs and is meant to walk students through signing up with the Giphy API to get a feel for that process. The second half goes over the try/catch block and has students experiment with errors and error handling. 
+There is a natural splitting point in the lesson to teach it over 2 days. The first half covers closed APIs and is meant to walk students through signing up with the Giphy API to get a feel for that process. The second half goes over the try/catch block and has students experiment with errors and error handling.
 
 ### Objectives
 
@@ -28,6 +26,13 @@ Students will be able to:
 
 ### NYS Standards
 
+* **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
+* **9-12.CT.7** Design or remix a program that utilizes a data structure to maintain changes to related pieces of data.
+* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored and referenced over the Internet.
+* **9-12.DL.1** Type proficiently on a keyboard.
+* **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
+* **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
+
 ### Vocabulary
 
 * **Query Parameter**: Data added to the end of a URL. Separated from the rest of the URL with `?`, key value pairs matched with `=` and separated by `&`.
@@ -37,16 +42,16 @@ Students will be able to:
 
 ### Planning Notes && Materials
 
-|  Planning Notes  |  Materials  |
-| :--------------: | :---------: |
-| Familiarize yourself with the Giphy API documentation (https://developers.giphy.com/docs/api/#quick-start-guide) and sample code. | [Starter Code](./U4LA2-Starter) |
-| Review the exemplar | [Exemplar Code](./U4LA2-Exemplar) |
-| Practice signing up for an API key so you'll be able to walk students through it | |
+|                                                           Planning Notes                                                          |             Materials            |
+| :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: |
+| Familiarize yourself with the Giphy API documentation (https://developers.giphy.com/docs/api/#quick-start-guide) and sample code. |  [Starter Code](U4LA2-Starter/)  |
+|                                                        Review the exemplar                                                        | [Exemplar Code](U4LA2-Exemplar/) |
+|                          Practice signing up for an API key so you'll be able to walk students through it                         |                                  |
 
 ### Suggestions for UDL
 
-| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
+|                                                                       Multiple Means of Representation                                                                       |                                                                                                       Multiple Means of Engagement                                                                                                      |                                             Multiple Means of Expression                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | Students may need additional examples for understanding what a GIF is. In particular, pay attention to how they're commonly used as an expressive way to communicate online. | Students may have trouble with the abstract concept of an API. It may help to find ways to make it more concrete, such as mailing a letter asking for something or playing a game sending each other instructions in a specific format. | The discussions can be done async or virtual, the hands-on parts can be done individually, in groups, or as a class |
 
 ### Suggestions for Differentiation
@@ -58,7 +63,7 @@ Students will be able to:
 ### Resources
 
 * [Giphy API docs](https://developers.giphy.com/docs/api/#quick-start-guide)
-* [Fetch Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [Fetch Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API)
 * [Try/Catch Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 ### Assessments
@@ -73,8 +78,6 @@ Students will be able to:
 
 API Final Project (End of Unit Project)
 
-## Lesson
-
 ### Do Now/Warm Up (\~10 min)
 
 Have students research online and find a public web API they think sounds interesting. They can look through the [Public API List](https://github.com/public-apis/public-apis) or use their own resources.
@@ -86,14 +89,16 @@ Have students research online and find a public web API they think sounds intere
 ### Closed APIs and API Keys (\~10 min)
 
 Open APIs can be accessed by anyone, closed APIs require getting a token or other means of access. Ask the students to write a list of reasons why someone who provides data through a public API would want to limit access by requiring a key. You can have them share these out, as well as submit them for review. You may wish to use some technique for hearing and documenting shared and unique entries. Make sure you highlight the following:
-- selling access,
-- selling additional usage
-- throttling usage to stop from overwhelming the server
-- limiting malicious access.
+
+* selling access
+* selling additional usage
+* throttling usage to stop from overwhelming the server
+* limiting malicious access.
 
 ### Making an API Request (\~15 min)
 
 A client (like a browser) makes a request to a server (like an API server). The server then decides what to send back as a response. We've already seen a couple of basic API requests, but this is what one of the endpoints looks like for the Giphy API. It gets a trending Gif.
+
 ```js
 // NOTE: This is just an example. 'await' should live in an async function.
 const API_KEY = "INSERT API KEY"
@@ -112,7 +117,7 @@ const { data } = await response.json()
 
 ### Displaying GIFs (\~15 min)
 
-Using the [starter code](U4LA2-Starter/script.js), complete the following steps to demonstrate to students how to integrate the retrieved GIF data into their applications. 
+Using the [starter code](U4LA2-Starter/script.js), complete the following steps to demonstrate to students how to integrate the retrieved GIF data into their applications.
 
 In `script.js`:
 
@@ -121,6 +126,7 @@ In `script.js`:
 3. Parse the response and set its `data[0].images.original.url` to `$gif.src`
 
 <details>
+
 <summary>Solution</summary>
 
 ```js
@@ -149,57 +155,59 @@ const app = async () => {
 
 app()
 ```
+
 </details>
-<br>
+
+\
 Consider encouraging creativity by designing the user interface, manipulating the CSS to showcase the GIFs effectively.
 
 ### Try/Catch and Error Handling (\~25 min)
 
-- In the try/catch workflow, flow control goes to the `try` block. If anything in it throws an error, control goes to the `catch` block. The `catch` block has access to an `error` object containing details about what errored.
-	```javascript
-	try {
-		// Something that might error
-	} catch (error) {
-		// How the error should be handled
-	}
-	```
+*   In the try/catch workflow, flow control goes to the `try` block. If anything in it throws an error, control goes to the `catch` block. The `catch` block has access to an `error` object containing details about what errored.
 
-- Ask students to predict what kinds of things can error when making API calls. Follow up with their ideas of how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display and error message and redirect the user to try something else.
+    ```javascript
+    try {
+    	// Something that might error
+    } catch (error) {
+    	// How the error should be handled
+    }
+    ```
+* Ask students to predict what kinds of things can error when making API calls. Follow up with their ideas of how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display and error message and redirect the user to try something else.
+* Some examples of errors include syntax, invalid endpoint, invalid query, 404, or accessing an attribute in the response that doesn't exist.
+*   Present this code block to students:
 
-- Some examples of errors include syntax, invalid endpoint, invalid query, 404, or accessing an attribute in the response that doesn't exist.
+    ```javascript
+    const $message = document.querySelector(".message")
 
-- Present this code block to students:
-	```javascript
-	const $message = document.querySelector(".message")
+    try {
+    	const response = await fetch("http://example-api.com/some-endpoint")
+    	const data = await response.json()
+    	$message.textContent = `Successfully fetched ${data.message}`
+    } catch (error) {
+    	$message.textContent = `Request failed: ${error.message}`
+    }
+    ```
 
-	try {
-		const response = await fetch("http://example-api.com/some-endpoint")
-		const data = await response.json()
-		$message.textContent = `Successfully fetched ${data.message}`
-	} catch (error) {
-		$message.textContent = `Request failed: ${error.message}`
-	}
-	```
-	In this example, the following happens:
-	-  `$message` is saved.
-	- In the `try` block, the browser attempts to get an HTTP response from that URL and save the response in `response`. If it fails, control will go to the `catch` block.
-	- Then, the browser will attempt to parse the response and save it in `data`. If it fails, control will go to the `catch` block. 
-	- Finally, the browser will set the `$message`'s text to the parsed data's message. 
-	
-	If any of the processes errored, the `$message`'s text will display the error's message.
+    In this example, the following happens:
 
-- In the example above, we can see that the endpoint doesn't exist when we try to run it. In this simpler example, we try to access an element of the array that doesn't exist. `try`/`catch` blocks can also be used for other purposes, like debugging!
-	```js
-	const numbers = [1, 2, 3, 4];
+    * `$message` is saved.
+    * In the `try` block, the browser attempts to get an HTTP response from that URL and save the response in `response`. If it fails, control will go to the `catch` block.
+    * Then, the browser will attempt to parse the response and save it in `data`. If it fails, control will go to the `catch` block.
+    * Finally, the browser will set the `$message`'s text to the parsed data's message.
 
-	try {
-		console.log(numbers[9]);
-	} catch (err) {
-		console.log("Error caught", err);
-	}
-	```
+    If any of the processes errored, the `$message`'s text will display the error's message.
+*   In the example above, we can see that the endpoint doesn't exist when we try to run it. In this simpler example, we try to access an element of the array that doesn't exist. `try`/`catch` blocks can also be used for other purposes, like debugging!
 
-- Have students spend some time purposely creating bugs in a try/catch block and see how many different kinds of errors they can get. Spend some time sharing some of these errors in a demo with the whole class. 
+    ```js
+    const numbers = [1, 2, 3, 4];
+
+    try {
+    	console.log(numbers[9]);
+    } catch (err) {
+    	console.log("Error caught", err);
+    }
+    ```
+* Have students spend some time purposely creating bugs in a try/catch block and see how many different kinds of errors they can get. Spend some time sharing some of these errors in a demo with the whole class.
 
 ### Wrap Up (\~5 min)
 

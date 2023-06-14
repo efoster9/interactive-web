@@ -1,5 +1,5 @@
 ---
-description: What makes an API closed and how do we safely incorporate our API key.
+description: What makes an API closed and how do we safely incorporate our API key?
 ---
 
 # 🗃 U4LA2 Mini Project: DIY Dictionary

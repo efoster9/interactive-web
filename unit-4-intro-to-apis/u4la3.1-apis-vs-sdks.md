@@ -26,6 +26,13 @@ Students will be able to:
 
 ### NYS Standards
 
+* **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
+* **9-12.CT.7** Design or remix a program that utilizes a data structure to maintain changes to related pieces of data.
+* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored and referenced over the Internet.
+* **9-12.DL.1** Type proficiently on a keyboard.
+* **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
+* **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
+
 ### Vocabulary
 
 * **API:** Application Programming Interface; A set of rules and protocols that allow different software applications to communicate and interact with each other
