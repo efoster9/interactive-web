@@ -23,6 +23,7 @@ const advanceBlue = (e) => {
   blue_position += 1;
   changePosition(blueHorse, blue_position);
   checkWinner(blue_position, "Blue");
+  blueHorse.alt = `blue horse at position ${blue_position} out of 5`;
 };
 // (3)
 const advancePink = (e) => {
@@ -30,12 +31,14 @@ const advancePink = (e) => {
   pink_position += 1;
   changePosition(pinkHorse, pink_position);
   checkWinner(pink_position, "Pink"); // (4)
+  pinkHorse.alt = `pink horse at position ${pink_position} out of 5`;
 };
 const advanceBrown = (e) => {
   console.log("clicked");
   brown_position += 1;
   changePosition(brownHorse, brown_position);
   checkWinner(brown_position, "Brown"); // (4)
+  brownHorse.alt = `brown horse at position ${brown_position} out of 5`;
 };
 
 

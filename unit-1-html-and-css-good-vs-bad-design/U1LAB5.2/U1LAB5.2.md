@@ -51,11 +51,17 @@ Beautiful websites can be fun and satisfying for both the creator and the naviga
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+Consider having students try to navigate a website of their choice with the brightness turned off or with a paper or folder covering their screen. This can be attempted with and/or without the use of a screen reader. Then, discuss what was hard or frustrating about it.
+
+Consider brainstorming with the students things that are hard to do and the tools made to help with those tasks. Examples include: walking with an injured foot & crutches, complex mathematics & a calculator, or pulling a hot pan from the oven & an oven mit. Have students discuss and come up with a few of their own ideas in pairs before sharing with the class. 
+
+In both examples, the goal is to give students an intrinsic sense of why we should consider coding with others in mind; namely those with visual deficiencies.
 
 ### Extra Help?
 
-[COURTNEY TO ADD]
+Many of the resources needed to complete the lab are attached as links in the section they are referenced. The main 2 links you can use as a resource is [w3schools for semantic elements](https://www.w3schools.com/html/html5_semantic_elements.asp) and **WEBAIM** for best practices ([here's one example](https://webaim.org/techniques/forms/controls)).
+
+Here's a [video resource](https://youtu.be/z8xUCzToff8?t=624) from an employee at Google talking about accessibility. The link starts at 10:24 which is where he starts to mentions the power and importance of using semantic elements to make for a more accessible website.
 
 ### Extensions
 

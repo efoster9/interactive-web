@@ -1,12 +1,16 @@
 ---
-description: How can you use add, remove, and toggle in Javascript to change class and attributes in HTML?
+description: How can you use add, remove, and toggle in Javascript to change an element's classList and other attributes in HTML?
 ---
 
-# The Mismatched (Cross-Wired) Lightbulbs Puzzle
+# The Cross-Wired Lightbulbs Puzzle
 
 ### Teacher Notes
 
-...
+In this lessons students wil be using add, remove, and toggle to connect switch checkboxes with purposely mismatched lights. They will be toggling a class name that, when added, illuminates the light box.
+
+It will feel weird and wrong purposefully mismatching switches with lights, but reiterate that students should be zoned in on the routing list in #6. The directions go through the routing of the first switch which you may want to do with students if you see many of them are struggling. Then, students are expected to repeat the pattern for the other routings.
+
+This lab will not conclude as an accessible one. However, the exemplar is accessible, and feel free to encourage students to explore ways to make the site accessible as a spicy extension.
 
 ### Prompt
 
@@ -41,15 +45,15 @@ The goal is simple, turn on all the lights! That would be simple if every switch
     ```
 
 6. Now, continue to route lights as indicated below
-    - switch1: lightbulb3, lightbulb8
-    - switch2: lightbulb1, lightbulb7
-    - switch3: lightbulb4, lightbulb6, lightbulb8
-    - switch4: lightbulb2, lightbulb9
-    - switch5: lightbulb5
-    - switch6: lightbulb1, lightbulb4
-    - switch7: lightbulb2, lightbulb3
-    - switch8: lightbulb5, lightbulb9
-    - switch9: lightbulb6, lightbulb7
+    - **switch1**: lightbulb3, lightbulb8
+    - **switch2**: lightbulb1, lightbulb7
+    - **switch3**: lightbulb4, lightbulb6, lightbulb8
+    - **switch4**: lightbulb2, lightbulb9
+    - **switch5**: lightbulb5
+    - **switch6**: lightbulb1, lightbulb4
+    - **switch7**: lightbulb2, lightbulb3
+    - **switch8**: lightbulb5, lightbulb9
+    - **switch9**: lightbulb6, lightbulb7
     
 7. Great, you did it! If you did it right, all your switches should be... wrong. Switch #5 should be the only switch working correctly. Take a moment to try and get all the lights to turn on!
 
@@ -59,11 +63,21 @@ Take a look at this [finished example](./U2LAB4-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+We find that a light switch is a good, generic example of applying toggle in javascript, but students may have a hard time seeing how else this can be applied on a website. [This website](https://codemyui.com/tag/toggle-switch/) is a good starting point to have students begin recognizing the use of toggle, but encourage students to explore other websites to identify toggle in a place that's more familiar to them. Places may include: emails, social media accounts, phone's settings/control center, music making applications, and more.
 
 ### Extra Help?
 
-...
+Here is a good video resource for [examples using add, remove, and toggle](https://www.youtube.com/watch?v=FKQkx-wGexo). 
+
+If you forget how to implement conditional if/else statements, here's the [w3schools resource](https://www.w3schools.com/js/js_if_else.asp) on examples of that.
+
+<details>
+<summary>Click here for the answer key to the puzzle</summary>
+<br>
+
+_Click on switches 2, 3, 7, and 8 to turn on all the lights_
+
+</details>
 
 ### Extensions
 
@@ -87,4 +101,6 @@ Take a look at this [finished example](./U2LAB4-Exemplar/index.html) before you 
 
 **Reflection Questions:**
 
-- 
+- Clicking switches and seeing lights appear will be inaccessible to someone who cannot see. What are some ways that you can make this website accessible? 
+- What else can be added to a website like this to improve it?
+- What was the biggest challenge you faced while going through this lab? 

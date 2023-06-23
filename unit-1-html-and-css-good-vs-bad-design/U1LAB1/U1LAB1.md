@@ -49,7 +49,7 @@ Take a look at this [finished example](./U1LAB1-Exemplar/index.html) before you 
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+Students have the opportunity to personalize this lab by selecting nonfictional or fictional celebrities of their choosing. Feel free to, but be cautious when adding restriction to students' choice here.
 
 ### Extra Help?
 
@@ -59,10 +59,14 @@ Finished with your HTML and want to browse through more specific colors? Check o
 
 ### Extensions
 
-**Directions**:
+**Mild**:
+- Add an extra section on the page that includes a title and a short description. One idea is to add a "Gallery" section with more photos of the person you chose.
 
-- Turn your achievements section into a table with a title, date, picture, and description.
-- You may have noticed that some your page is already styled with colors. Add IDs and class names where appropriate and see if you can fiddle with the colors on your page. Use the example lab to help you.
+**Medium**
+- Use a table to organize the "Achievements" section. The table should have a title, date, picture, and description as headings. Check out this resource on [HTML tables](https://www.w3schools.com/html/html_tables.asp) if you need it.
+
+**Spicy**
+- You may have noticed that some of your page is already styled with colors. Peak into the `style.css`, change the values, and notice what changes on your website. Add IDs and class names where appropriate and see if you can fiddle with the properties on your page like color and image width. Use the example lab and [this resource on IDs and styling](https://www.w3schools.com/html/html_id.asp) to help you.
 
 **Reflection Questions:**
 

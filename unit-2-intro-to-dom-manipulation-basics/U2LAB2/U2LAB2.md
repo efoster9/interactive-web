@@ -6,7 +6,9 @@ description: How do you change a webpage based on clicked buttons?
 
 ### Teacher Notes
 
-...
+In this lab, students will be using `addEventListener` and `innerHTML` to activate buttons. When the button is clicked, it should move the corresponding horse up one step. When a horse reaches the end of the "road" a message will appear saying that that color has won. The blue horse is already done as it should be as an example for students.
+
+In the second half of the lab, students will use ARIA and alt text to make the webpage accessible. Resources have been provided but be sure to have some examples ready for extra support. 
 
 ### Prompt
 
@@ -42,27 +44,69 @@ It's the national horse race again! Three horses line up to race for the finish 
     };
     ```
 
+7. **Make it accessible**: When you turn on the screen reader, what do you notice that could be improved?
+    - Notice that neither the buttons nor the horses have a descriptive enough alt text. The screen reader just announces _"Run! Button"_ for the button and "Blue Horse", for example, for the horses.
+    - When the buttons are clicked, nothing is said by the screen reader.
+    - Lastly, when a horse reaches the end, there is no way for someone who is blind to know that the race is over.
+
+8. For the buttons, use the `aria-label` property to give it a good descriptive text that will be read when hovered over by a screen reader. In the `index.html` add `aria-label="Advance blue horse"` in the blue button element. Do the same for the other 2 buttons. Here's a [resource on aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label).
+
+9. The image of the horse already has alt text, but change it so that it includes the position of the horse in the track. The horses all start at position 1 out of 5: `alt="blue horse at position 1 out of 5"`. Do the same for the other 2 horse images in the `index.html`.
+
+10. In the `script.js`, when a button is clicked, also change the alt text so that it contains the new position. At the end of the `advanceBlue` function, use `.alt` to set alt text. Here's [a resource with examples](https://www.w3schools.com/jsref/prop_img_alt.asp). Again, make sure you do this for all three horses. 
+
+11. Now that the text is available, descriptive, and updating with every button click, the last step will be to make sure that the screen reader announces those updates. Add the following 2 attributes to each of the image elements: `aria-live="polite"` and `aria-atomic="true"`. In the div where the winner text is displayed, use these two as well but make the `aria-live="assertive"`. For example:
+    ```html
+    <div id="winner" aria-live="assertive" aria-atomic="true"></div>
+    ```
+
+    Check out this [resource on aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) and this one on [aria-atomic](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic). 
+
 ### Exemplar (...to be deleted)
 
 Take a look at this [finished example](./U2LAB2-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+When thinking of the rationale behind using OnClick and ensuring it's accessibility on a website, consider having students recall a time that they clicked something on a website not including links. You may even encourage them to explore websites with their partners looking for examples. In this way, students will find a rationale that they can personally identify with. 
 
 ### Extra Help?
 
-...
+For accessibility, the resources linked above are your best bet when you get stuck. Check them out to see an example on how they should be used.
+
+Use the following resources to see some other examples that may help throughout the lab:
+- [addEventListener "onClick"](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
+- [innerHTML](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
 
 ### Extensions
 
-**Directions**:
-
+**Mild**
 - Once the game is over, notice that the other buttons still work. In fact, if the blue horse wins, you can get another horse to the finish line overwriting who the winner is. Use `blueButton.disabled = true;` to disable all three of the buttons once a winner is declared. You'll want to put the statements in the `if` statement of your `checkWinner` function. Use [the documentation for disabling buttons](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) for more information. 
-- With everything you've coded up until now, add a restart button to the page that starts the game over. For an easier challenge, disable it while the game is in progress, and reenable it once the game is over and there's a winner. For a more spicy challenge, make the button appear and disappear instead. Regardless, the restart button should do 3 things:
+- Using everything you've learned up until now, add a restart button to the page that starts the game over. Use a basic `<button>` element tag and give it the label "Restart Game". Disable it while the game is in progress, and reenable it once the game is over and there's a winner. The restart button should do 3 things:
     - set the horses position to 1, back to the starting position,
     - reenable the buttons,
     - clear the `innerHTML` of the `div` with `id="winner"`, and
+
+**Medium**
+- Change the restart button so that it appears and disappears instead of being enabled and disabled. Be sure your button has an `ID` so you can use `querySelector` to access it. Then, change the _display_ to `"none"` to hide it or `"block"` to show it. Use this [resource for some help](https://www.w3schools.com/jsref/prop_style_display.asp).
+    ```js
+    myButton.style.display = "none";
+    ```
+
+- Add another button between the title and the horses named "Steps". Then, immediately after, add a `div id="steps"` that will hold the output of that button. The "Steps" button when clicked should output a random number either 0, 1, or 2 in the innerHTML of the `div`. Use the following code to generate the random number. Here is a [resource if you'd like to learn more](https://www.w3schools.com/js/js_random.asp).
+    ```js
+    let randomNumber = Math.floor(Math.random() * 3);
+    ```
+
+    Once the button generates random numbers, use it to tell you how far to move each horse. _For example, starting with the blue horse, let's say you click the "Steps" button, and it outputs 1. That means we will click the "Run!" button for the blue horse 1 time. Then, click the "Steps" button again for the pink horse; let's say it says 0. Then, we skip over the pink horse's "Run! button", and so on until a horse wins._
+
+**Spicy**
+- Create a duplicate of the "Steps" button as done above, but call it "Color". In the `index.html`, there should now be 2 buttons and 2 `divs` for the button's outputs. The first should be `div id="steps"` and this second should be `div id="chosen-horse"`.  In the `script.js`, create another event listener function so that when the "Color" button is clicked, it changes the innerHTML of the new `div id="chosen-horse"` to...
+    - _"Blue"_ if the random number is 0, 
+    - _"Pink"_ if it is 1, and
+    - _"Brown"_ if it is 2.
+
+    Now, before advancing any horse, click both the "Steps" button and the "Color" button. _If the outputs are "2" and "Brown", for example, then advance the brown horse 2 steps, and so on until a horse wins._ 
 - There's currently quite a bit of redundancy in the code; there's repetition where there doesn't need to be. For this extension, you'll change the `advanceBlue()`, `advancePink()`, and `advanceBrown()` functions into 1 function called `advance()`:
     - First, head to the top of code and change all the variables so that they are in 1 object. You will have to eventually delete `blue_position`, `pink_position`, `brown_position`, and all the query selectors. The new object should be called `horses` and have 3 keys: "blue", "pink", and "brown". Each of the values should be another object with 3 keys as follows:
         ```js
@@ -106,4 +150,6 @@ Take a look at this [finished example](./U2LAB2-Exemplar/index.html) before you 
 
 **Reflection Questions:**
 
-- ...
+- What was the most challenging part of the lab? What was the part you're most proud of?
+- With more time, what would you add to this website to make it a better experience? How might you think about doing that?
+-  Is it important for website like this to be accessible to people with visual deficiencies? Why or why not?

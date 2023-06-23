@@ -46,7 +46,9 @@ You're applying for a different position, and this employer wants to see that yo
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+Then pictures and descriptions are made up for this lab. Feel empowered to change the generic theme pasted on the website to fit the identities of your students. 
+
+As another extension, for example, students can add more photos and descriptions or refactor the existing ones to be a band, director or publishing company they like.
 
 ### Extra Help?
 
@@ -75,7 +77,7 @@ There are so many rulesets. How do I know which one to include `display: flex;` 
 5. Now that you've completed the individual parts of the website, it's time to put it all together into one site. Copy and paste the individual HTML levels 1-4 into the main `level_five.html`. Do the same with all the individual CSS code -- put it into the one `level_five.css`. The goal will be to use Grid to orient the page so that it looks like _"Mock Up 5"_ below. There are a couple of things you should _delete_ before doing this:
     - In the `.sidebar` ruleset, delete `width: 150px;` and
   `height: 100vh;`. You will replace this with grid.
-    - In the `.footer` ruleset, delete `position: fixed;` and `width: 100%;`
+    - In the `.footer` ruleset, delete `position: fixed;` and `width: 100%;` for the same reason
 
     _Mock Up 5 - Full Page View_
     ![Level 5 Exemplar](U1LAB3.2-Starter/level5/exemplar/level5.png)  

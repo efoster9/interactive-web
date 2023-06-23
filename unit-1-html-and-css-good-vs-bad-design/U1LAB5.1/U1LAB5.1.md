@@ -85,7 +85,7 @@ When you're done, the page should look like [this](U1LAB5.1-Starter/level5/exemp
 
 ### Culturally Responsive Best Practice
 
-[COURTNEY TO ADD]
+This lab was designed to be a generic, social-media-like page. Feel empowered to change the context (pictures, headings, etc.) to fit something more relevant to your students. Also, feel free to have students add their own pictures for further personalization. 
 
 ### Extra Help?
 
@@ -93,19 +93,29 @@ Not seeing your changes on the screen? Make sure you are typing your `@media` qu
 
 ### Extensions
 
-**Directions**:
+**Mild**:
 
-- Surprise, as you can see by the new addition of the sidebar, this is actually Gordon Ramsey's ChefHub page. For **level 5**, be especially sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
-    - **Method 1**: using `grid-template-areas` and `grid-area`. This way is easier, most commonly used, and is the most efficient way, but it is trickier to first learn. Regardless, this is the way we recommend doing it, and the site is currently formatted using `grid-area`. Checkout [this video](https://youtu.be/qTGbWfEEnKI?t=319) for an example on how to use it. HINT: In the `@media` query, you will need to only change the one parent `div`.
-    - **Method 2**: using `grid-template-columns` and `grid-column`. This way will most likely feel more familiar to you. It is easier to learn, but harder to implement. In the `@media` query, you would need to change all the changed child `div`'s `grid-columns`.
+- Add 2 more changes to the website at one or two of the existing breakpoints. For example, maybe change the color of the background when the screen is smaller than `Large` or even a different color at every screen size. Or, make it so that the shadows behind the pictures are bigger at larger screen sizes. Brainstorm at least 2 changes with you partner.
 
-    Choose which ever route you feel comfortable exploring. If you choose to use `grid-template-columns`, be sure to change the pre-written `level_five.css` to be consistent with this method. 
+**Medium**
 
 - Currently, if you reduce the screen down to below `400px`, Things start looking a bit weird. Go back and add another breakpoint `X-Small` to all the individual parts of the page that need adjusting so that things still look okay in this new screen size. The **x-small** and **small** sizes should be defined as follows now:
     - `X-Small`: 0px - 576px
     - `Small`: 576px - 768px
 
+**Spicy**
+
+- Surprise! As you can see by the new addition of the sidebar, this is actually Gordon Ramsey's ChefHub page. For **level 5**, be especially sure to look at the exemplars to get a good idea of what the design should look like. When the screen size is `Medium` or smaller, the sidebar turns into a second navbar! The goal is to use what you've learned with CSS Grid up until now to reformat the page at this breakpoint. There are two ways you can do this:
+    - **Method 1**: using `grid-template-areas` and `grid-area`. This way is easier, most commonly used, and is the most efficient way, but it is trickier to first learn. Regardless, this is the way we recommend doing it, and the site is currently formatted using `grid-area`. Checkout [this video](https://youtu.be/qTGbWfEEnKI?t=319) for an example on how to use it. HINT: In the `@media` query, you will need to only change the one parent `div`.
+    - **Method 2**: using `grid-template-columns` and `grid-column`. This way will most likely feel more familiar to you. It is easier to learn, but harder to implement. In the `@media` query, you would need to change all the changed child `div`'s `grid-columns`.
+
+    Choose which ever route you feel comfortable exploring. If you choose to use `grid-template-columns`, be sure to change the pre-written `level_five.css` to be consistent with this method. 
+
+- Lastly, double check that this new sidebar looks good in every screen size across breakpoints. If something looks squished or out of place, make adjustments. 
+
+
 **Reflection Questions:**
 
+- What was the most challenging part of this lab? What did you do to overcome the challenge?
 - Why is it important to have breakpoints in your code?
 - Whats the difference between starting with a small sized website and building up ("mobile-first") and starting with an x-large sized website and building down ("desktop-first")? Do a little bit of research and see what you can find on which is better or worse and why. Which one makes the most sense and at what time is one approach more sensible than the other?

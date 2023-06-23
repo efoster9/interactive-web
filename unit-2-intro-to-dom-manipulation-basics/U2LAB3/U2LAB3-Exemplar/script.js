@@ -1,7 +1,9 @@
 // YOUR CODE HERE
 
+// getRandomInt() - gets a random number between 1 and 100
+// is_dark(hex) - takes in a hex number (for example #123456) and returns true if it's dark and false if it's light.
+
 // Part 1 - Radio Buttons - qS, ifelse, innerHTML
-const randomNumber = getRandomInt();
 const radioInput = document.querySelector("#fav_color");
 const radioOutput = document.querySelector("#radio-output");
 
@@ -27,12 +29,14 @@ radioInput.addEventListener('change', displayColor);
 
 
 // Part 2 - Guess the Number - qS, nested If, innerHTML, valueAsNumber
+const randomNumber = getRandomInt();
 const numInput = document.querySelector("#num-input");
 const numOutput = document.querySelector("#num-output");
 
 const checkNumber = (e) => {
   const value = e.target.valueAsNumber;
   console.log("number", value, "answer", randomNumber);
+  e.target.select();
 
   if( value != randomNumber) {
     if( value > randomNumber){
@@ -45,7 +49,7 @@ const checkNumber = (e) => {
   }
 }
 
-numInput.addEventListener('change', checkNumber)
+numInput.addEventListener('change', checkNumber);
 
 
 // Part 3 - 7 continents - qS, toLower, elseif, .remove()
@@ -54,7 +58,25 @@ let count = 0;
 
 const checkContinent = (e) => {
   const guess = e.target.value.toLowerCase();
-  console.log("guess", guess);
+  const srAlert = document.querySelector("#sr-continent-alert");
+  e.target.select();
+
+  // Instead of the following, this is another more advanced way
+
+  // let img = document.querySelector( "#" + guess.replace(' ', '-'));
+  // if(img){
+  //   if(img.classList.contains("hidden")){
+  //     count += 1;
+  //     img.classList.remove("hidden");
+  //     srAlert.innerHTML = `Yes! ${guess} is a continent. ${count} out of 7`;
+  //   } else {
+  //     srAlert.innerHTML = guess + " has already been selected.";
+  //   }
+  // } else {
+  //   srAlert.innerHTML = guess + " is not a continent."
+  // }
+
+
   let img;
 
   if(guess === "north america") {
@@ -72,10 +94,18 @@ const checkContinent = (e) => {
   } else if(guess === "asia") {
     img = document.querySelector("#asia");
   } else {
+    srAlert.innerHTML = guess + " is not a continent."
     return 0;
   }
 
-  img.classList.remove("hidden");
+  if(img.classList.contains("hidden")){
+    count += 1;
+    img.classList.remove("hidden");
+    srAlert.innerHTML = `Yes! ${guess} is a continent. ${count} out of 7`;
+  } else {
+    srAlert.innerHTML = guess + " has already been selected.";
+  }
+  
 }
 
 textInput.addEventListener('change', checkContinent);
@@ -90,6 +120,7 @@ const body = document.querySelector("body");
 
 const changeBackground = (e) => {
   e.preventDefault();
+  const srAlert = document.querySelector("#sr-background-alert");
   console.log("color", colorInput.value);
   console.log("is_checked", checkbox.checked);
 
@@ -101,6 +132,9 @@ const changeBackground = (e) => {
       body.style.color = 'black';
     }
     checkbox.checked = false;
+    srAlert.innerHTML = "Background color changed to " + colorInput.value;
+  } else {
+    srAlert.innerHTML = "Background color not changed. Please, select 'I'm not a robot'."
   }
 }
 
