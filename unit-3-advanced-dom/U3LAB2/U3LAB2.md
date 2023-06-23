@@ -8,7 +8,7 @@ description: How can you use advanced data structures and functional computing w
 
 In this lab, students will have the opportunity to build a personality quiz with some guidance. The teacher will walk students through a trivial version (the exemplar), and students will, similar to a unit project, brainstorm ways to personalize it adding different forms of inputs, creative outputs, and implementing concepts in the previous few lessons.
 
-{tbc}
+Most students will have a hard time coming up with an algorithm that will calculate the final result of their test even with guidance below. Prepare some simple visual examples that students can use to get started. For example if there are 4 results that can be put on an XY-axis, draw what this may look like and show how each questions will push the quiz taker higher or lower on an axis. 
 
 ### Prompt
 

@@ -49,17 +49,26 @@ Students will be able to:
 | :------------: | :-------: |
 | When using repl.it, please determine if you would like students to clone directly from GitHub, or if you will be setting up assignments via Teams for Education. | _No special materials are required_ |
 
-### Suggestions for UDL (edit this)
+### Suggestions for UDL
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| Have students find websites they've visited that they can **interact** with. Use this as an anchor site that students can identify with to rationalize back-end programming. | Print a reference sheet or form a slide deck on basic Javascript syntax that students can reference while completing the challenges.  | Students have an opportunity to self assess at the close of this lesson. The activity can also be used as a formal assessment. |
+| Have students use which ever job they'd apply for in place of the implied computer science job here. While on the medium extension, they can continue input fields that apply to the job they chose.  | Consider having students share their code after adding on different input fields. This would also give them a chance to showcase their interests.  | Wrap Up questions are a great way to determine students overall understanding. Completing the mild and medium extensions will mean a student has learned how to incorporate local storage well.  |
 
 ### Suggestions for Differentiation (edit this)
 
-Allow time for students to copy code with you during the code along. You may consider having more or less pre-written code depending on the proficiency of your specific students. Some students may require the completed version of the code along as a supplemental material based on an IEP or similar.
+There are only 4 methods that are learned here:
 
-There are roughly 3 independent sections during this lesson: the warm up, #2 in the lesson demo, and the practice activities at the end. They are each designed with differentiation in mind. Each of these activities have a small bonus or an similar opportunity for the quicker students to be challenged.
+- `localStorage.setItem()`
+- `localStorage.getItem()`
+- `localStorage.removeItem()`
+- `localStorage.clear()`
+
+Consider putting these on the board and having students explore these before going into the starter code. Show them the Application tab in the Dev Tools, and on a blank vanilla JS project, have them use these methods to add, get, remove, and clear data from local storage. 
+
+If you do this, you can then split the class into students that feel like they'd like to try the lesson lesson/demo on their own and those who'd like to see you walk through it. 
+
+Regardless, the "practice activities" have a natural progression in difficulty suited for various learning levels.
 
 ### Resources
 
@@ -119,7 +128,7 @@ After, have students open up and run the starter code. Fill out the Job Applicat
     controls.forEach( input => input.addEventListener('input', saveChanges));
     ```
 
-    Ask students to predict what this code is doing. Consider doing it through a turn and talk and having them refer to the index.html as needed. Take some time to walk through the code with them highlighting the new parts above.
+    Ask students to predict what this code is doing. Consider doing it through a turn and talk and having them refer to the `index.html` as needed. Take some time to walk through the code with them highlighting the new parts above.
     - comment 1: save the input element's id value and inputted text in a variable
     - comment 2: if there is an input to save, and if the input is not the default _"Select"_ value, add it using `setItem(ID, VALUE)`, otherwise, delete the reference using `removeItem(ID)`
 
@@ -171,7 +180,8 @@ After, have students open up and run the starter code. Fill out the Job Applicat
 **Practice Activities**
 
 **Mild**
-- - In the footer of the `index.html`, there's a results `p` element already made. When the user applies, reset the inputs and local storage, and display a message at the bottom saying something like "Thanks for your application for CHOSEN POSITION, NAME. We sent a confirmation email to EMAIL"
+- When the user hits the apply button, reset the inputs and local storage, and alert a message saying something like, "Thanks for your application for CHOSEN POSITION, NAME. We sent a confirmation email to EMAIL"
+- If you look in the footer of the `index.html`, there's a results `p` element with `id="results"` already made. Instead of alerting when the user hits apply, display the message in the innerHTML of this element.
 
 **Medium**
 - Add 2 more input fields and make sure they're connected to local storage. Here are some examples if you get stuck:

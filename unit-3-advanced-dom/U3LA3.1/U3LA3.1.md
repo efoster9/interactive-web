@@ -36,13 +36,13 @@ Students will be able to:
 
 ### Vocabulary
 
-* **pass-by-reference**: []
-* **pass-by-value**: []
-* **spread operator**: []
-* **mutability**: []
-* **deep copy**: []
-* **shallow copy**: []
-* **memory location**: []
+* **pass-by-reference**: a method of passing the address of an argument in the calling function to a corresponding parameter in the called function. (ie. pass the entire reference of the data)
+* **pass-by-value**: you are making a copy in memory of the actual parameter's value that is passed in, a copy of the contents of the actual parameter (ie. pass the data itself)
+* **spread operator**: expands iterable into individual elements. The spread operator is commonly used to make deep copies of JS objects.
+* **mutable object**: An object that allows you to change its values without changing its identity
+* **deep copy**: a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. (ie. released of all variable references)
+* **shallow copy**: a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made.
+* **memory location**: location in computer memory that holds data in the form of a binary number or decimal number of some sort.
 
 ### Planning Notes && Materials
 
@@ -54,7 +54,7 @@ Students will be able to:
 
 | Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
 | :----------------: | :------------------: | :--------------: |
-| _Identity & Inclusion_ | _Different Learning Styles_  | _Assessments_ |
+| The themes here were randomly chosen merely to illustrate the programmatic concepts. Consider having students fill out a survey giving you an array or object of data in the theme they choose that you can use in place of the arbitrary themes used here for the examples.  | Students will be engaged in a code along with multiple examples of several different themes. Consider having a resource like a slide deck to consolidate the examples for students to reference at a later time. | Student will mainly be note taking and writing their reflections. Consider having them write down their questions whether or not they choose to ask them. This can then be anonymously collected, or asked on a follow up day.  |
 
 ### Suggestions for Differentiation
 
@@ -113,7 +113,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     ```
     _"numX 10"
     "numY 15"_
-    It may help to breakdown the statements one line at a time i this is not clear for your students. 
+    It may help to breakdown the statements one line at a time if this is not clear for your students. 
 
 2. Now, copy down the following code and give students a minute again to analyze and predict the output before taking predictions:
     ```js

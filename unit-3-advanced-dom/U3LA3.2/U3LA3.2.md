@@ -6,7 +6,9 @@ description: What is a DOM element and how can we use it to navigate and manipul
 
 ### Teacher Notes & Overview
 
-{tbc}
+With advanced DOM manipulation, students will be able to visualize the DOM tree, and learn to add elements via Javascript. Students will use methods such as `createElement()`, `appendChild()`, `classList.add()`, `.innerHTML()`, and more to construct HTML code. By the end, they will have a glimpse into the power of of combining Javascript's advanced data structures, conditional flow, and iteration with these methods.
+
+Despite the demo, students typically have a hard time seeing why these methods are used as opposed to copying and pasting HTML and setting it to the innerHTML of the parent. The truth is `createElement()` is faster, as browsers are not required to parse the HTML string and then **build a node tree out of it**; it also doesn't have to **attach event listeners** as innerHTML does. Using innerHTML will cause browsers to re-parse and recreate all DOM nodes inside the element whose innerHTML is modified. In other words, event listeners are difficult to add on to innerHTML strings. Be ready to patiently explain such questions when they come.  
 
 ### Objectives
 
