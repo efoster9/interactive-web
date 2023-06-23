@@ -2,7 +2,7 @@
 description: How can I store and manipulate data to later be used in various ways throughout my website?
 ---
 
-# U2LA3: Javascript Essentials: Variables to Arrow Functions
+# U2LA1.1: Javascript Essentials: Variables to Arrow Functions
 
 ### Teacher Notes & Overview
 
