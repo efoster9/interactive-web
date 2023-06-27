@@ -2,7 +2,7 @@
 description: How can I use media queries to create responsive layouts?
 ---
 
-# U1LA4.2: TBD Breakpoint Lesson
+# U1LA4.2: Breakpoint Lesson
 
 ### Teacher Notes && Overview
 
@@ -53,7 +53,7 @@ Some students might benefit from more detailed guidance within the starter code 
 
 ### Resources
 
-* Starter Code for code-along [repl.it](https://replit.com/@KELLYJOHNSTON4/Media-QueriesCode-Along#index.html) | github
+* Starter Code for code-along ([repl.it](https://replit.com/@KELLYJOHNSTON4/Media-QueriesCode-Along#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA4.2/Starter%20Code))
 * [A Complete Guide to CSS Media Queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
 * [Mobile First Vs Responsive Web Design](https://ugem.design/blog/mobile-first-or-responsive-web-design)
 * [Learn CSS Media Query in 7 Minutes](https://www.youtube.com/watch?v=yU7jJ3NbPdA)
