@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+	background-color: #EDE4F5;
+}
+
+#title{
+	color: #FFFFFF;
+	background-color: #E87E23;
+	border: 2px dotted;
+	border-color: #FFFFFF;
+}
+
+#footer{
+	color: #E87E23;
+	background-color: #FFFFFF;
+	border: 10px dashed;
+	border-color: #E87E23;
+}
+
+.green{
+	background-color:#BFDBD2;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+.yellow{
+	background-color:#F2EBC7;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+div {
+	border: 2px solid;
+	padding: 10px;
+	margin: 5px;
+	background-color: #E8BEC5;
+}
