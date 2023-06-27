@@ -51,8 +51,8 @@ The Flexbox Froggy game is excellent for students who need a different access po
 
 ### Resources
 
-* Code Along Starter Code [repl.it](https://replit.com/@KELLYJOHNSTON4/Flexbox-vs-Grid) | github
-* Independent Practice Starter Code repl.it | github
+* Code Along Starter Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Flexbox-vs-Grid) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA3.2/Code%20Along%20Starter%20Code))
+* Independent Practice Starter Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Flex-the-Swag) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA3.2/Independent%20Practice%20Starter%20Code))
 * [CSS Grid Vs. Flexbox](https://youtu.be/MdPYenT89o4) video (resource)
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (resource)
 * [Flexbox - The Ultimate CSS Flex Cheatsheet (with animated diagrams!)](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/) (resource)
