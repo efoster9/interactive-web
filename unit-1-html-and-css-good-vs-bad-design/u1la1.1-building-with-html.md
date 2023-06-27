@@ -60,7 +60,7 @@ _Didn't forget, just coming to do all of this absolutely last._
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) **-** a robust but sometimes less student-friendly documentation
 * [**What is HTML, CSS, JavaScript?** ](https://youtu.be/gT0Lh1eYk78)(Youtube Video)
-* [**Practice: Recreating Template**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) (repl.it) NEED TO PUT CODE ON GITHUB
+* **Practice: Recreating Template** ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA1.1/Starter%20Code))
 
 ### Assessments
 
@@ -240,7 +240,7 @@ In this activity, students will pair-program to work with a partner and try to r
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-09-15 at 1.11.11 PM.png" alt=""><figcaption><p>Sample Website to Duplicate</p></figcaption></figure>
 
-Students will begin by [forking this code](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) that does not have any extra HTML in the body and will try to get as close to [the example](https://interactive-web-u1la11-recreation-website.qrtnycs4all.repl.co/) as possible. It's okay for them to go out and find similar, but not identical, images to what's contained in the project!
+Students will begin by opening the **Practice: Recreating Template** ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA11-Recreation-Website-Template#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA1.1/Starter%20Code)) starter code that does not have any extra HTML in the body and will try to get as close to [the example](https://interactive-web-u1la11-recreation-website.qrtnycs4all.repl.co/) as possible. It's okay for them to go out and find similar, but not identical, images to what's contained in the project!
 
 If students finish early, ask them to make sure they each have a project copy, and then explore W3 schools to try and add some other HTML elements to improve upon the example page. They may need to Google for some extra Internet Facts!
 
