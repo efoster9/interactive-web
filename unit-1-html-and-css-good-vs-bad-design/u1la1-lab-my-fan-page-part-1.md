@@ -2,7 +2,7 @@
 description: How do you use HTML elements to build a webpage?
 ---
 
-# 🗃 U1LA1 Lab: My Fan Page Part 1
+# 🗃 U1LA1 Mini Project: My Fan Page Part 1
 
 ### Teacher Notes
 
@@ -47,7 +47,7 @@ Include the following html elements in your code...
 
 #### Exemplar
 
-Take a look at this [finished example](U1LAB1/U1LAB1-Exemplar/index.html) before you start to get an idea of what your fan page might look like.
+Take a look at this [finished example](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB1/U1LAB1-Exemplar) before you start to get an idea of what your fan page might look like.
 
 #### Culturally Responsive Best Practice
 

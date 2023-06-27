@@ -55,7 +55,7 @@ For students who are struggling to conceptually grasp what grids “look” like
 
 ### Resources
 
-* Code Along Exemplar Code [repl.it](https://replit.com/@KELLYJOHNSTON4/Code-Along-ExemplarGrid-Lesson#index.html) | github
+* Code Along Exemplar Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Code-Along-ExemplarGrid-Lesson#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA3.1/Starter%20Code))
 * ADD SECOND HALF STARTER
 * [W3 Schools Reference | Documentation](https://www.w3schools.com/cssref/pr\_grid.php) (Resource)
 * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-container) (Resource)
@@ -100,7 +100,7 @@ Now that we have the parent-child nesting structure in HTML clear in our minds, 
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-04-25 at 10.58.56 AM.png" alt=""><figcaption><p>Image of illustrated grid with header, main, empty, sidebar, and footer from <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-introduction">SOURCE</a>.</p></figcaption></figure>
 
-Let’s build this example together! We can see that there are four elements ‘contained’ in this grid. These are called grid-items. They are children elements to the grid-container, which in this case is the `<body>` element. Check out the HTML below, which does not yet have any CSS styling added. It’s our starting point for building the above grid layout.
+Let’s build this example together! Open up the Code Along Exemplar Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Code-Along-ExemplarGrid-Lesson#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA3.1/Starter%20Code)). We can see that there are four elements ‘contained’ in this grid. These are called grid-items. They are children elements to the grid-container, which in this case is the `<body>` element. Check out the HTML below, which does not yet have any CSS styling added. It’s our starting point for building the above grid layout.
 
 ```html
 <body class="grid-container">

@@ -10,7 +10,7 @@ description: >-
 
 This lab is a way for students to get some at bats at applying CSS Grid to pre-written HTML code. In the extension, students will have the opportunity to duplicate the general structure of a webpage. We find that Apple's website is a straight forward exemplar, but feel free to find other similar websites or allow students to use a website they prefer to recreate.
 
-\[ADD] Students will utilize the starter code (repl.it | github) to begin.
+\[ADD REPL.IT] Students will utilize the starter code (repl.it | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB3.1/U1LAB3.1-Starter)) to begin. [Exemplars can be viewed on github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB3.1/U1LAB3.1-Exemplar).
 
 Especially for level 3 and harder, students will want to use the Dev Tools to visualize how Grid is being applied. For level 3 and 4, two mock up views are provided. One is used to illustrate the exemplar result, and the other is used to illustrate how the result should be conceptualized in order to incorporate Grid effectively. Take some time to show students how to use the Dev Tools on their own computers to work through these problems.
 

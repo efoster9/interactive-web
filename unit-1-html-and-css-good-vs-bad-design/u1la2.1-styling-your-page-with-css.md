@@ -56,7 +56,7 @@ _Coming Soon_
 
 ### Resources
 
-* Website Starter Code ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) | github)
+* Website Starter Code ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA2.1/Starter%20Code))
 * [W3Schools Demo Page ](https://www.w3schools.com/w3css/tryw3css\_templates\_start\_page.htm)(Resource)
 * [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php)[/Documentation](https://www.w3schools.com/cssref/index.php) (Resource)
 * [Google Fonts](https://fonts.google.com/) (Resource)
@@ -117,7 +117,7 @@ At this point, if you would like to use the [View and Change CSS](https://develo
 
 ### Styling Your Page (10 - 15 minutes)
 
-Share the [starter code for the Ugliest Website in the World](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) with students. Explain that we want to feel free to try anything as we make our CSS pages and they should not feel concerned about making something beautiful or cohesive right off the bat - in fact, their goal is to make this website quite ugly.
+Share the **Ugliest Website Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA21-Styling-with-CSS-Starter-Code#index.html) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA2.1/Starter%20Code)**)** with students. Explain that we want to feel free to try anything as we make our CSS pages and they should not feel concerned about making something beautiful or cohesive right off the bat - in fact, their goal is to make this website quite ugly.
 
 Before they begin, they will need a CSS file. To do this, they can click the 'New File' button the repl.it sidebar and make a file titled `style.css`. While CSS files can have _any_ name (as long as they end in `.css`), `style.css` is a typical name for their stylesheet. Once we have the sheet made, we need to link it in our HTML page. So let's go to our `index.html` and then find our `<head>` tag. Inside that tag on approximately line 9, we will add the following:
 

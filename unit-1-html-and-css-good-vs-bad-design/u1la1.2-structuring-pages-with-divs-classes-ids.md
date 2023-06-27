@@ -54,7 +54,7 @@ _Coming soon_
 
 ### Resources
 
-* **Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA12-Divs-Class-IDs-Starter-Code#index.html) | github)
+* **Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA12-Divs-Class-IDs-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA1.2/Starter%20Code))
 * **W3 Schools** [Divs](https://www.w3schools.com/tags/tag\_div.ASP) | [IDs](https://www.w3schools.com/html/html\_id.asp) | [Classes](https://www.w3schools.com/html/html\_classes.asp)
 
 ### Assessments
@@ -81,7 +81,7 @@ What are three things you would _like_ to learn to improve your websites?
 
 Today, we are learning an important building block for our pages: the div. Divs define a division or a section in an HTML page. We can think of it a bit like an empty box into which we can put other HTML elements to better organize and structure our page. Eventually, you'll learn how divs can be used to create grids and interesting layouts, but today we're keeping it simple.
 
-Let's start by forking the [starter code](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA12-Divs-Class-IDs-Starter-Code#index.html). You'll notice it looks pretty boring so far - so let's make our first div!
+Let's start by forking the **Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/Interactive-Web-U1LA12-Divs-Class-IDs-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA1.2/Starter%20Code)). You'll notice it looks pretty boring so far - so let's make our first div!
 
 ```html
 <body>
