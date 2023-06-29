@@ -8,9 +8,9 @@ description: How does Flexbox offer more specific formatting than Grid?
 
 This lab is a way for students to get some at bats at applying CSS Flexbox to pre-written HTML code. The main section focusses on tackling individual parts of a webpage such as the sidebar, footer, etc. In the extension, students will have two opportunities to use both Grid and Flexbox simultaneously to bring these different parts together completing a full webpage.
 
-\[ADD] Link starter code?
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U1LA32-Mini-Project-Starter-Code#index.html) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB3.2/U1LAB3.2-Starter)**) for this challenge.**
 
-DISCLAIMER: The order of the two extension questions are interchangeable. #5 is slightly more challenging than #6 as it requires the copying and pasting of code from various files into one. This can cause some errors that are good to troubleshoot through, but are not the intent of such a lesson. Despite #5 being more challenging, it is a natural continuation of the previous levels 1-4 which is why it is originally placed as #5.
+**DISCLAIMER**: The order of the two extension questions are interchangeable. #5 is slightly more challenging than #6 as it requires the copying and pasting of code from various files into one. This can cause some errors that are good to troubleshoot through, but are not the intent of such a lesson. Despite #5 being more challenging, it is a natural continuation of the previous levels 1-4 which is why it is originally placed as #5.
 
 ### Prompt
 

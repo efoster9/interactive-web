@@ -6,7 +6,9 @@ description: What can one do to make a website more easily accessible?
 
 ### Teacher Notes
 
-From a student's perspective, knowing if you're applying _accessibility_ correctly is tricky. From a teacher's perspective, grading it is too, tricky. Students won't be adding any code in this lab. They will instead be making modifications to the HTML and CSS in order to make the website more accessible. For the students, links to the HTML accessibility tools have been provided, but we believe accessibility is best understood with some type of a screen reader validating the adjustments being made. For teachers, an outline of the answer key is provided in the [`U1LAB5.2-Exemplar`](U1LAB5.2/U1LAB5.2-Exemplar) folder. This answer key makes it easier to scan through a student's code without having to use a screen reader to check their work.
+From a student's perspective, knowing if you're applying _accessibility_ correctly is tricky. From a teacher's perspective, grading it is too, tricky. Students won't be adding any code in this lab. They will instead be making modifications to the HTML and CSS in order to make the website more accessible. For the students, links to the HTML accessibility tools have been provided, but we believe accessibility is best understood with some type of a screen reader validating the adjustments being made. For teachers, an outline of the answer key is provided in the [`U1LAB5.2-Exemplar` folder](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB5.2/U1LAB5.2-Exemplar). This answer key makes it easier to scan through a student's code without having to use a screen reader to check their work.
+
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U1LA5-Mini-Project) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB5.2/U1LAB5.2-Starter)**) for this project.**
 
 ### Prompt
 

@@ -10,6 +10,8 @@ description: >-
 
 Leading up to this Lab, you may want to model again how to inspect a page and use the _Toggle Device Toolbar_. Point out specifically the dimensions of the webpage at the top so that students can use this to validate that their breakpoints are working. This is explained in step 0.
 
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U1LA4-Mini-Project-Starter-Code#index.html) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LAB5.1/U1LAB5.1-Starter)**) for this project.**
+
 ### Prompt
 
 You've gotten hired for the web design job you were looking to get! The company that hired you is called _ChefHub_, a social media platform for chefs to collaborate with other chefs and to share their recipes, menu designs, and more. The person who left the role you're filling created a beautiful website already, but it only looks great when it's in full screen on a laptop. You've been brought in to make it look good at all sizes - especially on a mobile phone.

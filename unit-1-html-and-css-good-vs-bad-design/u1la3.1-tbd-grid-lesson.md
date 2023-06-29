@@ -56,7 +56,7 @@ For students who are struggling to conceptually grasp what grids “look” like
 ### Resources
 
 * Code Along Exemplar Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Code-Along-ExemplarGrid-Lesson#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA3.1/Starter%20Code))
-* ADD SECOND HALF STARTER
+* Code Along Part 2 Starter Code ([repl.it](https://replit.com/@KELLYJOHNSTON4/Frame-an-ImageStarter-Code) | github)
 * [W3 Schools Reference | Documentation](https://www.w3schools.com/cssref/pr\_grid.php) (Resource)
 * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-container) (Resource)
 * [FreeCodeCamp Grid Tutorial with Cheatsheet](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/) (Resource)

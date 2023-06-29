@@ -55,7 +55,7 @@ _Coming Soon_
 ### Resources
 
 * [Bulma CSS Framework](https://bulma.io/) (Includes instructions for getting started and documentation)
-* Building with Bulma Starter Code ([repl.it](https://replit.com/@qrtnycs4all/U1LA61-Bulma-Columns-Starter-Code#index.html) | github)
+* Building with Bulma Starter Code ([repl.it](https://replit.com/@qrtnycs4all/U1LA61-Bulma-Columns-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA6.1/Starter%20Code))
 
 ### Assessments
 
@@ -98,7 +98,7 @@ At this point, you may want to code along with students putting the Bulma link i
 
 ### Exploring Organization with Bulma (15 - 20 minutes)
 
-Share students on the Building with Bulma Starter Code ([repl.it](https://replit.com/@qrtnycs4all/U1LA61-Bulma-Columns-Starter-Code#index.html) | github). Begin by giving students a chance to look through the HTML and CSS, and then point out a few key points:
+Share students on the Building with Bulma Starter Code ([repl.it](https://replit.com/@qrtnycs4all/U1LA61-Bulma-Columns-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-1-html-and-css-good-vs-bad-design/U1LA6.1/Starter%20Code)). Begin by giving students a chance to look through the HTML and CSS, and then point out a few key points:
 
 * We've connected Bulma on line 11 to our project, which allows us to use the entirety of the Bulma CSS library.
 * If we look at the CSS, you'll notice that the `<h1>` and `<div>` tags have been styled. After the `font-size` in `h1`, you'll see that it says `!important`. This is to prevent Bulma styling from overriding our preferred styling.
