@@ -4,8 +4,6 @@ description: How can JavaScript help me make my websites interactive?
 
 # U2LA2.1: DOM Manipulation with JavaScript Click Interactions
 
-## Preface && Context
-
 ### Teacher Notes && Overview
 
 In this lesson, students will apply the JavaScript they've been reviewing and strengthening in the start of Unit 2 to the context of a webpage. This is an essential first step in delivering on the promise made in the title of this course - The Interactive Web.
@@ -64,10 +62,11 @@ For students who excel: Consider challenging your most advanced students to impl
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA21-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter))
+* [**Lesson Exemplar Code**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Exemplar)
 * [**Replit.com**](https://replit.com/)
 * [**W3 Schools: What is the DOM**](https://www.w3schools.com/js/js\_htmldom.asp) - explains in brief what the Document Object Model is.
 * [**MDN: Document.querySelector()**](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) - Explains how the `.querySelector()` method works, including how it can replicate any CSS selector.
-* [**Starter Code** ](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter)| **Repl.it Version**
 
 ### Assessments
 
@@ -85,11 +84,9 @@ Unit 2, Lab 2 (Upcoming Lab)
 
 JavaScript DOM Manipulation Final Project (End of Unit Project)
 
-## Lesson
-
 ### Do Now/Warm Up (\~3 - 5 min)
 
-Share out the [starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter) (repl.it version) and ask students what they think should happen when you press any of the three buttons currently shown on screen. Additionally, ask them to study the source code and identify each of the following:
+Share out the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA21-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA2.1/U2LA2.1-Starter)) and ask students what they think should happen when you press any of the three buttons currently shown on screen. Additionally, ask them to study the source code and identify each of the following:
 
 * What is the ID of the apple button?
 * What is the ID of the banana button?
@@ -181,7 +178,7 @@ const addApple = () => {
 };
 ```
 
-\[Mini-challenge] Give students about 3-5 minutes to complete a few or all of the following:
+**\[Mini-challenge]** Give students about 3-5 minutes to complete a few or all of the following:
 
 * Adjust the banana button to also increment the total.
 * Adjust the mango button to also increment the total.

@@ -8,7 +8,9 @@ description: >-
 
 ### Teacher Notes
 
-This vanilla javascript lab located exclusively in the [`script.js`](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB1/U2LAB1-Starter/script.js) ([repl.it version](https://replit.com/@qrtnycs4all/U2LA1-Mini-Project-JavaScript-Essentials-Starter#script.js)) is a series of challenges for students to get familiar with javascript essential topics from variable arithmetics to functions with conditional statements. The extensions are included but not labeled at the bottom of the `script.js`. They require researching the pythagorean theorem formula and researching recursive functions to be completed.
+This vanilla javascript lab is located exclusively in the [`script.js`](U2LAB1/U2LAB1-Starter/script.js) ([repl.it version](https://replit.com/@qrtnycs4all/U2LA1-Mini-Project-Starter-Code#index.html)) is a series of challenges for students to get familiar with javascript essential topics from variable arithmetics to functions with conditional statements. The extensions are included but not labeled at the bottom of the `script.js`. They require researching the Pythagorean theorem formula and researching recursive functions to be completed.
+
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA1-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB1/U2LAB1-Starter)**) for this project.**&#x20;
 
 ### Prompt
 
@@ -16,11 +18,11 @@ For this lab, put together what you know so far about javascript and try the cha
 
 ### Exemplar (teacher's view only)
 
-Take a look at [this finished example](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB1/U2LAB1-Exemplar/script.js) for the answer key to the javascript challenges.
+Take a look at [this finished example](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB1/U2LAB1-Exemplar) for the answer key to the javascript challenges.
 
 ### Culturally Responsive Best Practice
 
-In the previous unit, students learned to build and add style to websites that they were, unfortunately, unable to interact with. Consider starting this unit by having student look for websites that they **can** interact with. Have them identify what is happening in their own words and why they enjoy interacting with the website they found. In this way, students can find something they can relate to that will demonstrate how vanilla javascript can potentially add value to the websites they build in the near future.
+In the previous unit, students learned to build and add style to websites that they were, unfortunately, unable to interact with. Consider starting this unit by having students look for websites that they **can** interact with. Have them identify what is happening in their own words and why they enjoy interacting with the website they found. In this way, students can find something they can relate to that will demonstrate how vanilla javascript can potentially add value to the websites they build in the near future.
 
 ### Extra Help?
 

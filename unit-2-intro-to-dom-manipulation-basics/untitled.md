@@ -63,6 +63,8 @@ This lesson is designed as an exploration of websites using a screen reader. The
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it ](https://replit.com/@qrtnycs4all/U2LA22-Lesson-Starter-Code)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA2.2/U2LA2.2-Starter))
+* **Lesson Exemplar** ([repl.it](https://replit.com/@qrtnycs4all/U2LA22-Exemplar) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA2.2/U2LA2.2-Exemplar))
 * [**Replit.com**](https://replit.com/)
 * [**W3 Schools: DOM Essentials**](https://www.w3schools.com/js/js\_htmldom\_document.asp) - functions used to read and update the DOM
 * [**MDN: Accessibility Best Practices**](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS\_and\_JavaScript) - an article on how CSS and Javascript are accessible.

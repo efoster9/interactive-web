@@ -10,11 +10,13 @@ In this lab, students will be using `addEventListener` and `innerHTML` to activa
 
 In the second half of the lab, students will use ARIA and alt text to make the webpage accessible. Resources have been provided but be sure to have some examples ready for extra support.
 
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Starter)**) for this project.**
+
 ### Prompt
 
 It's the national horse race again! Three horses line up to race for the finish line. Which one will win? Click the "Run!" button to activate a horse. (Try the blue one, it works!) When it gets to the end of the screen, a text should appear announcing that horse the winner.
 
-**Directions**: Your task is to [finish the website ](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Starter)so that the pink and brown horse also work the same as the blue horse. You'll have to use `querySelector`, `addEventListener`, and _arrow functions_ to do so. For the extensions, you'll have a chance to add a fourth horse, a reset button, and more.
+**Directions**: Your task is to **finish the website** **(**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Starter)**)** so that the pink and brown horse also work the same as the blue horse. You'll have to use `querySelector`, `addEventListener`, and _arrow functions_ to do so. For the extensions, you'll have a chance to add a fourth horse, a reset button, and more.
 
 1. If you haven't already, check out the website and notice that when you click the "Run!" button next to the blue horse, the blue horse moves forward a bit. First thing we're going to work on is getting the other horses to do the same. This will be done in 3 parts: 1st, you'll need `querySelectors` to listen to the button and move the horse image, 2nd, you'll need to create `addEventListeners` for each button, and 3rd, you'll need to create a function that advances the horse once the button is clicked.
 2.  First, go to the [`script.js`](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Starter/script.js) and notice that there are 2 `querySelctors`: one for the `blueButton`, and one for the `blueHorse`. We need the first to listen to when the "Run!" button is clicked, and we need the second to move the image of the horse. Do the same for the pink horse and the brown horse. If you're stuck look below for the code for the pink horse:
@@ -23,12 +25,12 @@ It's the national horse race again! Three horses line up to race for the finish 
     const pinkButton = document.querySelector("#pink-button");
     const pinkHorse = document.querySelector("#pink-horse");
     ```
-3. Second, scroll to the bottom, and notice that theres is an `addEventListener` for the `blueButton` that calls a function _"advanceBlue"_. Create 2 more `addEventListeners`, one for the `pinkButton` and one for the `brownButton`. When these buttons are clicked, they should call a function called _"advancePink"_ and _"advanceBrown"_ respectively. Use the blue button's event listener for reference.
-4. Third, find the section on the page where the OnClick functions are declared. Notice that the `advanceBlue()` arrow function is already made, and the `advancePink()` function is set up, but not completed. Complete the advancePink function so that it increments the `pink_position` variable by 1, then it should adjusts the image of the horse using the function `changePosition` that takes in 2 variables as parameters: the `querySelector` for the horse, and the new position. Use the `advanceBlue` function for reference.
+3. Second, scroll to the bottom, and notice that there is an `addEventListener` for the `blueButton` that calls a function _"advanceBlue"_. Create 2 more `addEventListeners`, one for the `pinkButton` and one for the `brownButton`. When these buttons are clicked, they should call a function called _"advancePink"_ and _"advanceBrown"_ respectively. Use the blue button's event listener for reference.
+4. Third, find the section on the page where the OnClick functions are declared. Notice that the `advanceBlue()` arrow function is already made, and the `advancePink()` function is set up, but not completed. Complete the advancePink function so that it increments the `pink_position` variable by 1, then it should adjust the image of the horse using the function `changePosition` that takes in 2 variables as parameters: the `querySelector` for the horse, and the new position. Use the `advanceBlue` function for reference.
 5. Great! Now head over to the website and check that all 3 of your buttons are working.
 6. Now, when a horse gets to the end of the race, you'll have to announce that that horse is the winner. Edit the `checkWinner()` function so that it writes a winner to the screen based on the position of the horse:
    * First, up with all the other query selectors, write a new `querySelector` for the `div` with an `id="winner"`
-   * Then, in the `checkWinner()` function, write an if statement: If the horse's position is equal to 5, change the innerHTML of the winner `div` to, for example, "Blue is the Winner!". Use the `position` argument and the `color` to help.
+   * Then, in the `checkWinner()` function, write an if statement: If the horse's position is equal to 5, change the `innerHTML` of the winner `div` to, for example, "Blue is the Winner!". Use the `position` argument and the `color` to help.
    * NOTE: use `console.log()` where needed to check that your code is doing what it should.
 7.  After the function is set up, you'll need to call it in each of the _`advanceColor()`_ functions. For example, here's what the `advanceBlue()` function should look like:
 
@@ -54,9 +56,9 @@ It's the national horse race again! Three horses line up to race for the finish 
 
     Check out this [resource on aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) and this one on [aria-atomic](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).
 
-### Exemplar (...to be deleted)
+### Exemplar
 
-Take a look at this[ finished example](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Exemplar) before you start to get an idea of what your horse race might look like.
+Take a look at this **finished example** ([repl.it](https://replit.com/@qrtnycs4all/U2LA2-Mini-Project-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB2/U2LAB2-Exemplar)) before you start to get an idea of what your horse race might look like.
 
 ### Culturally Responsive Best Practice
 

@@ -73,6 +73,8 @@ Furthermore, students can remain in pairs so that during the code along, they ca
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA1-Lesson-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA1/U2LA1-Starter))
+* **Lesson Exemplar** ([repl.it](https://replit.com/@qrtnycs4all/U2LA1-Exemplar) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA1/U2LA1-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/)- a robust but sometimes less student-friendly documentation
