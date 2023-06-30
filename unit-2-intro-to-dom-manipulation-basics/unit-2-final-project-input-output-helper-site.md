@@ -6,19 +6,21 @@ description: How can you use Javascript to create seamless interaction on a webp
 
 ### Teacher Notes
 
-In this project, students will be coming up with unique ideas for how to create an accessible websites that require some type of user input and will generate some type of an output. The prompt is left vague enough that students can bring their own identities and motivations, but ideas and requirements are provided for a sense of direction and a clear rubric.
+In this project, students will be coming up with unique ideas for how to create accessible websites that require some type of user input and will generate some type of output. The prompt is left vague enough that students can bring their own identities and motivations, but ideas and requirements are provided for a sense of direction and a clear rubric.
 
 If you chose to minimize the scope of the project, be sure to keep the aforementioned in mind allowing room for students to personalize their project. If students are getting writers block, have a specific project idea in mind to recommend (we suggest an "order form" similar to the exemplar).
 
-We suggest spending at least an entire period allowing the students with their partner to come up with a written plan for what they will create and what tools they will use to make it accessible.
+We suggest spending at least an entire period allowing the students with their partners to come up with a written plan for what they will create and what tools they will use to make it accessible.
 
-As always, but especially with this project, we suggest ending with a show and tell of the students' unique designs. At this point they would show the site, answer the first reflection question below, and (if time allows) demonstrate how the website is accessible.
+As always, but especially with this project, we suggest ending with a show and tell of the students' unique designs. At this point, they would show the site, answer the first reflection question below, and (if time allows) demonstrate how the website is accessible.
+
+**Students will build this website from scratch, and as such, there is no starter code associated with it.**
 
 ### Prompt
 
 The magic of a website comes together when a user can interact with it. The website becomes more fun, human, and helpful. Interactivity can be explained as inputs and outputs. The user inputs some information and the website reacts by giving some output back to the user.
 
-**Directions**: [Create a website](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2FINAL/U2FINAL-Starter) with at least 3 inputs and at least 1 specific output that is based on the inputs. The website should be a toll that helps people in some way. If you can see yourself using it, you're on the right track. Here are some examples:
+**Directions**: Create a website with at least 3 inputs and at least 1 specific output that is based on the inputs. The website should be a toll that helps people in some way. If you can see yourself using it, you're on the right track. Here are some examples:
 
 * A tip calculator, final grade calculator, or budget tracker
 * A personality quiz, "which character are you" quiz, or practice quiz for another class
@@ -35,7 +37,7 @@ All of these are just ideas. If they spark another idea with input and output th
 
 ### Exemplar
 
-Take a look at this [finished example](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2FINAL/U2FINAL-Exemplar/index.html) before you start to get an idea of what your final page might look like.
+Take a look at this **finished example (**[**repl.it**](https://replit.com/@qrtnycs4all/Unit-2-Final-Project-Exemplar#index.html) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2FINAL/U2FINAL-Exemplar)**)** before you start to get an idea of what your final page might look like.
 
 ### Culturally Responsive Best Practice
 
@@ -45,7 +47,7 @@ As aforementioned in the teacher notes, the topic is meant to be vague enough th
 
 Consider using [P5.js](https://p5js.org/get-started/) to make your website shine. Maybe you'll use it as part of a personality quiz. Or, maybe you'll use inputs that can generate a cool P5 visual.
 
-If you're stuck on what [types of inputs](https://www.w3schools.com/html/html\_form\_input\_types.asp) are available to you, check out this resources. You can go a long way with just buttons, text inputs, and number inputs. Let your mind wander.
+If you're stuck on what [types of inputs](https://www.w3schools.com/html/html\_form\_input\_types.asp) are available to you, check out these resources. You can go a long way with just buttons, text inputs, and number inputs. Let your mind wander.
 
 Have you seen [Calculator.Net](https://www.calculator.net/) yet? If you're thinking of making a calculator, this site has just about every standard kind. Steal one of these or use them as inspiration for something new.
 
@@ -61,11 +63,11 @@ Have you seen [Calculator.Net](https://www.calculator.net/) yet? If you're think
   * If you have a tip calculator, can you split the tip by multiple people? What if each person got to pick their own percentage?
   * If you have a quiz, is there an option to play again? Is there a long version and a short version? An optional bonus question?
   * If you're making a budget tracker or calorie counter, is there a conservative and liberal option? Is there a recommended default?
-  * If you're calculating a final grade, is there an option to synthesize multiple classes? Can you compare with the average grade according to state records? Can you compare your grades with a friend?
+  * If you're calculating a final grade, is there an option to synthesize multiple classes? Can you compare it with the average grade according to state records? Can you compare your grades with a friend?
 
 **Spicy**
 
-* Functions are best used when there are multiple lines of code being identically repeated in different parts of of the program. Skim through your code. If you find any parts that are repeated, put them in a function and call the function instead. For example, if you have something like this:
+* Functions are best used when there are multiple lines of code being identically repeated in different parts of the program. Skim through your code. If you find any parts that are repeated, put them in a function and call the function instead. For example, if you have something like this:
 
 ```javascript
 let num = 0;
@@ -98,6 +100,6 @@ add1print(num);
 **Reflection Questions:**
 
 * What's one thing you're proud of and one thing you would have liked to do with more time?
-* What did you do to plan for your the development of your website? How did it help? What could you have done different?
+* What did you do to plan for the development of your website? How did it help? What could you have done different?
 * Did you get stuck at any point? What did you do to get unstuck?
 * How accessible is your website? What did you do to ensure this? What more can be done to make it more accessible?

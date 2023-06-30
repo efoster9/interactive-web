@@ -12,11 +12,13 @@ In this lab, students will be adding Javascript to the site that has pre-written
 
 Students may be excited to jump around and do the section that appeals to them the most. Use your best judgement, but these were built to be done in order. Making them interactive and accessible both get increasingly more challenging as the lab progresses. The 4th section was originally created as an extension, and can still be used in that way if desired.
 
+**Students should utilize the Starter Code** **(**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA3-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB3/U2LAB3-Starter)**) to begin this project.**
+
 ### Prompt
 
 Text inputs, buttons, checkboxes... you've seen many of these input types before, but they haven't done anything to make changes to the page. They are all really useful ways to have the user interact with the page, but the page doesn't interact back with the user. This website has 4 interactive components that currently are not interactive. Can we use Javascript to change that?
 
-**Directions**: Your task is to [make this site interactive](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB3/U2LAB3-Starter) and accessible. The first section will display to the user a heart emoji thats the same color that the user picks. The second section is a number guessing game that the site will help the user find by saying to guess higher or lower. For the third section, enter all 7 continents and the site will have an image of each of them appear as you do. Lastly, use the color input to pick a color, check the checkbox to say you're not a robot, and click the button to change the website's background color.
+**Directions**: Your task is to **make this site interactive** **(**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA3-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB3/U2LAB3-Starter)**)** and accessible. The first section will display to the user a heart emoji thats the same color that the user picks. The second section is a number guessing game that the site will help the user find by saying to guess higher or lower. For the third section, enter all 7 continents and the site will have an image of each of them appear as you do. Lastly, use the color input to pick a color, check the checkbox to say you're not a robot, and click the button to change the website's background color.
 
 1. Before we start coding, look through the files to see what you're working with. Reminder, this is best practice when ever working on a new project.
    * First, navigate through the website as it is, and play with the inputs. Start thinking about the data type (integer, string, etc.) of each input. This will become more important to know as you start to write that javascript code.
@@ -98,17 +100,15 @@ Text inputs, buttons, checkboxes... you've seen many of these input types before
 
 ### Exemplar
 
-You can utilize this [completed example](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB3/U2LAB3-Exemplar) to check student work.&#x20;
+You can utilize this **completed example** **(**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA3-Mini-Project-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB3/U2LAB3-Exemplar)**)** to check student work.&#x20;
 
 ### Culturally Responsive Best Practice
 
-"What's your favorite color" and "Name all 7 continents" are purposely made to be innocuous topics so that the focus of the lab is weighted on the the javascript and not the topic itself. If you feel like continents, for example, will create obstacles in you classroom, feel empowered to change the topic while being conscious of not excluding any individuals.
+"What's your favorite color" and "Name all 7 continents" are purposely made to be innocuous topics so that the focus of the lab is weighted on the javascript and not the topic itself. If you feel like continents, for example, will create obstacles in your classroom, feel empowered to change the topic while being conscious of not excluding any individuals.
 
 ### Extra Help?
 
-*   If you're having trouble getting your conditionals to work properly...
-
-    \
+If you're having trouble getting your conditionals to work properly...
 
 * Section 3 gets tricky pretty quickly. Are you using the following methods? Here are some resources that may help:
   * [toLowerCase()](https://www.w3schools.com/jsref/jsref\_tolowercase.asp)

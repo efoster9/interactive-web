@@ -14,11 +14,13 @@ It will feel weird and wrong purposefully mismatching switches with lights, but 
 
 This lab will not conclude as an accessible one. However, the exemplar is accessible, and feel free to encourage students to explore ways to make the site accessible as a spicy extension.
 
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA4-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB4/U2LAB4-Starter)**) to begin this project.**
+
 ### Prompt
 
 The goal is simple, turn on all the lights! That would be simple if every switch turned on the single light that was above it. However, almost every switch in this lab does just the opposite of what you would expect. First, you'll have to do something evil and program the lights to be mismatched, then you will try to get all of them on. After, in the extensions, there will be some fun ways to spice up the challenge.
 
-**Directions**: Utilize the [starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LAB4/U2LAB4-Starter). There are 9 lights as numbered in the image below. The steps below will guide you to connect `switch 1` with `light 3` and `light 8`. Then, follow the same pattern to connect the other switches as indicated below.
+**Directions**: Utilize the **Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA4-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB4/U2LAB4-Starter)**)**. There are 9 lights as numbered in the image below. The steps below will guide you to connect `switch 1` with `light 3` and `light 8`. Then, follow the same pattern to connect the other switches as indicated below.
 
 ![Numbered layout of lights](U2LAB4/img/grid.png)
 
@@ -59,7 +61,7 @@ The goal is simple, turn on all the lights! That would be simple if every switch
 
 ### Exemplar
 
-Take a look at this [finished example](U2LAB4/U2LAB4-Exemplar/index.html) before you start to get an idea of a working solution.
+Take a look at this **finished example (**[**repl.it**](https://replit.com/@qrtnycs4all/U2LA4-Mini-Project-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LAB4/U2LAB4-Exemplar)**)** before you start to get an idea of a working solution.
 
 ### Culturally Responsive Best Practice
 

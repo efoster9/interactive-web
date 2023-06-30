@@ -60,6 +60,8 @@ Be sure to end early enough that everyone has reached but not necessarily starte
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA3-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter))
+* [**Lesson Exemplar Code**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Exemplar)
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**(OPTIONAL) MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -80,7 +82,7 @@ Be sure to end early enough that everyone has reached but not necessarily starte
 
 ### Do Now/Warm Up (\~10 min)
 
-Ask students to open the starter code to the [`script.js`](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA3/U2LA3-Starter/script.js). Point out the 3 `querySelectors` at the top of the file, and ask students to work in pairs and find the IDs that are associated to each one based on the variable names: `textBox`, `outputBox`, and `statusBox`. (\~5 minutes)
+Ask students to open the starter code to the `script.js`. Point out the 3 `querySelectors` at the top of the file, and ask students to work in pairs and find the IDs that are associated to each one based on the variable names: `textBox`, `outputBox`, and `statusBox`. (\~5 minutes)
 
 After about 5 minutes, ask for three volunteers to share what they found (1 volunteer per ID). Emphasize how this can be a bit challenging, and reward them for trying regardless of their answers. Fill in any missing IDs and have them do the same. Show the console log in the dev tools to illustrate the success. (\~3 minutes)
 
@@ -92,7 +94,7 @@ Lastly, ask students what they think these 3 DOM elements will be used for.
 
 ### Lesson & Demo: Accessing User Input & Writing Conditional Output (\~25 min)
 
-1. After going through the warmup, briefly walk the students through the rest of the code pre coded in the `script.js`. Show them how there's an event listener on the `textBox` which is listening for a change in the input field, and show them the function that it's connected to `checkAnswer()`.
+1. After going through the warmup, briefly walk the students through the rest of the code pre-coded in the `script.js`. Show them how there's an event listener on the `textBox` which is listening for a change in the input field, and show them the function that it's connected to `checkAnswer()`.
 2.  Demonstrate how when an input is added to the textfield, for example "Manhattan", nothing happens. Use `.value` to access that input, save it into a variable `currentAnswer`, and print it to the console. Show the students through the console log that now, when something is inputted, we have proof that the value is saved.
 
     ```js

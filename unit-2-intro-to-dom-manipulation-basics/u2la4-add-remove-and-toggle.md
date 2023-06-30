@@ -58,6 +58,8 @@ Be sure to stop early enough that everyone has reached but not necessarily start
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA4-Lesson-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA4/U2LA4-Starter))
+* [**Lesson Exemplar Code**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA4/U2LA4-Exemplar)
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**(OPTIONAL) MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -67,7 +69,7 @@ Be sure to stop early enough that everyone has reached but not necessarily start
 
 **Formative:**
 
-* During **group work:** spot check to ensure students are using accessing DOM variables well, using `.add()`, `.remove()`, and `.toggle()` properly, and ask informal check-for-understanding questions. This lesson in particular is a good chance to have students (who feel comfortable) show their properly completed code to help other students catch on.
+* During **group work:** spot-check to ensure students are using accessing DOM variables well, using `.add()`, `.remove()`, and `.toggle()` properly, and ask informal check-for-understanding questions. This lesson in particular is a good chance to have students (who feel comfortable) show their properly completed code to help other students catch on.
 * **Activity Code** can be collected and assessed as needed
 * **Wrap Up** reflection questions and shares can serve as formative assessments.
 
@@ -78,7 +80,7 @@ Be sure to stop early enough that everyone has reached but not necessarily start
 
 ### Do Now/Warm Up (\~5 min)
 
-Ask students to open the [starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-2-intro-to-dom-manipulation-basics/U2LA4/U2LA4-Starter) to the lesson and find at least 5 things that can be accessed with a `querySelector`. They may look at both the webpage page and the `index.html`. They may also work in pairs to find things. Students should ultimately share their answers with a buddy. (This should take 3-4 minutes)
+Ask students to open the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U2LA4-Lesson-Starter-Code#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-2-intro-to-dom-manipulation-basics/U2LA4/U2LA4-Starter)) and find at least 5 things that can be accessed with a `querySelector`. They may look at both the webpage page and the `index.html`. They may also work in pairs to find things. Students should ultimately share their answers with a buddy. (This should take 3-4 minutes)
 
 At the end of the 4 minutes, ask for about three volunteers to describe one thing they found. Reward all answers, but if someone mentions "Your Inbox" especially shout them out for finding that intentionally discrete one. If no one mentions "Your Inbox" include that at the end. (1-2 minutes)
 
@@ -103,7 +105,7 @@ At the end of the 4 minutes, ask for about three volunteers to describe one thin
 3. Create the function `changeFontColor`, but leave it empty for now. Explain to students that this function will be called to change the font color of the text, and we will fill it out in just a moment.
 4. Create the event listener. The first parameter is what you're listening for ("click"), and the second is what function/ action you will do in response ("changeFontColor").
 5. Finally, in the function, add the class "blue-text" as illustrated above, and show the students the class in the `style.css`.
-6. As a coded comment, show students there's a method to remove a class as well, `.remove('CLASS_NAME')`. You may also want to use this opportunity to supply a website resource like [this one](https://www.w3schools.com/jsref/prop\_element\_classlist.asp) that they can use for the independent work.
+6. As a coded comment, show students there's a method to remove a class as well, `.remove('CLASS_NAME')`. You may also want to use this opportunity to supply a website resource like [this one](https://www.w3schools.com/jsref/prop\_element\_classlist.asp) that they can use for independent work.
 7. **NOTE**: Tell students for the second _Mild_ activity, they will need 2 `querySelectors`, and that they should check in with you after they get it to check that they are moving on the right track.
 
 **Mild Activities**
@@ -154,7 +156,7 @@ At the end of the 4 minutes, ask for about three volunteers to describe one thin
     * Adds the `is-selected` class to the inbox
     * Un-hides the div with ID `action-buttons`
 
-    When the checkbox is clicked again, the opposite should happen create a toggle effect.
+    When the checkbox is clicked again, the opposite should happen creating a toggle effect.
 
 **Medium Activities**
 
@@ -163,22 +165,22 @@ At the end of the 4 minutes, ask for about three volunteers to describe one thin
     * Hide the entire inbox
     * use `innerHTML` to change the text of the button from "Delete Message(s)" to "Undo Deletion"
 
-    When "Undo Deletion" is clicked, inbox should reappear and the text should change back to "Delete Message(s)".
+    When "Undo Deletion" is clicked, the inbox should reappear and the text should change back to "Delete Message(s)".
 4. Code the "Mark as Read" to do the following:
    * Un-hide the "Mark as Unread" button
-   * Unselect the message (get rid of blue background)
+   * Unselect the message (get rid of the blue background)
    * Turn the inbox background grey
-   * Uncheck the the checkbox (Checkout [this resource](https://www.w3schools.com/jsref/prop\_checkbox\_checked.asp) for help on this)
+   * Uncheck the checkbox (Check out [this resource](https://www.w3schools.com/jsref/prop\_checkbox\_checked.asp) for help on this)
 
 **Spicy Activities**
 
 5. There's one more button that needs to be programmed; the "Dark Mode" button at the top left of the page! For this, you'll need to create your own CSS classes and general design for what _dark mode_ will look like on this page. If you're stuck, look for images of Google's dark mode on Gmail for some inspiration.
 
-### Wrap Up (\~10 minutes)
+### Wrap-Up (\~10 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-Before students leave, ask them to select a question to answer on a post-it or other easily collectable paper:
+Before students leave, ask them to select a question to answer on a post-it or other easily collectible paper:
 
 1. What is something you struggled with?
 2. Do you have any lingering questions you need answered?
