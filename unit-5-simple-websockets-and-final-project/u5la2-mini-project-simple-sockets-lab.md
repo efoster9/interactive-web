@@ -24,6 +24,8 @@ This is really all you or the students need to know about the distinction betwee
 * WebSockets don't have a built-in way to control broadcasting, but Socket.io has dedicated utilities for sending to one, all, or a group of sockets
 * WebSockets always use pure TCP socket messages, but Socket.io attempts to do that but seamlessly falls back to long-polling HTTP as needed
 
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB2/U5LAB2-Starter)**) to begin this project.**
+
 ## Prompt
 
 Are you ready to build a chat room? This app, MESG, works just like any other web-based chat tools you've used but needs your help. The interface and layout is already built, but you need to wire up the interface to the socket server.
@@ -37,11 +39,11 @@ const $input = document.querySelector("input#first-name")
 const input = $input.value
 ```
 
-The lab also contains several included functions in [`client/utilities.js`](U5LAB1-Starter/client/script.js) that you can use just by calling them. You won't need to modify these at all, but you can look at them if you're curious how they work.
+The lab also contains several included functions in `client/utilities.js` of the **Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB2/U5LAB2-Starter)**)**that you can use just by calling them. You won't need to modify these at all, but you can look at them if you're curious how they work.
 
 ## Directions
 
-All of your code will be written in [`client/script.js`](U5LAB1-Starter/client/script.js):
+All of your code will be written in `client/script.js of the` **Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB2/U5LAB2-Starter)**)**:
 
 ### Connect to the socket server
 
@@ -66,7 +68,7 @@ socket.emit("direct message", {
 
 The events can be named anything you want and represent a category of messages in your app.
 
-**Add the following to** [**`client/script.js`**](U5LAB1-Starter/client/script.js):
+**Add the following to `client/script.js`**:
 
 1. Add an event listener to the `"submit"` event of `$joinForm`
 2. Prevent the default browser behavior with `event.preventDefault()`
@@ -150,7 +152,7 @@ socket.on("some event", (someData) => {
 
 The handler will be called with whatever was sent in the matching `emit`. Note the slight syntax difference: DOM events use `element.addEventListener("some event", someHandler)`, while both WebSocket and socket.io events use `socket.on("some event", someHandler)`.
 
-**Add the following to** [**`client/script.js`**](U5LAB1-Starter/client/script.js):
+**Add the following to `client/script.js`**:
 
 1. Add an event listener to the socket for the `chat` event
 2. Extract the `screenName` and `message` values out of the object in the handler
@@ -193,12 +195,14 @@ socket.on('chat', ({ screenName, message }) => {
 
 ## Exemplar
 
+You can explore the **finished project (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA2-MINI-PROJECT-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB2/U5LAB2-Exemplar)**)** for reference.
+
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Two working socket clients sending messages</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
 
-* If the students are unfamiliar with chat rooms, show them some examples relevant to them, such as Facebook Messenger, Discord, Slack, or even chat bots from commercial websites. You may want to show them historical examples, such as AOL instant messenger, ICQ, or IRC. You may wish to compare/contrast these tools with contemporary methods of online communication.
-* You may wish to talk about the concept of online identities as being distinct from real identities, and how screen names have helped people from marginalized groups protect themselves while still establishing a consistent presence and engaging in a community. Conversely, discuss how how people have used this kind of anonymity to hurt others without consequences. This app doesn't do anything to permanently register or protect screen names. You may want to lead a discussion on what the server would have to do to prevent someone from impersonating you, or how difficult it to tell whether the server is logging or sharing your messages with others.
+* If the students are unfamiliar with chat rooms, show them some examples relevant to them, such as Facebook Messenger, Discord, Slack, or even chatbots from commercial websites. You may want to show them historical examples, such as AOL instant messenger, ICQ, or IRC. You may wish to compare/contrast these tools with contemporary methods of online communication.
+* You may wish to talk about the concept of online identities as being distinct from real identities, and how screen names have helped people from marginalized groups protect themselves while still establishing a consistent presence and engaging in a community. Conversely, discuss how people have used this kind of anonymity to hurt others without consequences. This app doesn't do anything to permanently register or protect screen names. You may want to lead a discussion on what the server would have to do to prevent someone from impersonating you, or how difficult it to tell whether the server is logging or sharing your messages with others.
 
 ## Extra Help
 
@@ -246,4 +250,4 @@ Create a notice that a particular user is typing and display it under the chat w
 
 * Compare and contrast socket event handlers with DOM event handlers.
 * Come up with a scenario that would benefit from sockets and come up with names for 3 socket events you might see in it.
-* On the server, Socket.io has a lot of tools for managing who messages are sent to. On other hand, Socket.io clients can only make simple `.emit()` calls. Why is this?
+* On the server, Socket.io has a lot of tools for managing who messages are sent to. On the other hand, Socket.io clients can only make simple `.emit()` calls. Why is this?

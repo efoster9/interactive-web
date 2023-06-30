@@ -4,8 +4,6 @@ description: What can real-time client/server communication add to the web?
 
 # U5LA2: Intro to WebSockets
 
-## Preface && Context
-
 ### Teacher Notes && Overview
 
 In this lesson, you'll discuss what WebSockets are, work with some examples, lead an I do/we do/you do with an app, and have students reflect on what they can do with WebSockets. The app responds to WebSocket requests with randomized real-time data that can be displayed on a web page. The lesson is intentionally light on theory and designed to get students directly engaged with the core concepts of sockets immediately.
@@ -22,7 +20,7 @@ The lesson uses plain WebSockets for simplicity. Later lessons and activities wi
 
 The second half of the lesson uses a simple exercise called Postra. Students will need to be comfortable attaching event listeners to buttons and updating DOM elements, but there are no other major skills required. There are only 3 steps to the basic exercise, and being confident with them radically simplifies learning things like rooms and broadcasting later on.
 
-Watch out:
+**Watch out:**
 
 * Note that despite using a similar name, WebSockets are unrelated to Unix Sockets.
 * You can't mix and match WebSocket and socket.io clients and servers. While identical in purpose and similar in function, they do not use compatible protocols.
@@ -80,6 +78,8 @@ Watch out:
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA2-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA2/U5LA2-Starter))
+* **Lesson Exemplar Code** ([repl.it ](https://replit.com/@qrtnycs4all/U5LA2-EXEMPLAR)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA2/U5LA2-Exemplar))
 * [**MDN: WebSockets API**](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets\_API) - MDN's guide to the WebSocket API
 
 ### Assessments
@@ -88,8 +88,10 @@ Watch out:
 
 Questions:
 
-* Q: What are WebSockets? A: A browser API for sending and receiving 1-way messages with a compatible server
-* Q: What are two examples of how WebSockets are used? A: Real-time interaction, online multiplier games, chat, server notifications
+* Q: What are WebSockets?&#x20;
+  * A: A browser API for sending and receiving 1-way messages with a compatible server
+* Q: What are two examples of how WebSockets are used?&#x20;
+  * A: Real-time interaction, online multiplier games, chat, server notifications
 
 Student work on Postra can be collected, as can the reflection question.
 
@@ -121,7 +123,7 @@ Introduce the idea of WebSockets; a way for clients and servers to send each oth
 
 ### I Do (\~5 - 10 minutes)
 
-Using the [starter code](U5LA1-Starter/), demonstrate how to create a WebSocket connection, listen for messages, and use data from them.
+Using the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA2-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA2/U5LA2-Starter)), demonstrate how to create a WebSocket connection, listen for messages, and use data from them.
 
 Start by writing out all of the steps you'll follow:
 
@@ -131,7 +133,7 @@ Start by writing out all of the steps you'll follow:
 
 2. Create a new WebSocket that connects to the embedded socket server
 
-* `const ws = new WebSocket(`wss://${location.host}/socket-server`)`
+* `const ws = new WebSocket(wss://${location.host}/socket-server)`
 
 3. Attach a `message` event listener to the WebSocket
 
@@ -141,7 +143,7 @@ Start by writing out all of the steps you'll follow:
 
 * `element.textContent = message.data`
 
-Demonstrate implementing these steps in the [client/script.js](U5LA1-Starter/client/script.js), discussing what's happening at each step. Your finished code should look something like this:
+Demonstrate implementing these steps in the `client/script.js`, discussing what's happening at each step. Your finished code should look something like this:
 
 ```js
 // client/script.js
@@ -157,7 +159,7 @@ This is a great time to pause and collect questions. Have the students draw a se
 
 ### We Do (\~5 minutes)
 
-Clear the code you wrote in `client/script.js`, rollback your commit, or make a copy of the code to start over. Have students guide you through the same process without referencing the written steps. This can be either done by round-robin, volunteer, or submitting written responses. If they fly through this, it's OK to do it a few times. More advanced WebSockets topics will be much easier to understand if the pattern of making a connection and listening for messages is solid.
+Clear the code you wrote in `client/script.js`, rollback your commit, or make a copy of the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA2-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA2/U5LA2-Starter)) to start over. Have students guide you through the same process without referencing the written steps. This can be either done by round-robin, volunteer, or submitting written responses. If they fly through this, it's OK to do it a few times. More advanced WebSockets topics will be much easier to understand if the pattern of making a connection and listening for messages is solid.
 
 As a reminder, these steps are:
 
@@ -208,7 +210,7 @@ Be prepared to debug:
 
 If they move quickly, encourage them to attempt the stretch challenge.
 
-### Wrap Up (\~7 minutes)
+### Wrap-Up (\~7 minutes)
 
 Everybody Writes (3 minutes): "What would you build with sockets?"
 
@@ -223,10 +225,7 @@ You can tease the lab by mentioning that there are tools that make it simple to 
 From the `script.js`, If you send the message `"all"` to the socket server, you'll upgrade the feed from the socket server from one count to an array of counts.
 
 1. Copy the existing HTML to create four `.card` divs. Use any name, image, and message you like. In the same file, give each `<span>` an `id` of `"A"`, `"B"`, `"C"`, and `"D"` respectively. Read the response to get the data schema.
-2.  The socket (in `app.js`) is already configured to send you 4 data points when you send it the string “all” using `ws.send(“all”)`. However, if you try and send “all” before the socket connection opens, you will get an error. Try to find a solution on your own before coming here for 1 way to do it. HINT: use `ws.send()` in both files to communicate back and forth between files.
-
-    \
-
+2. The socket (in `app.js`) is already configured to send you 4 data points when you send it the string “all” using `ws.send(“all”)`. However, if you try and send “all” before the socket connection opens, you will get an error. Try to find a solution on your own before coming here for 1 way to do it. HINT: use `ws.send()` in both files to communicate back and forth between files.
 3. Use `.forEach()` to iterate through the data and update each of the 4 cards.
 4. Display the cards in a 2x2 grid by styling it in the `client/index.css`
 

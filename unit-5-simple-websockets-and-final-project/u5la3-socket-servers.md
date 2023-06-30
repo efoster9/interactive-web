@@ -37,18 +37,18 @@ Note that a lot of the code will look similar to the client-side Socket code. So
 
 ### Planning Notes && Materials
 
-|  Planning Notes  |  Materials  |
-| :--------------: | :---------: |
-| This might useful to print or otherwise have visible for students to reference during the lesson | Module Quick Reference, see resources |
-| This might useful to print or otherwise have visible for students to reference during the lesson | Socket.IO Quick Reference, see resources |
-| The diagramming exercise has long instructions that are worth printing or sending for students to reference | See diagramming exercise below |
-| Code used in the class exercise | [Starter](./U5LA3-Starter) and [Exemplar](./U5LA3-Exemplar) |
+|                                                Planning Notes                                               |                 Materials                |
+| :---------------------------------------------------------------------------------------------------------: | :--------------------------------------: |
+|       This might useful to print or otherwise have visible for students to reference during the lesson      |   Module Quick Reference, see resources  |
+|       This might useful to print or otherwise have visible for students to reference during the lesson      | Socket.IO Quick Reference, see resources |
+| The diagramming exercise has long instructions that are worth printing or sending for students to reference |      See diagramming exercise below      |
+|                                       Code used in the class exercise                                       |                                          |
 
 ### Suggestions for UDL
 
-| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| Exercise instructions can be read or dictated. Discussions can take place with voice or in print.  Lesson begins with priming, then gets hands-on, and has exploratory elements. | The lesson contains discussion, coding activities, and drawing. | Students listen, discuss, write, draw, analyze, and explore. |
+|                                                                         Multiple Means of Representation                                                                        |                   Multiple Means of Engagement                  |                 Multiple Means of Expression                 |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------: | :----------------------------------------------------------: |
+| Exercise instructions can be read or dictated. Discussions can take place with voice or in print. Lesson begins with priming, then gets hands-on, and has exploratory elements. | The lesson contains discussion, coding activities, and drawing. | Students listen, discuss, write, draw, analyze, and explore. |
 
 ### Suggestions for Differentiation
 
@@ -63,6 +63,8 @@ Note that a lot of the code will look similar to the client-side Socket code. So
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it ](https://replit.com/@qrtnycs4all/U5LA3-Lesson-Starter-Code)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA3/U5LA3-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA3-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA3/U5LA3-Exemplar))
 * [**Express**](https://expressjs.com/)
 * [**Socket.IO**](https://socket.io/)
 * [**Socket.IO Guide**](https://socket.io/docs/v4/)
@@ -83,20 +85,20 @@ import { someFileNamedExport } from "./some-file"
 
 These send a message from the server to one or more connected clients:
 
-| Method | Recipient |
-| --- | --- |
-| `socket.emit("some event", "Some value")` | Sender |
-| `socket.to("some room").emit("some event", "Some value")` | Everyone in a room |
-| `socket.broadcast.emit("sign on", "Some value")` | Everyone except sender |
-| `io.emit("some event", "Some value")` | Everyone (note the `io`) |
+| Method                                                    | Recipient                |
+| --------------------------------------------------------- | ------------------------ |
+| `socket.emit("some event", "Some value")`                 | Sender                   |
+| `socket.to("some room").emit("some event", "Some value")` | Everyone in a room       |
+| `socket.broadcast.emit("sign on", "Some value")`          | Everyone except sender   |
+| `io.emit("some event", "Some value")`                     | Everyone (note the `io`) |
 
 These change something about the socket:
 
-| Method | What it does |
-| --- | --- |
-| `socket.join("some room")` | Join a room |
-| `socket.leave("some room")` | Leave a room |
-| `socket.disconnect()` | Close a socket connection |
+| Method                      | What it does              |
+| --------------------------- | ------------------------- |
+| `socket.join("some room")`  | Join a room               |
+| `socket.leave("some room")` | Leave a room              |
+| `socket.disconnect()`       | Close a socket connection |
 
 ### Assessments
 
@@ -113,7 +115,7 @@ io.on("connection", socket => {
 })
 ```
 
----
+***
 
 ```javascript
 const io = new Server(server)
@@ -124,24 +126,31 @@ io.on("connection", socket => {
 })
 ```
 
----
+***
 
 Draw 4 diagrams of how clients and servers communicate over sockets. Each diagram should include 1 server and 4 clients. The diagrams are simple boxes and arrows and can be done on paper, whiteboards, or any simple graphics tool.
 
 1. **Emit To All**: 1 client emitting a message to every client
-  * 1 message from a client to the server (clients can't communicate directly with each other)
-  * 4 messages from the server every client (including the sender)
-2. **Broadcasting**: 1 client broadcasting a message to the other 3
-  * 1 message from a client to the server (clients can't communicate directly with each other)
-  * 3 messages from the server to the other clients (not back to the original sender)
-3. **Emit To Sender**: 1 client sending a message to the server and getting a response
-  * 1 message from a client to the server
-  * 1 message from the server to the same client
-4. **DMing**: 1 client sending a message to 1 other client
-  * 1 message from a client to the server
-  * 1 message from the server to a different client
 
----
+* 1 message from a client to the server (clients can't communicate directly with each other)
+* 4 messages from the server every client (including the sender)
+
+2. **Broadcasting**: 1 client broadcasting a message to the other 3
+
+* 1 message from a client to the server (clients can't communicate directly with each other)
+* 3 messages from the server to the other clients (not back to the original sender)
+
+3. **Emit To Sender**: 1 client sending a message to the server and getting a response
+
+* 1 message from a client to the server
+* 1 message from the server to the same client
+
+4. **DMing**: 1 client sending a message to 1 other client
+
+* 1 message from a client to the server
+* 1 message from the server to a different client
+
+***
 
 Additionally, the final student code from the exercise can be used as a formative assessment.
 
@@ -151,17 +160,15 @@ Unit 5, Socket Lab 3
 
 Socket Final Project (End of Unit Project)
 
-## Lesson
-
 ### Do Now/Warm Up (\~5 - 15 min)
 
-Ask students to look at the [final code for the server exercise](./U5LA3-Exemplar/index.js). Have them write a list of things they don't recognize or understand about the code and submit them to you. Spend some time extracting themes from the questions to discuss.
+Ask students to look at the final code for the server exercise. Have them write a list of things they don't recognize or understand about the code and submit them to you. Spend some time extracting themes from the questions to discuss.
 
 Explain that client-side sockets are comparatively simple; they can connect, listen, and send messages. Socket.IO servers can do those things as well as manage rooms and broadcast messages to a configurable subset of clients. They're simple to add to an Express server and can coexist with other Express routes and even other Socket.IO servers. You may also wish to review the difference between WebSockets and Socket.IO.
 
 ### Code Along (\~10 min)
 
-Open the [starter code](./U5LA3-Exemplar) containing a basic Express app. The code for the server is in [`index.js`](./U5LA3-Exemplar/index.js), while the code for the client is in [`client/index.js`](./U5LA3-Exemplar/client/index.js). Explore the existing code individually and as a class.
+Open the **Lesson Starter Code** ([repl.it ](https://replit.com/@qrtnycs4all/U5LA3-Lesson-Starter-Code)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA3/U5LA3-Starter)) containing a basic Express app. The code for the server is in `index.js`, while the code for the client is in `client/index.js`. Explore the existing code individually and as a class.
 
 Then, invite the class to follow along with you as you demonstrate.
 
@@ -248,8 +255,7 @@ io.on("connection", (socket) => {
 })
 ```
 
-`io` is the Socket.IO server. The connection event handler is called with `socket`, an instance of a single connected client.
-Each socket event handler is called with `payload`, the optional contents of the socket event. Payloads can be any data type (including objects) and should be renamed to more accurately reflect the specific contents as needed.
+`io` is the Socket.IO server. The connection event handler is called with `socket`, an instance of a single connected client. Each socket event handler is called with `payload`, the optional contents of the socket event. Payloads can be any data type (including objects) and should be renamed to more accurately reflect the specific contents as needed.
 
 Note the nested event handlers: The outer `"connection"` event handler wraps every inner custom socket event handler. Conceptually what's happening is when a client establishes a connection with the socket server, Socket.IO is registering all your custom events on the connection object it creates.
 
@@ -326,7 +332,7 @@ io.on("connection", (socket) => { 					// When a client connects to this server
 })
 ```
 
-This is a really common way for servers to send messages to clients. The original sender is left out because they likely already updated their local state before they sent the event. If there's data generated by the server that even the sender will need, call `emit` on `io` instead of `socket` and leave out `.broadcast`:
+This is a really common way for servers to send messages to clients. The original sender is left out because they likely already updated their local state before they sent the event. If there is data generated by the server that even the sender will need, call `emit` on `io` instead of `socket` and leave out `.broadcast`:
 
 ```javascript
 io.on("connection", (socket) => { 								// When a client connects to this server
@@ -376,21 +382,28 @@ This may take a while to get everyone through it. When it's set up correctly, bo
 Ask the students to draw 4 diagrams of how clients and servers communicate over sockets. Each diagram should include 1 server and 4 clients. The diagrams are simple boxes and arrows and can be done on paper, whiteboards, or any simple graphics tool.
 
 1. **Emit To All**: 1 client emitting a message to every client
-  * 1 message from a client to the server (clients can't communicate directly with each other)
-  * 4 messages from the server every client (including the sender)
+
+* 1 message from a client to the server (clients can't communicate directly with each other)
+* 4 messages from the server every client (including the sender)
+
 2. **Broadcasting**: 1 client broadcasting a message to the other 3
-  * 1 message from a client to the server (clients can't communicate directly with each other)
-  * 3 messages from the server to the other clients (not back to the original sender)
+
+* 1 message from a client to the server (clients can't communicate directly with each other)
+* 3 messages from the server to the other clients (not back to the original sender)
+
 3. **Emit To Sender**: 1 client sending a message to the server and getting a response
-  * 1 message from a client to the server
-  * 1 message from the server to the same client
+
+* 1 message from a client to the server
+* 1 message from the server to the same client
+
 4. **DMing**: 1 client sending a message to 1 other client
-  * 1 message from a client to the server
-  * 1 message from the server to a different client
+
+* 1 message from a client to the server
+* 1 message from the server to a different client
 
 You can use this as a check for understanding. Review answers as a class and remediate as needed.
 
-### Wrap Up (\~5 min)
+### Wrap-Up (\~5 min)
 
 Look at the following code:
 

@@ -1,3 +1,7 @@
+---
+description: How can I set up a basic static file server with Node and Express?
+---
+
 # 🗃 U5LA1 Mini Project: Express Lab
 
 ## Teacher Notes
@@ -5,6 +9,8 @@
 This lab is about setting up a basic static file server with Node and Express. It's sequenced after the client-side socket material and before the server-side socket material. In practice, setting up a socket server means setting up a server and serving the client from it to avoid cross-origin browser restrictions. This lesson is intended to bridge the gap between consuming sockets and serving sockets. It's limited to serving static files, but simple REST-ish APIs are an easy extension.
 
 Note that the syntax for Node modules is in transition. All of these lessons use the (finalized but technically experimental) ESM `import`/`export` syntax that's used in front-end JavaScript, but Node has historically used the CommonJS `require`/`module.exports` syntax. They are very syntactically similar and serve the same purpose, but ESM modules are statically linked and CommonJS modules are imported at runtime. The bigger issue is that both in very common usage in learning resources across the web, so anticipate some confusion about this.
+
+**Students should utilize the Starter Code (**[**repl.it** ](https://replit.com/@qrtnycs4all/U5LA1-Mini-Project-Starter-Code)**|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB1/U5LAB1-Starter)**) to begin this project.**
 
 Modules cheat sheet:
 
@@ -33,7 +39,7 @@ You've been building websites for a while. Have you ever wondered how the comput
 
 ### Install Dependencies
 
-The starter code for this lab contains tests to give you feedback on your progress. **Download the lab's dependencies by running \`npm install on the terminal**. This may take a while and a lot of lines may go by on your screen. The platform you're working on may also already have done this. That's OK, it doesn't hurt anything to run this command multiple times.
+The **Starter Code (**[**repl.it** ](https://replit.com/@qrtnycs4all/U5LA1-Mini-Project-Starter-Code)**|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB1/U5LAB1-Starter)**)** for this lab contains tests to give you feedback on your progress. **Download the lab's dependencies by running \`npm install on the terminal**. This may take a while and a lot of lines may go by on your screen. The platform you're working on may also already have done this. That's OK, it doesn't hurt anything to run this command multiple times.
 
 ### Run the tests
 
@@ -83,11 +89,11 @@ In this lab all the tests are written for you, but it's even possible to write t
 
 The error says we need to export an Express app, which means we need to install Express.
 
-Express is an open source package. That means a group of volunteers works on this code and makes it available to others to use, extend, and learn from. For example, you can explore the [code for Express on GitHub](https://github.com/expressjs/express) and even make your own copy of it and make changes. If you think others might like your changes, you can submit them back to the team that manages Express. This open source contribution process powers the majority of the software used on the web.
+Express is an open-source package. That means a group of volunteers works on this code and makes it available to others to use, extend, and learn from. For example, you can explore the [code for Express on GitHub](https://github.com/expressjs/express) and even make your own copy of it and make changes. If you think others might like your changes, you can submit them back to the team that manages Express. This open-source contribution process powers the majority of the software used on the web.
 
 We could download the Express files and try to set it all up by hand, but Node comes with a better tool for this called npm. npm (informally known as "node package manager") is a tool for installing packages like Express. It's also used for configuration and storing scripts, such as the `npm test` and `npm run test:watch` scripts you've used. npm packages are hosted at [npmjs.org](https://www.npmjs.com/), which also includes details about how to install them.
 
-**Go to the** [**npmjs.org**](https://www.npmjs.com/) **and find Express. Follow the instructions on the site to install it.**
+**Go to** [**npmjs.org**](https://www.npmjs.com/) **and find Express. Follow the instructions on the site to install it.**
 
 If you've done this correctly, you should see a line in the file `package.json` that looks something like this (it's OK if the numbers don't match):
 
@@ -178,6 +184,8 @@ You can stop the server with `Control` + `c`.
 
 ## Exemplar
 
+You can view the **finished code (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA1-MINI-PROJECT-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB1/U5LAB1-Exemplar)**)** online.
+
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Website displaying 'You did it!'</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
@@ -188,7 +196,7 @@ You may wish to explore:
 
 * Running servers uses large amounts of energy, which has widespread impacts
 * Sometimes people pay for servers by selling the data on them, which is connected to growing concerns about privacy
-* Who owns the data on a server: the company who owns the server or the person the data is about? How have laws changed on this over time?
+* Who owns the data on a server: the company that owns the server or the person the data is about? How have laws changed on this over time?
 
 ## Extra Help
 
@@ -234,11 +242,11 @@ app.get('/random/dog', (request, response) => {
 
 Build a custom API with Express. Create a web page that fetches the data from your server and displays it on your page. Serve the web page from your Express app.
 
-For example, `https://dog.ceo/` the main page for this API shows how to use the website to get information on dogs. But, an API call with the same base `https://dog.ceo/api/breeds/image/random` returns data instead of an html page.
+For example, `https://dog.ceo/` the main page for this API shows how to use the website to get information on dogs. But, an API call with the same base `https://dog.ceo/api/breeds/image/random` returns data instead of an HTML page.
 
 ## Reflection Questions
 
-* Your server sent `index.html` in response to a general request to the server, even though that wasn't actually a file that was specifically requested. Why is that? How would you request contents of the stylesheet?
+* Your server sent `index.html` in response to a general request to the server, even though that wasn't actually a file that was specifically requested. Why is that? How would you request the contents of the stylesheet?
 * npm packages are written, uploaded, and maintained by ordinary users. What is at least 1 advantage of this? At least 1 disadvantage?
 * `express.static()` won't let you host static files from the root folder of the server. Why do you think that is?
 * What kind of limitations does a server face in scaling? What factors keep it from being able to serve trillions of files to trillions of users?

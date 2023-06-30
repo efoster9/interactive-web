@@ -4,8 +4,6 @@ description: How are files delivered on the web?
 
 # U5LA1: Servers and Express
 
-## Preface && Context
-
 ### Teacher Notes && Overview
 
 This lesson is a conceptual overview of servers, Node, and Express. It connects the web development they've already done with server development by exploring how the HTML/CSS/JS files get to the browser. It also isolates setting up an Express HTTP app from attaching a socket server to it.
@@ -25,7 +23,7 @@ The included starter code is already configured for ESM and includes Express. If
 
 \~1-2 Period (\~45-90 min)
 
-If your students are already confident with client-server concepts, you can probably get this done in one lesson, otherwise plan on two.
+If your students are already confident with client-server concepts, you can probably get this done in one lesson, otherwise, plan on two.
 
 ### NYS Standards
 
@@ -41,10 +39,10 @@ If your students are already confident with client-server concepts, you can prob
 
 ### Planning Notes && Materials
 
-|  Planning Notes  |  Materials  |
-| :--------------: | :---------: |
-| Write out the steps for the diagramming exercise ahead of time (rewritten below). | There is a sample Express app in U5LA2-Exemplar that you can use to reference or demo with. Make sure the dependencies have been installed with `npm install`, then run the app with `npm start`. By default, the server listens on `http://localhost:3000`. |
-| Make sure you are confident drawing and talking through the diagram in the diagramming step. | |
+|                                        Planning Notes                                        |                                                                                                                           Materials                                                                                                                          |
+| :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Write out the steps for the diagramming exercise ahead of time (rewritten below).      | There is a sample Express app in U5LA2-Exemplar that you can use to reference or demo with. Make sure the dependencies have been installed with `npm install`, then run the app with `npm start`. By default, the server listens on `http://localhost:3000`. |
+| Make sure you are confident drawing and talking through the diagram in the diagramming step. |                                                                                                                                                                                                                                                              |
 
 1. Browser makes HTTP GET request to `http://website.com/about.html`
 2. Express receives the request
@@ -54,9 +52,9 @@ If your students are already confident with client-server concepts, you can prob
 
 ### Suggestions for UDL
 
-| Multiple Means of Representation | Multiple Means of Engagement | Multiple Means of Expression |
-| :------------------------------: | :--------------------------: | :--------------------------: |
-| Exercise instructions can be read or dictated. Discussions can take place with voice or in print.  Lesson begins with priming, which is immediately activated through discussion. | Students can relate to this topic via their previous work in this course and are encouraged to come up with their own examples of how the technologies introduced can be used. | Students read, listen, discuss, write, draw, and use. |
+|                                                                         Multiple Means of Representation                                                                         |                                                                          Multiple Means of Engagement                                                                          |              Multiple Means of Expression             |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------: |
+| Exercise instructions can be read or dictated. Discussions can take place with voice or in print. Lesson begins with priming, which is immediately activated through discussion. | Students can relate to this topic via their previous work in this course and are encouraged to come up with their own examples of how the technologies introduced can be used. | Students read, listen, discuss, write, draw, and use. |
 
 ### Suggestions for Differentiation
 
@@ -69,24 +67,26 @@ If your students are already confident with client-server concepts, you can prob
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA1-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA1/U5LA1-Starter))
+* **Lesson Exemplar Code** ([repl.it ](https://replit.com/@qrtnycs4all/U5LA1-EXEMPLAR)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA1/U5LA1-Exemplar))
 * [**Express**](https://expressjs.com/)
-* [**W3Schools: Node.js Introduction**](https://www.w3schools.com/nodejs/nodejs_intro.asp)
+* [**W3Schools: Node.js Introduction**](https://www.w3schools.com/nodejs/nodejs\_intro.asp)
 * [**FreeCodeCamp: What Exactly is Node.js? Explained for Beginners**](https://www.freecodecamp.org/news/what-is-node-js/)
 
 ### Assessments
 
 **Formative:**
 
-Questions:
+**Questions**:
 
-* Q: What is the relationship between clients and servers?
-    A: Clients make requests, servers provide responses to requests
-* Q: What is Node?
-    A: Node is a JavaScript runtime. It is a way to run JavaScript outside of the browser.
-* Q: Explain the relationship between JavaScript, Browsers, Node.js, and Express
-    A: JavaScript is a programming language that can on browsers or on Node.js, a runtime. Express is a JavaScript framework that runs on Node.js and responds to requests from Browsers.
-* Q: Explain what serving a static file means?
-    A: Serving a static file means an HTTP server has responded to an HTTP request by reading a file's contents and sending them in an HTTP response.
+* Q: What is the relationship between clients and servers?&#x20;
+  * A: Clients make requests, servers provide responses to requests
+* Q: What is Node?&#x20;
+  * A: Node is a JavaScript runtime. It is a way to run JavaScript outside of the browser.
+* Q: Explain the relationship between JavaScript, Browsers, Node.js, and Express&#x20;
+  * A: JavaScript is a programming language that can on browsers or on Node.js, a runtime. Express is a JavaScript framework that runs on Node.js and responds to requests from Browsers.
+* Q: Explain what serving a static file means?&#x20;
+  * A: Serving a static file means an HTTP server has responded to an HTTP request by reading a file's contents and sending them in an HTTP response.
 
 Student work in the lesson can be collected, as can the reflection question.
 
@@ -100,7 +100,7 @@ Socket Final Project
 
 ### Do Now/Warm Up (\~5 - 15 min)
 
-Read [MDN's introduction to Node and Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction) through the end of "HelloWorld Express." You do not need to run the code in the examples. Consider these questions:
+Read [MDN's introduction to Node and Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express\_Nodejs/Introduction) through the end of "HelloWorld Express." You do not need to run the code in the examples. Consider these questions:
 
 * What is Node?
 * What are some benefits of Node?
@@ -124,10 +124,11 @@ Demonstrate making a Hello World with Node and invite students to follow along:
 2. Inside it, write `console.log("Hello, world!")`
 3. Run the program with `node index.js`
 
-> If you're running from Replit:
-> - Create a new Replit with the language set to Node.js
-> - package.json already exists as a file. Show hidden files to copy and paste into package-lock.json
-> - index.js is already made. You can run the above commands through the “Shell” tab and see results in the “Console” tab. However, the Run button is already configured to run “node index.js” by default.
+> _**If you're running from Replit:**_
+>
+> * Create a new Replit with the language set to Node.js
+> * package.json already exists as a file. Show hidden files to copy and paste into package-lock.json
+> * index.js is already made. You can run the above commands through the “Shell” tab and see results in the “Console” tab. However, the Run button is already configured to run “node index.js” by default.
 
 Optionally, challenge them to implement a simple algorithm such as reversing a string and print the output. If you'd like to have them accept input, CLI arguments can be accessed with the built-in array `process.argv`. `process.argv[0]` is a string of all arguments, individual arguments can be accessed starting at index 1. For Example:
 
@@ -145,7 +146,7 @@ function reverse(string){
 
 ### Demonstration (\~10 min)
 
-Next, shift to talking about Express. In [client/index.html](./U5LA2-Starter/client/index.html), write a simple HTML file:
+Next, shift to talking about Express. In client/index.html of the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U5LA1-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LA1/U5LA1-Starter)), write a simple HTML file:
 
 ```html
 <!-- client/index.html -->
@@ -178,7 +179,7 @@ app.listen(3000)
 
 Run the server with `npm start`. Then, go to `http://localhost:3000` in a browser and see the displayed on the page. If you're running on a public network, invite students to access the page too. This is a good time to pause and collect questions.
 
-> If you're running from Replit simply press the run button. It may take a while to run upon the first try.
+> _**If you're running from Replit simply press the run button. It may take a while to run upon the first try.**_
 >
 > Instead of `http://localhost:3000`, you will see Replit's normal URL. Something like: `http://FILE-NAME.USER-NAME.repl.co`. However, in the code, continue to use port 3000.
 
@@ -199,7 +200,7 @@ Then draw a diagram of each step.
 1. Start by drawing two large labeled boxes for the client and server.
 2. Draw a large box inside the server box and label it "Express." Reinforce that the browser is a client and the server is a computer running an Express app with Node.
 3. Next, draw 3 small labeled boxes inside the "Express" box but inside the server box for "pages/index.html", "pages/about.html", and "pages/products.html". Explain that these 3 files are on the same computer as the Express server.
-4. Write the address (`http://website.com`) above the server box. Explain that this is the where the server is on the internet.
+4. Write the address (`http://website.com`) above the server box. Explain that this is where the server is on the internet.
 5. Draw an arrow from the "Client" box to the "Server" box and label it with `GET http://website.com/about.html`
 6. Draw another arrow connecting the previous arrow with the "Express" box. Explain the request goes to Express because it's listening for it.
 7. Draw an arrow from "Express" to "pages/about.html" and another going from "pages/about.html" back to "Express" again, indicating that Express is reading the contents of this file.
@@ -213,9 +214,9 @@ Ask the class what they think you'd get if you didn't specify a file. Guide them
 
 Explain that this pattern--a server that delivers files on request--is called a **static file server**. Prompt the students to think about what's "static" about it (you can hint that it's the opposite of "dynamic"). Contrast file servers with things like email servers, game servers, and APIs.
 
-Leave the written instructions up, but erase or hide the diagram. Ask the students to attempt to recreate the diagram just based on the written instructions. Use their work to identify specific misunderstandings and assess readiness to move on. You can repeat these section as needed to build confidence in the concept of static file serving.
+Leave the written instructions up, but erase or hide the diagram. Ask the students to attempt to recreate the diagram just based on the written instructions. Use their work to identify specific misunderstandings and assess readiness to move on. You can repeat these sections as needed to build confidence in the concept of static file serving.
 
-### Wrap Up (\~10 min)
+### Wrap-Up (\~10 min)
 
 Facilitate a group discussion on the different roles played by clients and servers. You probably don't want to use all of these (and feel free to substitute your own), but here are some example prompts:
 
@@ -230,4 +231,4 @@ Facilitate a group discussion on the different roles played by clients and serve
 
 Have them try to follow the official [Getting Started guide for Express](https://expressjs.com/en/starter/installing.html).
 
-Add additional HTTP routes to the Express server. Use the documentation in [Express Routing](https://expressjs.com/en/guide/routing.html) to get create routes that respond to browser requests with `app.get(/path-name-here) with JSON responses. Create a web page that fetches the data from your server and displays it on your page.
+Add additional HTTP routes to the Express server. Use the documentation in [Express Routing](https://expressjs.com/en/guide/routing.html) to get create routes that respond to browser requests with \`app.get(/path-name-here) with JSON responses. Create a web page that fetches the data from your server and displays it on your page.

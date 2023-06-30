@@ -4,6 +4,8 @@
 
 This lab has students set up a socket server for a chat room with [Socket.io](https://socket.io/). The front-end and Express server are already set up. The page includes a script that sends Socket.io messages to the server automatically. The exercise involves listening for each socket message and sending the appropriate response.
 
+**Students should utilize the Starter Code (**[**repl.it** ](https://replit.com/@qrtnycs4all/U5LA3-Mini-Project-Starter-Code)**|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB3/U5LAB3-Starter)**) to begin this project.**
+
 ## Prompt
 
 This lab is about setting up a Socket server for a chat room! The Express server and client are already built, but everything relating to sockets needs to be added by you. This includes:
@@ -19,7 +21,7 @@ The app includes a script that will automatically send socket messages to your s
 
 ## Directions
 
-All of your work for this lab takes place in [index.js](U5LAB3-Starter/index.js).
+All of your work for this lab takes place in index.js from the **Starter Code (**[**repl.it** ](https://replit.com/@qrtnycs4all/U5LA3-Mini-Project-Starter-Code)**|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB3/U5LAB3-Starter)**)** .
 
 ### Initialization
 
@@ -42,7 +44,7 @@ Follow these three steps to initialize your server:
 
 If you did this correctly, you should be able to **run `npm start`** and get a notification that your server is listening. You should also have a webview showing the running chat room. You'll use this website to monitor the progress of your socket server. As you add new handlers on the server, you'll see new messages showing up on the page. Right now, you'll see any messages your currently selected user (Ashley by default) is sending but nothing else.
 
-Note that [app.js](U5LAB3-Starter/app.js) and [http-server.js](U5LAB3-Starter/http-server.js) contains the rest of the server code, which should look familiar from the Express lab.
+Note that app.js and http-server.js of the **Starter Code (**[**repl.it** ](https://replit.com/@qrtnycs4all/U5LA3-Mini-Project-Starter-Code)**|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB3/U5LAB3-Starter)**)**  contain the rest of the server code, which should look familiar from the Express lab.
 
 If you've done it correctly, it should look like this:
 
@@ -201,12 +203,14 @@ socket.disconnect();
 
 ## Exemplar
 
+You can explore the **finished code (**[**repl.it**](https://replit.com/@qrtnycs4all/U5LA3-MINI-PROJECT-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-5-simple-websockets/U5LAB3/U5LAB3-Exemplar)**)** as an example.
+
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Finished chatroom example</p></figcaption></figure>
 
 ## Culturally Responsive Best Practices
 
-* If the students are unfamiliar with chat rooms, show them some examples relevant to them, such as Facebook Messenger, Discord, Slack, or even chat bots from commercial websites. You may want to show them historical examples, such as AOL instant messenger, ICQ, or IRC. You may wish to compare/contrast these tools with contemporary methods of online communication.
-* You may wish to talk about the concept of online identities as being distinct from real identities, and how screen names have helped people from marginalized groups protect themselves while still establishing a consistent presence and engaging in a community. Conversely, discuss how how people have used this kind of anonymity to hurt others without consequences. This app doesn't do anything to permanently register or protect screen names. You may want to lead a discussion on what the server would have to do to prevent someone from impersonating you, or how difficult it to tell whether the server is logging or sharing your messages with others.
+* If the students are unfamiliar with chat rooms, show them some examples relevant to them, such as Facebook Messenger, Discord, Slack, or even chatbots from commercial websites. You may want to show them historical examples, such as AOL instant messenger, ICQ, or IRC. You may wish to compare/contrast these tools with contemporary methods of online communication.
+* You may wish to talk about the concept of online identities as being distinct from real identities, and how screen names have helped people from marginalized groups protect themselves while still establishing a consistent presence and engaging in a community. Conversely, discuss how people have used this kind of anonymity to hurt others without consequences. This app doesn't do anything to permanently register or protect screen names. You may want to lead a discussion on what the server would have to do to prevent someone from impersonating you, or how difficult it to tell whether the server is logging or sharing your messages with others.
 
 ## Extra Help
 
@@ -238,7 +242,7 @@ These change something about the socket:
 
 ### Mild
 
-* In the `"sign out"` event handler, broadcast a `"sign out"` message and resend the data
+* In the `"sign out"` event handler broadcast a `"sign out"` message and resend the data
 * Add an event handler for the `"leave"` event. This should broadcast as a `"leave"` event and send the leave request data. Additionally, the socket should leave the channel stored in the `.channel` property of the leave request.
 
 ### Medium
@@ -277,7 +281,7 @@ const someArray = [...someSet]
 
 ### Spicy
 
-Explore [client/actions.js](U5LAB3-Starter/client/actions.js). Read through the `actions` array to understand the format of the chat script. Modify the `actions` array to be a chat script of your own.
+Explore client/actions.js. Read through the `actions` array to understand the format of the chat script. Modify the `actions` array to be a chat script of your own.
 
 ## Reflection Questions
 
