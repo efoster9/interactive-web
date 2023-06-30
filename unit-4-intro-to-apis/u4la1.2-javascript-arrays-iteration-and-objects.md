@@ -57,10 +57,12 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-Consider making a reference sheet to basic async await function that uses a simple rendition of the fetch response syntax.
+Consider making a reference sheet to a basic async await function that uses a simple rendition of the fetch response syntax.
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA12-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.2/U4LA1.2-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA12-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.2/U4LA1.2-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -80,7 +82,7 @@ Consider making a reference sheet to basic async await function that uses a simp
 
 ### Do Now/Warm Up (\~5 min)
 
-Have students run the starter code. The site is a Jeopardy questions teaser made for aspiring contestants to test their skills. Right now, each card has its default data instead of real Jeopardy data. In the starter `script.js`, the code is done for the most part. Show students that `sampleData` is an array of clues that have been hard coded in `sampleData.js`. **For Each** of these clues, the `script.js` is printing out a card using the `jeopardy` object.
+Have students run the starter code. The site is a Jeopardy questions teaser made for aspiring contestants to test their skills. Right now, each card has its default data instead of real Jeopardy data. In the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA12-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.2/U4LA1.2-Starter))`script.js`, the code is done for the most part. Show students that `sampleData` is an array of clues that have been hard-coded in `sampleData.js`. **For Each** of these clues, the `script.js` is printing out a card using the `jeopardy` object.
 
 Have students open up the starter `script.js`. Their task is to change the values in the `jeopardy` object to be the corresponding values from the clues object. Give them about 3 minutes and ask them to change the values one at a time to ensure that the values are being properly populated on the site. NOTE: you may want to show them an example with the first property.
 
@@ -100,7 +102,7 @@ In the lesson walkthrough, students will get a chance to see how data transfers 
 
 **Accessing the Random Endpoint**
 
-Remember, the data right now is not coming from an API call, but instead the `sampleData.js`.Instead of this, lets add the `getRandom()` function at the bottom of `utilities.js`, and call it in a new _async_ function in `script.js`. _NOTE: typically all API get functions are saved away in a separate file like we're doing here._
+Remember, the data right now is not coming from an API call, but instead the `sampleData.js`.Instead of this, let's add the `getRandom()` function at the bottom of `utilities.js`, and call it in a new _async_ function in `script.js`. _NOTE: typically all API get functions are saved away in a separate file like we're doing here._
 
 1.  In the `sampleData.js`, finish the function `getRandom()` so it returns an array of 5 random clues. Use the [JService documentation](https://jservice.io/) if needed.
 
@@ -134,15 +136,15 @@ Let's show the point value of these questions on the card. Recall from Unit 3 th
     ```
 4. In the `utilities.js`, do the following 3 things to insert the point values into the card.
    * Create and `h2` element using `createElement()` and save it in a variable `points`
-   * Set the inner html to `jeopardy.value` plus the word _"pts"_ (Ex. 100 pts)
+   * Set the inner HTML to `jeopardy.value` plus the word _"pts"_ (Ex. 100 pts)
    * append this child to the `categoryDiv` variable.
 
-**Add an eventListener for the input**
+**Add an `eventListener` for the input**
 
-To make this come to life, add an event listener to the input field and for now, show the answer in the answer p element on change.
+To make this come to life, add an event listener to the input field, and for now, show the answer in the answer p element on change.
 
 5. In the `questionCard()` function (in the `utilities.js`) add an eventListener to the input element. On change, it should do the following:
-   * Add the answer in the `p` element's innerHTML
+   * Add the answer in the `p` element's `innerHTML`
    * disable the input field (to prevent multiple answers)
 
 ### Extensions (\~15 min)
@@ -165,23 +167,23 @@ To make this come to life, add an event listener to the input field and for now,
 
 **Spicy**
 
-* In the `index.html`, add total points somewhere in the header and initialize it to 0. In the `utilities.js`, change `updateScore(isCorrect, points)` so that it updates this total instead of console logging it.
-*   Activate the category drop down!
+* In the `index.html`, add total points somewhere in the header, and initialize it to 0. In the `utilities.js`, change `updateScore(isCorrect, points)` so that it updates this total instead of console logging it.
+*   Activate the category drop-down!
 
     * In `utilities.js` create a function `get10Categories()` that requests 10 categories using the API.
     * Also, create a function `getClues(id, number)` that requests a certain "number" of clues that are of the same category based on the "id".
-    * In the `script.js`, create an async function that calls `get10Categories()` and initialize the drop down to the categories.
-    * Add an eventListener for the dropdown. On click, it should do an async function that saves the id for the chosen category and calls `getClues(id, number)`. Then iterate through the clues and print the cards for them. (For now just set the number to 5)
+    * In the `script.js`, create an async function that calls `get10Categories()` and initializes the drop-down to the categories.
+    * Add an `eventListener` for the dropdown. On click, it should do an async function that saves the id for the chosen category and calls `getClues(id, number)`. Then iterate through the clues and print the cards for them. (For now, just set the number to 5)
     * Finally, un-disable the dropdown in the `index.html`.
 
-    _NOTE: You wont need to call `setRandomClues(number)` anymore._
+    _NOTE: You won't need to call `setRandomClues(number)` anymore._
 * \[Super Spicy] Have both inputs work simultaneously and have _"Random"_ as a category choice. For example, if a user selects 8 and "Photography", then 8 clues should appear under the category photography, and if a user selects 10 and "Random", then 10 random clues should appear as before.
 
-### Wrap Up (\~5-10 minutes)
+### Wrap-Up (\~5-10 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-Before students leave, ask them to select a question or two to answer on an easily collectable paper or document:
+Before students leave, ask them to select a question or two to answer on an easily collectible paper or document:
 
 1. Over time, what problems may arise from having code or a website making API requests? What would be necessary to have in place in your code because of this?
 2. What did you struggle with? How did you get through it?

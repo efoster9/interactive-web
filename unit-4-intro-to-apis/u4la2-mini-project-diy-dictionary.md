@@ -6,9 +6,11 @@ description: What makes an API closed and how do we safely incorporate our API k
 
 ### Teacher Notes
 
-Students will be building a website that accesses a Dictionary API. The API requires a user's _"api key"_ and a _word_. It will return the definition, synonyms, and more. The instructions below loosely walk through retrieving the API key before guiding students to a finished version of the website represented by the exemplar.
+Students will be building a website that accesses a Dictionary API. The API requires a user's _"API key"_ and a _word_. It will return the definition, synonyms, and more. The instructions below loosely walk through retrieving the API key before guiding students to a finished version of the website represented by the exemplar.
 
-The DictionaryAPI was chosen because of its relatively simple and free sign up process. Realistically, the sign up process can be much more difficult. However, this lab aims to give students a glimpse into closed APIs and, more importantly, another chance to practice using APIs in general. The final lab would therefore be a good chance for students to explore other APIs that match the difficulty they desire.
+The DictionaryAPI was chosen because of its relatively simple and free sign-up process. Realistically, the sign-up process can be much more difficult. However, this lab aims to give students a glimpse into closed APIs and, more importantly, another chance to practice using APIs in general. The final lab would therefore be a good chance for students to explore other APIs that match the difficulty they desire.
+
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U4LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LAB2/U4LAB2-Starter)**) to begin this project.**
 
 ### Prompt
 
@@ -39,7 +41,7 @@ Most APIs you will run into are closed. For the most part, closed and open APIs 
 
 **Connect to the API**:
 
-For this section, we'll be working from the browser to quickly test the endpoint and your API key. Then, we'll code in the `api.js`.
+For this section, we'll be working from the browser to quickly test the endpoint and your API key. Then, we'll code in the `api.js` of the **Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U4LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LAB2/U4LAB2-Starter)**)**.
 
 4.  There are several APIs that are provided by DictionaryAPI found at [this site](https://dictionaryapi.com/products/index). You should have signed up for the [Thesaurus API](https://dictionaryapi.com/products/api-collegiate-thesaurus) and the [Spanish/English API](https://dictionaryapi.com/products/api-spanish-dictionary). At those links, you can find the endpoint you will need to access. Here's the one for the thesaurus, the first one we'll be using:
 
@@ -79,7 +81,7 @@ For this section, we'll be working from the browser to quickly test the endpoint
 Notice that a lot of the code is already pre-written. For this section, you'll just need to fill in the variables to connect the website with the API calls.
 
 8. In the `script.js`, the `getSimpInfo(word)` function should return a simplified object with just the word, the part of speech (noun, verb, etc.), and the definition. Replace `'PART_OF_SPEECH'` and `'DEFINITION'` with the actual data from the response. Console log this new `finalData` to check that it works.
-9. For the makeCard(finalData), do the same thing. The object you just created will be passed to this function, so it will have the same 3 features.
+9. For the `makeCard(finalData)`, do the same thing. The object you just created will be passed to this function, so it will have the same 3 features.
 10. Last, for the event listener:
     * Call `getSimpInfo(word)` to get the `finalData`, and
     * Call `makeCard(finalData)` to get the html string that you will set as the innerHTML of the card. (NOTE: the card div is queried at the top of the `script.js`)
@@ -87,11 +89,11 @@ Notice that a lot of the code is already pre-written. For this section, you'll j
 
 ### Exemplar
 
-Take a look at this [finished example](U4LAB2-Exemplar/index.html) for the finished version of the site.
+Take a look at this **finished example (**[**repl.it**](https://replit.com/@qrtnycs4all/U4LA2-MINI-PROJECT-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LAB2/U4LAB2-Exemplar)**)** for the finished version of the site.
 
 ### Culturally Responsive Best Practice
 
-Consider giving students a list of 5-10 words that the students can look up once they have their website running properly. This way, they won't stuck on searching for which word to use (NOTE: this is also a good opportunity to sneak in some vocabulary from other subject areas). Otherwise, you can have students come up with 5-10 words from their favorite subject or domaine that they will plan to test using their site.
+Consider giving students a list of 5-10 words that the students can look up once they have their website running properly. This way, they won't be stuck on searching for which word to use (NOTE: This is also a good opportunity to sneak in some vocabulary from other subject areas). Otherwise, you can have students come up with 5-10 words from their favorite subject or domain that they will plan to test using their site.
 
 ### Extra Help?
 
@@ -115,11 +117,11 @@ Consider giving students a list of 5-10 words that the students can look up once
 
 * The other API you should have access to is the [Spanish/ English dictionary](https://dictionaryapi.com/products/api-spanish-dictionary). Add a translate button on the card that when clicked shows the translation of the word into Spanish.
 * When the searched word doesn't exist, check out your response! You should get an array of suggested words. Use this array to make recommendations for your user in some way. For example:
-  * After a word submission you can display links to the other suggested words, or
-  * It could be a drop down of suggestions after each letter is typed in the search bar.
+  * After a word submission, you can display links to the other suggested words, or
+  * It could be a drop-down of suggestions after each letter is typed in the search bar.
 
 **Reflection Questions:**
 
-* Why might one favor a closed API over an open one? What would you assume are the benefits of making your API closed.
+* Why might one favor a closed API over an open one? What would you assume are the benefits of making your API closed?
 * Why might someone else favor an open API over a closed one? What are the drawbacks of making your API closed?
 * What is something about APIs that you still would like to explore?

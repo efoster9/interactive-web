@@ -41,11 +41,11 @@ Students will be able to:
 
 ### Planning Notes && Materials
 
-|                                                   Planning Notes                                                   |             Materials            |
-| :----------------------------------------------------------------------------------------------------------------: | :------------------------------: |
-| Familiarize yourself with the Giphy Web SDK documentation (https://developers.giphy.com/docs/sdk) and sample code. |  [Starter Code](U4LA3-Starter/)  |
-|                                                 Review the exemplar                                                | [Exemplar Code](U4LA3-Exemplar/) |
-|                  Practice signing up for an API key so you'll be able to walk students through it                  |                                  |
+|                                                   Planning Notes                                                   |                   Materials                   |
+| :----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------: |
+| Familiarize yourself with the Giphy Web SDK documentation (https://developers.giphy.com/docs/sdk) and sample code. |                                               |
+|                                                 Review the exemplar                                                | _No extra materials required for this lesson_ |
+|                  Practice signing up for an API key so you'll be able to walk students through it                  |                                               |
 
 ### Suggestions for UDL
 
@@ -61,6 +61,8 @@ Students will be able to:
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA31-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA3.1/U4LA3.1-Starter))
+* **Lesson Exemplar Code** ([repl.it ](https://replit.com/@qrtnycs4all/U4LA31-EXEMPLAR)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA3.1/U4LA3.1-Exemplar))
 * [Giphy SDK docs](https://developers.giphy.com/docs/sdk/#web)
 
 ### Assessments
@@ -84,7 +86,7 @@ In the previous two labs, we had an `api.js`. Pull up the exemplar `api.js` for 
 * Why do you think it's a good idea to have this stuff separated from the `script.js`?
 * What might cause this file to grow or shrink in size?
 
-The `api.js` consists of all the functions being used to communicate with the API. When programming in this file, the focus is having of the proper endpoint, parameters, and try catch blocks. In the main `script.js`, the focus is everything else. These methods are called but expected to operate as designed.
+The `api.js` consists of all the functions being used to communicate with the API. When programming in this file, the focus is on having the proper endpoint, parameters, and try-catch blocks. In the main `script.js`, the focus is everything else. These methods are called but expected to operate as designed.
 
 If the API is more complicated or if there are more unique calls that need to be made, the `api.js` will grow. As it grows, programmers consider another less tedious way to access data through the API.
 
@@ -117,7 +119,7 @@ If the API is more complicated or if there are more unique calls that need to be
     const imgLink = new someapi.ImgLink({size:"large"});
     ````
 * In the first example, we can see all the steps to directly request the API. In the second, the steps are hidden, and we only have to write 1 line in the `index.html`! Ask students what might be the pros and cons of these two methods.
-  * SDKs have less code, but more "magic" or behind the scenes logic.
+  * SDKs have less code, but more "magic" or behind-the-scenes logic.
   * APIs allow us to personalize and customize more.
   * APIs are usually more flexible and follow more customizable patterns than SDKs. SDKs usually require less code to work with. You may compare this to using a standard `for` loop vs using a `forEach()` loop.
 
@@ -137,11 +139,11 @@ const result = await gf.search("cats")
 $gif.src = result.data[0].images.original.url
 ```
 
-* Have student work along side you to obtain an API key from the Giphy Developer Portal.
+* Have students work alongside you to obtain an API key from the Giphy Developer Portal.
 
 ### Hands-on Activity: Integrating Giphy Web SDK (\~20 minutes)
 
-* Have students open the `script.js` in the starter code, and have them try to:
+* Have students open the `script.js` from the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA31-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA3.1/U4LA3.1-Starter)), and have them try to:
   * Connect to the API
   * Display 5 images from the API.
   * Make adjustments to the HTML and CSS and pretty up your display of Gifs. \[Stretch]
@@ -149,7 +151,7 @@ $gif.src = result.data[0].images.original.url
 * Discuss the challenges faced by students during the activity and how they overcame them.
 * Ask students if they like SDKs over APIs? Why or why not? Lead a brief discussion on the advantages and limitations of using SDKs. _The primary benefit is simplicity, the primary limitations are non-standard interfaces and not as flexible._
 
-### Wrap Up (\~5 min)
+### Wrap-Up (\~5 min)
 
 * Having worked with APIs and SDKs, which did you prefer? Are there things that you think one is better suited for over the other?
 * Encourage students to explore other APIs and SDKs in their future projects or areas of interest.

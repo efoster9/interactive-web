@@ -6,7 +6,7 @@ description: What is an API?
 
 ### Teacher Notes & Overview
 
-Most of this lesson will take place in the browser. The goal is to get students comfortable with accessing different end points by editing URLs and navigating JSON response right in the browser. The lesson is split in 2 mini lessons. Mini lesson 1 goes through accessing endpoints straight from the browser, and mini lesson 2 goes through coding request using "async await".
+Most of this lesson will take place in the browser. The goal is to get students comfortable with accessing different end points by editing URLs and navigating JSON responses right in the browser. The lesson is split in 2 mini lessons. Mini-lesson 1 goes through accessing endpoints straight from the browser, and mini-lesson 2 goes through coding requests using "async await".
 
 Open APIs with multiple endpoints are hard to come by, but if you find one that is more appropriate for your students, feel empowered to choose that one instead. The activities below should work with any open API with at least 3 endpoints.
 
@@ -18,7 +18,7 @@ Lastly, there are plenty of student extensions to do this lesson over 2 or 3 day
 
 Students will be able to:
 
-* Read documentation for the JService open API.
+* Read the documentation for the JService open API.
 * Access endpoints on the browser.
 * Read and interpret JSON data in the browser.
 * Use a basic fetch command.
@@ -31,7 +31,7 @@ Students will be able to:
 
 * **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
 * **9-12.CT.7** Design or remix a program that utilizes a data structure to maintain changes to related pieces of data.
-* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored and referenced over the Internet.
+* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored, and referenced over the Internet.
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
 * **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
@@ -61,10 +61,12 @@ Students will be able to:
 
 If students have a hard time starting the extensions consider spending more time going through more examples of API calls from the browser as this is the critical endpoint for them to be able to move forward. The _"Mini Lesson 1 Activity: Scavenger Hunt"_ has questions that fall in this category.
 
-Furthermore, if students need more time to digest the first mini activity, allow them to stay on that while others move on to the second mini activity section.
+Furthermore, if students need more time to digest the first mini-activity, allow them to stay on that while others move on to the second mini-activity section.
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA1-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.1/U4LA1.1-Starter))
+* **Lesson Exemplar Code and Mini Lesson Answers** ([repl.it](https://replit.com/@qrtnycs4all/U4LA11-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.1/U4LA1.1-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -88,7 +90,7 @@ Furthermore, if students need more time to digest the first mini activity, allow
 
 Go to, and have the students go to, `https://jservice.io/api/random`. Tell students that this website doesn't have any front end but instead gives us _an array with 1 object in it_.
 
-Ask students, to explain to their partner what they think each property means. Bonus points if they can guess what old time game show this is.
+Ask students, to explain to their partner what they think each property means. Bonus points if they can guess what old-time game show this is.
 
 > Note: they should all have a different question on the screen. Tell them to refresh and notice the changes.
 
@@ -102,7 +104,7 @@ Make some of the following observations with the students. Consider asking them 
 
 **Conclusion**
 
-This is not a website. This is actually an _API endpoint_. An **API**, an application programming interface, is a way in which your computer can access specific parts of a database without having to download the entire database. The specific url that allows you to access the data in a specific way is called an **endpoint**. The endpoint we've been using in this warm up is `https://jservice.io/api/random`.
+This is not a website. This is actually an _API endpoint_. An **API**, an application programming interface, is a way in which your computer can access specific parts of a database without having to download the entire database. The specific URL that allows you to access the data in a specific way is called an **endpoint**. The endpoint we've been using in this warm-up is `https://jservice.io/api/random`.
 
 ### Mini Lesson 1: API endpoints from the browser (\~10 min)
 
@@ -114,7 +116,7 @@ Have students get rid of the `api/random` part of the url and go to `https://jse
 
     It responds with a single category - its ID, title, and number of clues that exist in that category. Pretty neat!
 
-> Vocabulary! - When ever we make a http **request** using an API endpoint, we can expect a **response**. In the case of a successful request, our response is the data.
+> **Vocabulary**! - When ever we make a http **request** using an API endpoint, we can expect a **response**. In the case of a successful request, our response is the data.
 
 2.  What if we want more options than just one category? We can add a parameter "count" as follows:
 
@@ -145,14 +147,14 @@ Scavenger Hunt! Try and find the following information by accessing the right en
 * The answer for the only 400 point level question that came out in the year 2022 with a category ID of 60.
 * The 101st category ID.
 
-> Note for Teachers: Answers in the exemplar folder
+> **Note for Teachers**: Answers in the **Lesson Exemplar Code and Mini Lesson Answers** ([repl.it](https://replit.com/@qrtnycs4all/U4LA11-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.1/U4LA1.1-Exemplar))
 
 ### Mini Lesson 2: Requests in Javascript (\~10 min)
 
-Now open the starter code and have students do the same. If only there was a way to access this data that's in data structures that we're familiar with (arrays, objects etc.) in Javascript. In javascript, we can make these requests and access the data straight from our code.
+Now open the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA1-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA1.1/U4LA1.1-Starter)) and have students do the same. If only there was a way to access this data that's in data structures that we're familiar with (arrays, objects etc.) in Javascript. In javascript, we can make these requests and access the data straight from our code.
 
 1. In the browser, type the link `https://jservice.io/api/categories?count=5` to reiterate that this endpoint accesses the first 5 categories in the database.
-2.  In the `script.js`, in the function `get5Categories()` point to the link saved under `endpoint`, and add the following peace of code in the function:
+2.  In the `script.js`, in the function `get5Categories()` point to the link saved under `endpoint`, and add the following piece of code to the function:
 
     ```js
     const get5Categories = () => {
@@ -169,9 +171,9 @@ Now open the starter code and have students do the same. If only there was a way
     get5Categories();
     ```
 
-    In the code above, the `endpoint` variable holds the url we are trying to get data from. The function `fetch()` should get that data (JSON) for us and save it in the response `variable`.
-3. Run the code, and show students that what we expect to see is not coming out. Instead we get a _"Promise"_. That's because it's quicker for our program to run then it is for the JSON data to load. Instead of getting nothing while we wait for the data, we get this Promise ensuring that the data will be replaced in this variable once it loads.
-4.  In order for our program to wait for the data to load, we must tell it to wait. This whole process should happen independent of (or asynchronously from) the rest of the program. Make the following adjustments to your code to illustrate this.
+    In the code above, the `endpoint` variable holds the URL we are trying to get data from. The function `fetch()` should get that data (JSON) for us and save it in the response `variable`.
+3. Run the code, and show students that what we expect to see is not coming out. Instead, we get a _"Promise"_. That's because it's quicker for our program to run than it is for the JSON data to load. Instead of getting nothing while we wait for the data, we get this Promise ensuring that the data will be replaced in this variable once it loads.
+4.  In order for our program to wait for the data to load, we must tell it to wait. This whole process should happen independently of (or asynchronously from) the rest of the program. Make the following adjustments to your code to illustrate this.
 
     ```js
     //Notice the async function
@@ -187,8 +189,8 @@ Now open the starter code and have students do the same. If only there was a way
     get5Categories();
     ```
 
-    Again, we don't quite get what we're looking for, but this time if we open the response in that was logged, we can see a _200 status code_ and a `statusText` of _"OK"_ meaning everything was sent with success. If you open the `[[Prototype]] : Response` attribute, you will see the .json() function we can call to finally get the data.
-5.  The last step, is to call the `.json()` function off the response to see the data. NOTE: if you don't await this, you will get a Promise again.
+    Again, we don't quite get what we're looking for, but this time if we open the response that was logged, we can see a _200 status code_ and a `statusText` of _"OK"_ meaning everything was sent with success. If you open the `[[Prototype]] : Response` attribute, you will see the .json() function we can call to finally get the data.
+5.  The last step is to call the `.json()` function off the response to see the data. NOTE: if you don't await this, you will get a Promise again.
 
     ```js
         //await the fetching of data
@@ -202,7 +204,7 @@ Now open the starter code and have students do the same. If only there was a way
 
 **Mini Lesson 2 Activity: Async Functions**
 
-For each of the following activities, refer to the Mini Lesson 1 answers or the [JService documentation](http://jservice.io/).
+For each of the following activities, refer to the Mini-Lesson 1 answers or the [JService documentation](http://jservice.io/).
 
 **Mild**
 
@@ -249,12 +251,12 @@ For each of the following activities, refer to the Mini Lesson 1 answers or the 
     * HINT: you'll need another while loop to check that the first question's value is 100
     * NOTE: Beware the error `ERR_FAILED 429 (Too Many Requests)` this means that you are making too many requests consecutively. See [Resources](u4la1-intro-to-apis.md#resources).
 
-### Wrap Up (\~5-10 minutes)
+### Wrap-Up (\~5-10 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-Before students leave, ask them to select a question or two to answer on an easily collectable paper or document:
+Before students leave, ask them to select a question or two to answer on an easily collectible paper or document:
 
-1. In your own words, what's the difference between an API endpoint url and a regular url like http://google.com?
-2. What kind of websites could you imagine needing to use APIs to access large amounts of data? Which kind of websites probably wont need to use APIs?
-3. What did you have most difficulty with? How did you get through it?
+1. In your own words, what's the difference between an API endpoint url and a regular URL like http://google.com?
+2. What kind of websites could you imagine needing to use APIs to access large amounts of data? Which kind of websites probably won't need to use APIs?
+3. What did you have the most difficulty with? How did you get through it?

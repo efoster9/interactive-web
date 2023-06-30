@@ -42,11 +42,11 @@ Students will be able to:
 
 ### Planning Notes && Materials
 
-|                                                           Planning Notes                                                          |             Materials            |
-| :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: |
-| Familiarize yourself with the Giphy API documentation (https://developers.giphy.com/docs/api/#quick-start-guide) and sample code. |  [Starter Code](U4LA2-Starter/)  |
-|                                                        Review the exemplar                                                        | [Exemplar Code](U4LA2-Exemplar/) |
-|                          Practice signing up for an API key so you'll be able to walk students through it                         |                                  |
+|                                                           Planning Notes                                                          |            Materials            |
+| :-------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------: |
+| Familiarize yourself with the Giphy API documentation (https://developers.giphy.com/docs/api/#quick-start-guide) and sample code. |                                 |
+|                                                        Review the exemplar                                                        | _No special materials required_ |
+|                          Practice signing up for an API key so you'll be able to walk students through it                         |                                 |
 
 ### Suggestions for UDL
 
@@ -62,6 +62,8 @@ Students will be able to:
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA2-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA2/U4LA2-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA2-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA2/U4LA2-Exemplar))
 * [Giphy API docs](https://developers.giphy.com/docs/api/#quick-start-guide)
 * [Fetch Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API)
 * [Try/Catch Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
@@ -117,7 +119,7 @@ const { data } = await response.json()
 
 ### Displaying GIFs (\~15 min)
 
-Using the [starter code](U4LA2-Starter/script.js), complete the following steps to demonstrate to students how to integrate the retrieved GIF data into their applications.
+Using the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA2-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA2/U4LA2-Starter)), complete the following steps to demonstrate to students how to integrate the retrieved GIF data into their applications.
 
 In `script.js`:
 
@@ -159,7 +161,7 @@ app()
 </details>
 
 \
-Consider encouraging creativity by designing the user interface, manipulating the CSS to showcase the GIFs effectively.
+Consider encouraging creativity by designing the user interface, and manipulating the CSS to showcase the GIFs effectively.
 
 ### Try/Catch and Error Handling (\~25 min)
 
@@ -172,7 +174,7 @@ Consider encouraging creativity by designing the user interface, manipulating th
     	// How the error should be handled
     }
     ```
-* Ask students to predict what kinds of things can error when making API calls. Follow up with their ideas of how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display and error message and redirect the user to try something else.
+* Ask students to predict what kinds of things can error when making API calls. Follow up with their ideas of how to handle them gracefully. For example, if the response HTTP code is 404, that means that you requested something that doesn't exist. Rather than have logic that expects a result to be present, you can gracefully display an error message and redirect the user to try something else.
 * Some examples of errors include syntax, invalid endpoint, invalid query, 404, or accessing an attribute in the response that doesn't exist.
 *   Present this code block to students:
 
@@ -195,7 +197,7 @@ Consider encouraging creativity by designing the user interface, manipulating th
     * Then, the browser will attempt to parse the response and save it in `data`. If it fails, control will go to the `catch` block.
     * Finally, the browser will set the `$message`'s text to the parsed data's message.
 
-    If any of the processes errored, the `$message`'s text will display the error's message.
+    If any of the processes errored, the `$message`'s text will display the error message.
 *   In the example above, we can see that the endpoint doesn't exist when we try to run it. In this simpler example, we try to access an element of the array that doesn't exist. `try`/`catch` blocks can also be used for other purposes, like debugging!
 
     ```js
@@ -209,7 +211,7 @@ Consider encouraging creativity by designing the user interface, manipulating th
     ```
 * Have students spend some time purposely creating bugs in a try/catch block and see how many different kinds of errors they can get. Spend some time sharing some of these errors in a demo with the whole class.
 
-### Wrap Up (\~5 min)
+### Wrap-Up (\~5 min)
 
 * Have students share their applications or experiences with connecting to the Giphy API.
 * Discuss the importance and practical applications of connecting to closed APIs in real-world scenarios. For example, talk about how the most powerful APIs will always require some kind of token so they can handle paid access limits.

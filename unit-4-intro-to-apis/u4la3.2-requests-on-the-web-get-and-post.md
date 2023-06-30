@@ -6,15 +6,15 @@ description: What do API calls look like on other websites?
 
 ### Teacher Notes & Overview
 
-This lesson is a guided exploration through websites and how they make POST and GET requests. It doesn't require any coding on the students part, but instead learning to use and observe new tools on the browser: the URL and tabs in the dev tools.
+This lesson is a guided exploration through websites and how they make POST and GET requests. **It doesn't require any coding on the students part**, but instead learning to use and observe new tools on the browser: the URL and tabs in the dev tools.
 
-As students head toward their final projects, the tools here will put them in a better place to choose their depth of learning with APIs. APIs vary greatly in how they're used and how the syntax should be written to use each of them. Instead of showing another example of an API that is perhaps more challenging or requires say a `timeout` function. We chose to remain conceptual and allow for a more self regulated exploration.
+As students head toward their final projects, the tools here will put them in a better place to choose their depth of learning with APIs. APIs vary greatly in how they're used and how the syntax should be written to use each of them. Instead of showing another example of an API that is perhaps more challenging or requires say a `timeout` function. We chose to remain conceptual and allow for a more self-regulated exploration.
 
 ### Objectives
 
 Students will be able to:
 
-* See urls as endpoints with parameters.
+* See URLs as endpoints with parameters.
 * Explain the benefits and drawbacks of using GET vs POST.
 * Use the Network tab in Dev Tools to track requests and responses.
 
@@ -26,7 +26,7 @@ Students will be able to:
 
 * **9-12.CT.4** Implement a program using a combination of student-defined and third-party functions to organize the computation.
 * **9-12.CT.7** Design or remix a program that utilizes a data structure to maintain changes to related pieces of data.
-* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored and referenced over the Internet.
+* **9-12.NSD.4** Describe the components and design characteristics that allow data and information to be moved, stored, and referenced over the Internet.
 * **9-12.DL.1** Type proficiently on a keyboard.
 * **9-12.DL.2** Communicate and work collaboratively with others using digital tools to support individual learning and contribute to the learning of others.
 * **9-12.DL.5** Transfer knowledge of technology in order to use new and emerging technologies on multiple platforms.
@@ -56,12 +56,13 @@ Students will be able to:
 
 Some students learn better by watching rather than coding or typing along. For these students, consider creating a slide deck of the main ideas, or a large post-it or space on the board with key takeaways.
 
-This lesson works best if students are working in paris. They can then hold each other accountable and help each other stay on pace with you teaching.
+This lesson works best if students are working in pairs. They can then hold each other accountable and help each other stay on pace with your teaching.
 
 As you walk around helping some students find and understand things like the Network tab in the dev tools or the parameters in the URL, consider having the other students find 2-3 other examples in other websites.
 
 ### Resources
 
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U4LA32-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LA3.2/U4LA3.2-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -71,7 +72,7 @@ As you walk around helping some students find and understand things like the Net
 
 **Formative:**
 
-* Informally walk around observing and listening in on conversation about students' observations, predictions, and understandings.
+* Informally walk around observing and listening in on conversations about students' observations, predictions, and understandings.
 * **Wrap Up** reflection questions and shares can serve as formative assessments.
 
 **Summative:**
@@ -81,19 +82,19 @@ As you walk around helping some students find and understand things like the Net
 ### Do Now/Warm Up (\~10 min)
 
 1. Open up a new tab in "incognito mode" (or not signed in to an account) and head over to Google.com. Instruct students that they may do this along with you if they'd like
-2. Demo for students a search for say a celebrity like Beyonce. Then, point out the url or endpoint we are hitting. It should look as follows:
+2. Demo for students a search for say a celebrity like Beyonce. Then, point out the URL or endpoint we are hitting. It should look as follows:
 
 ```
 https://www.google.com/search?q=beyonce&oq=beyonce&aqs=chrome.0.69i59l2j0i271l2j69i60l2j69i61.967j0j1&sourceid=firefox&ie=UTF-8 
 ```
 
-3. Ask students in pairs to see if they can find the parameter in the url that is specifying a search for `beyonce`. Then, give them a couple of minutes to play:
-   * Search for someone else and confirm that this part of the url has changed as expected
-   * Get rid of everything else in the url and see what happens to it. How short can you make it?
-   * Can you make a search for another celebrity by only changing the url?
+3. Ask students in pairs to see if they can find the parameter in the URL that is specifying a search for `beyonce`. Then, give them a couple of minutes to play:
+   * Search for someone else and confirm that this part of the URL has changed as expected
+   * Get rid of everything else in the URL and see what happens to it. How short can you make it?
+   * Can you make a search for another celebrity by only changing the URL?
    * How does this relate or differ from APIs as we've learned it thus far?
 4. After a couple of minutes discuss and share the answer for these keeping the following points in mind:
-   * The shortest url that still works is `https://www.google.com/search?q=beyonce` where it's assumed that q stands for query.
+   * The shortest URL that still works is `https://www.google.com/search?q=beyonce` where it's assumed that q stands for query.
    * You can search for something with spaces using the `+` symbol. ie. `https://www.google.com/search?q=ariana+grande`
    * This works the same as an API! The website is an endpoint, that can take a search query, and the response is an entire website instead of just a JSON object.
 
@@ -103,9 +104,9 @@ https://www.google.com/search?q=beyonce&oq=beyonce&aqs=chrome.0.69i59l2j0i271l2j
 
 **Post vs GET**
 
-1. Let's look at another website. Head over to the [Github Login page](https://github.com/login). Login with your real (or fake) username and password, and ask students why we don't see the username or password up in the url as a parameter like we saw the search results in Google.
+1. Let's look at another website. Head over to the [Github Login page](https://github.com/login). Log in with your real (or fake) username and password, and ask students why we don't see the username or password up in the URL as a parameter like we saw the search results in Google.
    * It's true, in the background an API is still being used to check that the credentials are correct,
-   * However, it won't be safe to put username and password information in the url for all to see.
+   * However, it won't be safe to put username and password information in the URL for all to see.
 2. There is a safer way to send the form inputs as part of the fetch to check that the user has valid login credentials. Using POST as opposed to GET.
 3. \[Optional] Open the exemplar script and show students what a GET request vs a POST request might look like.
 4. Ask students to brainstorm when a POST request might be used.
@@ -124,17 +125,17 @@ https://www.google.com/search?q=beyonce&oq=beyonce&aqs=chrome.0.69i59l2j0i271l2j
    * Can you find the response and headers?
 7. Go through the process with them, and discuss the questions with the following points in mind:
    * Each letter triggers a GET request; Google uses an API to get suggestions for their typeahead search dropdown.
-   * In the new page, there are many GETs and POSTs that happen right away. The site is probably getting all the images and links needed for the search word, and the site is probably POSTing our search history and the ID for this search result.
+   * On, the new page, there are many GETs and POSTs that happen right away. The site is probably getting all the images and links needed for the search word, and the site is probably POSTing our search history and the ID for this search result.
    * If you click on the Name of any of the requests, you should see a window that displays the headers and response for the request. See #8.
 8.  Spend some time showing the students the Header and Response tab, and ask them to explore that with you. Pay special attention to the URL, Method, and see if you can parse through the response JSON.&#x20;
 
     <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 9. API's are truly used in almost every modern website. Now students have all the resources they need to continue their exploration.
 
-### Wrap Up (\~5-10 minutes)
+### Wrap-Up (\~5-10 minutes)
 
-Before students leave, ask them to select a question or two to answer on an easily collectable paper or document:
+Before students leave, ask them to select a question or two to answer on an easily collectible paper or document:
 
 1. What are the benefits and drawbacks of using GET over POST? ... POST over GET?
-2. Most of the "Name"s in the Dev tools aren't straight forward. Why do you think this is? For example, instead of "log?slf\_rd=1", "LogInUser" or "GetAdForPage" would be much better descriptors.
+2. Most of the "Name"s in the Dev tools aren't straightforward. Why do you think this is? For example, instead of "log?slf\_rd=1", "LogInUser" or "GetAdForPage" would be much better descriptors.
 3. What are some examples of websites that you would imagine using Get requests? ... Post requests.

@@ -17,12 +17,14 @@ The walkthrough consists of 3 parts:
 In the extensions, after students feel comfortable using this new API, students have the opportunity to:
 
 * Connect the responses to the HTML code
-* Get another at bat at creating an async function in `api.js` and connecting its functionality in `script.js`.
+* Get another at-bat at creating an async function in `api.js` and connecting its functionality in `script.js`.
 * Turn the website into a card game "Higher or Lower". _NOTE: this is a spicy extension and students shouldn't feel like they've failed if they don't get to this._
+
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U4LA1-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LAB1/U4LAB1-Starter)**) to begin this project.**
 
 ### Prompt
 
-We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofcardsapi.com/) has endpoints that allows for users to get an ID for a deck of cards and do things like shuffle, deal, create piles and more. In the walkthrough, you will get a chance to get familiar with API and put together a simple website that deals cards. In the extensions, you'll create a game of "Higher or Lower".
+We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofcardsapi.com/) has endpoints that allow for users to get an ID for a deck of cards and do things like shuffle, deal, create piles, and more. In the walkthrough, you will get a chance to get familiar with API and put together a simple website that deals cards. In the extensions, you'll create a game of "Higher or Lower".
 
 **Familiarize yourself with the API**:
 
@@ -36,8 +38,8 @@ We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofc
     You should have gotten a response like this:&#x20;
 
     <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-4. I got the 8 of clubs! Notice how there's even a link to a static image that can potentially be used in a website. If you visit the same endpoint again, notice how you will draw a different card. Do this a couple times and notice the different cards that come up and how the `remaining` attribute goes down.
-5. **Return and shuffle the cards to the deck:** Last, lets return the cards you drew back to the deck and shuffle the deck at the same time. See if you can find this endpoint before checking here for the answer.
+4. I got the 8 of clubs! Notice how there's even a link to a static image that can potentially be used in a website. If you visit the same endpoint again, notice how you will draw a different card. Do this a couple of times and notice the different cards that come up and how the `remaining` attribute goes down.
+5. **Return and shuffle the cards to the deck:** Last, let's return the cards you drew back to the deck and shuffle the deck at the same time. See if you can find this endpoint before checking here for the answer.
 
 **Use real API calls**
 
@@ -117,13 +119,13 @@ We'll be using a new open API for this lab. The [DeckOfCardsAPI](https://deckofc
 
 ### Exemplar
 
-Take a look at this [finished example](U3LAB2-Exemplar/index.html) for the finished version of the site.
+Take a look at this **finished example (**[**repl.it**](https://replit.com/@qrtnycs4all/U4LA1-Mini-Project-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-4-intro-to-apis/U4LAB1/U4LAB1-Exemplar)**)** for the finished version of the site.
 
 ### Culturally Responsive Best Practice
 
-This lab uses a standard 52 deck of cards. Some students may not have any experiences playing with such a deck or regardless may not know the value of a jack, queen, king or ace. Consider having your students play a game of higher or lower, or war with each other in preparation for this lab.
+This lab uses a standard 52 deck of cards. Some students may not have any experience playing with such a deck or regardless may not know the value of a jack, queen, king, or ace. Consider having your students play a game of higher or lower, or war with each other in preparation for this lab.
 
-The goal of this lab is to have students feel comfortable with using open APIs and incorporating the response data in a website. Feel free to choose a different API if you find that your students will better resinate.
+The goal of this lab is to have students feel comfortable with using open APIs and incorporating the response data into a website. Feel free to choose a different API if you find that your students will better resonate.
 
 ### Extra Help?
 
@@ -137,7 +139,7 @@ The goal of this lab is to have students feel comfortable with using open APIs a
 **Mild**
 
 * Instead of console logging the whole object, log just the value of the card ('2', '6', 'KING', etc.)
-* Adjust the `drawCard()` function so that the image of the card displays on the website. _Note: the link to the image is apart of the response of each card._
+* Adjust the `drawCard()` function so that the image of the card displays on the website. _Note: the link to the image is a part of the response of each card._
   * In the `index.html`, find the Span ID that contains the image of the drawn card.
   * In the `script.js`, every time `drawCard()` is called, it should use the card object to put the image in the innerHTML of the span. Look at Extra Help for more assistance on this.
 
@@ -162,7 +164,7 @@ The goal of this lab is to have students feel comfortable with using open APIs a
     }
     ```
 * "Higher Lower" - Follow the following steps to turn this use of an API into a little game:
-  1.  In the `index.html`, replace the section id="buttons" with the following html code:
+  1.  In the `index.html`, replace the `section id="buttons"` with the following HTML code:
 
       ```html
       <!-- Score -->
