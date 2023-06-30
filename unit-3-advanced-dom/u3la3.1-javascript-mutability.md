@@ -44,7 +44,7 @@ Students will be able to:
 * **mutable object**: An object that allows you to change its values without changing its identity
 * **deep copy**: a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. (ie. released of all variable references)
 * **shallow copy**: a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made.
-* **memory location**: location in computer memory that holds data in the form of a binary number or decimal number of some sort.
+* **memory location**: location in computer memory that holds data in the form of a binary number or a decimal number of some sort.
 
 ### Planning Notes && Materials
 
@@ -60,14 +60,16 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-Students have opportunities to predict, look up documentation, and explore the code on their own allowing them to self differentiate for the most part.
+Students have opportunities to predict, look up documentation, and explore the code on their own allowing them to self-differentiate for the most part.
 
 Consider having the code pre-written and commented so your students can uncomment sections as you go through them. In some cases, this will allow for them to be more available to make predictions and ask questions. Students may also require this as per an IEP, for example.
 
-There are a lot of new vocabulary words used in this section. Consider having these words defined for students as a supplemental material, on the board, large post-it, or other easily accessible location.
+There are a lot of new vocabulary words used in this section. Consider having these words defined for students as supplemental material, on the board, large post-it, or in other easily accessible locations.
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA31-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.1/U3LA3.1-Starter))
+* [**Lesson Exemplar Code**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.1/U3LA3.1-Exemplar)
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -79,7 +81,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
 
 * During **code along:** use participation during predictive questions to informally asses whether students are following or thinking critically.
 * **Activity Code** can be collected and assessed as needed
-* **Student Exploration** and **Wrap Up** reflection questions and shares can serve as formative assessments.
+* **Student Exploration** and **Wrap-Up** reflection questions and shares can serve as formative assessments.
 
 **Summative:**
 
@@ -88,10 +90,10 @@ There are a lot of new vocabulary words used in this section. Consider having th
 
 ### Do Now/Warm Up (\~10 min)
 
-1. Have students [open the starter `script.js`](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits-2/unit-3-advanced-dom/U3LA3.1/U3LA3.1-Starter) and work in pairs to predict whether each output is True or False. Implore them not to run the code just yet. (NOTE: the script is not linked in the `index.html` anyway as of right now)
+1. Have students **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA31-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.1/U3LA3.1-Starter)) and work in pairs to predict whether each output is True or False. Implore them not to run the code just yet. (NOTE: the script is not linked in the `index.html` anyway as of right now)
 2. After a few minutes, open the `index.html` and connect the `script.js`: `<script src="script.js"></script>`. Open the `script.js`, comment out all lines but the first one, and ask groups for their predictions as you show each result one at a time. The answers should be: _True_, _True_, _False_, _False_, _False_.
-3. Don't spend much time explaining why the results are what they are. Instead, use the curiosity to lead into the lesson.
-4. Tell students that there is something weird happening behind the scenes here, and that in this lesson we're going to dive deeper and find out what.
+3. Don't spend much time explaining why the results are what they are. Instead, use curiosity to lead into the lesson.
+4. Tell students that there is something weird happening behind the scenes here and that in this lesson we're going to dive deeper and find out what.
 
 ### Mini Lesson: Primitive Types and Mutability (\~25 min)
 
@@ -108,7 +110,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     console.log("numY", numY);
     ```
 
-    _"numX 10" "numY 15"_ It may help to breakdown the statements one line at a time if this is not clear for your students.
+    _"numX 10" "numY 15"_ It may help to break down the statements one line at a time if this is not clear to your students.
 2.  Now, copy down the following code and give students a minute again to analyze and predict the output before taking predictions:
 
     ```js
@@ -120,7 +122,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     console.log("arrY", arrY);
     ```
 
-    After the reveal, tell students that array Y is not being assigned to the value of the array, `[1, 2, 3]`, as they may try to intuit. Instead the **memory location** of that value is saved because it's an object.
+    After the reveal, tell students that array Y is not being assigned to the value of the array, `[1, 2, 3]`, as they may try to intuit. Instead, the **memory location** of that value is saved because it's an object.
 3. Explain to students that in the first example, `10` is a **primitive datatype**, a single, simple value that gets passed as such. Other primitive datatypes are _strings, booleans, null, and undefined_. In the second example, `[1, 2, 3]` is an array. Because it isn't primitive, the variable `arrX` points to the specific array's **memory location** which gets passed to `arrY`. **Since they both point to the same array, when you change 1, you change the other!**
 
 **The Spread Operator**
@@ -180,7 +182,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
 
 7.  Let's look at an example of a method we've seen before. Give students a minute to analyze the following code and ask them to predict if...
 
-    * `.map()` will change the values of the array its mapping?
+    * `.map()` will change the values of the array and its mapping?
     * `arr1[0] = 9;` will change a value in `arr2`, too?
 
     ```js
@@ -197,7 +199,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
 
     _Nope, `.map()` actually creates a new array with the changed values._
 8. Open the [documentation for `.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map) with the students, and point out that it says **"method creates a new array"**.
-9.  Now, show students the following code and have them look up the documentation for `.filter()` and `.sort()`. The goal is to find out if the they will make a shallow copy, or if they will change the original array ("in place"). Then, predict the results based on their finding.
+9.  Now, show students the following code and have them look up the documentation for `.filter()` and `.sort()`. The goal is to find out if they will make a shallow copy, or if they will change the original array ("in place"). Then, predict the results based on their finding.
 
     ```js
     let employees = ["Marcos", "Daniel", "Zoey", "Albert", "Joe"];
@@ -224,7 +226,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     console.log("For..of Results: ", numbers);
     ```
 
-    _The values are passed but the original array is not changed._ There's actually 2 ways we can change the values of the array:
+    _The values are passed but the original array is not changed._ There are actually 2 ways we can change the values of the array:
 
     ```js
     // Using an explicit, traditional for loop
@@ -256,7 +258,7 @@ There are a lot of new vocabulary words used in this section. Consider having th
     console.log("Shallow Teacher Clone", teacherClone);
     ```
 
-    _The old subject stays "Math", but the array get's a push_. Very unintuitive! This is called a **shallow copy**. The contents were copied over, but students, because its value is an array, that array has to be spread too.
+    _The old subject stays "Math", but the array gets a push_. Very unintuitive! This is called a **shallow copy**. The contents were copied over, but students, because its value is an array, that array has to be spread too.
 12. Instead of manually spreading all nested values, we can use a function called `structuredClone()` that does a **deep copy** for us, getting rid of all the "connections". Notice the following:
 
     ```js
@@ -274,11 +276,11 @@ There are a lot of new vocabulary words used in this section. Consider having th
   * \[Bonus] - See if you can predict which ones will and will not work
   * \[Bonus] - For each change, write down why they are causing an error or why they are allowing the change. HINT: `const` (short for constant) means cannot be changed. Are you changing it somehow?
 
-### Wrap Up (\~5 minutes)
+### Wrap-Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
-The ["Student Exploration"](u3la3.1-javascript-mutability.md#student-exploration-let-vs-const-10-min) above can be used as a wrap up, writing activity to summarize the lesson. If you'd like to add more to that or if you'd like something more reflective, use the questions below:
+The ["Student Exploration"](u3la3.1-javascript-mutability.md#student-exploration-let-vs-const-10-min) above can be used as a wrap-up, writing activity to summarize the lesson. If you'd like to add more to that or if you'd like something more reflective, use the questions below:
 
 1. Why might using `const` be more helpful than `let`? When would `let` be more necessary?
 2. What was something that you struggled with today? How did you overcome that barrier?

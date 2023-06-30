@@ -62,6 +62,8 @@ The practice activities after the lesson are non essential, but they give studen
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA21-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA21-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -80,7 +82,7 @@ The practice activities after the lesson are non essential, but they give studen
 
 ### Do Now/Warm Up (\~10 min)
 
-Run the website and show students that the site is meant to be a smoothie builder. However, notice that the buttons don't work. For the Do Now, have students connect just the banana button. When the button is clicked, the "Enjoy your Smoothie!" text should say "Enjoy your Banana Smoothie!", and the class `is-selected` should be added to that button so it glows green. Direct students to the [`script.js`](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits-2/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Starter) to begin. Uncomment and use the [`demo.js`](https://github.com/nycdoe-cs4all/interactive-web/blob/manny-edits-2/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Exemplar/demo.js) if you need to demo this solution.
+Run the website and show students that the site is meant to be a smoothie builder. However, notice that the buttons don't work. For the Do Now, have students connect just the banana button. When the button is clicked, the "Enjoy your Smoothie!" text should say "Enjoy your Banana Smoothie!", and the class `is-selected` should be added to that button so it glows green. Direct students to the [`script.js`](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits-2/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Starter) to begin. Uncomment and use the `demo.js` in the Exemplar ([repl.it](https://replit.com/@qrtnycs4all/U3LA21-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.1/U3LA2.1-Exemplar)) if you need to demo this solution.
 
 The idea is that the students are recalling `querySelector`, `addEventListener`, `innerHTML`, and how to find `ID`s for elements in the `index.html`. Have the solution ready for the Lesson & Demo (use the `demo.js` in the exemplar folder). Ask a student for consent to share their solution to the class.
 

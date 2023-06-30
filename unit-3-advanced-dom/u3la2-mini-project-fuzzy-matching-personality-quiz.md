@@ -12,6 +12,8 @@ In this lab, students will have the opportunity to build a personality quiz with
 
 Most students will have a hard time coming up with an algorithm that will calculate the final result of their test even with guidance below. Prepare some simple visual examples that students can use to get started. For example if there are 4 results that can be put on an XY-axis, draw what this may look like and show how each questions will push the quiz taker higher or lower on an axis.
 
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U3LA2-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LAB2/U3LAB2-Starter)**) to begin this project.**
+
 ### Prompt
 
 What is your personality type? Which character from your favorite movie pr show are you most like? What color is your energy? In a personality quiz, you answer questions to discover what category you most align with. First code along as you see how it's done. Then, make it your own!
@@ -79,7 +81,7 @@ What is your personality type? Which character from your favorite movie pr show 
 
 ### Exemplar
 
-Take a look at this [finished example](U3LAB2-Exemplar/index.html) for the finished version of the site.
+Take a look at this **finished version (**[**repl.it**](https://replit.com/@qrtnycs4all/U3LA2-Mini-Project-EXEMPLAR) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LAB2/U3LAB2-Exemplar)**)** for the finished version of the site.
 
 ### Culturally Responsive Best Practice
 
@@ -103,7 +105,7 @@ Use the following steps to plan out how you will change the personality quiz to 
 
 1. With your partner, do some research and exploring and think up what kind of personality quiz you'd like to set up. It can be **silly** like "What fruit are you?" or **serious** like "What vacation is best for you?". _If you're not sure, go with the vacation spot!_
 2. Then, write down all the possible results your quiz can end in. Will there be **only 2** (ex. "Your more left brain than right brain" or "Your more right brain than left brain")? Or, will you have **several results** (ex. "Out of all the fruits your most likely a watermelon!")? _If you're not sure, we recommend picking 3-4 vastly different results like "Space", "Cabin in Alaska", "Staycation", and "New Orleans"._
-3. **Inputs**: For the walk through above, radio buttons were the inputs for the quiz. Will you use radio buttons with words or pictures to select from, will you use drop down menus, will you have checkboxes as to allow multiple selections? Also, think about how you will store the user's responses. _Most common is using radio buttons and an object. That's what we'd recommend if you're unsure._
+3. **Inputs**: For the walk-through above, radio buttons were the inputs for the quiz. Will you use radio buttons with words or pictures to select from, will you use drop-down menus, will you have checkboxes to allow multiple selections? Also, think about how you will store the user's responses. _Most common is using radio buttons and an object. That's what we'd recommend if you're unsure._
 4. **Calculating Results**: Here are some ideas for how you can narrow down the user's inputs into some results. Choose 1:
    * **\[MILD]** - Each answer in the quiz can award positive **points** to a category or personality type. At the end of the quiz, which ever personality type has the most points is the one the user will get.
    * **\[MEDIUM]** - If your results can be put on **a scale**, start a score at 50 and have each question add or subtract points to the score. At the end, use the number to give the user a different personality type. _(ex. "Netflix and PJs" would be a 0-35% => always likes to be alone, "Party Animal" would be a 65-100% => never likes to be alone, and maybe even "Hard to Get" would be a 35-65% => likes a balance of both)_ You can split this in 2, have 3 zones, or how ever many zones you need.
@@ -111,9 +113,9 @@ Use the following steps to plan out how you will change the personality quiz to 
      * Scale1 = likes to be outside vs. likes to be inside
      * Scale2 = likes to be along vs likes to be with others Based on the combination of the 2 scales, you can give the user a different personality type _(ex. outside & alone = "Vacation in Space!")_ If it helps, think of this one like an XY graph.
 5. **Outputs**: Finally, what will you show the user once they hit submit?
-   * \[MILD] - Will it be a single output?
-   * \[MEDIUM] - Will you show a few or all possible outcomes and their percentage in each category? (ex. "You're 70% lion and 30% mouse")
-   * \[SPICY] - Will it have a more detailed description or a unique picture to go with it?
+   * **\[MILD]** - Will it be a single output?
+   * **\[MEDIUM]** - Will you show a few or all possible outcomes and their percentage in each category? (ex. "You're 70% lion and 30% mouse")
+   * **\[SPICY]** - Will it have a more detailed description or a unique picture to go with it?
 6. Now that you have your plan, get your quiz up and running! Refrain from focussing on font, images, color and other styling for now. Also, (IMPORTANT) start with **1** question, and add more once you have it working.
 7. Once, you can complete the quiz and get a unique result, go back and add styling, images, and more questions.
 

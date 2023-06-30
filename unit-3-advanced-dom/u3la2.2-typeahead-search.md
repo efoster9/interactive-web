@@ -8,11 +8,11 @@ description: >-
 
 ### Teacher Notes & Overview
 
-In this lesson, students will be working with an array of objects using the iterative techniques learned in prior lessons. Typeahead search is combination of an input field, dropdown menu, and array filtering behind the scenes.
+In this lesson, students will be working with an array of objects using the iterative techniques learned in prior lessons. Typeahead search is a combination of an input field, a dropdown menu, and array filtering behind the scenes.
 
 This lab can be done in 1 day or can be spread across \~3 days depending on the level of your students. The Warmup is set for \~15 minutes allowing students to kick start the lesson by reviewing material they should know up until this point. This can be stretched to a whole day if students struggle with it and need the extra time, or it can be shortened to 5 minutes if your students are coming in with more knowledge.
 
-Furthermore, the practice activities give students more time with the code from this lesson allowing them to explore function calls, iteration, and DOM manipulation. If your students need the practice, this too can span \~1 day. Otherwise, if they are more comfortable, feel empowered to cherry pick the activities that make the most sense for your class.
+Furthermore, the practice activities give students more time with the code from this lesson allowing them to explore function calls, iteration, and DOM manipulation. If your students need the practice, this too can span \~1 day. Otherwise, if they are more comfortable, feel empowered to cherry-pick the activities that make the most sense for your class.
 
 ### Objectives
 
@@ -67,6 +67,8 @@ As with previous code-along lessons, consider preparing partially completed code
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA22-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.2/U3LA2.2-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA22-EXEMPLAR#index.html) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.2/U3LA2.2-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -85,13 +87,13 @@ As with previous code-along lessons, consider preparing partially completed code
 
 ### Do Now/Warm Up (\~15 min)
 
-Have students open up [the starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits-2/unit-3-advanced-dom/U3LA2.2/U3LA2.2-Starter) and give them a tour of the `script.js`. There are 4 DOM elements, 3 functions, and 1 incomplete `addEventListener()` for the user's input. Run up the webpage and show them that there is an input bar where users can search for a state by state name or capital.
+Have students open up **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA22-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA2.2/U3LA2.2-Starter)) and give them a tour of the `script.js`. There are 4 DOM elements, 3 functions, and 1 incomplete `addEventListener()` for the user's input. Run up the webpage and show them that there is an input bar where users can search for a state by state name or capital.
 
-There are 3 mini-goals that students should work together on as a warm up to get this going:
+There are 3 mini-goals that students should work together on as a warm-up to get this going:
 
 * Connect the `addEventListener()` to the `updateDropdown()` function.
 * For now, the function should console log the input every time a character is added or removed! (For example, if you want to enter in "New", you should see "N", "Ne", and "New" in the console as you search it.)
-* \[BONUS] In the `updateDropdown()` function, add _"is-active"_ to the classList of the `dropdown` DOM element if there is an input. Otherwise, remove _"is-active"_ from the classList if there is no input.
+* \[BONUS] In the `updateDropdown()` function, add _"is-active"_ to the classList of the `dropdown` DOM element if there is an input. Otherwise, remove _"is-active"_ from the `classList` if there is no input.
 
 Review the solution with the following questions in mind. Alternatively, you can have students discuss these questions in groups before sharing collectively:
 
@@ -101,11 +103,11 @@ Review the solution with the following questions in mind. Alternatively, you can
   * _**'keydown'** will save the input as it was before the key was pressed (before the new character was added/removed), and_
   * _**'change'** will only take affect when the input is entered._
 * How did you display the input? Is there another way? -- _You can use `e.target.value` or just `input.value`. You can also save the value in a variable before printing it._
-* Why are we manually _adding_ and _removing_ instead of _toggling_ the class name? -- _If students aren't sure about this one, demo it to see what happens. Toggling will show and hide the drop down with every character added. This doesn't make sense for a search bar._
+* Why are we manually _adding_ and _removing_ instead of _toggling_ the class name? -- _If students aren't sure about this one, demo it to see what happens. Toggling will show and hide the drop-down with every character added. This doesn't make sense for a search bar._
 
 ### Lesson & Demo: Array Iteration for Typeahead (\~25 min)
 
-1.  After the warm up, we're about half way through finishing the search bar functionality. You should have something like this:
+1.  After the warm-up, we're about halfway through finishing the search bar functionality. You should have something like this:
 
     ```js
     const updateDropdown = () => {
@@ -123,15 +125,15 @@ Review the solution with the following questions in mind. Alternatively, you can
     input.addEventListener('keyup', updateDropdown);
     ```
 2. Take a moment to verbalize the next few steps you will guide students through in the code along. Use the finished exemplar to illustrate the final functionality. Through every input change, we want the dropdown to include any capital-state pairs that match the search. When a search result is clicked, a badge should appear for it. We'll do this in the following steps:
-   * Connect to the drop down.
+   * Connect to the drop-down.
    * Filter the array of states to match the input.
-   * Create anchor tags for each match and add it to the dropdown.
-3.  **Connect to the drop down.** If we look in the `index.html` we'll find the class name `.dropdown-content` which we'll add to the corresponding DOM element. Show students where this class name is located making notice of the template anchor tag, and code up the following:
+   * Create anchor tags for each match and add them to the dropdown.
+3.  **Connect to the drop-down.** If we look in `index.html` we'll find the class name `.dropdown-content` which we'll add to the corresponding DOM element. Show students where this class name is located making notice of the template anchor tag, and code up the following:
 
     ```js
     const dropdownContent = document.querySelector(".dropdown-content");
     ```
-4.  **Filter the array of states to match the input.** First, in the `setMatches(string)` function, lower case the input and filter the `fiftyStates` using `includes()`.
+4.  **Filter the array of states to match the input.** First, in the `setMatches(string)` function, lowercase the input and filter the `fiftyStates` using `includes()`.
 
     ```js
     const setMatches = (string) => {
@@ -144,7 +146,7 @@ Review the solution with the following questions in mind. Alternatively, you can
         })
     };
     ```
-5.  **Create anchor tags for each match and add it to the dropdown.** Notice how we use the template anchor (a) tag from the `index.html`. However, format it so that the corresponding capital and state is placed in between.
+5.  **Create anchor tags for each match and add them to the dropdown.** Notice how we use the template anchor (a) tag from the `index.html`. However, format it so that the corresponding capital and state are placed in between.
 
     ```js
     const setMatches = (string) => {
@@ -164,7 +166,7 @@ Review the solution with the following questions in mind. Alternatively, you can
     };
     ```
 
-    _**NOTE**: There are many ways to do the setMatches() function! The map and filter can be joined into 1, a for.. of loop can be used instead, etc. See the exemplar for a different solution that doesn't use filter() or map(). Use what makes the most sense for your particular class._
+    _**NOTE**: There are many ways to do the `setMatches()` function! The map and filter can be joined into 1, a for.. of loop can be used instead, etc. See the exemplar for a different solution that doesn't use `filter()` or `map()`. Use what makes the most sense for your particular class._
 6.  Last step is to call `setMatches()` from `updateDropdown()` when there is text in the input bar. Be sure to pass the user's input to `setMatches()`.
 
     ```js
@@ -179,7 +181,7 @@ Review the solution with the following questions in mind. Alternatively, you can
 
         //...
     ```
-7.  You should now see that the type ahead search is working! Lastly, when we click on the drop down item, a badge should appear. In the anchor template, add an `onclick="displayBadge(this)"` attribute. The `displayBadge(element)` function is already written for you in the `script.js`. Notice that we include _"this"_ as a parameter. That means pass **this** element to the function to use as needed. The full formatted string should be:
+7.  You should now see that the type-ahead search is working! Lastly, when we click on the drop-down item, a badge should appear. In the anchor template, add an `onclick="displayBadge(this)"` attribute. The `displayBadge(element)` function is already written for you in the `script.js`. Notice that we include _"this"_ as a parameter. That means pass **this** element to the function to use as needed. The full formatted string should be:
 
     ```js
     `<a class="dropdown-item" onclick="displayBadge(this)">${stateObj.capital}, ${stateObj.state}</a>`
@@ -190,26 +192,26 @@ Review the solution with the following questions in mind. Alternatively, you can
 **Mild**
 
 * Once a _Capital, State_ pair is clicked by the user, hide the dropdown suggestions.
-* Add an extra feature to each state. For example, population, state bird, slogan, or political majority. Include this new feature in the badge but not the drop down.
+* Add an extra feature to each state. For example, population, state bird, slogan, or political majority. Include this new feature in the badge but not the drop-down.
 
 **Medium**
 
 * Allow a user to additionally search by the feature you added.
-* Make sure each state can only appear once as a badge. If the badge is already created, it shouldn't appear in the dropdown. _HINT: you may want create an array called `selectedStates =[]`_
+* Make sure each state can only appear once as a badge. If the badge is already created, it shouldn't appear in the dropdown. _HINT: you may want to create an array called `selectedStates =[]`_
 * Add a clear all button on the page that clears all the badges on the page.
 
 **Spicy**
 
 * Add an x button to each badge that removes the badge. Be sure that this option now reappears in the dropdown when it is searched for.
-* Add a "See All" checkbox on the page that allows you to see any remaining _Capital, State_ badges that haven't been selected. The styling of these badges should be slightly different then the ones that have been selected. When you uncheck the checkbox, these unselected badges should disappear again.
-* Add a bold font to the search results. If a user searches for "son", then the results in the drop down should bold all `son`s.
+* Add a "See All" checkbox on the page that allows you to see any remaining _Capital, State_ badges that haven't been selected. The styling of these badges should be slightly different than the ones that have been selected. When you uncheck the checkbox, these unselected badges should disappear again.
+* Add a bold font to the search results. If a user searches for "son", then the results in the drop-down should bold all `son`s.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Typeahead Example</p></figcaption></figure>
 
-### Wrap Up (\~5 minutes)
+### Wrap-Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
 * What are some websites and examples where you have used typeahead search?
-* What is made easy with typeahead search? When would it make sense to **not** have typeahead on a website?
+* What is made easy with a typeahead search? When would it make sense to **not** have typeahead on a website?
 * What was the biggest challenge you faced in this lesson?

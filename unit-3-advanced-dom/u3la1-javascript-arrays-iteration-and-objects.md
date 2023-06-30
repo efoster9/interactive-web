@@ -8,11 +8,11 @@ description: >-
 
 ### Teacher Notes & Overview
 
-Students will be learning arrays, iteration using `forEach()`, `map()`, and `filter()`, and objects. This lesson is designed as a vanilla javascript lesson. There is no front end other than the console in the development tools window (the "dev tools console"). Instruction will consist of mainly a lecture style code along. However, the presentation is written with opportunities for students to engage by making predictions.
+Students will be learning arrays, and iteration using `forEach()`, `map()`, and `filter()`, and objects. This lesson is designed as a vanilla javascript lesson. There is no front end other than the console in the development tools window (the "dev tools console"). Instruction will consist of mainly a lecture-style code along. However, the presentation is written with opportunities for students to engage by making predictions.
 
-As it is now, [the starter](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-3-advanced-dom/U3LA1/U3LA1-Starter) `notes.js` code is blank. Depending on where a majority of your students are coming from, you may consider modifying the amount of [starter code](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-3-advanced-dom/U3LA1/U3LA1-Starter) you give to relieve the pressure of copying notes allowing students to add comments or put more of their attention on your presentation. Be mindful that students with IEPs may **require** a visual supplemental aid.
+As it is now, the starter ([repl.it ](https://replit.com/@qrtnycs4all/U3LA1-Lesson-Starter-Code)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA1/U3LA1-Starter)) `notes.js` code is blank. Depending on where a majority of your students are coming from, you may consider modifying the amount of starter code you give to relieve the pressure of copying notes allowing students to add comments or put more of their attention on your presentation. Be mindful that students with IEPs may **require** a visual supplemental aid.
 
-Depending on the level of your specific classroom, this lesson can take 1 to 3 days. Regardless, this lesson and the lab that follows offers many activities and challenges for students to feel more comfortable with the material.
+Depending on the level of your specific classroom, this lesson can take 1 to 3 days. Regardless, this lesson and the lab that follows offer many activities and challenges for students to feel more comfortable with the material.
 
 ### Objectives
 
@@ -60,14 +60,16 @@ Students will be able to:
 
 ### Suggestions for Differentiation
 
-For best results, we suggest interchanging between the code along and the hands on activity in the 3 parts that are sectioned below rather than doing the full code along and then having students do the full activity. The activity progressively increases in difficulty offering a low enough entry point for the students that need more guidance, and a challenging enough stretch goal for the students that need to be challenged. The critical point that students need to hit before moving on is indicated in the [exemplar (answer key)](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-3-advanced-dom/U3LA1/U3LA1-Exemplar) version of the `script.js`.
+For best results, we suggest interchanging between the code along and the hands-on activity in the 3 parts that are sectioned below rather than doing the full code along and then having students do the full activity. The activity progressively increases in difficulty offering a low enough entry point for the students that need more guidance, and a challenging enough stretch goal for the students that need to be challenged. The critical point that students need to hit before moving on is indicated in the [exemplar (answer key)](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA1/U3LA1-Exemplar) version of the `script.js`.
 
-There are small moments within the lecture where it is encouraged that you stop and ask predictive questions, e.g. "What do you predict this `console.log()` statement will print?". These questions are intentionally open ended and challenging. The more advance students will have an opportunity to problem solve while copying notes, and the students with less experience won't feel expected to have prior knowledge in order to answer these predictive questions.
+There are small moments within the lecture where it is encouraged that you stop and ask predictive questions, e.g. "What do you predict this `console.log()` statement will print?". These questions are intentionally open-ended and challenging. The more advanced students will have an opportunity to problem solve while copying notes, and the students with less experience won't feel expected to have prior knowledge in order to answer these predictive questions.
 
-Furthermore, students can remain in pairs so that during the code along, they can ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
+Furthermore, students can remain in pairs so that during the code-along, they can ask each other for clarification as you move on. They can also help each other debug small syntax errors in similar situations.
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it ](https://replit.com/@qrtnycs4all/U3LA1-Lesson-Starter-Code)| [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA1/U3LA1-Starter))
+* [**Lesson Exemplar Code**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA1/U3LA1-Exemplar)
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools\*\***](https://www.w3schools.com/html/) - readable documentation
 * [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation

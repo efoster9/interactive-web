@@ -6,10 +6,10 @@ description: How can you use local storage to save the current state of the webs
 
 ### Teacher Notes & Overview
 
-In this lesson, students will be using local storage to retain information on their page upon refresh. There are 3 different types of storage: Local storage, Session storage, and Cookies. You don't need much information about all 3 other than whats provided below. This link can offer [more information](https://www.xenonstack.com/insights/local-vs-session-storage-vs-cookie) if so desired.
+In this lesson, students will be using local storage to retain information on their page upon refresh. There are 3 different types of storage: Local storage, Session storage, and Cookies. You don't need much information about all 3 other than what's provided below. This link can offer [more information](https://www.xenonstack.com/insights/local-vs-session-storage-vs-cookie) if so desired.
 
 * Local Storage: stays until you delete it manually and can be accessed from any tab
-* Session Storage: expires upon close of the tab and only accessible from the tab it was created
+* Session Storage: expires upon close of the tab and is only accessible from the tab it was created
 * Cookies: Similar to Local, but expiration can be set and requires "requests" to access (more about that in Unit 5)
 
 ### Objectives
@@ -37,7 +37,7 @@ Students will be able to:
 
 * **Local Storage** - a web storage type that enables JavaScript sites and apps to store data (key-value pairs) in the browser with no expiration date.
 * **Client-side** - everything in a web application that is displayed or takes place on the end user device (the client)
-* **Web Browser** - a computer program (such as chrome or safari) with a graphical user interface for displaying and navigating between web pages.
+* **Web Browser** - a computer program (such as Chrome or Safari) with a graphical user interface for displaying and navigating between web pages.
 * **Client Browser Storage** - a standard JavaScript application programming interface (API) provided by web browsers that enables websites to store persistent data on users' devices.
 
 ### Planning Notes && Materials
@@ -52,7 +52,7 @@ Students will be able to:
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Have students use which ever job they'd apply for in place of the implied computer science job here. While on the medium extension, they can continue input fields that apply to the job they chose. | Consider having students share their code after adding on different input fields. This would also give them a chance to showcase their interests. | Wrap Up questions are a great way to determine students overall understanding. Completing the mild and medium extensions will mean a student has learned how to incorporate local storage well. |
 
-### Suggestions for Differentiation (edit this)
+### Suggestions for Differentiation
 
 There are only 4 methods that are learned here:
 
@@ -63,12 +63,14 @@ There are only 4 methods that are learned here:
 
 Consider putting these on the board and having students explore these before going into the starter code. Show them the Application tab in the Dev Tools, and on a blank vanilla JS project, have them use these methods to add, get, remove, and clear data from local storage.
 
-If you do this, you can then split the class into students that feel like they'd like to try the lesson lesson/demo on their own and those who'd like to see you walk through it.
+If you do this, you can then split the class into students that feel like they'd like to try the lesson/demo on their own and those who'd like to see you walk through it.
 
 Regardless, the "practice activities" have a natural progression in difficulty suited for various learning levels.
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA4-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA4/U3LA4-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA4-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA4/U3LA4-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -77,7 +79,7 @@ Regardless, the "practice activities" have a natural progression in difficulty s
 
 **Formative:**
 
-* Overlook **students' code** during the warm up and during the practice activities as an informal formative assessment.
+* Overlook **students' code** during the warm-up and during the practice activities as an informal formative assessment.
 * **Wrap Up** reflection questions can serve as formative assessments.
 
 **Summative:**
@@ -94,11 +96,11 @@ Regardless, the "practice activities" have a natural progression in difficulty s
 * If you're logged in or not (but not your sensitive account information)
 * My tabs! Keep them open.
 
-After, have students open up and run the starter code. Fill out the Job Application Form with them and have them restart the webpage before clicking "Apply". Up until this point, the websites we've created have cleared all changes made to the website when refreshed. Today we learn how to _persist_ those changes.
+After, have students open up and run the starter code. Fill out the Job Application Form with them and have them restart the webpage before clicking "Apply". Up until this point, the websites we've created have cleared all changes made to the website when refreshed. Today we learn how to _persist_ in those changes.
 
 ### Lesson & Demo: Approaching Problems (\~35 min)
 
-1. Open the `script.js` and notice that most of the DOM selectors we'll need for this are already created. We'll be working with `inputs` for the most part.
+1. Open the `script.js` from the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA4-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA4/U3LA4-Starter)) and notice that most of the DOM selectors we'll need for this are already created. We'll be working with `inputs` for the most part.
 2.  The variable `controls` holds all the references to the input fields (name, email, and position). Use `forEach()` to add an event listener to each one. Call the function `saveChanges` on input.
 
     > NOTE: `saveChanges()` calls `spinLoader()` by default which you can ignore for now. If it interests you, feel free to check it out in the `loader.js`.
@@ -127,8 +129,8 @@ After, have students open up and run the starter code. Fill out the Job Applicat
 
     * comment 1: save the input element's id value and inputted text in a variable
     * comment 2: if there is an input to save, and if the input is not the default _"Select"_ value, add it using `setItem(ID, VALUE)`, otherwise, delete the reference using `removeItem(ID)`
-4. To further illustrate that this is working, run the page and open the _Application_ tab in the inspect _Dev Tools_. On the sidebar, click the file under _Local Storage_ fill out the form. Notice the appearance of key and value pairs, and the disappearance once the input is removed.
-5.  Next, we need to make sure the code first checks for any inputs already in storage when the page loads. If so, it should retrieve and default to those values. Use [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys) to iterate over all the keys in local storage. Use the object `inputs` to check that the key in local storage matches what we need. In the `script.js`, the object `inputs` has a key value pair for every input's ID and DOM element respectively. Console log for more clarity.
+4. To further illustrate that this is working, run the page and open the _Application_ tab in the inspect _Dev Tools_. On the sidebar, click the file under _Local Storage_ and fill out the form. Notice the appearance of key and value pairs, and the disappearance once the input is removed.
+5.  Next, we need to make sure the code first checks for any inputs already in storage when the page loads. If so, it should retrieve and default to those values. Use [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys) to iterate over all the keys in local storage. Use the object `inputs` to check that the key in local storage matches what we need. In the `script.js`, the object `inputs` has a key-value pair for every input's ID and DOM element respectively. Console log for more clarity.
 
     ```js
     //partial answer - just to see local storage saved data
@@ -181,7 +183,7 @@ After, have students open up and run the starter code. Fill out the Job Applicat
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Example of alert message</p></figcaption></figure>
 
-### Wrap Up (\~5 minutes)
+### Wrap-Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 

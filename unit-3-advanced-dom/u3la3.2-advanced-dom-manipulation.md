@@ -59,6 +59,8 @@ There are roughly 3 independent sections during this lesson: the warm up, #2 in 
 
 ### Resources
 
+* **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA32-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.2/U3LA3.2-Starter))
+* **Lesson Exemplar Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA32-EXEMPLAR) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.2/U3LA3.2-Exemplar))
 * [**Repl.it**](https://replit.com/\~)- online IDE
 * [**W3 Schools**](https://www.w3schools.com/html/) - readable documentation
 * **(OPTIONAL)** [**MDN**](https://developer.mozilla.org/en-US/) - a robust but sometimes less student-friendly documentation
@@ -67,7 +69,7 @@ There are roughly 3 independent sections during this lesson: the warm up, #2 in 
 
 **Formative:**
 
-* Overlook **students' code** during the warm up and during the practice activities as an informal formative assessment.
+* Overlook **students' code** during the warm-up and during the practice activities as an informal formative assessment.
 * **Wrap Up** reflection questions can serve as formative assessments.
 
 **Summative:**
@@ -77,7 +79,7 @@ There are roughly 3 independent sections during this lesson: the warm up, #2 in 
 
 ### Do Now/Warm Up (\~5 min)
 
-Have the students open up the starter code `script.js`. Take a moment to walk them through the code and the checkbox on the website that it is connected to. There is already a DOM element for the checkbox called `darkMode`, and the event listener is set up to listen to when the checkbox is checked. Their challenge is to search and use a method that will get the "parent element" to make the background of the window dark, then use the method to finish the code. Demo this functionality with the exemplar code.
+Have the students open up the **Lesson Starter Code** ([repl.it](https://replit.com/@qrtnycs4all/U3LA32-Lesson-Starter-Code) | [github](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LA3.2/U3LA3.2-Starter)) `script.js`. Take a moment to walk them through the code and the checkbox on the website that it is connected to. There is already a DOM element for the checkbox called `darkMode`, and the event listener is set up to listen when the checkbox is checked. Their challenge is to search and use a method that will get the "parent element" to make the background of the window dark, then use the method to finish the code. Demo this functionality with the exemplar code.
 
 Part of the challenge is that they cannot create a new DOM element alias using `document.querySelector()`. In fact, for an extra challenge refrain from looking at the `index.html` at all!
 
@@ -211,7 +213,7 @@ The idea is that students start to think of a DOM element as something that has 
     ```
 
     _NOTE: Notice that when you look at the console log, you should now see all the nested elements._
-9.  If we look at the innerHTML of the the paragraph (`p`) elements and the icon (`i`) element, they require some text. We can use `innerHTML` to insert that text. The icon will always be an 'x' and the other 2 will be dependent on the `title` and `date` variables passed as parameters.
+9.  If we look at the `innerHTML` of the the paragraph (`p`) elements and the icon (`i`) element, they require some text. We can use `innerHTML` to insert that text. The icon will always be an 'x' and the other 2 will be dependent on the `title` and `date` variables passed as parameters.
 
     ```js
         //...
@@ -264,9 +266,9 @@ The idea is that students start to think of a DOM element as something that has 
   * [parentElement](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
   * [insertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
 
-### Wrap Up (\~5 minutes)
+### Wrap-Up (\~5 minutes)
 
 If you'd like time to collect their work, this would also be a good time. If you are not using Repl.it Teams for Education, a great way to collect projects quickly is a Google Form where they submit their link as well as any reflection questions.
 
 * You now know 2 ways to add HTML code to a website. Which way do you prefer? Why?
-* Why might it be more helpful as a developer to manually create DOM element variables over typing out the html code as a string?
+* Why might it be more helpful as a developer to manually create DOM element variables over typing out the HTML code as a string?

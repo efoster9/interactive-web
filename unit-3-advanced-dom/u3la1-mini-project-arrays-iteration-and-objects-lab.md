@@ -8,11 +8,13 @@ description: >-
 
 ### Teacher Notes
 
-This [vanilla javascript lab located exclusively in the `script.js` (1-3)](https://github.com/nycdoe-cs4all/interactive-web/tree/manny-edits/unit-3-advanced-dom/U3LAB1/U3LAB1-Starter) is a series of challenges for students to get familiar with javascript basic data structures, arrays and objects, and iterating through them. The extensions are included at the bottom of the `script.js`.
+This vanilla javascript lab located exclusively in the `script.js` (1-3) **(**[**repl.it**](https://replit.com/@qrtnycs4all/U3LA1-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LAB1/U3LAB1-Starter)**)** is a series of challenges for students to get familiar with javascript basic data structures, arrays and objects, and iterating through them. The extensions are included at the bottom of the `script.js`.
 
 This lab is designed to come right after the Javascript Arrays, Iteration, and Objects lesson. Students should be able to jump right in and work on the challenges throughout the script files. As there are 3 files, plan to remind students how to comment and uncomment the corresponding script tags in the `index.html` as to which they are currently working on. (i.e. when they finish the `script1.js` they should comment out the line in the `index.html` and uncomment the `script2.js` line so they can see the results displayed in the Dev Tools.)
 
 You can structure this lab to be 3 separate days, 1 day per each lab, all the labs on 1 day, or break it up how you see fit. The first lab is all about arrays, the second contains objects and nested objects, and the third is all about array iteration.
+
+**Students should utilize the Starter Code (**[**repl.it**](https://replit.com/@qrtnycs4all/U3LA1-Mini-Project-Starter-Code) **|** [**github**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LAB1/U3LAB1-Starter)**) to begin this project.**
 
 ### Prompt
 
@@ -20,7 +22,7 @@ For this lab, put together what you've learned recently about javascript arrays 
 
 ### Exemplar (teacher's view only)
 
-Take a look at this [finished example](unit-3-advanced-dom/U3LAB1-Exemplar/index.html) for the answer key to the javascript challenges.
+Take a look at this [**finished example**](https://github.com/nycdoe-cs4all/interactive-web/tree/main/unit-3-advanced-dom/U3LAB1/U3LAB1-Exemplar) for the answer key to the javascript challenges.
 
 ### Culturally Responsive Best Practice
 
